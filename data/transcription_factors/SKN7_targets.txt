@@ -1,0 +1,194 @@
+!
+!Date: 05/27/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Regulator	Regulator Systematic Name	Target	Target Systematic Name	Direction	Regulation of	Happens During	Regulator Type	Direction	Regulation Of	Happens During	Method	Evidence	Strain Background	Reference
+SKN7	YHR206W	AFT2	YPL202C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	AGE1	YDR524C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	AHP1	YLR109W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	AIM26	YKL037W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	AKR2	YOR034C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	ALD6	YPL061W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	AMN1	YBR158W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ARG1	YOL058W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ASF1	YJL115W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ATG39	YLR312C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	ATP1	YBL099W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ATP14	YLR295C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	BAT2	YJR148W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	BUL2	YML111W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CAR1	YPL111W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CCW12	YLR110C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	CHS1	YNL192W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	CIN1	YOR349W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	CIP1	YPL014W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CMR3	YPR013C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	CPR1	YDR155C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CPR1	YDR155C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	CUE4	YML101C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CWP1	YKL096W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	CWP2	YKL096W-A		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	CYT2	YKL087C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	DCP2	YNL118C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	DDI3	YFL061W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	DDR48	YMR173W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	ECM33	YBR078W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ECM4	YKR076W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	EPS1	YIL005W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	FIG1	YBR040W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	FKS3	YMR306W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	FMP48	YGR052W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	GAS1	YMR307W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	GAT2	YMR136W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	GIC2	YDR309C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	GID8	YMR135C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	GID8	YMR135C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	GIP3	YPL137C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	GIP3	YPL137C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	GPX2	YBR244W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	GSY2	YLR258W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	HAP4	YKL109W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HEF3	YNL014W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	HEF3	YNL014W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HEM13	YDR044W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HER1	YOR227W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HOG1	YLR113W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HOR7	YMR251W-A		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	HOR7	YMR251W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	HSP42	YDR171W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	ICS2	YBR157C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ICY1	YMR195W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	IES5	YER092W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	IRC22	YEL001C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ISU1	YPL135W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ISU2	YOR226C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	KNH1	YDL049C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	KNH1	YDL049C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	KNS1	YLL019C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	KTI12	YKL110C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MDH2	YOL126C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	MDH2	YOL126C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MGA1	YGR249W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MHP1	YJL042W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	MIR1	YJR077C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	MNN1	YER001W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MOD5	YOR274W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MRPL15	YLR312W-A		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	MRS4	YKR052C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MRX11	YPL041C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MSB2	YGR014W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	MSN4	YKL062W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NCA3	YJL116C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NCE102	YPR149W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NCW1	YMR122W-A		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	NDE1	YMR145C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NEM1	YHR004C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NRG1	YDR043C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	NRG2	YBR066C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	OCH1	YGL038C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	OCH1	YGL038C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	OLE1	YGL055W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	OXA1	YER154W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PEA2	YER149C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PET122	YER153C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PGK1	YCR012W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	PHO91	YNR013C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PIL1	YGR086C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PLB3	YOL011W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	PLS1	YNL097C-B		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	PLS1	YNL097C-B		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PMA1	YGL008C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PMC1	YGL006W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	POR2	YIL114C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PUN1	YLR414C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	PUT4	YOR348C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	PYC1	YGL062W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	RAS2	YNL098C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RBA50	YDR527W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RCF2	YNR018W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RHO3	YIL118W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RHO5	YNL180C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RMI1	YPL024W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	ROX1	YPR065W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RPA14	YDR156W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	RPA14	YDR156W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RPI1	YIL119C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RPL20B	YOR312C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	RPL34B	YIL052C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	RPP2A	YOL039W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RPS15	YOL040C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	RPS1B	YML063W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	RPS3	YNL178W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SCW10	YMR305C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SCW4	YGR279C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SDP1	YIL113W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SDS23	YGL056C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SET4	YJL105W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SGA1	YIL099W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SKS1	YPL026C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SKS1	YPL026C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SLM4	YBR077C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SLM4	YBR077C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SNA2	YDR525W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SNR47	YNCD0010C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SOK2	YMR016C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SOL2	YCR073W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SPI1	YER150W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SPI1	YER150W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SPO20	YMR017W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SRX1	YKL086W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SSK22	YCR073C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	STE6	YKL209C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SUR7	YML052W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SUR7	YML052W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SUT2	YPR009W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	SUT2	YPR009W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	SYG1	YIL047C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	TCB2	YNL087W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	TDH2	YJR009C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	TIR1	YER011W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	TPO4	YOR273C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	TPS1	YBR126C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	TRM13	YOL125W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	TSA1	YML028W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	TSA1	YML028W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	TSL1	YML100W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	UGP1	YKL035W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	URA7	YBL039C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	USV1	YPL230W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	UTH1	YKR042W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	UTH1	YKR042W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	VNX1	YNL321W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	XBP1	YIL101C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YAP5	YIR018W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YBL071C-B	YBL071C-B		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YBR053C	YBR053C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YBR085C-A	YBR085C-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YDR042C	YDR042C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YDR524C-B	YDR524C-B		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YDR524W-C	YDR524W-C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YER010C	YER010C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YGL006W-A	YGL006W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YGL007C-A	YGL007C-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YGR161W-C	YGR161W-C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YIL089W	YIL089W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YJL107C	YJL107C		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YKL063C	YKL063C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YKR075C	YKR075C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YLR257W	YLR257W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YLR297W	YLR297W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YML053C	YML053C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YMR173W-A	YMR173W-A		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	YNCL0035C	YNCL0035C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YNL234W	YNL234W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YNR014W	YNR014W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YNR014W	YNR014W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YOL014W	YOL014W		transcription	cellular response to heat	transcription factor		transcription	cellular response to heat	high-throughput	chromatin immunoprecipitation-chip evidence	S288C	Venters BJ, et al. (2011) PMID:21329885
+SKN7	YHR206W	YOR365C	YOR365C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+SKN7	YHR206W	YPR063C	YPR063C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YPR148C	YPR148C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+SKN7	YHR206W	YRO2	YBR054W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208

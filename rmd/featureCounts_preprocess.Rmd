@@ -1,0 +1,129 @@
+---
+title: "featureCounts_preprocess"
+author: "Weronika"
+date: "2024-05-23"
+output: html_document
+---
+
+```{r cil_setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(comment = NA)
+
+library(reticulate)
+
+path_to_python <- "/Users/s1964600/mambaforge/envs/py/bin/python" # TODO: find a more flexible solution
+use_python(path_to_python, required = TRUE)
+
+COUNT_HEADER_COLUMNS <- c("Geneid", "Chr", "Start",
+                          "End", "Strand", "Length")
+
+```
+
+```{python sample_specific, echo=FALSE}
+# TODO: convert this to R
+
+import pandas as pd
+from glob import glob
+
+# ------------------------
+#species = r.species
+#strain = r.strain
+#samplesheet = r.samplesheet
+# ------------------------
+species = "Candida_glabrata"
+strain1 = "CBS138"
+strain2 = "BG2"
+samplesheet = "DGE_samplesheet_canGla2.txt"
+# ------------------------
+
+counts_path_1 = "../data/featureCounts/" + species + "_" + strain1 + "/counts/"
+counts_path_2 = "../data/featureCounts/" + species + "_" + strain2 + "/counts/"
+
+sample_sheet_path = "../data/sample_sheets/" + samplesheet
+sample_sheet_df = pd.read_csv(sample_sheet_path, sep="\t", comment="#")
+print(sample_sheet_df)
+
+experiment_data_1 = sample_sheet_df[(sample_sheet_df["Species"] == species) & (sample_sheet_df["Strain"] == strain1)].copy()
+experiment_data_1.drop(["Species", "Strain"], axis=1, inplace=True)
+print(experiment_data_1)
+
+experiment_data_2 = sample_sheet_df[(sample_sheet_df["Species"] == species) & (sample_sheet_df["Strain"] == strain2)].copy()
+experiment_data_2.drop(["Species", "Strain"], axis=1, inplace=True)
+print(experiment_data_2)
+
+
+sample_names_1 = experiment_data_1["SampleID"].to_list()
+sample_codes_1 = pd.Series(experiment_data_1.Code.values,index=experiment_data_1.SampleID).to_dict()
+code_levels_1 = experiment_data_1["Code"].to_list()
+#print(sample_codes_1)
+#print(sample_names_1)
+
+sample_names_2 = experiment_data_2["SampleID"].to_list()
+sample_codes_2 = pd.Series(experiment_data_2.Code.values,index=experiment_data_2.SampleID).to_dict()
+code_levels_2 = experiment_data_2["Code"].to_list()
+print(sample_codes_2)
+print(sample_names_2)
+
+def read_df(path, sample, sample_codes):
+  suffix = "_aln.bam"
+  current_df = pd.read_csv(path + str(sample) + "/" + str(sample) + "_counts.txt", sep="\t", comment="#")
+  
+  current_df.columns = r.COUNT_HEADER_COLUMNS + [sample_codes[sample]]
+  current_df[sample_codes[sample]] = current_df[sample_codes[sample]] + 1
+  return current_df[["Geneid", sample_codes[sample]]]
+
+counts_file_path_1 = counts_path_1 + str(sample_names_1[0]) + "/" + str(sample_names_1[0]) + "_counts.txt"
+#print(counts_file_path_1)
+
+counts_file_path_2 = counts_path_2 + str(sample_names_2[0]) + "/" + str(sample_names_2[0]) + "_counts.txt"
+#print(counts_file_path_2)
+
+counts_df_1 = pd.read_csv(counts_file_path_1, sep="\t", comment="#")[r.COUNT_HEADER_COLUMNS]
+#print(counts_df_1)
+
+counts_df_2 = pd.read_csv(counts_file_path_2, sep="\t", comment="#")[r.COUNT_HEADER_COLUMNS]
+#print(counts_df_2)
+
+
+for sample in sample_names_1:
+  counts_df_1 = counts_df_1.merge(read_df(counts_path_1, sample, sample_codes_1), how="outer", on="Geneid")
+#print(counts_df_1)
+
+for sample in sample_names_2:
+  counts_df_2 = counts_df_2.merge(read_df(counts_path_2, sample, sample_codes_2), how="outer", on="Geneid")
+#print(counts_df_2)
+
+
+counts_1 = counts_df_1.set_index("Geneid").drop(r.COUNT_HEADER_COLUMNS, axis=1, errors="ignore")
+print(counts_1)
+
+counts_2 = counts_df_2.set_index("Geneid").drop(r.COUNT_HEADER_COLUMNS, axis=1, errors="ignore")
+print(counts_2)
+
+counts_all_1 = counts_df_1.set_index("Geneid").drop(r.COUNT_HEADER_COLUMNS, axis=1, errors="ignore").reset_index()
+print(counts_all_1)
+
+counts_all_2 = counts_df_2.set_index("Geneid").drop(r.COUNT_HEADER_COLUMNS, axis=1, errors="ignore").reset_index()
+print(counts_all_2)
+
+
+
+```
+
+```{python norm_counts, echo=FALSE}
+counts_rpm_1 = counts_1.div(counts_1.sum(), axis=1) * 1000000
+counts_rpm_2 = counts_2.div(counts_2.sum(), axis=1) * 1000000
+
+```
+
+```{r read_counts, echo=FALSE}
+# read variables from python
+counts_1 = py$counts_1 #CBS138
+counts_2 = py$counts_2 #BG2
+
+counts_rpm_1 = py$counts_rpm_1 #CBS138
+counts_rpm_2 = py$counts_rpm_2 #BG2
+
+
+```
+

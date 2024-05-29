@@ -1,0 +1,98 @@
+---
+title: "ortho_preprocess"
+author: "Weronika"
+date: "2024-05-23"
+output: html_document
+---
+
+```{r cil_setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(comment = NA)
+
+library(reticulate)
+
+path_to_python <- "/Users/s1964600/mambaforge/envs/py/bin/python" # TODO: find a more flexible solution
+use_python(path_to_python, required = TRUE)
+```
+
+# Get gene_id and protein_id pairs for each strain of C. glabrata as well as BY4741
+
+```{python load_data}
+import pandas as pd
+
+GTF_COLUMNS = ["chr", "source", "feature", "start", "end", "score", "strand", "frame", "attribute"]
+
+bg2 = pd.read_csv("../data/genomes/BG2_GCA_014217725.1/ncbi_dataset/data/GCA_014217725.1/genomic.gtf", sep="\t", header=None, comment="#")
+bg2.columns = GTF_COLUMNS
+
+cbs138 = pd.read_csv("../data/genomes/CBS138_GCF_000002545.3/ncbi_dataset/data/GCF_000002545.3/genomic.gtf", sep="\t", header=None, comment="#")
+cbs138.columns = GTF_COLUMNS
+
+by4741 = pd.read_csv("../data/genomes/BY4741_GCF_000146045.2/ncbi_dataset/data/GCF_000146045.2/genomic.gtf", sep="\t", header=None, comment="#")
+by4741.columns = GTF_COLUMNS
+
+print(bg2)
+print(cbs138)
+print(by4741)
+
+bg2_cds = bg2[bg2.feature == "CDS"].copy()
+cbs138_cds = cbs138[cbs138.feature == "CDS"].copy()
+by4741_cds = by4741[by4741.feature == "CDS"].copy()
+
+bg2_cds["gene_id_bg2"] = bg2_cds["attribute"].str.extract("gene_id \"([^\"]*)\"")
+bg2_cds["protein_id_bg2"] = bg2_cds["attribute"].str.extract("protein_id \"([^\"]*)\"")
+print(bg2_cds)
+
+cbs138_cds["gene_id_cbs138"] = cbs138_cds["attribute"].str.extract("gene_id \"([^\"]*)\"")
+cbs138_cds["protein_id_cbs138"] = cbs138_cds["attribute"].str.extract("protein_id \"([^\"]*)\"")
+print(cbs138_cds)
+
+by4741_cds["gene_id_by4741"] = by4741_cds["attribute"].str.extract("gene_id \"([^\"]*)\"")
+by4741_cds["protein_id_by4741"] = by4741_cds["attribute"].str.extract("protein_id \"([^\"]*)\"")
+print(by4741_cds)
+
+bg2_ids = bg2_cds[["gene_id_bg2", "protein_id_bg2"]].copy()
+cbs138_ids = cbs138_cds[["gene_id_cbs138", "protein_id_cbs138"]].copy()
+by4741_ids = by4741_cds[["gene_id_by4741", "protein_id_by4741"]].copy()
+
+cbs138_ids.drop_duplicates(inplace=True)
+bg2_ids.drop_duplicates(inplace=True)
+by4741_ids.drop_duplicates(inplace=True)
+
+print(bg2_ids)
+print(cbs138_ids)
+print(by4741_ids)
+
+```
+
+# Convert RBBH protein IDs to gene IDs
+
+```{python rbbh_preprocess}
+rbbh_cgla_cgla = pd.read_csv("../data/reciprocal_blast/cgla_cgla/CSB138_BG2_rbbh.csv")
+print(rbbh_cgla_cgla)
+
+rbbh_scer_cgla = pd.read_csv("../data/reciprocal_blast/scer_cgla/scer_cgla_rbbh.csv")
+print(rbbh_scer_cgla)
+
+
+rbbh_cgla_clga_ids = rbbh_cgla_cgla[["query_y", "subject_y"]]
+rbbh_cgla_clga_ids = rbbh_cgla_clga_ids.merge(bg2_ids, how="inner", left_on="query_y", right_on="protein_id_bg2")
+rbbh_cgla_clga_ids = rbbh_cgla_clga_ids.merge(cbs138_ids, how="inner", left_on="subject_y", right_on="protein_id_cbs138")
+print(rbbh_cgla_clga_ids)
+
+rbbh_cgla_clga_ids_gene = rbbh_cgla_clga_ids[["gene_id_cbs138", "gene_id_bg2"]]
+print(rbbh_cgla_clga_ids_gene)
+#rrbh_gene_id.to_csv("rbbh_cbs138_bg2.csv", header=True, index=None)
+
+rbbh_scer_cgla_ids = rbbh_scer_cgla[["query_y", "subject_y"]]
+rbbh_scer_cgla_ids = rbbh_scer_cgla_ids.merge(by4741_ids, how="inner", left_on="subject_y", right_on="protein_id_by4741")
+rbbh_scer_cgla_ids = rbbh_scer_cgla_ids.merge(cbs138_ids, how="inner", left_on="query_y", right_on="protein_id_cbs138")
+print(rbbh_scer_cgla_ids)
+
+rbbh_scer_cgla_ids_gene = rbbh_scer_cgla_ids[["gene_id_cbs138", "gene_id_by4741"]]
+print(rbbh_scer_cgla_ids_gene)
+#rrbh_gene_id.to_csv("rbbh_cbs138_bg2.csv", header=True, index=None)
+
+
+
+```

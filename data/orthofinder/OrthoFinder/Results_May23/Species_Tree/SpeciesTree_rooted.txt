@@ -1,0 +1,1 @@
+(sacCer_protein:0.5,(CBS138_protein:1,BG2_protein:1)1:0.5);

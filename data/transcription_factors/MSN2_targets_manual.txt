@@ -1,0 +1,34 @@
+!
+!Date: 05/27/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Regulator	Regulator Systematic Name	Target	Target Systematic Name	Direction	Regulation of	Happens During	Regulator Type	Direction	Regulation Of	Happens During	Method	Evidence	Strain Background	Reference
+MSN2	YMR037C	ALD3	YMR169C	positive	transcription	cellular response to heat	transcription factor	positive	transcription	cellular response to heat	manually curated	northern blot evidence	S288C	Ruiz-Roig C, et al. (2010) PMID:20398213
+MSN2	YMR037C	ALD3	YMR169C	positive	transcription	cellular response to osmotic stress	transcription factor	positive	transcription	cellular response to osmotic stress	manually curated	quantitative reverse transcription polymerase chain reaction evidence	Other	Bai C, et al. (2020) PMID:32804965
+MSN2	YMR037C	AMS1	YGL156W	positive	transcription	cellular response to nitrogen starvation	transcription factor	positive	transcription	cellular response to nitrogen starvation	manually curated	reverse transcription polymerase chain reaction evidence	S288C	Umekawa M, et al. (2016) PMID:26947009
+MSN2	YMR037C	AMS1	YGL156W	positive	transcription	cellular response to glucose starvation	transcription factor	positive	transcription	cellular response to glucose starvation	manually curated	reverse transcription polymerase chain reaction evidence	S288C	Umekawa M, et al. (2016) PMID:26947009
+MSN2	YMR037C	ATG39	YLR312C	positive	transcription		transcription factor	positive	transcription		manually curated	quantitative reverse transcription polymerase chain reaction evidence	W303	Mizuno T and Irie K (2021) PMID:34099851
+MSN2	YMR037C	CIP1	YPL014W		transcription	cellular response to stress	transcription factor		transcription	cellular response to stress	manually curated	chromatin immunoprecipitation evidence	W303	Chang YL, et al. (2017) PMID:28676626
+MSN2	YMR037C	CIP1	YPL014W		transcription	cellular response to stress	transcription factor		transcription	cellular response to stress	manually curated	electrophoretic mobility shift assay evidence	W303	Chang YL, et al. (2017) PMID:28676626
+MSN2	YMR037C	CIP1	YPL014W	positive	transcription	cellular response to stress	transcription factor	positive	transcription	cellular response to stress	manually curated	northern blot evidence	W303	Chang YL, et al. (2017) PMID:28676626
+MSN2	YMR037C	CTT1	YGR088W	positive	transcription	cellular response to heat	transcription factor	positive	transcription	cellular response to heat	manually curated	northern blot evidence	S288C	Ruiz-Roig C, et al. (2010) PMID:20398213
+MSN2	YMR037C	CTT1	YGR088W	positive	transcription	cellular response to hydrogen peroxide	transcription factor	positive	transcription	cellular response to hydrogen peroxide	manually curated	northern blot evidence	Other	Nakazawa N, et al. (2018) PMID:29607878
+MSN2	YMR037C	CTT1	YGR088W	positive	transcription		transcription factor	positive	transcription		manually curated	northern blot evidence	Other	Nakazawa N, et al. (2018) PMID:29607878
+MSN2	YMR037C	CTT1	YGR088W	positive	transcription	cellular response to stress	transcription factor	positive	transcription	cellular response to stress	manually curated	quantitative reverse transcription polymerase chain reaction evidence	S288C	Cho BR and Hahn JS (2017) PMID:28330760
+MSN2	YMR037C	DAK1	YML070W	positive	transcription	cellular response to osmotic stress	transcription factor	positive	transcription	cellular response to osmotic stress	manually curated	quantitative reverse transcription polymerase chain reaction evidence	Other	Bai C, et al. (2020) PMID:32804965
+MSN2	YMR037C	GRE1	YPL223C	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Martínez-Montañés F, et al. (2013) PMID:23435728
+MSN2	YMR037C	HSP12	YFL014W	positive	transcription	cellular response to stress	transcription factor	positive	transcription	cellular response to stress	manually curated	quantitative reverse transcription polymerase chain reaction evidence	S288C	Cho BR and Hahn JS (2017) PMID:28330760
+MSN2	YMR037C	HSP12	YFL014W	positive	transcription	cellular response to osmotic stress	transcription factor	positive	transcription	cellular response to osmotic stress	manually curated	quantitative reverse transcription polymerase chain reaction evidence	Other	Bai C, et al. (2020) PMID:32804965
+MSN2	YMR037C	PHM8	YER037W		transcription	cellular response to salt stress	transcription factor		transcription	cellular response to salt stress	manually curated	chromatin immunoprecipitation-qPCR evidence	S288C	Martínez-Montañés F, et al. (2013) PMID:23435728
+MSN2	YMR037C	PNS1	YOR161C	positive	transcription	cellular response to heat	transcription factor	positive	transcription	cellular response to heat	manually curated	northern blot evidence	S288C	Ruiz-Roig C, et al. (2010) PMID:20398213
+MSN2	YMR037C	RTC3	YHR087W	positive	transcription		transcription factor	positive	transcription		manually curated	quantitative reverse transcription polymerase chain reaction evidence	Other	Bai C, et al. (2020) PMID:32804965
+MSN2	YMR037C	RTN2	YDL204W	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Martínez-Montañés F, et al. (2013) PMID:23435728
+MSN2	YMR037C	SPI1	YER150W	positive	transcription	cellular response to acidic pH	transcription factor	positive	transcription	cellular response to acidic pH	manually curated	northern blot evidence	S288C	Simões T, et al. (2006) PMID:16980434
+MSN2	YMR037C	SPS100	YHR139C	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Martínez-Montañés F, et al. (2013) PMID:23435728
+MSN2	YMR037C	TPS1	YBR126C	positive	transcription	cellular response to heat	transcription factor	positive	transcription	cellular response to heat	manually curated	northern blot evidence	S288C	Ruiz-Roig C, et al. (2010) PMID:20398213
+MSN2	YMR037C	TPS1	YBR126C	positive	transcription		transcription factor	positive	transcription		manually curated	northern blot evidence	Other	Nakazawa N, et al. (2014) PMID:25273988
+MSN2	YMR037C	YHR140W	YHR140W	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Martínez-Montañés F, et al. (2013) PMID:23435728

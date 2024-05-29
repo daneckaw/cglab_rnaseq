@@ -1,0 +1,3 @@
+GOID	GO_term	Cluster frequency	Background frequency	Corrected P-value	False discovery rate	Gene(s) annotated to the term	Directly Annotated GOID List
+4497	monooxygenase activity	5 out of 320 genes, 1.6%	10 out of 5614 background genes, 0.2%	0.02654	4.00%	HMX1:ERG1:ERG11:ERG25:ERG5	50660:4497:4392:249:5506:254:4506:20037:8398:16491:16705
+16705	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	6 out of 320 genes, 1.9%	18 out of 5614 background genes, 0.3%	0.07753	9.00%	HMX1:ERG1:ERG11:ERG3:ERG25:ERG5	50660:4497:4392:248:249:5506:254:8398:20037:4506:16491:16705

@@ -1,0 +1,1 @@
+((CBS138_protein_XP_446980.1:0,(BG2_protein_QNG16199.1:0,(BG2_protein_QNG14316.1:0,(BG2_protein_QNG14317.1:0,(BG2_protein_QNG14319.1:0,(BG2_protein_QNG14321.1:0,(BG2_protein_QNG14318.1:0,BG2_protein_QNG14320.1:0)n7:0)n6:0)n5:0)n4:0)n3:0)n2:0)n1:0,(BG2_protein_QNG16198.1:0,(CBS138_protein_XP_002999586.1:0,CBS138_protein_XP_446981.1:0)n9:0)n8:0)n0;

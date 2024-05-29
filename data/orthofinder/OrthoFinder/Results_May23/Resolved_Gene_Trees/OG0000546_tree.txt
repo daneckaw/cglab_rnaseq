@@ -1,0 +1,1 @@
+(CBS138_protein_NP_818778.1:0.0318809,(sacCer_protein_NP_009305.1:0.00454725,(sacCer_protein_NP_009306.1:0.327249,sacCer_protein_NP_009307.2:0.575807)n2:0.249059)n1:0.0318809)n0;

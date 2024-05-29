@@ -1,0 +1,238 @@
+﻿Gene ID,Gene Name,Sc Homologue,Protein name,GO ID,GO name,GO namespace,Evidence code,Exact p-value,Adjusted p-value
+CAGL0A00495g,PMA1,PMA1,Putative plasma membrane proton pump with a predicted role in pH homeostasis,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0A01199g,DIP5,DIP5,Putative dicarboxylic amino acid permease,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0A01782g,HXT4,HXT4,"Ortholog(s) have glucose transmembrane transporter activity, pentose transmembrane transporter activity and plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0D04708g,0,CTR1,"Ortholog(s) have copper uptake transmembrane transporter activity, role in copper ion import, high-affinity iron ion transport and cytoplasm, nucleus, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0D05566g,0,YEH1,"Ortholog(s) have sterol esterase activity, role in cell wall mannoprotein biosynthetic process, sterol metabolic process and integral to membrane, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0D06512g,0,0,Putative membrane bound guanine nucleotide exchange factor; gene is upregulated in azole-resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0E03113g,0,RSR1,"Ortholog(s) have GTPase activity, signal transducer activity",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0E04092g,SIT1,ARN1,Putative siderophore-iron transporter with 14 transmembrane domains; required for iron-dependent survival in macrophages; mRNA levels elevated under iron deficiency conditions; plasma membrane localized,GO:0005886,plasma membrane,CC,IDA,4.47947e-12,3.610453e-9
+CAGL0F02387g,PHO87,PHO90,Ortholog(s) have phosphate ion transmembrane transporter activity and role in phosphate ion transport,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0F03003g,0,HKR1,"Ortholog(s) have osmosensor activity and role in (1->3)-beta-D-glucan biosynthetic process, cellular bud site selection, fungal-type cell wall organization, hyperosmotic response, osmosensory signaling pathway via Sho1 osmosensor",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0F04499g,0,FUI1,"Ortholog(s) have uridine transmembrane transporter activity, role in transmembrane transport, uridine transport and plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0F05115g,0,INA1,Ortholog of S. cerevisiae : YLR413W,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0G00242g,YOR1,YOR1,Putative ABC transporter involved in multidrug efflux; gene is upregulated in azole-resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0G00286g,GAS1,0,Putative glycoside hydrolase of the Gas/Phr family; predicted GPI-anchor,GO:0005886,plasma membrane,CC,IGI,4.47947e-12,3.610453e-9
+CAGL0G08558g,0,RHO3,"Ortholog(s) have GTP binding, GTPase activity",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0G09383g,TDH3,TDH3,Putative glyceraldehyde-3-phosphate dehydrogenase; increased protein abundance in azole resistant strain; expression upregulated in biofilm vs planktonic cell culture,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0I04862g,SNQ2,0,"Predicted plasma membrane ATP-binding cassette (ABC) transporter, putative transporter involved in multidrug resistance; involved in Pdr1p-mediated azole resistance",GO:0005886,plasma membrane,CC,"IGI, ISA",4.47947e-12,3.610453e-9
+CAGL0I06160g,PIR4,CIS3,"Pir protein family member, predicted GPI-anchor",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0I07843g,ADH1,ADH1,Putative alcohol dehydrogenase isoenzyme III; increased protein abundance in azole resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0I09702g,0,MCH5,"Ortholog(s) have riboflavin transporter activity, role in riboflavin transport and plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0I10725g,0,YGR122W,"Ortholog(s) have role in negative regulation of transcription from RNA polymerase II promoter, nuclear-transcribed mRNA catabolic process, non-stop decay and cytoplasm, nucleus, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0J04202g,HSP12,HSP12,Heat shock protein; gene is upregulated in azole-resistant strain; expression upregulated in biofilm vs planktonic cell culture,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0J08184g,0,ALP1,"Ortholog(s) have arginine transmembrane transporter activity, role in arginine transport, transmembrane transport and membrane raft, mitochondrion, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0J09944g,AQR1,AQR1,Plasma membrane drug:H+ antiporter involved in resistance to drugs and acetic acid,GO:0005886,plasma membrane,CC,IDA,4.47947e-12,3.610453e-9
+CAGL0K05995g,0,LCB5,Putative sphingoid long-chain base kinase; gene is upregulated in azole-resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0K07293g,0,FAA4,"Ortholog(s) have long-chain fatty acid-CoA ligase activity and role in long-chain fatty acid transport, long-chain fatty-acyl-CoA metabolic process",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0K08316g,RHO4,RHO4,"Ortholog(s) have GTPase activity and role in GTP catabolic process, cytokinetic cell separation, maintenance of cell polarity, positive regulation of formin-nucleated actin cable assembly",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0K09350g,0,SIP2,Ortholog(s) have AMP-activated protein kinase activity,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0K11880g,0,MRH1,"Ortholog(s) have mitochondrion, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0K12034g,ENA1,ENA1,Na(+)-ATPase with broad substrate specificity; plays a role in sodium detoxification; highly upregulated by increased osmotic pressure or sodium concentration,GO:0005886,plasma membrane,CC,IDA,4.47947e-12,3.610453e-9
+CAGL0L04378g,0,PNS1,Ortholog(s) have plasma membrane localization,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0L07722g,PGK1,PGK1,Putative 3-phosphoglycerate kinase; protein differentially expressed in azole resistant strain; protein abundance increased in ace2 mutant cells,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0L10043g,0,STD1,Ortholog(s) have protein kinase activator activity,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0L10142g,RSB1,RSB1,Putative sphingolipid flippase; gene is upregulated in azole-resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0L10912g,0,TPO4,"Ortholog(s) have spermidine transmembrane transporter activity, spermine transmembrane transporter activity, role in spermidine transport, spermine transport and fungal-type vacuole membrane, plasma membrane localization",GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0M00154g,CYN1,0,Plasma membrane high affinity cystine specific transporter; present only in pathogenic yeasts; confers the ability to utilize cystine as a sulfur source,GO:0005886,plasma membrane,CC,IDA,4.47947e-12,3.610453e-9
+CAGL0M01760g,CDR1,0,"Multidrug transporter of ATP-binding cassette (ABC) superfamily, involved in resistance to azoles; expression regulated by Pdr1p; increased abundance in azole resistant strains; expression increased by loss of the mitochondrial genome",GO:0005886,plasma membrane,CC,ISA,4.47947e-12,3.610453e-9
+CAGL0M03311g,0,GTT3,Ortholog(s) have plasma membrane localization,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0M07293g,0,0,Putative ABC transporter of weak organic acids; gene is downregulated in azole-resistant strain,GO:0005886,plasma membrane,CC,IEA,4.47947e-12,3.610453e-9
+CAGL0A00495g,PMA1,PMA1,Putative plasma membrane proton pump with a predicted role in pH homeostasis,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A01199g,DIP5,DIP5,Putative dicarboxylic amino acid permease,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A01243g,GIT1,0,"Has domain(s) with predicted transmembrane transporter activity, role in transmembrane transport and integral to membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A01782g,HXT4,HXT4,"Ortholog(s) have glucose transmembrane transporter activity, pentose transmembrane transporter activity and plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A02211g,HXT6/7,HXT7,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A02233g,HXT4/6/7,HXT6,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0A02321g,HXT3,HXT5,"Ortholog(s) have fructose transmembrane transporter activity, glucose transmembrane transporter activity, role in fructose import, glucose import and cell division site, cell tip localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D02640g,0,0,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D02662g,0,0,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D03322g,0,IZH3,Ortholog(s) have role in cellular zinc ion homeostasis and endoplasmic reticulum localization,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D04708g,0,CTR1,"Ortholog(s) have copper uptake transmembrane transporter activity, role in copper ion import, high-affinity iron ion transport and cytoplasm, nucleus, plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D05566g,0,YEH1,"Ortholog(s) have sterol esterase activity, role in cell wall mannoprotein biosynthetic process, sterol metabolic process and integral to membrane, plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0D05940g,ERG1,ERG1,Squalene epoxidase with a role in ergosterol synthesis; involved in growth under conditions of low oxygen tension,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0E03674g,TPO1_2,0,Has domain(s) with predicted role in transmembrane transport and integral to membrane localization,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0E04092g,SIT1,ARN1,Putative siderophore-iron transporter with 14 transmembrane domains; required for iron-dependent survival in macrophages; mRNA levels elevated under iron deficiency conditions; plasma membrane localized,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0G00242g,YOR1,YOR1,Putative ABC transporter involved in multidrug efflux; gene is upregulated in azole-resistant strain,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0G03927g,TPO1_1,TPO1,"Ortholog(s) have drug transmembrane transporter activity, spermidine transmembrane transporter activity, spermine transmembrane transporter activity",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0H00803g,0,RBD2,"Ortholog(s) have COPI-coated vesicle, Golgi apparatus localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0H06017g,FLR1,0,Multidrug transporter of the major facilitator superfamily; gene is downregulated in azole-resistant strain,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0H06039g,FLR2,0,"Has domain(s) with predicted drug transmembrane transporter activity, role in drug transport, transmembrane transport and integral to membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0H08393g,0,BAP2,"Has domain(s) with predicted amino acid transmembrane transporter activity, role in amino acid transmembrane transport, amino acid transport, transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0I04862g,SNQ2,0,"Predicted plasma membrane ATP-binding cassette (ABC) transporter, putative transporter involved in multidrug resistance; involved in Pdr1p-mediated azole resistance",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0I09086g,0,0,"Ortholog(s) have endoplasmic reticulum, mitochondrion localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0I09702g,0,MCH5,"Ortholog(s) have riboflavin transporter activity, role in riboflavin transport and plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0J08162g,0,LYP1,"Ortholog(s) have basic amino acid transmembrane transporter activity, role in basic amino acid transport and mitochondrion localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0J08184g,0,ALP1,"Ortholog(s) have arginine transmembrane transporter activity, role in arginine transport, transmembrane transport and membrane raft, mitochondrion, plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0J09944g,AQR1,AQR1,Plasma membrane drug:H+ antiporter involved in resistance to drugs and acetic acid,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0K02739g,0,LAG1,Has domain(s) with predicted integral to membrane localization,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0K05753g,0,GNP1,"Has domain(s) with predicted amino acid transmembrane transporter activity, role in amino acid transmembrane transport, amino acid transport, transmembrane transport and integral to membrane, membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0K12034g,ENA1,ENA1,Na(+)-ATPase with broad substrate specificity; plays a role in sodium detoxification; highly upregulated by increased osmotic pressure or sodium concentration,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0L03696g,0,ECM3,Has domain(s) with predicted role in transmembrane transport and integral to membrane localization,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0L07546g,0,BAP3,"Ortholog(s) have amino acid transmembrane transporter activity, role in amino acid transport, transmembrane transport and mitochondrion localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0L10142g,RSB1,RSB1,Putative sphingolipid flippase; gene is upregulated in azole-resistant strain,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0L10912g,0,TPO4,"Ortholog(s) have spermidine transmembrane transporter activity, spermine transmembrane transporter activity, role in spermidine transport, spermine transport and fungal-type vacuole membrane, plasma membrane localization",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0M01760g,CDR1,0,"Multidrug transporter of ATP-binding cassette (ABC) superfamily, involved in resistance to azoles; expression regulated by Pdr1p; increased abundance in azole resistant strains; expression increased by loss of the mitochondrial genome",GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0M07293g,0,0,Putative ABC transporter of weak organic acids; gene is downregulated in azole-resistant strain,GO:0016021,integral component of membrane,CC,IEA,3.1266e-9,1.26002E-06
+CAGL0E06358g,GPM1,GPM1,Putative tetrameric phosphoglycerate mutase; expression downregulated in biofilm vs planktonic cell culture,GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0F08041g,PFK1,PFK1,"Putative phosphofructokinase, alpha subunit; increased protein abundance in azole resistant strain",GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0I02486g,ENO1,ENO2,Putative enolase I; protein abundance increased in azole resistant strain and in ace2 mutant cells,GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0I05698g,0,0,"Ortholog(s) have 6-phosphofructokinase activity, mRNA binding activity, role in glycolysis, proton transport and 6-phosphofructokinase complex, mitochondrion localization",GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0L02497g,FBA1,0,Fructose-bisphosphate aldolase; expression downregulated in biofilm vs planktonic cell culture; protein abundance increased in ace2 mutant cells,GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0L07722g,PGK1,PGK1,Putative 3-phosphoglycerate kinase; protein differentially expressed in azole resistant strain; protein abundance increased in ace2 mutant cells,GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0L10758g,PFK2,PFK2,"Putative 6-phosphofructokinase, beta subunit; protein abundance increased in ace2 mutant cells",GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0M12034g,PYK1,CDC19,Pyruvate kinase,GO:0006096,glycolytic process,BP,IEA,2.969775e-7,7.9788E-05
+CAGL0A00517g,0,PMC1,"Ortholog(s) have calcium-transporting ATPase activity, role in calcium ion transport, cellular calcium ion homeostasis, cellular response to drug, transmembrane transport and fungal-type vacuole membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0A01243g,GIT1,0,"Has domain(s) with predicted transmembrane transporter activity, role in transmembrane transport and integral to membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0A01782g,HXT4,HXT4,"Ortholog(s) have glucose transmembrane transporter activity, pentose transmembrane transporter activity and plasma membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0A02211g,HXT6/7,HXT7,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0A02233g,HXT4/6/7,HXT6,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0D02640g,0,0,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0D02662g,0,0,"Has domain(s) with predicted substrate-specific transmembrane transporter activity, transmembrane transporter activity, role in transmembrane transport and integral to membrane, membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0E03674g,TPO1_2,0,Has domain(s) with predicted role in transmembrane transport and integral to membrane localization,GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0F02387g,PHO87,PHO90,Ortholog(s) have phosphate ion transmembrane transporter activity and role in phosphate ion transport,GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0F04499g,0,FUI1,"Ortholog(s) have uridine transmembrane transporter activity, role in transmembrane transport, uridine transport and plasma membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0G00242g,YOR1,YOR1,Putative ABC transporter involved in multidrug efflux; gene is upregulated in azole-resistant strain,GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0H06039g,FLR2,0,"Has domain(s) with predicted drug transmembrane transporter activity, role in drug transport, transmembrane transport and integral to membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0I05632g,PHO91,PHO91,"Ortholog(s) have phosphate ion transmembrane transporter activity, role in phosphate ion transport, polyphosphate metabolic process and endoplasmic reticulum, fungal-type vacuole membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0I09086g,0,0,"Ortholog(s) have endoplasmic reticulum, mitochondrion localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0I09702g,0,MCH5,"Ortholog(s) have riboflavin transporter activity, role in riboflavin transport and plasma membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0J08184g,0,ALP1,"Ortholog(s) have arginine transmembrane transporter activity, role in arginine transport, transmembrane transport and membrane raft, mitochondrion, plasma membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0L03696g,0,ECM3,Has domain(s) with predicted role in transmembrane transport and integral to membrane localization,GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0L07546g,0,BAP3,"Ortholog(s) have amino acid transmembrane transporter activity, role in amino acid transport, transmembrane transport and mitochondrion localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0L10912g,0,TPO4,"Ortholog(s) have spermidine transmembrane transporter activity, spermine transmembrane transporter activity, role in spermidine transport, spermine transport and fungal-type vacuole membrane, plasma membrane localization",GO:0055085,transmembrane transport,BP,IEA,1.73515E-06,0.000349633
+CAGL0A01199g,DIP5,DIP5,Putative dicarboxylic amino acid permease,GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0B02838g,MUP1,0,"Ortholog(s) have L-methionine secondary active transmembrane transporter activity and role in cysteine transport, methionine transport",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0H08393g,0,BAP2,"Has domain(s) with predicted amino acid transmembrane transporter activity, role in amino acid transmembrane transport, amino acid transport, transmembrane transport and integral to membrane, membrane localization",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0J08162g,0,LYP1,"Ortholog(s) have basic amino acid transmembrane transporter activity, role in basic amino acid transport and mitochondrion localization",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0J08184g,0,ALP1,"Ortholog(s) have arginine transmembrane transporter activity, role in arginine transport, transmembrane transport and membrane raft, mitochondrion, plasma membrane localization",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0K05753g,0,GNP1,"Has domain(s) with predicted amino acid transmembrane transporter activity, role in amino acid transmembrane transport, amino acid transport, transmembrane transport and integral to membrane, membrane localization",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0L07546g,0,BAP3,"Ortholog(s) have amino acid transmembrane transporter activity, role in amino acid transport, transmembrane transport and mitochondrion localization",GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0M00154g,CYN1,0,Plasma membrane high affinity cystine specific transporter; present only in pathogenic yeasts; confers the ability to utilize cystine as a sulfur source,GO:0003333,amino acid transmembrane transport,BP,IEA,4.58373E-06,0.000622758
+CAGL0F01463g,TIR1,TIR2,Putative GPI-linked cell wall mannoprotein of the Srp1p/Tip1p family,GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0F07579g,CWP1.2,CWP1,Putative GPI-linked cell wall protein,GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0F07601g,CWP1.1,CWP2,Putative GPI-linked cell wall protein,GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0G00286g,GAS1,0,Putative glycoside hydrolase of the Gas/Phr family; predicted GPI-anchor,GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0G00308g,SCW4,SCW4,"Putative transglycosidase with a predicted role in the modification of 1,3-beta-glucan",GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0G09383g,TDH3,TDH3,Putative glyceraldehyde-3-phosphate dehydrogenase; increased protein abundance in azole resistant strain; expression upregulated in biofilm vs planktonic cell culture,GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0I06160g,PIR4,CIS3,"Pir protein family member, predicted GPI-anchor",GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0I06182g,PIR2,HSP150,"Pir protein family member, predicted GPI-anchor",GO:0009277,fungal-type cell wall,CC,IDA,5.24994E-06,0.000622758
+CAGL0K10164g,0,SED1,Predicted GPI-linked protein; putative adhesin-like protein,GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0L06424g,0,0,Predicted GPI-linked adhesin-like protein,GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0L07502g,0,TIP1,Putative GPI-linked cell wall protein,GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0M05599g,0,TOS1,"Ortholog(s) have cell surface, endoplasmic reticulum, extracellular region, fungal-type vacuole, hyphal cell wall localization",GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0M08514g,PIR5,PIR3,"Pir protein family member, predicted GPI-anchor",GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0M13805g,MP65,SCW10,65 kDa mannoprotein,GO:0009277,fungal-type cell wall,CC,IEA,5.24994E-06,0.000622758
+CAGL0F07579g,CWP1.2,CWP1,Putative GPI-linked cell wall protein,GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0F07601g,CWP1.1,CWP2,Putative GPI-linked cell wall protein,GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0I06160g,PIR4,CIS3,"Pir protein family member, predicted GPI-anchor",GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0I06182g,PIR2,HSP150,"Pir protein family member, predicted GPI-anchor",GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0I06204g,PIR1,PIR5,Pir protein family member; predicted GPI-anchor,GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0L07502g,0,TIP1,Putative GPI-linked cell wall protein,GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0M08514g,PIR5,PIR3,"Pir protein family member, predicted GPI-anchor",GO:0005199,structural constituent of cell wall,MF,IEA,5.40857E-06,0.000622758
+CAGL0F08041g,PFK1,PFK1,"Putative phosphofructokinase, alpha subunit; increased protein abundance in azole resistant strain",GO:0005945,6-phosphofructokinase complex,CC,IEA,0.000154533,0.01383925
+CAGL0I05698g,0,0,"Ortholog(s) have 6-phosphofructokinase activity, mRNA binding activity, role in glycolysis, proton transport and 6-phosphofructokinase complex, mitochondrion localization",GO:0005945,6-phosphofructokinase complex,CC,IEA,0.000154533,0.01383925
+CAGL0L10758g,PFK2,PFK2,"Putative 6-phosphofructokinase, beta subunit; protein abundance increased in ace2 mutant cells",GO:0005945,6-phosphofructokinase complex,CC,IEA,0.000154533,0.01383925
+CAGL0F08041g,PFK1,PFK1,"Putative phosphofructokinase, alpha subunit; increased protein abundance in azole resistant strain",GO:0003872,6-phosphofructokinase activity,MF,IEA,0.000154533,0.01383925
+CAGL0I05698g,0,0,"Ortholog(s) have 6-phosphofructokinase activity, mRNA binding activity, role in glycolysis, proton transport and 6-phosphofructokinase complex, mitochondrion localization",GO:0003872,6-phosphofructokinase activity,MF,IEA,0.000154533,0.01383925
+CAGL0L10758g,PFK2,PFK2,"Putative 6-phosphofructokinase, beta subunit; protein abundance increased in ace2 mutant cells",GO:0003872,6-phosphofructokinase activity,MF,IEA,0.000154533,0.01383925
+CAGL0C04389g,0,HTB2,Ortholog(s) have replication fork protection complex localization,GO:0000786,nucleosome,CC,IEA,0.000484959,0.03057992
+CAGL0C04411g,0,HTA2,Ortholog(s) have role in DNA repair and replication fork protection complex localization,GO:0000786,nucleosome,CC,IEA,0.000484959,0.03057992
+CAGL0H09834g,HHF3,0,Ortholog(s) have nucleus localization,GO:0000786,nucleosome,CC,IEA,0.000484959,0.03057992
+CAGL0H09856g,HHT3,0,"Ortholog(s) have role in response to DNA damage stimulus and mating-type region heterochromatin, nuclear centromeric heterochromatin, telomeric heterochromatin localization",GO:0000786,nucleosome,CC,IEA,0.000484959,0.03057992
+CAGL0F02387g,PHO87,PHO90,Ortholog(s) have phosphate ion transmembrane transporter activity and role in phosphate ion transport,GO:0006814,sodium ion transport,BP,IEA,0.000593413,0.03057992
+CAGL0I05632g,PHO91,PHO91,"Ortholog(s) have phosphate ion transmembrane transporter activity, role in phosphate ion transport, polyphosphate metabolic process and endoplasmic reticulum, fungal-type vacuole membrane localization",GO:0006814,sodium ion transport,BP,IEA,0.000593413,0.03057992
+CAGL0K12034g,ENA1,ENA1,Na(+)-ATPase with broad substrate specificity; plays a role in sodium detoxification; highly upregulated by increased osmotic pressure or sodium concentration,GO:0006814,sodium ion transport,BP,"IDA, IGI",0.000593413,0.03057992
+CAGL0E05940g,0,FLC1,Ortholog(s) have calcium channel activity,GO:0031520,plasma membrane of cell tip,CC,IEA,0.000593413,0.03057992
+CAGL0G01034g,FKS1,FKS1,"Putative 1,3-beta-glucan synthase component; functionally redundant with Fks2p; ""hot spot"" mutations in FKS1 confer resistance to echinocandins",GO:0031520,plasma membrane of cell tip,CC,IEA,0.000593413,0.03057992
+CAGL0G02453g,0,PTR2,"Ortholog(s) have dipeptide transmembrane transporter activity, tripeptide transporter activity and role in dipeptide transmembrane transport, tripeptide transport",GO:0031520,plasma membrane of cell tip,CC,IEA,0.000593413,0.03057992
+CAGL0F08041g,PFK1,PFK1,"Putative phosphofructokinase, alpha subunit; increased protein abundance in azole resistant strain",GO:0006002,fructose 6-phosphate metabolic process,BP,IEA,0.000593413,0.03057992
+CAGL0I05698g,0,0,"Ortholog(s) have 6-phosphofructokinase activity, mRNA binding activity, role in glycolysis, proton transport and 6-phosphofructokinase complex, mitochondrion localization",GO:0006002,fructose 6-phosphate metabolic process,BP,IEA,0.000593413,0.03057992
+CAGL0L10758g,PFK2,PFK2,"Putative 6-phosphofructokinase, beta subunit; protein abundance increased in ace2 mutant cells",GO:0006002,fructose 6-phosphate metabolic process,BP,IEA,0.000593413,0.03057992
+CAGL0G00242g,YOR1,YOR1,Putative ABC transporter involved in multidrug efflux; gene is upregulated in azole-resistant strain,GO:0008559,xenobiotic-transporting ATPase activity,MF,IEA,0.000593413,0.03057992
+CAGL0I04862g,SNQ2,0,"Predicted plasma membrane ATP-binding cassette (ABC) transporter, putative transporter involved in multidrug resistance; involved in Pdr1p-mediated azole resistance",GO:0008559,xenobiotic-transporting ATPase activity,MF,"IGI, ISA",0.000593413,0.03057992
+CAGL0M01760g,CDR1,0,"Multidrug transporter of ATP-binding cassette (ABC) superfamily, involved in resistance to azoles; expression regulated by Pdr1p; increased abundance in azole resistant strains; expression increased by loss of the mitochondrial genome",GO:0008559,xenobiotic-transporting ATPase activity,MF,IDA,0.000593413,0.03057992
+CAGL0B03069g,TAL1,TAL1,Putative transaldolase; expression upregulated in biofilm vs planktonic cell culture,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0D00176g,0,GDH3,"Ortholog(s) have glutamate dehydrogenase (NADP+) activity, role in glutamate biosynthetic process and cytosol, nucleus localization",GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0D01298g,TKL1,TKL1,Putative transketolase,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0H07997g,KNH1,0,"Protein involved in cell wall beta 1,6-glucan synthesis, similar to Kre9p,",GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0I00484g,0,EXG1,"Ortholog(s) have glucan endo-1,6-beta-glucosidase activity and barrier septum, extracellular region localization",GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0I06160g,PIR4,CIS3,"Pir protein family member, predicted GPI-anchor",GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0J07128g,0,0,Has domain(s) with predicted hydrolase activity,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0K07832g,0,TEF2,"Ortholog(s) have cytosol, nucleus localization",GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0K11858g,0,PST2,Putative flavodoxin,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0K12100g,0,HEM13,Putative coproporphyrinogen III oxidase; protein differentially expressed in azole resistant strain,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0M13805g,MP65,SCW10,65 kDa mannoprotein,GO:0005576,extracellular region,CC,IEA,0.000601508,0.03057992
+CAGL0A02343g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0B00572g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0B00594g,0,YCL048W-A,Predicted GPI-linked protein,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0B02970g,BMT5,0,Beta mannosyltransferase,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0B03949g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0C00781g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0C02827g,0,DSE3,"Ortholog(s) have cellular bud neck, cytoplasm, nucleus localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0C04785g,0,YJR115W,Ortholog of S. cerevisiae : YJR115W,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D00286g,BMT1,0,Beta mannosyltransferase,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D00418g,0,FAT3,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D00682g,0,0,Has domain(s) with predicted nucleic acid binding activity,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D04092g,DOG2,DOG2,2-deoxyglucose-6-phosphate phosphatase,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D05456g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0D06534g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0E04554g,0,0,Putative protein; gene is upregulated in azole-resistant strain,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0E05192g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0E05214g,0,0,"Ortholog(s) have role in cellular response to cadmium ion, detoxification of cadmium ion and cytosol, nucleus localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0E05566g,0,TYE7,Has domain(s) with predicted protein dimerization activity,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0F04521g,0,ECM13,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0F04543g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0F05115g,0,INA1,Ortholog of S. cerevisiae : YLR413W,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G02409g,SRP40,SRP40,Ortholog(s) have nucleolus localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G03949g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G04433g,0,PRM10,Ortholog(s) have endoplasmic reticulum localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G04785g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G05808g,0,YDL211C,Putative adhesin-like protein,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G06182g,0,YHR131C,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G06622g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G06644g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G07667g,0,PRY1,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G09273g,0,SNG1,Putative transporter involved in nitrosoguanidine resistance; gene is downregulated in azole-resistant strain,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G09603g,0,YOR186W,Putative protein; gene is upregulated in azole-resistant strain,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0G09625g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H00803g,0,RBD2,"Ortholog(s) have COPI-coated vesicle, Golgi apparatus localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H00825g,0,YPL245W,"Ortholog(s) have cytoplasm, nucleus localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H04059g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H07337g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H09130g,0,MNN4,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0H10054g,0,YBR053C,"Ortholog of S. cerevisiae : YBR053C, C. albicans SC5314 : orf19.2722/CGR1, C. dubliniensis CD36 : Cd36_42630, C. parapsilosis CDC317 : CPAR2_400280 and Candida tenuis NRRL Y-1498 : CANTEDRAFT_113139",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I00374g,0,GEP7,Ortholog(s) have mitochondrion localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I00396g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I05610g,0,YNR014W,Ortholog(s) have cytoplasm localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I06182g,PIR2,HSP150,"Pir protein family member, predicted GPI-anchor",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I06204g,PIR1,PIR5,Pir protein family member; predicted GPI-anchor,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I07865g,0,PHM7,"Ortholog(s) have Golgi apparatus, fungal-type vacuole, plasma membrane localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I08591g,0,YER158C,Ortholog of S. cerevisiae : YER158C,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I08613g,DUR3,0,Putative plasma membrane polyamine transporter,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0I08767g,0,LSO2,Ortholog of S. cerevisiae : YJR005C-A,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0J01595g,GLM6,0,Gene used for molecular typing of C. glabrata strain isolates,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0J02904g,0,GIP2,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0J07128g,0,0,Has domain(s) with predicted hydrolase activity,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0J09328g,0,PCL2,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0J09922g,0,SUN4,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0K12980g,BMT7,0,Beta mannosyltransferase,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L03289g,0,UTH1,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L04378g,0,PNS1,Ortholog(s) have plasma membrane localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L05786g,0,0,Ortholog(s) have sequence-specific DNA binding activity,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L07568g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L07744g,0,ADP1,Ortholog(s) have endoplasmic reticulum localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L08492g,0,YPR148C,"Ortholog(s) have cytoplasm, ribosome localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L08712g,0,CIP1,"Ortholog(s) have cytoplasm, nucleus localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L09361g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L10362g,0,YOR062C,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0L11572g,0,SBE22,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M01892g,0,ECM8,Ortholog of S. cerevisiae : ECM8,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M03311g,0,GTT3,Ortholog(s) have plasma membrane localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M04851g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M05593g,0,0,Ortholog(s) have endoplasmic reticulum localization,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M05599g,0,TOS1,"Ortholog(s) have cell surface, endoplasmic reticulum, extracellular region, fungal-type vacuole, hyphal cell wall localization",GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M05819g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M11660g,0,0,Has domain(s) with predicted hydrolase activity,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M11726g,0,CCW12,Putative GPI-linked cell wall adhesin-like protein,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992
+CAGL0M12056g,0,0,NO ENTRY IN DB,GO:0008150,biological_process,BP,ND,0.000607046,0.03057992

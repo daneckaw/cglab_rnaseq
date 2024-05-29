@@ -1,0 +1,1 @@
+(sacCer_protein_NP_878123.1:0,(sacCer_protein_NP_878127.1:0,(sacCer_protein_NP_878122.1:0,sacCer_protein_NP_878126.1:0):0):0);

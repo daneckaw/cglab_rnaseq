@@ -1,0 +1,13 @@
+2024-05-23 00:25:20 : Started OrthoFinder version 2.5.5
+Command Line: /Users/s1964600/mambaforge/envs/orthofinder2/bin/orthofinder -f cangla
+
+WorkingDirectory_Base: /Users/s1964600/Work/orthofinder_test/orthofinder_tutorial/cangla/OrthoFinder/Results_May23/WorkingDirectory/
+
+Species used: 
+0: BG2_protein.faa
+1: CBS138_protein.faa
+2: sacCer_protein.faa
+
+FN_Orthogroups: /Users/s1964600/Work/orthofinder_test/orthofinder_tutorial/cangla/OrthoFinder/Results_May23/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+WorkingDirectory_Trees: /Users/s1964600/Work/orthofinder_test/orthofinder_tutorial/cangla/OrthoFinder/Results_May23/WorkingDirectory/
+2024-05-23 00:26:29 : OrthoFinder run completed

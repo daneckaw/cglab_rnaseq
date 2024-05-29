@@ -1,0 +1,80 @@
+!
+!Date: 05/27/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Regulator	Regulator Systematic Name	Target	Target Systematic Name	Direction	Regulation of	Happens During	Regulator Type	Direction	Regulation Of	Happens During	Method	Evidence	Strain Background	Reference
+ROX1	YPR065W	AAC3	YBR085W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	AKR2	YOR034C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	AMN1	YBR158W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	ANB1	YJR047C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CBP4	YGR174C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CDC19	YAL038W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	CMK2	YOL016C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CMR3	YPR013C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	COQ6	YGR255C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	COX5B	YIL111W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CYB5	YNL111C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CYC1	YJR048W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	CYC3	YAL039C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	DAN1	YJR150C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	DIA1	YMR316W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	DJP1	YIR004W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	DUG1	YFR044C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	ECL1	YGR146C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	ENB1	YOL158C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	ERG1	YGR175C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FET3	YMR058W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FET4	YMR319C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FIT2	YOR382W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FIT3	YOR383C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FTR1	YER145C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	FYV7	YLR068W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	GAC1	YOR178C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	GAT2	YMR136W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	GID8	YMR135C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	GND2	YGR256W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	HAP4	YKL109W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	HEM13	YDR044W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	HMS1	YOR032C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	HUG1	YML058W-A		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	HXT1	YHR094C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	ICS2	YBR157C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	IDH1	YNL037C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	KTI12	YKL110C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	LAC1	YKL008C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	LCP5	YER127W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	LIA1	YJR070C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	MAK16	YAL025C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	NCE103	YNL036W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	PET9	YBL030C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	PMA1	YGL008C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	PMC1	YGL006W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	PRP24	YMR268C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	RNR4	YGR180C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	ROX1	YPR065W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	RPF1	YHR088W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	RRT15	YLR162W-A		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	SCM4	YGR049W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	SED1	YDR077W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	SIT1	YEL065W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	SPI1	YER150W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	SUR2	YDR297W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	TAP42	YMR028W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	TIR2	YOR010C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	VHR1	YIL056W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	VPS63	YLR261C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	VRP1	YLR337C		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638
+ROX1	YPR065W	YAP6	YDR259C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YBL029C-A	YBL029C-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YBL029W	YBL029W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YGL006W-A	YGL006W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YGL007C-A	YGL007C-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YGR146C-A	YGR146C-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YMR315W	YMR315W		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YOR032W-A	YOR032W-A		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	YPR063C	YPR063C		transcription		transcription factor		transcription		high-throughput	chromatin immunoprecipitation-chip evidence	W303	MacIsaac KD, et al. (2006) PMID:16522208
+ROX1	YPR065W	ZRT1	YGL255W		transcription		transcription factor		transcription		high-throughput	DNA to cDNA expression microarray evidence	S288C	Hu Z, et al. (2007) PMID:17417638

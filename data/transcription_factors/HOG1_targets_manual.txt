@@ -1,0 +1,51 @@
+!
+!Date: 05/27/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Regulator	Regulator Systematic Name	Target	Target Systematic Name	Direction	Regulation of	Happens During	Regulator Type	Direction	Regulation Of	Happens During	Method	Evidence	Strain Background	Reference
+HOG1	YLR113W	AFT1	YGL071W	negative	protein activity	cellular response to iron ion	protein modifier	negative	protein activity	cellular response to iron ion	manually curated	protein kinase assay evidence	S288C	Martins TS, et al. (2018) PMID:29032057
+HOG1	YLR113W	ALD3	YMR169C	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	ARR1	YPR199C		protein activity		protein modifier		protein activity		manually curated	electrophoretic mobility shift assay evidence	S288C	Guerra-Moreno A, et al. (2019) PMID:31772124
+HOG1	YLR113W	CIP1	YPL014W	positive	protein activity	cellular response to osmotic stress	protein modifier	positive	protein activity	cellular response to osmotic stress	manually curated	protein kinase assay evidence	W303	Chang YL, et al. (2017) PMID:28676626
+HOG1	YLR113W	CIP1	YPL014W	positive	protein activity	cellular response to osmotic stress	protein modifier	positive	protein activity	cellular response to osmotic stress	manually curated	protein kinase assay evidence	S288C	Flynn MJ and Benanti JA (2022) PMID:35653562
+HOG1	YLR113W	CTT1	YGR088W	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	FAR8	YMR029C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	GCS1	YDL226C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	GCS1	YDL226C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	GRE2	YOL151W	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	HAC1	YFL031W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	HSF1	YGL073W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	HSF1	YGL073W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	KIC1	YHR102W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	KIC1	YHR102W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	MFB1	YDR219C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	NUP2	YLR335W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	ORM2	YLR350W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	ORM2	YLR350W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	PAN1	YIR006C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	PKH1	YDR490C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	PMD1	YER132C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	PSP2	YML017W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	PSP2	YML017W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	RGA1	YOR127W		protein activity		protein modifier		protein activity		manually curated	sodium dodecyl sulfate polyacrylamide gel electrophoresis evidence	S288C	Patterson JC, et al. (2021) PMID:34680163
+HOG1	YLR113W	RPO21	YDL140C	positive	protein activity	cellular response to salt stress	protein modifier	positive	protein activity	cellular response to salt stress	manually curated	protein kinase assay evidence	S288C	Yurko N, et al. (2017) PMID:29220656
+HOG1	YLR113W	SAP1	YER047C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	SKO1	YNL167C		protein activity		protein modifier		protein activity		manually curated	electrophoretic mobility shift assay evidence	S288C	Guerra-Moreno A, et al. (2019) PMID:31772124
+HOG1	YLR113W	SOG2	YOR353C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	SOG2	YOR353C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	SPT4	YGR063C	positive	protein activity	cellular response to salt stress	protein modifier	positive	protein activity	cellular response to salt stress	manually curated	qualitative western immunoblotting evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	SPT4	YGR063C	positive	protein activity	cellular response to salt stress	protein modifier	positive	protein activity	cellular response to salt stress	manually curated	protein kinase assay evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	SPT5	YML010W	positive	protein activity	cellular response to salt stress	protein modifier	positive	protein activity	cellular response to salt stress	manually curated	protein kinase assay evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	SPT6	YGR116W		protein activity	cellular response to salt stress	protein modifier		protein activity	cellular response to salt stress	manually curated	protein kinase assay evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	STE20	YHL007C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	STL1	YDR536W	positive	transcription	cellular response to salt stress	transcription factor	positive	transcription	cellular response to salt stress	manually curated	northern blot evidence	S288C	Silva A, et al. (2017) PMID:29155810
+HOG1	YLR113W	TFG1	YGR186W		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	UBP13	YBL067C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	UBP13	YBL067C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	VPS53	YJL029C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	YSP2	YDR326C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	mass spectrometry evidence	Other	Janschitz M, et al. (2019) PMID:31208443
+HOG1	YLR113W	YSP2	YDR326C		protein activity	cellular response to sorbitol	protein modifier		protein activity	cellular response to sorbitol	manually curated	physical interaction evidence	Other	Janschitz M, et al. (2019) PMID:31208443

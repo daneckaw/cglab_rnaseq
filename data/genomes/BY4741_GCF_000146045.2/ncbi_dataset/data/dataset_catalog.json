@@ -1,0 +1,39 @@
+{
+"apiVersion": "V2",
+"assemblies": [
+{
+  "files": [
+    {
+      "filePath": "assembly_data_report.jsonl",
+      "fileType": "DATA_REPORT"
+    }
+  ]
+},{
+  "accession": "GCF_000146045.2",
+  "files": [
+    {
+      "filePath": "GCF_000146045.2/GCF_000146045.2_R64_genomic.fna",
+      "fileType": "GENOMIC_NUCLEOTIDE_FASTA"
+    },
+    {
+      "filePath": "GCF_000146045.2/genomic.gff",
+      "fileType": "GFF3"
+    },
+    {
+      "filePath": "GCF_000146045.2/rna.fna",
+      "fileType": "RNA_NUCLEOTIDE_FASTA"
+    },
+    {
+      "filePath": "GCF_000146045.2/cds_from_genomic.fna",
+      "fileType": "CDS_NUCLEOTIDE_FASTA"
+    },
+    {
+      "filePath": "GCF_000146045.2/protein.faa",
+      "fileType": "PROTEIN_FASTA"
+    },
+    {
+      "filePath": "GCF_000146045.2/sequence_report.jsonl",
+      "fileType": "SEQUENCE_REPORT"
+    }
+  ]
+}]}

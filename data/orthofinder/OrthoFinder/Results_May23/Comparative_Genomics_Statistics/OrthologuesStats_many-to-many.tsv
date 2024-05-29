@@ -1,0 +1,4 @@
+	BG2_protein	CBS138_protein	sacCer_protein
+BG2_protein	0.0	8.0	88.0
+CBS138_protein	8.0	0.0	90.0
+sacCer_protein	91.0	94.0	0.0

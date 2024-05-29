@@ -1,0 +1,19 @@
+!
+!Date: 05/27/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Regulator	Regulator Systematic Name	Target	Target Systematic Name	Direction	Regulation of	Happens During	Regulator Type	Direction	Regulation Of	Happens During	Method	Evidence	Strain Background	Reference
+PDR1	YGL013C	PDR10	YOR328W	positive	transcription	cellular response to xenobiotic stimulus	transcription factor	positive	transcription	cellular response to xenobiotic stimulus	manually curated	electrophoretic mobility shift assay evidence	W303	Wolfger H, et al. (1997) PMID:9428726
+PDR1	YGL013C	PDR15	YDR406W	positive	transcription	cellular response to xenobiotic stimulus	transcription factor	positive	transcription	cellular response to xenobiotic stimulus	manually curated	electrophoretic mobility shift assay evidence	W303	Wolfger H, et al. (1997) PMID:9428726
+PDR1	YGL013C	PDR3	YBL005W	positive	transcription		transcription factor	positive	transcription		manually curated	beta-galactosidase reporter gene assay evidence	S288C	Delahodde A, et al. (1995) PMID:7623800
+PDR1	YGL013C	PDR5	YOR153W	positive	transcription		transcription factor	positive	transcription		manually curated	beta-galactosidase reporter gene assay evidence	SEY6210	Katzmann DJ, et al. (1994) PMID:8007969
+PDR1	YGL013C	PDR5	YOR153W	positive	transcription		transcription factor	positive	transcription		manually curated	northern blot evidence	S288C	Mahé Y, et al. (1996) PMID:8861209
+PDR1	YGL013C	PDR5	YOR153W	positive	transcription	cellular response to xenobiotic stimulus	transcription factor	positive	transcription	cellular response to xenobiotic stimulus	manually curated	beta-galactosidase reporter gene assay evidence	SEY6210	Katzmann DJ, et al. (1996) PMID:8798494
+PDR1	YGL013C	SNQ2	YDR011W	positive	transcription		transcription factor	positive	transcription		manually curated	northern blot evidence	W303	Cui Z, et al. (1998) PMID:9767597
+PDR1	YGL013C	SNQ2	YDR011W	positive	transcription		transcription factor	positive	transcription		manually curated	northern blot evidence	S288C	Mahé Y, et al. (1996) PMID:8861209
+PDR1	YGL013C	YRR1	YOR162C	positive	transcription		transcription factor	positive	transcription		manually curated	RNA protection assay evidence	SEY6210	Zhang X, et al. (2001) PMID:11134057
+PDR1	YGL013C	YRR1	YOR162C	positive	transcription		transcription factor	positive	transcription		manually curated	beta-galactosidase reporter gene assay evidence	SEY6210	Zhang X, et al. (2001) PMID:11134057

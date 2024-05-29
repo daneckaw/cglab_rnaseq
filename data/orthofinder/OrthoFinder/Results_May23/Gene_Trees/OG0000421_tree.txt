@@ -1,0 +1,1 @@
+((sacCer_protein_NP_014243.3:0.335381,sacCer_protein_NP_012001.1:0.972349):0.196204,(CBS138_protein_XP_447963.1:0,BG2_protein_QNG15124.1:0):0.196204);

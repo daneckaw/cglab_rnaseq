@@ -1,0 +1,981 @@
+Orthogroup	Species Tree Node	Gene Tree Node	Support	Type	Genes 1	Genes 2
+OG0000000	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_058181.1	sacCer_protein_NP_011064.3, sacCer_protein_NP_058152.1, sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1, sacCer_protein_NP_058189.1, sacCer_protein_NP_058169.1, sacCer_protein_NP_013672.1, sacCer_protein_NP_012560.1, sacCer_protein_NP_058171.1, sacCer_protein_NP_058195.1, sacCer_protein_NP_058193.1, sacCer_protein_NP_058150.1, sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1, sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011064.3, sacCer_protein_NP_058152.1, sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1, sacCer_protein_NP_058189.1, sacCer_protein_NP_058169.1, sacCer_protein_NP_013672.1	sacCer_protein_NP_012560.1, sacCer_protein_NP_058171.1, sacCer_protein_NP_058195.1, sacCer_protein_NP_058193.1, sacCer_protein_NP_058150.1, sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1, sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011064.3, sacCer_protein_NP_058152.1, sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1, sacCer_protein_NP_058189.1, sacCer_protein_NP_058169.1	sacCer_protein_NP_013672.1
+OG0000000	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_011064.3	sacCer_protein_NP_058152.1, sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1, sacCer_protein_NP_058189.1, sacCer_protein_NP_058169.1
+OG0000000	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_058152.1, sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1	sacCer_protein_NP_058189.1, sacCer_protein_NP_058169.1
+OG0000000	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_058152.1	sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1, sacCer_protein_NP_058160.1
+OG0000000	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1, sacCer_protein_NP_058140.1	sacCer_protein_NP_058160.1
+OG0000000	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3, sacCer_protein_NP_620387.1	sacCer_protein_NP_058140.1
+OG0000000	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1, sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3	sacCer_protein_NP_620387.1
+OG0000000	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_011087.3, sacCer_protein_NP_012086.1	sacCer_protein_NP_009567.1, sacCer_protein_NP_058165.3
+OG0000000	sacCer_protein	n10	1.0	Terminal	sacCer_protein_NP_011087.3	sacCer_protein_NP_012086.1
+OG0000000	sacCer_protein	n11	1.0	Terminal	sacCer_protein_NP_009567.1	sacCer_protein_NP_058165.3
+OG0000000	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_058189.1	sacCer_protein_NP_058169.1
+OG0000000	sacCer_protein	n13	1.0	Terminal	sacCer_protein_NP_012560.1	sacCer_protein_NP_058171.1, sacCer_protein_NP_058195.1, sacCer_protein_NP_058193.1, sacCer_protein_NP_058150.1, sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1, sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n14	1.0	Terminal	sacCer_protein_NP_058171.1, sacCer_protein_NP_058195.1	sacCer_protein_NP_058193.1, sacCer_protein_NP_058150.1, sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1, sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_058171.1	sacCer_protein_NP_058195.1
+OG0000000	sacCer_protein	n16	1.0	Terminal	sacCer_protein_NP_058193.1, sacCer_protein_NP_058150.1	sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1, sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n17	1.0	Terminal	sacCer_protein_NP_058193.1	sacCer_protein_NP_058150.1
+OG0000000	sacCer_protein	n18	1.0	Terminal	sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1, sacCer_protein_NP_013765.1	sacCer_protein_NP_013668.1
+OG0000000	sacCer_protein	n19	1.0	Terminal	sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1, sacCer_protein_NP_058183.1	sacCer_protein_NP_013765.1
+OG0000000	sacCer_protein	n20	1.0	Terminal	sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1, sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1	sacCer_protein_NP_058183.1
+OG0000000	sacCer_protein	n21	1.0	Terminal	sacCer_protein_NP_058158.1, sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1	sacCer_protein_NP_013136.1, sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1
+OG0000000	sacCer_protein	n22	1.0	Terminal	sacCer_protein_NP_058158.1	sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1, sacCer_protein_NP_012562.1
+OG0000000	sacCer_protein	n23	1.0	Terminal	sacCer_protein_NP_058191.1, sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1	sacCer_protein_NP_012562.1
+OG0000000	sacCer_protein	n24	1.0	Terminal	sacCer_protein_NP_058191.1	sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1, sacCer_protein_NP_001268465.1
+OG0000000	sacCer_protein	n25	1.0	Terminal	sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1, sacCer_protein_NP_058178.1	sacCer_protein_NP_001268465.1
+OG0000000	sacCer_protein	n26	1.0	Terminal	sacCer_protein_NP_009549.1, sacCer_protein_NP_013759.1	sacCer_protein_NP_058178.1
+OG0000000	sacCer_protein	n27	1.0	Terminal	sacCer_protein_NP_009549.1	sacCer_protein_NP_013759.1
+OG0000000	sacCer_protein	n28	1.0	Terminal	sacCer_protein_NP_013136.1	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1, sacCer_protein_NP_009406.1
+OG0000000	sacCer_protein	n29	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1, sacCer_protein_NP_058148.1	sacCer_protein_NP_009406.1
+OG0000000	sacCer_protein	n30	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1, sacCer_protein_NP_058186.1	sacCer_protein_NP_058148.1
+OG0000000	sacCer_protein	n31	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1, sacCer_protein_NP_058139.1	sacCer_protein_NP_058186.1
+OG0000000	sacCer_protein	n32	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2, sacCer_protein_NP_058175.1	sacCer_protein_NP_058139.1
+OG0000000	sacCer_protein	n33	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1, sacCer_protein_NP_009910.2	sacCer_protein_NP_058175.1
+OG0000000	sacCer_protein	n34	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1, sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1	sacCer_protein_NP_009910.2
+OG0000000	sacCer_protein	n35	1.0	Terminal	sacCer_protein_NP_058147.3, sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1	sacCer_protein_NP_058157.1, sacCer_protein_NP_058164.1
+OG0000000	sacCer_protein	n36	1.0	Terminal	sacCer_protein_NP_058147.3	sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1, sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1
+OG0000000	sacCer_protein	n37	1.0	Terminal	sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1, sacCer_protein_NP_009451.1	sacCer_protein_NP_058143.1, sacCer_protein_NP_620390.1
+OG0000000	sacCer_protein	n38	1.0	Terminal	sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3, sacCer_protein_NP_009450.1	sacCer_protein_NP_009451.1
+OG0000000	sacCer_protein	n39	1.0	Terminal	sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3, sacCer_protein_NP_058146.3	sacCer_protein_NP_009450.1
+OG0000000	sacCer_protein	n40	1.0	Terminal	sacCer_protein_NP_058174.3, sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3	sacCer_protein_NP_058146.3
+OG0000000	sacCer_protein	n41	1.0	Terminal	sacCer_protein_NP_058174.3	sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2, sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3
+OG0000000	sacCer_protein	n42	1.0	Terminal	sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1, sacCer_protein_NP_009909.2	sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3, sacCer_protein_NP_058138.3
+OG0000000	sacCer_protein	n43	1.0	Terminal	sacCer_protein_NP_058163.1, sacCer_protein_NP_116653.1	sacCer_protein_NP_009909.2
+OG0000000	sacCer_protein	n44	1.0	Terminal	sacCer_protein_NP_058163.1	sacCer_protein_NP_116653.1
+OG0000000	sacCer_protein	n45	1.0	Terminal	sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3, sacCer_protein_NP_058185.3	sacCer_protein_NP_058138.3
+OG0000000	sacCer_protein	n46	1.0	Terminal	sacCer_protein_NP_620389.3, sacCer_protein_NP_058142.3	sacCer_protein_NP_058185.3
+OG0000000	sacCer_protein	n47	1.0	Terminal	sacCer_protein_NP_620389.3	sacCer_protein_NP_058142.3
+OG0000000	sacCer_protein	n48	1.0	Terminal	sacCer_protein_NP_058143.1	sacCer_protein_NP_620390.1
+OG0000000	sacCer_protein	n49	1.0	Terminal	sacCer_protein_NP_058157.1	sacCer_protein_NP_058164.1
+OG0000001	N1	n0	1.0	Non-Terminal	BG2_protein_QNG13052.1, CBS138_protein_XP_445700.1	CBS138_protein_XP_447262.1, BG2_protein_QNG15956.1, BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1, BG2_protein_QNG12108.1, BG2_protein_QNG12752.1, CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1, BG2_protein_QNG13325.1, CBS138_protein_XP_445980.1, BG2_protein_QNG14878.1, BG2_protein_QNG14879.1, BG2_protein_QNG12107.1, BG2_protein_QNG13323.1, BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1, BG2_protein_QNG12753.1, BG2_protein_QNG16706.1, BG2_protein_QNG17326.1, CBS138_protein_XP_449348.1, BG2_protein_QNG16704.1, CBS138_protein_XP_445219.1, BG2_protein_QNG12557.1
+OG0000001	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_447262.1, BG2_protein_QNG15956.1	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1, BG2_protein_QNG12108.1, BG2_protein_QNG12752.1, CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1, BG2_protein_QNG13325.1, CBS138_protein_XP_445980.1, BG2_protein_QNG14878.1, BG2_protein_QNG14879.1, BG2_protein_QNG12107.1, BG2_protein_QNG13323.1, BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1, BG2_protein_QNG12753.1, BG2_protein_QNG16706.1, BG2_protein_QNG17326.1, CBS138_protein_XP_449348.1, BG2_protein_QNG16704.1, CBS138_protein_XP_445219.1, BG2_protein_QNG12557.1
+OG0000001	N1	n4	1.0	Non-Terminal	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1, BG2_protein_QNG12108.1, BG2_protein_QNG12752.1, CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1, BG2_protein_QNG13325.1, CBS138_protein_XP_445980.1, BG2_protein_QNG14878.1, BG2_protein_QNG14879.1, BG2_protein_QNG12107.1, BG2_protein_QNG13323.1	BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1, BG2_protein_QNG12753.1, BG2_protein_QNG16706.1, BG2_protein_QNG17326.1, CBS138_protein_XP_449348.1, BG2_protein_QNG16704.1, CBS138_protein_XP_445219.1, BG2_protein_QNG12557.1
+OG0000001	N1	n5	1.0	Non-Terminal	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1, BG2_protein_QNG12108.1, BG2_protein_QNG12752.1, CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1, BG2_protein_QNG13325.1	CBS138_protein_XP_445980.1, BG2_protein_QNG14878.1, BG2_protein_QNG14879.1, BG2_protein_QNG12107.1, BG2_protein_QNG13323.1
+OG0000001	N1	n6	1.0	Non-Terminal	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1, BG2_protein_QNG12108.1, BG2_protein_QNG12752.1	CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1, BG2_protein_QNG13325.1
+OG0000001	N1	n7	0.5	Non-Terminal	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1, CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1	BG2_protein_QNG12108.1, BG2_protein_QNG12752.1
+OG0000001	N1	n8	1.0	Non-Terminal	BG2_protein_QNG16708.1, CBS138_protein_XP_449350.1	CBS138_protein_XP_448232.1, BG2_protein_QNG15394.1
+OG0000001	BG2_protein	n11	1.0	Terminal	BG2_protein_QNG12108.1	BG2_protein_QNG12752.1
+OG0000001	N1	n12	0.5	Non-Terminal	CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1, CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1	BG2_protein_QNG13325.1
+OG0000001	N1	n13	1.0	Non-Terminal	CBS138_protein_XP_445979.1, BG2_protein_QNG13322.1	CBS138_protein_XP_445189.1, BG2_protein_QNG14606.1, BG2_protein_QNG13050.1, BG2_protein_QNG12527.1
+OG0000001	BG2_protein	n16	1.0	Terminal	BG2_protein_QNG14606.1	BG2_protein_QNG13050.1, BG2_protein_QNG12527.1
+OG0000001	BG2_protein	n17	1.0	Terminal	BG2_protein_QNG13050.1	BG2_protein_QNG12527.1
+OG0000001	BG2_protein	n19	1.0	Terminal	BG2_protein_QNG14878.1, BG2_protein_QNG14879.1	BG2_protein_QNG12107.1, BG2_protein_QNG13323.1
+OG0000001	BG2_protein	n20	1.0	Terminal	BG2_protein_QNG14878.1	BG2_protein_QNG14879.1
+OG0000001	BG2_protein	n21	1.0	Terminal	BG2_protein_QNG12107.1	BG2_protein_QNG13323.1
+OG0000001	N1	n22	1.0	Non-Terminal	BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1, BG2_protein_QNG12753.1, BG2_protein_QNG16706.1, BG2_protein_QNG17326.1	CBS138_protein_XP_449348.1, BG2_protein_QNG16704.1, CBS138_protein_XP_445219.1, BG2_protein_QNG12557.1
+OG0000001	N1	n23	0.5	Non-Terminal	BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1, BG2_protein_QNG12753.1	BG2_protein_QNG16706.1, BG2_protein_QNG17326.1
+OG0000001	N1	n24	0.5	Non-Terminal	BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1, CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1	BG2_protein_QNG12753.1
+OG0000001	N1	n25	1.0	Non-Terminal	BG2_protein_QNG15398.1, CBS138_protein_XP_002999576.1	CBS138_protein_XP_445981.1, BG2_protein_QNG13324.1
+OG0000001	BG2_protein	n28	1.0	Terminal	BG2_protein_QNG16706.1	BG2_protein_QNG17326.1
+OG0000001	N1	n29	1.0	Non-Terminal	CBS138_protein_XP_449348.1, BG2_protein_QNG16704.1	CBS138_protein_XP_445219.1, BG2_protein_QNG12557.1
+OG0000002	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_010834.1	sacCer_protein_NP_013572.3, sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3, sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1, sacCer_protein_NP_011117.3, sacCer_protein_NP_015040.1, sacCer_protein_NP_014060.1, sacCer_protein_NP_011812.3, sacCer_protein_NP_061495.4
+OG0000002	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013572.3	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3, sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1, sacCer_protein_NP_011117.3, sacCer_protein_NP_015040.1, sacCer_protein_NP_014060.1, sacCer_protein_NP_011812.3, sacCer_protein_NP_061495.4
+OG0000002	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3, sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1, sacCer_protein_NP_011117.3, sacCer_protein_NP_015040.1, sacCer_protein_NP_014060.1, sacCer_protein_NP_011812.3	sacCer_protein_NP_061495.4
+OG0000002	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3, sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1, sacCer_protein_NP_011117.3	sacCer_protein_NP_015040.1, sacCer_protein_NP_014060.1, sacCer_protein_NP_011812.3
+OG0000002	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3, sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1	sacCer_protein_NP_011117.3
+OG0000002	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1, sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3	sacCer_protein_NP_012311.1, sacCer_protein_NP_012092.1
+OG0000002	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1, sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1	sacCer_protein_NP_010835.1, sacCer_protein_NP_013571.3
+OG0000002	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_116589.1, sacCer_protein_NP_015530.1	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1, sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1
+OG0000002	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_116589.1	sacCer_protein_NP_015530.1
+OG0000002	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1, sacCer_protein_NP_011813.1	sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1, sacCer_protein_NP_013573.1
+OG0000002	sacCer_protein	n10	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3, sacCer_protein_NP_009437.1	sacCer_protein_NP_011813.1
+OG0000002	sacCer_protein	n11	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1, sacCer_protein_NP_012091.3	sacCer_protein_NP_009437.1
+OG0000002	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1, sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1	sacCer_protein_NP_012091.3
+OG0000002	sacCer_protein	n13	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1, sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1	sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1, sacCer_protein_NP_009438.1
+OG0000002	sacCer_protein	n14	1.0	Terminal	sacCer_protein_NP_015529.1, sacCer_protein_NP_116590.1	sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1, sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1
+OG0000002	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_015529.1	sacCer_protein_NP_116590.1
+OG0000002	sacCer_protein	n16	1.0	Terminal	sacCer_protein_NP_011814.1, sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1	sacCer_protein_NP_012090.1, sacCer_protein_NP_009439.1
+OG0000002	sacCer_protein	n17	1.0	Terminal	sacCer_protein_NP_011814.1	sacCer_protein_NP_013567.3, sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1
+OG0000002	sacCer_protein	n18	1.0	Terminal	sacCer_protein_NP_013567.3	sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1, sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1
+OG0000002	sacCer_protein	n19	1.0	Terminal	sacCer_protein_NP_015528.1, sacCer_protein_NP_116591.1	sacCer_protein_NP_011116.3, sacCer_protein_NP_010839.1
+OG0000002	sacCer_protein	n20	1.0	Terminal	sacCer_protein_NP_015528.1	sacCer_protein_NP_116591.1
+OG0000002	sacCer_protein	n21	1.0	Terminal	sacCer_protein_NP_011116.3	sacCer_protein_NP_010839.1
+OG0000002	sacCer_protein	n22	1.0	Terminal	sacCer_protein_NP_012090.1	sacCer_protein_NP_009439.1
+OG0000002	sacCer_protein	n23	1.0	Terminal	sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1, sacCer_protein_NP_010837.1	sacCer_protein_NP_009438.1
+OG0000002	sacCer_protein	n24	1.0	Terminal	sacCer_protein_NP_013569.1, sacCer_protein_NP_010836.1	sacCer_protein_NP_010837.1
+OG0000002	sacCer_protein	n25	1.0	Terminal	sacCer_protein_NP_013569.1	sacCer_protein_NP_010836.1
+OG0000002	sacCer_protein	n26	1.0	Terminal	sacCer_protein_NP_013034.1, sacCer_protein_NP_013033.1	sacCer_protein_NP_013573.1
+OG0000002	sacCer_protein	n27	1.0	Terminal	sacCer_protein_NP_013034.1	sacCer_protein_NP_013033.1
+OG0000002	sacCer_protein	n28	1.0	Terminal	sacCer_protein_NP_010835.1	sacCer_protein_NP_013571.3
+OG0000002	sacCer_protein	n29	1.0	Terminal	sacCer_protein_NP_012311.1	sacCer_protein_NP_012092.1
+OG0000002	sacCer_protein	n30	1.0	Terminal	sacCer_protein_NP_015040.1	sacCer_protein_NP_014060.1, sacCer_protein_NP_011812.3
+OG0000002	sacCer_protein	n31	1.0	Terminal	sacCer_protein_NP_014060.1	sacCer_protein_NP_011812.3
+OG0000003	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_058192.1	sacCer_protein_NP_009407.1, sacCer_protein_NP_012563.1, sacCer_protein_NP_058159.1, sacCer_protein_NP_058180.1, sacCer_protein_NP_058179.1, sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1, sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1, sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009407.1	sacCer_protein_NP_012563.1, sacCer_protein_NP_058159.1, sacCer_protein_NP_058180.1, sacCer_protein_NP_058179.1, sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1, sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1, sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012563.1, sacCer_protein_NP_058159.1	sacCer_protein_NP_058180.1, sacCer_protein_NP_058179.1, sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1, sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1, sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012563.1	sacCer_protein_NP_058159.1
+OG0000003	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_058180.1	sacCer_protein_NP_058179.1, sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1, sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1, sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_058179.1, sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1, sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_058179.1	sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1, sacCer_protein_NP_010455.1
+OG0000003	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_009550.1, sacCer_protein_NP_013760.1	sacCer_protein_NP_010455.1
+OG0000003	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_009550.1	sacCer_protein_NP_013760.1
+OG0000003	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1, sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1	sacCer_protein_NP_058149.1
+OG0000003	sacCer_protein	n10	1.0	Terminal	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1, sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1	sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3, sacCer_protein_NP_058161.1
+OG0000003	sacCer_protein	n11	1.0	Terminal	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3, sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1	sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1, sacCer_protein_NP_058173.1
+OG0000003	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1, sacCer_protein_NP_058153.3	sacCer_protein_NP_058182.1, sacCer_protein_NP_058196.1
+OG0000003	sacCer_protein	n13	1.0	Terminal	sacCer_protein_NP_058155.1, sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1	sacCer_protein_NP_058153.3
+OG0000003	sacCer_protein	n14	1.0	Terminal	sacCer_protein_NP_058155.1	sacCer_protein_NP_058170.1, sacCer_protein_NP_058190.1
+OG0000003	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_058170.1	sacCer_protein_NP_058190.1
+OG0000003	sacCer_protein	n16	1.0	Terminal	sacCer_protein_NP_058182.1	sacCer_protein_NP_058196.1
+OG0000003	sacCer_protein	n17	1.0	Terminal	sacCer_protein_NP_013673.1, sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1	sacCer_protein_NP_058173.1
+OG0000003	sacCer_protein	n18	1.0	Terminal	sacCer_protein_NP_013673.1	sacCer_protein_NP_012561.3, sacCer_protein_NP_058172.1
+OG0000003	sacCer_protein	n19	1.0	Terminal	sacCer_protein_NP_012561.3	sacCer_protein_NP_058172.1
+OG0000003	sacCer_protein	n20	1.0	Terminal	sacCer_protein_NP_058141.1, sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3	sacCer_protein_NP_058161.1
+OG0000003	sacCer_protein	n21	1.0	Terminal	sacCer_protein_NP_058141.1	sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3, sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3
+OG0000003	sacCer_protein	n22	1.0	Terminal	sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1, sacCer_protein_NP_620388.3	sacCer_protein_NP_058176.1, sacCer_protein_NP_036195.3
+OG0000003	sacCer_protein	n23	1.0	Terminal	sacCer_protein_NP_058156.1, sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1	sacCer_protein_NP_620388.3
+OG0000003	sacCer_protein	n24	1.0	Terminal	sacCer_protein_NP_058156.1	sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1, sacCer_protein_NP_058151.1
+OG0000003	sacCer_protein	n25	1.0	Terminal	sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1, sacCer_protein_NP_013766.1	sacCer_protein_NP_058151.1
+OG0000003	sacCer_protein	n26	1.0	Terminal	sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1, sacCer_protein_NP_058166.1	sacCer_protein_NP_013766.1
+OG0000003	sacCer_protein	n27	1.0	Terminal	sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3, sacCer_protein_NP_058194.1	sacCer_protein_NP_058166.1
+OG0000003	sacCer_protein	n28	1.0	Terminal	sacCer_protein_NP_009568.1, sacCer_protein_NP_058184.3	sacCer_protein_NP_058194.1
+OG0000003	sacCer_protein	n29	1.0	Terminal	sacCer_protein_NP_009568.1	sacCer_protein_NP_058184.3
+OG0000003	sacCer_protein	n30	1.0	Terminal	sacCer_protein_NP_058176.1	sacCer_protein_NP_036195.3
+OG0000004	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_011253.1	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1, sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1, sacCer_protein_NP_012312.1, sacCer_protein_NP_012093.1, sacCer_protein_NP_014474.3, sacCer_protein_NP_013036.1, sacCer_protein_NP_013566.1, sacCer_protein_NP_010831.3, sacCer_protein_NP_009332.1, sacCer_protein_NP_011817.1
+OG0000004	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1, sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1, sacCer_protein_NP_012312.1, sacCer_protein_NP_012093.1, sacCer_protein_NP_014474.3, sacCer_protein_NP_013036.1, sacCer_protein_NP_013566.1, sacCer_protein_NP_010831.3	sacCer_protein_NP_009332.1, sacCer_protein_NP_011817.1
+OG0000004	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1, sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1, sacCer_protein_NP_012312.1, sacCer_protein_NP_012093.1, sacCer_protein_NP_014474.3, sacCer_protein_NP_013036.1, sacCer_protein_NP_013566.1	sacCer_protein_NP_010831.3
+OG0000004	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1, sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1, sacCer_protein_NP_012312.1, sacCer_protein_NP_012093.1	sacCer_protein_NP_014474.3, sacCer_protein_NP_013036.1, sacCer_protein_NP_013566.1
+OG0000004	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1, sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1	sacCer_protein_NP_012312.1, sacCer_protein_NP_012093.1
+OG0000004	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1, sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1	sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3, sacCer_protein_NP_010865.1
+OG0000004	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1, sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1	sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1, sacCer_protein_NP_014481.1
+OG0000004	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_012684.4, sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1	sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1, sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1
+OG0000004	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_012684.4	sacCer_protein_NP_076873.1, sacCer_protein_NP_012685.1
+OG0000004	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_076873.1	sacCer_protein_NP_012685.1
+OG0000004	sacCer_protein	n10	1.0	Terminal	sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1, sacCer_protein_NP_012698.1	sacCer_protein_NP_013075.1, sacCer_protein_NP_013138.1
+OG0000004	sacCer_protein	n11	1.0	Terminal	sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1, sacCer_protein_NP_010029.1	sacCer_protein_NP_012698.1
+OG0000004	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3, sacCer_protein_NP_012307.1	sacCer_protein_NP_010029.1
+OG0000004	sacCer_protein	n13	1.0	Terminal	sacCer_protein_NP_014058.1, sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3	sacCer_protein_NP_012307.1
+OG0000004	sacCer_protein	n14	1.0	Terminal	sacCer_protein_NP_014058.1	sacCer_protein_NP_015041.1, sacCer_protein_NP_015039.3
+OG0000004	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_015041.1	sacCer_protein_NP_015039.3
+OG0000004	sacCer_protein	n16	1.0	Terminal	sacCer_protein_NP_013075.1	sacCer_protein_NP_013138.1
+OG0000004	sacCer_protein	n17	1.0	Terminal	sacCer_protein_NP_116633.1, sacCer_protein_NP_009412.1	sacCer_protein_NP_014481.1
+OG0000004	sacCer_protein	n18	1.0	Terminal	sacCer_protein_NP_116633.1	sacCer_protein_NP_009412.1
+OG0000004	sacCer_protein	n19	1.0	Terminal	sacCer_protein_NP_011810.1, sacCer_protein_NP_009860.3	sacCer_protein_NP_010865.1
+OG0000004	sacCer_protein	n20	1.0	Terminal	sacCer_protein_NP_011810.1	sacCer_protein_NP_009860.3
+OG0000004	sacCer_protein	n21	1.0	Terminal	sacCer_protein_NP_012312.1	sacCer_protein_NP_012093.1
+OG0000004	sacCer_protein	n22	1.0	Terminal	sacCer_protein_NP_014474.3, sacCer_protein_NP_013036.1	sacCer_protein_NP_013566.1
+OG0000004	sacCer_protein	n23	1.0	Terminal	sacCer_protein_NP_014474.3	sacCer_protein_NP_013036.1
+OG0000004	sacCer_protein	n24	1.0	Terminal	sacCer_protein_NP_009332.1	sacCer_protein_NP_011817.1
+OG0000005	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_014063.1	sacCer_protein_NP_116593.1, sacCer_protein_NP_009861.1, sacCer_protein_NP_013574.1, sacCer_protein_NP_012695.3, sacCer_protein_NP_010033.1, sacCer_protein_NP_011811.1, sacCer_protein_NP_011815.1, sacCer_protein_NP_012703.1, sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_116593.1	sacCer_protein_NP_009861.1, sacCer_protein_NP_013574.1, sacCer_protein_NP_012695.3, sacCer_protein_NP_010033.1, sacCer_protein_NP_011811.1, sacCer_protein_NP_011815.1, sacCer_protein_NP_012703.1, sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009861.1, sacCer_protein_NP_013574.1	sacCer_protein_NP_012695.3, sacCer_protein_NP_010033.1, sacCer_protein_NP_011811.1, sacCer_protein_NP_011815.1, sacCer_protein_NP_012703.1, sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_009861.1	sacCer_protein_NP_013574.1
+OG0000005	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012695.3, sacCer_protein_NP_010033.1	sacCer_protein_NP_011811.1, sacCer_protein_NP_011815.1, sacCer_protein_NP_012703.1, sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_012695.3	sacCer_protein_NP_010033.1
+OG0000005	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_011811.1, sacCer_protein_NP_011815.1	sacCer_protein_NP_012703.1, sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_011811.1	sacCer_protein_NP_011815.1
+OG0000005	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_012703.1	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1, sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1, sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1	sacCer_protein_NP_014473.1
+OG0000005	sacCer_protein	n10	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1, sacCer_protein_NP_011821.1	sacCer_protein_NP_011820.1, sacCer_protein_NP_011251.1
+OG0000005	sacCer_protein	n11	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1, sacCer_protein_NP_009416.1	sacCer_protein_NP_011821.1
+OG0000005	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2, sacCer_protein_NP_011819.1	sacCer_protein_NP_009416.1
+OG0000005	sacCer_protein	n13	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1, sacCer_protein_NP_009413.2	sacCer_protein_NP_011819.1
+OG0000005	sacCer_protein	n14	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1, sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1	sacCer_protein_NP_009413.2
+OG0000005	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1, sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1	sacCer_protein_NP_009933.1, sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1
+OG0000005	sacCer_protein	n16	1.0	Terminal	sacCer_protein_NP_011462.1, sacCer_protein_NP_009418.1	sacCer_protein_NP_009419.1, sacCer_protein_NP_011464.1
+OG0000005	sacCer_protein	n17	1.0	Terminal	sacCer_protein_NP_011462.1	sacCer_protein_NP_009418.1
+OG0000005	sacCer_protein	n18	1.0	Terminal	sacCer_protein_NP_009419.1	sacCer_protein_NP_011464.1
+OG0000005	sacCer_protein	n19	1.0	Terminal	sacCer_protein_NP_009933.1	sacCer_protein_NP_009414.1, sacCer_protein_NP_009415.1
+OG0000005	sacCer_protein	n20	1.0	Terminal	sacCer_protein_NP_009414.1	sacCer_protein_NP_009415.1
+OG0000005	sacCer_protein	n21	1.0	Terminal	sacCer_protein_NP_011820.1	sacCer_protein_NP_011251.1
+OG0000006	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010052.1, sacCer_protein_NP_014190.1, BG2_protein_QNG12741.1, BG2_protein_QNG15599.1, CBS138_protein_XP_448432.1, CBS138_protein_XP_445408.1	CBS138_protein_XP_445544.1, BG2_protein_QNG12893.1, sacCer_protein_NP_012500.3, CBS138_protein_XP_446529.1, BG2_protein_QNG13867.1, sacCer_protein_NP_013076.1, sacCer_protein_NP_009396.2, CBS138_protein_XP_446506.1, BG2_protein_QNG13844.1, sacCer_protein_NP_011029.3, sacCer_protein_NP_009478.1
+OG0000006	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010052.1	sacCer_protein_NP_014190.1
+OG0000006	BG2_protein	n4	1.0	Terminal	BG2_protein_QNG12741.1	BG2_protein_QNG15599.1
+OG0000006	CBS138_protein	n5	1.0	Terminal	CBS138_protein_XP_448432.1	CBS138_protein_XP_445408.1
+OG0000006	N0	n6	1.0	Non-Terminal	CBS138_protein_XP_445544.1, BG2_protein_QNG12893.1, sacCer_protein_NP_012500.3	CBS138_protein_XP_446529.1, BG2_protein_QNG13867.1, sacCer_protein_NP_013076.1, sacCer_protein_NP_009396.2, CBS138_protein_XP_446506.1, BG2_protein_QNG13844.1, sacCer_protein_NP_011029.3, sacCer_protein_NP_009478.1
+OG0000006	N0	n9	1.0	Non-Terminal	CBS138_protein_XP_446529.1, BG2_protein_QNG13867.1, sacCer_protein_NP_013076.1, sacCer_protein_NP_009396.2	CBS138_protein_XP_446506.1, BG2_protein_QNG13844.1, sacCer_protein_NP_011029.3, sacCer_protein_NP_009478.1
+OG0000006	sacCer_protein	n12	1.0	Terminal	sacCer_protein_NP_013076.1	sacCer_protein_NP_009396.2
+OG0000006	sacCer_protein	n15	1.0	Terminal	sacCer_protein_NP_011029.3	sacCer_protein_NP_009478.1
+OG0000007	CBS138_protein	n1	1.0	Terminal	CBS138_protein_XP_447690.2	CBS138_protein_XP_002999571.1, CBS138_protein_XP_447689.1, CBS138_protein_XP_002999565.1, CBS138_protein_XP_002999564.1, CBS138_protein_XP_002999563.1, CBS138_protein_XP_449203.2, CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n2	1.0	Terminal	CBS138_protein_XP_002999571.1, CBS138_protein_XP_447689.1	CBS138_protein_XP_002999565.1, CBS138_protein_XP_002999564.1, CBS138_protein_XP_002999563.1, CBS138_protein_XP_449203.2, CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_002999571.1	CBS138_protein_XP_447689.1
+OG0000007	CBS138_protein	n4	1.0	Terminal	CBS138_protein_XP_002999565.1	CBS138_protein_XP_002999564.1, CBS138_protein_XP_002999563.1, CBS138_protein_XP_449203.2, CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n5	1.0	Terminal	CBS138_protein_XP_002999564.1	CBS138_protein_XP_002999563.1, CBS138_protein_XP_449203.2, CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n6	1.0	Terminal	CBS138_protein_XP_002999563.1	CBS138_protein_XP_449203.2, CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n7	1.0	Terminal	CBS138_protein_XP_449203.2	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1, CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n8	1.0	Terminal	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1, CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1	CBS138_protein_XP_002999598.1, CBS138_protein_XP_445192.1
+OG0000007	CBS138_protein	n9	1.0	Terminal	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1, CBS138_protein_XP_002999534.1	CBS138_protein_XP_445761.1, CBS138_protein_XP_002999597.1
+OG0000007	CBS138_protein	n10	1.0	Terminal	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1, CBS138_protein_XP_002999584.1	CBS138_protein_XP_002999534.1
+OG0000007	CBS138_protein	n11	1.0	Terminal	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1, CBS138_protein_XP_447260.1	CBS138_protein_XP_002999584.1
+OG0000007	CBS138_protein	n12	1.0	Terminal	CBS138_protein_XP_446806.1, CBS138_protein_XP_446805.1	CBS138_protein_XP_447260.1
+OG0000007	CBS138_protein	n13	1.0	Terminal	CBS138_protein_XP_446806.1	CBS138_protein_XP_446805.1
+OG0000007	CBS138_protein	n14	1.0	Terminal	CBS138_protein_XP_445761.1	CBS138_protein_XP_002999597.1
+OG0000007	CBS138_protein	n15	1.0	Terminal	CBS138_protein_XP_002999598.1	CBS138_protein_XP_445192.1
+OG0000008	N0	n0	0.6666666666666666	Non-Terminal	sacCer_protein_NP_011960.2, BG2_protein_QNG12177.1	BG2_protein_QNG12194.1, BG2_protein_QNG12195.1, BG2_protein_QNG12135.1, sacCer_protein_NP_011964.1, BG2_protein_QNG12179.1, sacCer_protein_NP_010632.1, sacCer_protein_NP_011962.1, BG2_protein_QNG12198.1, BG2_protein_QNG12178.1, BG2_protein_QNG15959.1, BG2_protein_QNG12879.1, BG2_protein_QNG12880.1
+OG0000008	N0	n2	0.3333333333333333	Non-Terminal	BG2_protein_QNG12194.1, BG2_protein_QNG12195.1, BG2_protein_QNG12135.1	sacCer_protein_NP_011964.1, BG2_protein_QNG12179.1, sacCer_protein_NP_010632.1, sacCer_protein_NP_011962.1, BG2_protein_QNG12198.1, BG2_protein_QNG12178.1, BG2_protein_QNG15959.1, BG2_protein_QNG12879.1, BG2_protein_QNG12880.1
+OG0000008	BG2_protein	n3	1.0	Terminal	BG2_protein_QNG12194.1, BG2_protein_QNG12195.1	BG2_protein_QNG12135.1
+OG0000008	BG2_protein	n4	1.0	Terminal	BG2_protein_QNG12194.1	BG2_protein_QNG12195.1
+OG0000008	N0	n5	0.3333333333333333	Non-Terminal	sacCer_protein_NP_011964.1, BG2_protein_QNG12179.1, sacCer_protein_NP_010632.1, sacCer_protein_NP_011962.1, BG2_protein_QNG12198.1, BG2_protein_QNG12178.1	BG2_protein_QNG15959.1, BG2_protein_QNG12879.1, BG2_protein_QNG12880.1
+OG0000008	N0	n6	0.6666666666666666	Non-Terminal	sacCer_protein_NP_011964.1, BG2_protein_QNG12179.1	sacCer_protein_NP_010632.1, sacCer_protein_NP_011962.1, BG2_protein_QNG12198.1, BG2_protein_QNG12178.1
+OG0000008	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_010632.1	sacCer_protein_NP_011962.1
+OG0000008	BG2_protein	n10	1.0	Terminal	BG2_protein_QNG12198.1	BG2_protein_QNG12178.1
+OG0000008	BG2_protein	n11	1.0	Terminal	BG2_protein_QNG15959.1	BG2_protein_QNG12879.1, BG2_protein_QNG12880.1
+OG0000008	BG2_protein	n12	1.0	Terminal	BG2_protein_QNG12879.1	BG2_protein_QNG12880.1
+OG0000009	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_447201.1, BG2_protein_QNG14546.1	CBS138_protein_XP_445350.1, BG2_protein_QNG12683.1, BG2_protein_QNG14547.1, CBS138_protein_XP_447202.1, BG2_protein_QNG12682.1, CBS138_protein_XP_445348.1, CBS138_protein_XP_445347.1, CBS138_protein_XP_445349.1, CBS138_protein_XP_445346.1, CBS138_protein_XP_445352.1, BG2_protein_QNG12438.1, BG2_protein_QNG12685.1
+OG0000009	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_445350.1, BG2_protein_QNG12683.1, BG2_protein_QNG14547.1, CBS138_protein_XP_447202.1, BG2_protein_QNG12682.1, CBS138_protein_XP_445348.1, CBS138_protein_XP_445347.1, CBS138_protein_XP_445349.1, CBS138_protein_XP_445346.1	CBS138_protein_XP_445352.1, BG2_protein_QNG12438.1, BG2_protein_QNG12685.1
+OG0000009	N1	n3	1.0	Non-Terminal	CBS138_protein_XP_445350.1, BG2_protein_QNG12683.1	BG2_protein_QNG14547.1, CBS138_protein_XP_447202.1, BG2_protein_QNG12682.1, CBS138_protein_XP_445348.1, CBS138_protein_XP_445347.1, CBS138_protein_XP_445349.1, CBS138_protein_XP_445346.1
+OG0000009	N1	n5	1.0	Non-Terminal	BG2_protein_QNG14547.1, CBS138_protein_XP_447202.1	BG2_protein_QNG12682.1, CBS138_protein_XP_445348.1, CBS138_protein_XP_445347.1, CBS138_protein_XP_445349.1, CBS138_protein_XP_445346.1
+OG0000009	CBS138_protein	n8	1.0	Terminal	CBS138_protein_XP_445348.1, CBS138_protein_XP_445347.1	CBS138_protein_XP_445349.1, CBS138_protein_XP_445346.1
+OG0000009	CBS138_protein	n9	1.0	Terminal	CBS138_protein_XP_445348.1	CBS138_protein_XP_445347.1
+OG0000009	CBS138_protein	n10	1.0	Terminal	CBS138_protein_XP_445349.1	CBS138_protein_XP_445346.1
+OG0000009	BG2_protein	n12	1.0	Terminal	BG2_protein_QNG12438.1	BG2_protein_QNG12685.1
+OG0000010	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_002999585.1, BG2_protein_QNG12756.1	BG2_protein_QNG14607.1, BG2_protein_QNG13326.1, BG2_protein_QNG12526.1, BG2_protein_QNG16707.1, CBS138_protein_XP_448233.1, BG2_protein_QNG12312.1, BG2_protein_QNG15396.1, BG2_protein_QNG14140.1, BG2_protein_QNG14880.1, BG2_protein_QNG15395.1, CBS138_protein_XP_002999542.1
+OG0000010	N1	n2	0.5	Non-Terminal	BG2_protein_QNG14607.1	BG2_protein_QNG13326.1, BG2_protein_QNG12526.1, BG2_protein_QNG16707.1, CBS138_protein_XP_448233.1, BG2_protein_QNG12312.1, BG2_protein_QNG15396.1, BG2_protein_QNG14140.1, BG2_protein_QNG14880.1, BG2_protein_QNG15395.1, CBS138_protein_XP_002999542.1
+OG0000010	N1	n3	0.5	Non-Terminal	BG2_protein_QNG13326.1	BG2_protein_QNG12526.1, BG2_protein_QNG16707.1, CBS138_protein_XP_448233.1, BG2_protein_QNG12312.1, BG2_protein_QNG15396.1, BG2_protein_QNG14140.1, BG2_protein_QNG14880.1, BG2_protein_QNG15395.1, CBS138_protein_XP_002999542.1
+OG0000010	N1	n4	0.5	Non-Terminal	BG2_protein_QNG12526.1, BG2_protein_QNG16707.1	CBS138_protein_XP_448233.1, BG2_protein_QNG12312.1, BG2_protein_QNG15396.1, BG2_protein_QNG14140.1, BG2_protein_QNG14880.1, BG2_protein_QNG15395.1, CBS138_protein_XP_002999542.1
+OG0000010	BG2_protein	n5	1.0	Terminal	BG2_protein_QNG12526.1	BG2_protein_QNG16707.1
+OG0000010	N1	n6	1.0	Non-Terminal	CBS138_protein_XP_448233.1, BG2_protein_QNG12312.1, BG2_protein_QNG15396.1	BG2_protein_QNG14140.1, BG2_protein_QNG14880.1, BG2_protein_QNG15395.1, CBS138_protein_XP_002999542.1
+OG0000010	BG2_protein	n8	1.0	Terminal	BG2_protein_QNG12312.1	BG2_protein_QNG15396.1
+OG0000010	BG2_protein	n10	1.0	Terminal	BG2_protein_QNG14140.1	BG2_protein_QNG14880.1, BG2_protein_QNG15395.1
+OG0000010	BG2_protein	n11	1.0	Terminal	BG2_protein_QNG14880.1	BG2_protein_QNG15395.1
+OG0000011	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_449106.1, BG2_protein_QNG16285.1, sacCer_protein_NP_009624.4	sacCer_protein_NP_010331.3, CBS138_protein_XP_448476.1, BG2_protein_QNG15643.1, CBS138_protein_XP_445015.1, BG2_protein_QNG12349.1, sacCer_protein_NP_010796.1, sacCer_protein_NP_009905.3, sacCer_protein_NP_009625.1, BG2_protein_QNG14508.1, CBS138_protein_XP_447164.1
+OG0000011	N0	n3	0.3333333333333333	Non-Terminal	sacCer_protein_NP_010331.3	CBS138_protein_XP_448476.1, BG2_protein_QNG15643.1, CBS138_protein_XP_445015.1, BG2_protein_QNG12349.1, sacCer_protein_NP_010796.1, sacCer_protein_NP_009905.3, sacCer_protein_NP_009625.1, BG2_protein_QNG14508.1, CBS138_protein_XP_447164.1
+OG0000011	N0	n4	1.0	Non-Terminal	CBS138_protein_XP_448476.1, BG2_protein_QNG15643.1, CBS138_protein_XP_445015.1, BG2_protein_QNG12349.1, sacCer_protein_NP_010796.1, sacCer_protein_NP_009905.3	sacCer_protein_NP_009625.1, BG2_protein_QNG14508.1, CBS138_protein_XP_447164.1
+OG0000011	N1	n6	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448476.1, BG2_protein_QNG15643.1	CBS138_protein_XP_445015.1, BG2_protein_QNG12349.1
+OG0000011	sacCer_protein	n9	1.0	Terminal	sacCer_protein_NP_010796.1	sacCer_protein_NP_009905.3
+OG0000012	BG2_protein	n0	1.0	Terminal	BG2_protein_QNG16564.1	BG2_protein_QNG12530.1, BG2_protein_QNG12755.1, BG2_protein_QNG13049.1, BG2_protein_QNG14848.1, BG2_protein_QNG16703.1, BG2_protein_QNG15955.1, BG2_protein_QNG13707.1, BG2_protein_QNG12754.1, BG2_protein_QNG12311.1, BG2_protein_QNG14139.1
+OG0000012	BG2_protein	n1	1.0	Terminal	BG2_protein_QNG12530.1, BG2_protein_QNG12755.1, BG2_protein_QNG13049.1, BG2_protein_QNG14848.1, BG2_protein_QNG16703.1	BG2_protein_QNG15955.1, BG2_protein_QNG13707.1, BG2_protein_QNG12754.1, BG2_protein_QNG12311.1, BG2_protein_QNG14139.1
+OG0000012	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG12530.1	BG2_protein_QNG12755.1, BG2_protein_QNG13049.1, BG2_protein_QNG14848.1, BG2_protein_QNG16703.1
+OG0000012	BG2_protein	n3	1.0	Terminal	BG2_protein_QNG12755.1	BG2_protein_QNG13049.1, BG2_protein_QNG14848.1, BG2_protein_QNG16703.1
+OG0000012	BG2_protein	n4	1.0	Terminal	BG2_protein_QNG13049.1	BG2_protein_QNG14848.1, BG2_protein_QNG16703.1
+OG0000012	BG2_protein	n5	1.0	Terminal	BG2_protein_QNG14848.1	BG2_protein_QNG16703.1
+OG0000012	BG2_protein	n6	1.0	Terminal	BG2_protein_QNG15955.1	BG2_protein_QNG13707.1, BG2_protein_QNG12754.1, BG2_protein_QNG12311.1, BG2_protein_QNG14139.1
+OG0000012	BG2_protein	n7	1.0	Terminal	BG2_protein_QNG13707.1	BG2_protein_QNG12754.1, BG2_protein_QNG12311.1, BG2_protein_QNG14139.1
+OG0000012	BG2_protein	n8	1.0	Terminal	BG2_protein_QNG12754.1	BG2_protein_QNG12311.1, BG2_protein_QNG14139.1
+OG0000012	BG2_protein	n9	1.0	Terminal	BG2_protein_QNG12311.1	BG2_protein_QNG14139.1
+OG0000013	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_446980.1, BG2_protein_QNG16199.1, BG2_protein_QNG14316.1, BG2_protein_QNG14317.1, BG2_protein_QNG14319.1, BG2_protein_QNG14321.1, BG2_protein_QNG14318.1, BG2_protein_QNG14320.1	BG2_protein_QNG16198.1, CBS138_protein_XP_002999586.1, CBS138_protein_XP_446981.1
+OG0000013	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG16199.1	BG2_protein_QNG14316.1, BG2_protein_QNG14317.1, BG2_protein_QNG14319.1, BG2_protein_QNG14321.1, BG2_protein_QNG14318.1, BG2_protein_QNG14320.1
+OG0000013	BG2_protein	n3	1.0	Terminal	BG2_protein_QNG14316.1	BG2_protein_QNG14317.1, BG2_protein_QNG14319.1, BG2_protein_QNG14321.1, BG2_protein_QNG14318.1, BG2_protein_QNG14320.1
+OG0000013	BG2_protein	n4	1.0	Terminal	BG2_protein_QNG14317.1	BG2_protein_QNG14319.1, BG2_protein_QNG14321.1, BG2_protein_QNG14318.1, BG2_protein_QNG14320.1
+OG0000013	BG2_protein	n5	1.0	Terminal	BG2_protein_QNG14319.1	BG2_protein_QNG14321.1, BG2_protein_QNG14318.1, BG2_protein_QNG14320.1
+OG0000013	BG2_protein	n6	1.0	Terminal	BG2_protein_QNG14321.1	BG2_protein_QNG14318.1, BG2_protein_QNG14320.1
+OG0000013	BG2_protein	n7	1.0	Terminal	BG2_protein_QNG14318.1	BG2_protein_QNG14320.1
+OG0000013	CBS138_protein	n9	1.0	Terminal	CBS138_protein_XP_002999586.1	CBS138_protein_XP_446981.1
+OG0000014	N1	n0	1.0	Non-Terminal	BG2_protein_QNG12434.1, CBS138_protein_XP_445098.1	BG2_protein_QNG12435.1, CBS138_protein_XP_445099.1, CBS138_protein_XP_445101.1, BG2_protein_QNG12437.1, BG2_protein_QNG12433.1, CBS138_protein_XP_445097.1, CBS138_protein_XP_445100.1, BG2_protein_QNG12436.1
+OG0000014	N1	n2	1.0	Non-Terminal	BG2_protein_QNG12435.1, CBS138_protein_XP_445099.1, CBS138_protein_XP_445101.1, BG2_protein_QNG12437.1, BG2_protein_QNG12433.1, CBS138_protein_XP_445097.1	CBS138_protein_XP_445100.1, BG2_protein_QNG12436.1
+OG0000014	N1	n3	1.0	Non-Terminal	BG2_protein_QNG12435.1, CBS138_protein_XP_445099.1	CBS138_protein_XP_445101.1, BG2_protein_QNG12437.1, BG2_protein_QNG12433.1, CBS138_protein_XP_445097.1
+OG0000014	N1	n5	1.0	Non-Terminal	CBS138_protein_XP_445101.1, BG2_protein_QNG12437.1	BG2_protein_QNG12433.1, CBS138_protein_XP_445097.1
+OG0000015	N0	n0	1.0	Non-Terminal	BG2_protein_QNG16316.1, CBS138_protein_XP_449074.1, sacCer_protein_NP_010203.1	sacCer_protein_NP_011601.3, sacCer_protein_NP_013235.1, sacCer_protein_NP_013145.1, CBS138_protein_XP_446491.1, BG2_protein_QNG13829.1, BG2_protein_QNG17053.1, CBS138_protein_XP_449691.1
+OG0000015	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_011601.3	sacCer_protein_NP_013235.1, sacCer_protein_NP_013145.1
+OG0000015	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_013235.1	sacCer_protein_NP_013145.1
+OG0000015	N1	n6	1.0	Non-Terminal	CBS138_protein_XP_446491.1, BG2_protein_QNG13829.1	BG2_protein_QNG17053.1, CBS138_protein_XP_449691.1
+OG0000016	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15303.1, CBS138_protein_XP_448141.1, sacCer_protein_NP_014333.1, sacCer_protein_NP_012143.2	sacCer_protein_NP_012968.4, CBS138_protein_XP_448915.1, BG2_protein_QNG16474.1, sacCer_protein_NP_012419.1, CBS138_protein_XP_446739.1, BG2_protein_QNG14072.1
+OG0000016	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_014333.1	sacCer_protein_NP_012143.2
+OG0000016	N0	n4	1.0	Non-Terminal	sacCer_protein_NP_012968.4, CBS138_protein_XP_448915.1, BG2_protein_QNG16474.1	sacCer_protein_NP_012419.1, CBS138_protein_XP_446739.1, BG2_protein_QNG14072.1
+OG0000017	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010025.1, sacCer_protein_NP_014464.3, sacCer_protein_NP_010024.1, sacCer_protein_NP_012313.1, sacCer_protein_NP_012095.1, sacCer_protein_NP_010023.1, sacCer_protein_NP_009536.1	sacCer_protein_NP_014463.1
+OG0000017	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010025.1, sacCer_protein_NP_014464.3, sacCer_protein_NP_010024.1, sacCer_protein_NP_012313.1, sacCer_protein_NP_012095.1, sacCer_protein_NP_010023.1	sacCer_protein_NP_009536.1
+OG0000017	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_010025.1, sacCer_protein_NP_014464.3, sacCer_protein_NP_010024.1, sacCer_protein_NP_012313.1, sacCer_protein_NP_012095.1	sacCer_protein_NP_010023.1
+OG0000017	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_010025.1, sacCer_protein_NP_014464.3, sacCer_protein_NP_010024.1	sacCer_protein_NP_012313.1, sacCer_protein_NP_012095.1
+OG0000017	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_010025.1, sacCer_protein_NP_014464.3	sacCer_protein_NP_010024.1
+OG0000017	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_010025.1	sacCer_protein_NP_014464.3
+OG0000017	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_012313.1	sacCer_protein_NP_012095.1
+OG0000018	N1	n1	1.0	Non-Terminal	CBS138_protein_XP_449187.1, BG2_protein_QNG16542.1, CBS138_protein_XP_448689.1, BG2_protein_QNG15861.1, CBS138_protein_XP_447339.1, BG2_protein_QNG16033.1	BG2_protein_QNG16058.1, CBS138_protein_XP_447364.1
+OG0000018	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_449187.1, BG2_protein_QNG16542.1	CBS138_protein_XP_448689.1, BG2_protein_QNG15861.1, CBS138_protein_XP_447339.1, BG2_protein_QNG16033.1
+OG0000018	N1	n4	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448689.1, BG2_protein_QNG15861.1	CBS138_protein_XP_447339.1, BG2_protein_QNG16033.1
+OG0000018	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_015154.1	sacCer_protein_NP_012049.1
+OG0000019	CBS138_protein	n0	1.0	Terminal	CBS138_protein_XP_444803.1	CBS138_protein_XP_444860.1, CBS138_protein_XP_444861.1, CBS138_protein_XP_444843.1, CBS138_protein_XP_444844.1, CBS138_protein_XP_444865.1, CBS138_protein_XP_444845.2, CBS138_protein_XP_447265.1, CBS138_protein_XP_445530.1, CBS138_protein_XP_445531.1
+OG0000019	CBS138_protein	n1	1.0	Terminal	CBS138_protein_XP_444860.1, CBS138_protein_XP_444861.1	CBS138_protein_XP_444843.1, CBS138_protein_XP_444844.1, CBS138_protein_XP_444865.1, CBS138_protein_XP_444845.2, CBS138_protein_XP_447265.1, CBS138_protein_XP_445530.1, CBS138_protein_XP_445531.1
+OG0000019	CBS138_protein	n2	1.0	Terminal	CBS138_protein_XP_444860.1	CBS138_protein_XP_444861.1
+OG0000019	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_444843.1	CBS138_protein_XP_444844.1, CBS138_protein_XP_444865.1, CBS138_protein_XP_444845.2, CBS138_protein_XP_447265.1, CBS138_protein_XP_445530.1, CBS138_protein_XP_445531.1
+OG0000019	CBS138_protein	n4	1.0	Terminal	CBS138_protein_XP_444844.1, CBS138_protein_XP_444865.1, CBS138_protein_XP_444845.2	CBS138_protein_XP_447265.1, CBS138_protein_XP_445530.1, CBS138_protein_XP_445531.1
+OG0000019	CBS138_protein	n5	1.0	Terminal	CBS138_protein_XP_444844.1, CBS138_protein_XP_444865.1	CBS138_protein_XP_444845.2
+OG0000019	CBS138_protein	n6	1.0	Terminal	CBS138_protein_XP_444844.1	CBS138_protein_XP_444865.1
+OG0000019	CBS138_protein	n7	1.0	Terminal	CBS138_protein_XP_447265.1	CBS138_protein_XP_445530.1, CBS138_protein_XP_445531.1
+OG0000019	CBS138_protein	n8	1.0	Terminal	CBS138_protein_XP_445530.1	CBS138_protein_XP_445531.1
+OG0000020	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_014486.1	sacCer_protein_NP_012316.1, sacCer_protein_NP_010629.3, sacCer_protein_NP_010630.1, sacCer_protein_NP_012321.1, sacCer_protein_NP_013182.1, sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1, sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012316.1	sacCer_protein_NP_010629.3, sacCer_protein_NP_010630.1, sacCer_protein_NP_012321.1, sacCer_protein_NP_013182.1, sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1, sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010629.3, sacCer_protein_NP_010630.1	sacCer_protein_NP_012321.1, sacCer_protein_NP_013182.1, sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1, sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_010629.3	sacCer_protein_NP_010630.1
+OG0000020	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012321.1	sacCer_protein_NP_013182.1, sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1, sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_013182.1	sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1, sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_012692.3, sacCer_protein_NP_010036.1	sacCer_protein_NP_014470.1, sacCer_protein_NP_010845.1
+OG0000020	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_012692.3	sacCer_protein_NP_010036.1
+OG0000020	sacCer_protein	n8	1.0	Terminal	sacCer_protein_NP_014470.1	sacCer_protein_NP_010845.1
+OG0000021	N0	n0	1.0	Non-Terminal	BG2_protein_QNG12521.1, CBS138_protein_XP_445184.1, sacCer_protein_NP_013275.1	sacCer_protein_NP_010217.1, CBS138_protein_XP_445447.1, BG2_protein_QNG12792.1, CBS138_protein_XP_446953.1, BG2_protein_QNG14288.1, sacCer_protein_NP_014389.3
+OG0000021	N0	n3	1.0	Non-Terminal	sacCer_protein_NP_010217.1, CBS138_protein_XP_445447.1, BG2_protein_QNG12792.1	CBS138_protein_XP_446953.1, BG2_protein_QNG14288.1, sacCer_protein_NP_014389.3
+OG0000022	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010981.3	sacCer_protein_NP_010982.1, sacCer_protein_NP_010976.1
+OG0000022	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010982.1	sacCer_protein_NP_010976.1
+OG0000022	N1	n3	1.0	Non-Terminal	CBS138_protein_XP_445191.1, BG2_protein_QNG12529.1, CBS138_protein_XP_448803.1, BG2_protein_QNG14616.1	BG2_protein_QNG14994.1, CBS138_protein_XP_447832.1
+OG0000022	N1	n4	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445191.1, BG2_protein_QNG12529.1	CBS138_protein_XP_448803.1, BG2_protein_QNG14616.1
+OG0000023	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448224.1, BG2_protein_QNG15385.1, sacCer_protein_NP_013719.1	sacCer_protein_NP_014632.1, BG2_protein_QNG13141.1, CBS138_protein_XP_445790.1, BG2_protein_QNG15386.1, CBS138_protein_XP_448225.1, sacCer_protein_NP_013721.1
+OG0000023	N0	n3	1.0	Non-Terminal	sacCer_protein_NP_014632.1, BG2_protein_QNG13141.1, CBS138_protein_XP_445790.1	BG2_protein_QNG15386.1, CBS138_protein_XP_448225.1, sacCer_protein_NP_013721.1
+OG0000024	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15568.1, CBS138_protein_XP_448401.1, BG2_protein_QNG13744.1, CBS138_protein_XP_446406.1, sacCer_protein_NP_013446.1, sacCer_protein_NP_011546.3	sacCer_protein_NP_014036.1, BG2_protein_QNG17312.1, CBS138_protein_XP_449945.1
+OG0000024	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15568.1, CBS138_protein_XP_448401.1	BG2_protein_QNG13744.1, CBS138_protein_XP_446406.1
+OG0000024	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_013446.1	sacCer_protein_NP_011546.3
+OG0000025	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013473.1, BG2_protein_QNG13910.1, CBS138_protein_XP_446574.1	BG2_protein_QNG16084.1, CBS138_protein_XP_447392.1, CBS138_protein_XP_447319.1, BG2_protein_QNG16013.1, sacCer_protein_NP_010884.1, sacCer_protein_NP_012579.1
+OG0000025	N1	n4	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16084.1, CBS138_protein_XP_447392.1	CBS138_protein_XP_447319.1, BG2_protein_QNG16013.1
+OG0000025	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_010884.1	sacCer_protein_NP_012579.1
+OG0000026	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_058136.1	sacCer_protein_NP_012083.1, sacCer_protein_NP_013028.1, sacCer_protein_NP_878091.3, sacCer_protein_NP_116576.1, sacCer_protein_NP_009335.1, sacCer_protein_NP_009424.1, sacCer_protein_NP_012081.1, sacCer_protein_NP_009338.1
+OG0000026	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012083.1	sacCer_protein_NP_013028.1, sacCer_protein_NP_878091.3, sacCer_protein_NP_116576.1, sacCer_protein_NP_009335.1, sacCer_protein_NP_009424.1, sacCer_protein_NP_012081.1, sacCer_protein_NP_009338.1
+OG0000026	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013028.1	sacCer_protein_NP_878091.3, sacCer_protein_NP_116576.1, sacCer_protein_NP_009335.1, sacCer_protein_NP_009424.1, sacCer_protein_NP_012081.1, sacCer_protein_NP_009338.1
+OG0000026	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_878091.3, sacCer_protein_NP_116576.1, sacCer_protein_NP_009335.1	sacCer_protein_NP_009424.1, sacCer_protein_NP_012081.1, sacCer_protein_NP_009338.1
+OG0000026	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_878091.3, sacCer_protein_NP_116576.1	sacCer_protein_NP_009335.1
+OG0000026	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_878091.3	sacCer_protein_NP_116576.1
+OG0000026	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_009424.1	sacCer_protein_NP_012081.1, sacCer_protein_NP_009338.1
+OG0000026	sacCer_protein	n7	1.0	Terminal	sacCer_protein_NP_012081.1	sacCer_protein_NP_009338.1
+OG0000027	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_446765.1, BG2_protein_QNG14100.1, sacCer_protein_NP_011713.1	sacCer_protein_NP_012549.3, CBS138_protein_XP_445142.1, BG2_protein_QNG12479.1, BG2_protein_QNG12480.1, CBS138_protein_XP_445143.1
+OG0000027	N1	n4	1.0	Non-Terminal	CBS138_protein_XP_445142.1, BG2_protein_QNG12479.1	BG2_protein_QNG12480.1, CBS138_protein_XP_445143.1
+OG0000028	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013029.3, sacCer_protein_NP_011828.1, CBS138_protein_XP_445860.1, BG2_protein_QNG13208.1	CBS138_protein_XP_445319.1, BG2_protein_QNG12656.1, sacCer_protein_NP_013052.1, sacCer_protein_NP_013030.1
+OG0000028	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013029.3	sacCer_protein_NP_011828.1
+OG0000028	sacCer_protein	n6	1.0	Terminal	sacCer_protein_NP_013052.1	sacCer_protein_NP_013030.1
+OG0000029	N0	n0	0.6666666666666666	Non-Terminal	sacCer_protein_NP_009564.1, BG2_protein_QNG14571.1, BG2_protein_QNG12687.1	sacCer_protein_NP_014367.1, BG2_protein_QNG16999.1, CBS138_protein_XP_445354.1, CBS138_protein_XP_449637.1, CBS138_protein_XP_447226.1
+OG0000029	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG14571.1	BG2_protein_QNG12687.1
+OG0000029	CBS138_protein	n5	1.0	Terminal	CBS138_protein_XP_445354.1	CBS138_protein_XP_449637.1, CBS138_protein_XP_447226.1
+OG0000029	CBS138_protein	n6	1.0	Terminal	CBS138_protein_XP_449637.1	CBS138_protein_XP_447226.1
+OG0000030	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014368.1	sacCer_protein_NP_009563.1
+OG0000030	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_445355.1, BG2_protein_QNG17000.1, BG2_protein_QNG14570.1	BG2_protein_QNG12688.1, CBS138_protein_XP_447225.1, CBS138_protein_XP_449638.1
+OG0000030	BG2_protein	n4	1.0	Terminal	BG2_protein_QNG17000.1	BG2_protein_QNG14570.1
+OG0000030	CBS138_protein	n6	1.0	Terminal	CBS138_protein_XP_447225.1	CBS138_protein_XP_449638.1
+OG0000031	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014038.1, BG2_protein_QNG13714.1, CBS138_protein_XP_446377.1, BG2_protein_QNG17313.1, CBS138_protein_XP_449946.1	CBS138_protein_XP_446407.1, BG2_protein_QNG13745.1, sacCer_protein_NP_013447.1
+OG0000031	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13714.1, CBS138_protein_XP_446377.1	BG2_protein_QNG17313.1, CBS138_protein_XP_449946.1
+OG0000032	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015321.1, CBS138_protein_XP_449164.1, BG2_protein_QNG16519.1	sacCer_protein_NP_011600.3, BG2_protein_QNG13774.1, CBS138_protein_XP_446436.1, CBS138_protein_XP_446490.1, BG2_protein_QNG13828.1
+OG0000032	N1	n4	1.0	Non-Terminal	BG2_protein_QNG13774.1, CBS138_protein_XP_446436.1	CBS138_protein_XP_446490.1, BG2_protein_QNG13828.1
+OG0000033	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_444824.1, BG2_protein_QNG12157.1	CBS138_protein_XP_445420.1, BG2_protein_QNG14608.1
+OG0000033	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_015518.1	sacCer_protein_NP_013048.1, sacCer_protein_NP_013047.1
+OG0000033	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_013048.1	sacCer_protein_NP_013047.1
+OG0000034	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013591.1, CBS138_protein_XP_445072.1, BG2_protein_QNG12407.1	BG2_protein_QNG16835.1, CBS138_protein_XP_449477.1, sacCer_protein_NP_015023.1, sacCer_protein_NP_014006.1
+OG0000034	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_015023.1	sacCer_protein_NP_014006.1
+OG0000035	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010694.1, BG2_protein_QNG13430.1, CBS138_protein_XP_446088.1	CBS138_protein_XP_449421.1, BG2_protein_QNG16780.1, sacCer_protein_NP_014973.1, sacCer_protein_NP_014796.3
+OG0000035	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_014973.1	sacCer_protein_NP_014796.3
+OG0000036	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_446753.1, BG2_protein_QNG14086.1, sacCer_protein_NP_015121.1	CBS138_protein_XP_449711.1, BG2_protein_QNG17073.1, sacCer_protein_NP_012371.2, sacCer_protein_NP_012755.1
+OG0000036	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_012371.2	sacCer_protein_NP_012755.1
+OG0000037	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012483.3, CBS138_protein_XP_447731.1, BG2_protein_QNG14893.1	sacCer_protein_NP_012542.1, sacCer_protein_NP_011708.3, CBS138_protein_XP_446770.1, BG2_protein_QNG14105.1
+OG0000037	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012542.1	sacCer_protein_NP_011708.3
+OG0000038	N1	n1	1.0	Non-Terminal	BG2_protein_QNG14561.1, CBS138_protein_XP_447215.1	CBS138_protein_XP_447216.1, BG2_protein_QNG14560.1
+OG0000038	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_010927.1	sacCer_protein_NP_014653.1, sacCer_protein_NP_014652.1
+OG0000038	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_014653.1	sacCer_protein_NP_014652.1
+OG0000039	N1	n1	1.0	Non-Terminal	BG2_protein_QNG17076.1, CBS138_protein_XP_449714.1	CBS138_protein_XP_447519.1, BG2_protein_QNG14678.1, BG2_protein_QNG14679.1, CBS138_protein_XP_447520.1
+OG0000039	N1	n3	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447519.1, BG2_protein_QNG14678.1	BG2_protein_QNG14679.1, CBS138_protein_XP_447520.1
+OG0000040	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014032.1, sacCer_protein_NP_014555.1	sacCer_protein_NP_009703.3
+OG0000040	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014032.1	sacCer_protein_NP_014555.1
+OG0000040	N1	n3	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447774.1, BG2_protein_QNG14937.1	CBS138_protein_XP_447590.1, BG2_protein_QNG14750.1
+OG0000041	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448539.1, BG2_protein_QNG15709.1, sacCer_protein_NP_012257.1, sacCer_protein_NP_013974.1	sacCer_protein_NP_014962.3, CBS138_protein_XP_447677.1, BG2_protein_QNG14838.1
+OG0000041	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012257.1	sacCer_protein_NP_013974.1
+OG0000042	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15031.1, CBS138_protein_XP_447870.1, sacCer_protein_NP_014873.3	BG2_protein_QNG15038.1, CBS138_protein_XP_447877.1, sacCer_protein_NP_015186.1, sacCer_protein_NP_014872.1
+OG0000042	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_015186.1	sacCer_protein_NP_014872.1
+OG0000043	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013565.3, sacCer_protein_NP_010026.1	sacCer_protein_NP_014265.3
+OG0000043	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013565.3	sacCer_protein_NP_010026.1
+OG0000043	N1	n3	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15810.1, CBS138_protein_XP_448640.1	BG2_protein_QNG15505.1, CBS138_protein_XP_448339.1
+OG0000044	N1	n1	1.0	Non-Terminal	BG2_protein_QNG15720.1, CBS138_protein_XP_448550.1, CBS138_protein_XP_448549.1, BG2_protein_QNG15719.1	BG2_protein_QNG15718.1, CBS138_protein_XP_448548.1
+OG0000044	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15720.1, CBS138_protein_XP_448550.1	CBS138_protein_XP_448549.1, BG2_protein_QNG15719.1
+OG0000045	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013173.1, BG2_protein_QNG16695.1, CBS138_protein_XP_449340.1	CBS138_protein_XP_448771.1, BG2_protein_QNG15942.1, sacCer_protein_NP_116611.1, sacCer_protein_NP_013290.1
+OG0000045	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_116611.1	sacCer_protein_NP_013290.1
+OG0000046	N0	n0	1.0	Non-Terminal	BG2_protein_QNG16154.1, CBS138_protein_XP_447461.1, sacCer_protein_NP_010294.1	BG2_protein_QNG17028.1, CBS138_protein_XP_449665.1, sacCer_protein_NP_014468.3, sacCer_protein_NP_015267.1
+OG0000046	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_014468.3	sacCer_protein_NP_015267.1
+OG0000047	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16335.1, CBS138_protein_XP_449054.1	CBS138_protein_XP_449851.1, BG2_protein_QNG17219.1
+OG0000047	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_014442.1	sacCer_protein_NP_010013.2, sacCer_protein_NP_013211.1
+OG0000047	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_010013.2	sacCer_protein_NP_013211.1
+OG0000048	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015277.1, CBS138_protein_XP_449323.1, BG2_protein_QNG16678.1	BG2_protein_QNG16390.1, CBS138_protein_XP_448998.1, sacCer_protein_NP_012842.1, sacCer_protein_NP_011717.4
+OG0000048	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_012842.1	sacCer_protein_NP_011717.4
+OG0000049	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009315.1	sacCer_protein_NP_009327.1, sacCer_protein_NP_009324.1, sacCer_protein_NP_009316.1, sacCer_protein_NP_009317.1, sacCer_protein_NP_009318.1
+OG0000049	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009327.1, sacCer_protein_NP_009324.1	sacCer_protein_NP_009316.1, sacCer_protein_NP_009317.1, sacCer_protein_NP_009318.1
+OG0000049	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_009327.1	sacCer_protein_NP_009324.1
+OG0000049	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_009316.1	sacCer_protein_NP_009317.1, sacCer_protein_NP_009318.1
+OG0000049	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_009317.1	sacCer_protein_NP_009318.1
+OG0000050	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_012096.1	sacCer_protein_NP_012314.1, sacCer_protein_NP_011808.3, sacCer_protein_NP_009858.3, sacCer_protein_NP_012319.1, sacCer_protein_NP_011803.3, sacCer_protein_NP_014485.1
+OG0000050	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012314.1	sacCer_protein_NP_011808.3, sacCer_protein_NP_009858.3, sacCer_protein_NP_012319.1, sacCer_protein_NP_011803.3, sacCer_protein_NP_014485.1
+OG0000050	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011808.3, sacCer_protein_NP_009858.3, sacCer_protein_NP_012319.1, sacCer_protein_NP_011803.3	sacCer_protein_NP_014485.1
+OG0000050	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_011808.3, sacCer_protein_NP_009858.3, sacCer_protein_NP_012319.1	sacCer_protein_NP_011803.3
+OG0000050	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_011808.3, sacCer_protein_NP_009858.3	sacCer_protein_NP_012319.1
+OG0000050	sacCer_protein	n5	1.0	Terminal	sacCer_protein_NP_011808.3	sacCer_protein_NP_009858.3
+OG0000051	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_011959.1, BG2_protein_QNG12176.1, CBS138_protein_XP_444842.1	sacCer_protein_NP_010628.3, CBS138_protein_XP_444859.1, BG2_protein_QNG12193.1
+OG0000052	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010640.1, CBS138_protein_XP_447305.1, BG2_protein_QNG15999.1	sacCer_protein_NP_011974.1, BG2_protein_QNG12207.1, CBS138_protein_XP_444874.1
+OG0000053	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_444888.1, BG2_protein_QNG12221.1, sacCer_protein_NP_009707.3	sacCer_protein_NP_014763.1, BG2_protein_QNG15996.1, CBS138_protein_XP_447302.1
+OG0000054	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447489.1, BG2_protein_QNG14647.1	BG2_protein_QNG12296.1, CBS138_protein_XP_444962.1
+OG0000054	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_009486.3	sacCer_protein_NP_011024.1
+OG0000055	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011261.1	sacCer_protein_NP_116711.3
+OG0000055	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14472.1, CBS138_protein_XP_447127.1	CBS138_protein_XP_444978.1, BG2_protein_QNG12310.1
+OG0000056	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009868.3, sacCer_protein_NP_009866.1	sacCer_protein_NP_010020.1
+OG0000056	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009868.3	sacCer_protein_NP_009866.1
+OG0000056	CBS138_protein	n4	1.0	Terminal	CBS138_protein_XP_445025.1	CBS138_protein_XP_444981.1
+OG0000057	N0	n0	1.0	Non-Terminal	BG2_protein_QNG12350.1, CBS138_protein_XP_445016.1, sacCer_protein_NP_013278.1	sacCer_protein_NP_010793.2, BG2_protein_QNG15240.1, CBS138_protein_XP_448077.1
+OG0000058	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013281.1, CBS138_protein_XP_445018.1, BG2_protein_QNG12352.1	sacCer_protein_NP_010790.3, CBS138_protein_XP_448075.1, BG2_protein_QNG15238.1
+OG0000059	N0	n0	1.0	Non-Terminal	BG2_protein_QNG12388.1, CBS138_protein_XP_445053.1, sacCer_protein_NP_010407.1	BG2_protein_QNG17203.1, CBS138_protein_XP_449836.1, sacCer_protein_NP_013197.1
+OG0000060	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448802.1, BG2_protein_QNG14615.1, sacCer_protein_NP_009347.1	sacCer_protein_NP_013254.1, BG2_protein_QNG12424.1, CBS138_protein_XP_445089.1
+OG0000061	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_445094.1, BG2_protein_QNG12430.1, sacCer_protein_NP_013461.1	sacCer_protein_NP_011570.1, CBS138_protein_XP_448416.1, BG2_protein_QNG15583.1
+OG0000062	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448480.1, BG2_protein_QNG15648.1, sacCer_protein_NP_013880.1	BG2_protein_QNG12454.1, CBS138_protein_XP_445120.1, sacCer_protein_NP_013357.1
+OG0000063	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445150.1, BG2_protein_QNG12487.1	BG2_protein_QNG13833.1, CBS138_protein_XP_446495.1
+OG0000063	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_011606.3	sacCer_protein_NP_015436.1
+OG0000064	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_009580.1, BG2_protein_QNG12497.1, CBS138_protein_XP_445160.1	sacCer_protein_NP_009593.1, BG2_protein_QNG16151.1, CBS138_protein_XP_447458.1
+OG0000065	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010822.1	sacCer_protein_NP_015043.1, sacCer_protein_NP_014055.1, sacCer_protein_NP_015036.3
+OG0000065	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_015043.1	sacCer_protein_NP_014055.1, sacCer_protein_NP_015036.3
+OG0000065	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_014055.1	sacCer_protein_NP_015036.3
+OG0000066	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13648.1, CBS138_protein_XP_446310.1, sacCer_protein_NP_010499.1	sacCer_protein_NP_013329.1, BG2_protein_QNG12561.1, CBS138_protein_XP_445226.1
+OG0000067	N0	n0	1.0	Non-Terminal	BG2_protein_QNG12585.1, CBS138_protein_XP_445248.1, sacCer_protein_NP_009804.1	sacCer_protein_NP_014948.1, CBS138_protein_XP_447665.1, BG2_protein_QNG14826.1
+OG0000068	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_011039.1, BG2_protein_QNG13854.1, CBS138_protein_XP_446516.1	sacCer_protein_NP_009468.1, BG2_protein_QNG12593.1, CBS138_protein_XP_445257.1
+OG0000069	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014913.3, BG2_protein_QNG12643.1, CBS138_protein_XP_445306.1	sacCer_protein_NP_013770.1, BG2_protein_QNG13581.1, CBS138_protein_XP_446243.1
+OG0000070	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014446.3, CBS138_protein_XP_445328.1, BG2_protein_QNG12665.1	sacCer_protein_NP_010018.1, CBS138_protein_XP_445706.1, BG2_protein_QNG13057.1
+OG0000071	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009555.1	sacCer_protein_NP_010284.1
+OG0000071	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445364.1, BG2_protein_QNG12696.1	CBS138_protein_XP_449801.1, BG2_protein_QNG17164.1
+OG0000072	N1	n1	1.0	Non-Terminal	CBS138_protein_XP_448713.1, BG2_protein_QNG15886.1	CBS138_protein_XP_445367.1, BG2_protein_QNG12699.1
+OG0000072	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_010511.3	sacCer_protein_NP_009552.1
+OG0000073	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_449022.1, BG2_protein_QNG16367.1, sacCer_protein_NP_012405.2	sacCer_protein_NP_012643.3, BG2_protein_QNG12719.1, CBS138_protein_XP_445387.1
+OG0000074	N0	n0	1.0	Non-Terminal	BG2_protein_QNG12726.1, CBS138_protein_XP_445393.1, sacCer_protein_NP_009421.3	sacCer_protein_NP_010265.1, CBS138_protein_XP_448301.1, BG2_protein_QNG15466.1
+OG0000075	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_445397.1, BG2_protein_QNG12730.1, sacCer_protein_NP_014582.1	sacCer_protein_NP_010262.1, CBS138_protein_XP_448298.1, BG2_protein_QNG15463.1
+OG0000076	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13531.1, CBS138_protein_XP_446194.1, sacCer_protein_NP_013517.1	CBS138_protein_XP_445431.1, BG2_protein_QNG12776.1, sacCer_protein_NP_012734.1
+OG0000077	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015405.1	sacCer_protein_NP_009676.1
+OG0000077	BG2_protein	n3	1.0	Terminal	BG2_protein_QNG12811.1	BG2_protein_QNG15731.1
+OG0000077	CBS138_protein	n4	1.0	Terminal	CBS138_protein_XP_445466.1	CBS138_protein_XP_448561.1
+OG0000078	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_011318.2, CBS138_protein_XP_445493.1, BG2_protein_QNG12839.1	sacCer_protein_NP_011058.3, CBS138_protein_XP_448316.1, BG2_protein_QNG15481.1
+OG0000079	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_445558.1, BG2_protein_QNG12907.1, sacCer_protein_NP_013120.1	CBS138_protein_XP_445651.1, BG2_protein_QNG13002.1, sacCer_protein_NP_013089.1
+OG0000080	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_446861.1, BG2_protein_QNG14195.1, sacCer_protein_NP_010586.3	sacCer_protein_NP_011898.1, BG2_protein_QNG12934.1, CBS138_protein_XP_445585.1
+OG0000081	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12943.1, CBS138_protein_XP_445594.1	BG2_protein_QNG17271.1, CBS138_protein_XP_449905.1
+OG0000081	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_011910.1	sacCer_protein_NP_011909.1
+OG0000082	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012832.1, BG2_protein_QNG15327.1, CBS138_protein_XP_448166.1	sacCer_protein_NP_013796.1, BG2_protein_QNG12951.1, CBS138_protein_XP_445602.2
+OG0000083	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015464.1	sacCer_protein_NP_011636.3
+OG0000083	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445625.1, BG2_protein_QNG12976.1	BG2_protein_QNG14867.1, CBS138_protein_XP_447707.1
+OG0000084	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13032.1, CBS138_protein_XP_445680.1, sacCer_protein_NP_011466.1	BG2_protein_QNG13181.1, CBS138_protein_XP_445832.1, sacCer_protein_NP_011678.3
+OG0000085	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013407.1, CBS138_protein_XP_445684.1, BG2_protein_QNG13036.1	CBS138_protein_XP_446075.1, BG2_protein_QNG13417.1, sacCer_protein_NP_012335.1
+OG0000086	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015019.1, CBS138_protein_XP_445696.1, BG2_protein_QNG13047.1	sacCer_protein_NP_010996.2, CBS138_protein_XP_447844.1, BG2_protein_QNG15005.1
+OG0000087	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_449509.1, BG2_protein_QNG16869.1, sacCer_protein_NP_014100.2	BG2_protein_QNG13131.1, CBS138_protein_XP_445781.1, sacCer_protein_NP_014526.1
+OG0000088	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_445834.1, BG2_protein_QNG13183.1, sacCer_protein_NP_013086.1	CBS138_protein_XP_449053.1, BG2_protein_QNG16336.1, sacCer_protein_NP_010419.3
+OG0000089	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13237.1, CBS138_protein_XP_445889.1	CBS138_protein_XP_449424.1, BG2_protein_QNG16783.1
+OG0000089	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_009634.2	sacCer_protein_NP_010340.1
+OG0000090	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445905.1, BG2_protein_QNG13253.1	CBS138_protein_XP_446742.1, BG2_protein_QNG14075.1
+OG0000090	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_014332.1	sacCer_protein_NP_011368.3
+OG0000091	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13292.1, CBS138_protein_XP_445947.1	CBS138_protein_XP_447185.1, BG2_protein_QNG14530.1
+OG0000091	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_015103.1	sacCer_protein_NP_011376.3
+OG0000092	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_447182.1, BG2_protein_QNG14527.1, sacCer_protein_NP_013902.1	sacCer_protein_NP_015100.2, BG2_protein_QNG13295.1, CBS138_protein_XP_445950.1
+OG0000093	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13305.1, CBS138_protein_XP_445960.2, sacCer_protein_NP_012765.3	sacCer_protein_NP_011913.1, BG2_protein_QNG14888.1, CBS138_protein_XP_447726.1
+OG0000094	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012719.2, BG2_protein_QNG15412.1, CBS138_protein_XP_448247.1	sacCer_protein_NP_012600.1, BG2_protein_QNG13340.1, CBS138_protein_XP_445995.1
+OG0000095	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_009373.1, BG2_protein_QNG13973.1, CBS138_protein_XP_446637.1	sacCer_protein_NP_014971.1, CBS138_protein_XP_446003.1, BG2_protein_QNG13348.1
+OG0000096	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014966.1, CBS138_protein_XP_446007.1, BG2_protein_QNG13352.1	sacCer_protein_NP_009379.2, CBS138_protein_XP_448088.1, BG2_protein_QNG15250.1
+OG0000097	N0	n0	1.0	Non-Terminal	BG2_protein_QNG14409.1, CBS138_protein_XP_447067.1, sacCer_protein_NP_009385.2	sacCer_protein_NP_014597.1, CBS138_protein_XP_446013.1, BG2_protein_QNG13357.1
+OG0000098	N0	n0	1.0	Non-Terminal	BG2_protein_QNG14411.1, CBS138_protein_XP_447069.1, sacCer_protein_NP_009387.1	sacCer_protein_NP_014599.1, BG2_protein_QNG13360.1, CBS138_protein_XP_446016.1
+OG0000099	N0	n0	1.0	Non-Terminal	BG2_protein_QNG16764.1, CBS138_protein_XP_449405.1, sacCer_protein_NP_010613.1	CBS138_protein_XP_446112.1, BG2_protein_QNG13455.1, sacCer_protein_NP_011948.1
+OG0000100	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014000.1, BG2_protein_QNG13460.1, CBS138_protein_XP_446118.1	BG2_protein_QNG15159.1, CBS138_protein_XP_447996.1, sacCer_protein_NP_013598.1
+OG0000101	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_447998.1, BG2_protein_QNG15161.1, sacCer_protein_NP_014467.3	sacCer_protein_NP_014002.1, CBS138_protein_XP_446120.1, BG2_protein_QNG13462.1
+OG0000102	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015149.1, CBS138_protein_XP_446125.1, BG2_protein_QNG13466.1	CBS138_protein_XP_448611.1, BG2_protein_QNG15781.1, sacCer_protein_NP_014899.1
+OG0000103	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15850.1, CBS138_protein_XP_448679.1, sacCer_protein_NP_116670.1	CBS138_protein_XP_446176.1, BG2_protein_QNG13513.1, sacCer_protein_NP_013359.1
+OG0000104	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011659.3	sacCer_protein_NP_015485.1
+OG0000104	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447683.1, BG2_protein_QNG14844.1	BG2_protein_QNG13520.1, CBS138_protein_XP_446183.1
+OG0000105	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448992.1, BG2_protein_QNG16396.1	CBS138_protein_XP_446242.1, BG2_protein_QNG13580.1
+OG0000105	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012851.1	sacCer_protein_NP_013769.1
+OG0000106	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011453.1	sacCer_protein_NP_009777.1
+OG0000106	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13609.1, CBS138_protein_XP_446270.1	BG2_protein_QNG15687.1, CBS138_protein_XP_448518.1
+OG0000107	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13654.1, CBS138_protein_XP_446316.1, sacCer_protein_NP_011754.3	BG2_protein_QNG16036.1, CBS138_protein_XP_447342.1, sacCer_protein_NP_012028.1
+OG0000108	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_011757.3, BG2_protein_QNG13657.1, CBS138_protein_XP_446319.1	sacCer_protein_NP_012031.1, CBS138_protein_XP_447345.1, BG2_protein_QNG16039.1
+OG0000109	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13666.1, CBS138_protein_XP_446328.1	BG2_protein_QNG16054.1, CBS138_protein_XP_447360.1
+OG0000109	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_011770.3	sacCer_protein_NP_012044.1
+OG0000110	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011795.1	sacCer_protein_NP_014035.1
+OG0000110	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446378.1, BG2_protein_QNG13716.1	BG2_protein_QNG17311.1, CBS138_protein_XP_449944.1
+OG0000111	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448470.1, BG2_protein_QNG15637.1, sacCer_protein_NP_014724.1	sacCer_protein_NP_013015.1, BG2_protein_QNG13803.1, CBS138_protein_XP_446465.1
+OG0000112	N0	n0	1.0	Non-Terminal	BG2_protein_QNG14425.1, CBS138_protein_XP_447083.1, sacCer_protein_NP_012115.1	BG2_protein_QNG13811.1, CBS138_protein_XP_446473.1, sacCer_protein_NP_013022.1
+OG0000113	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13842.1, CBS138_protein_XP_446504.1, sacCer_protein_NP_012943.1	sacCer_protein_NP_012453.1, CBS138_protein_XP_449485.1, BG2_protein_QNG16843.1
+OG0000114	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014751.1	sacCer_protein_NP_014295.1
+OG0000114	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13987.1, CBS138_protein_XP_446653.1	CBS138_protein_XP_446566.1, BG2_protein_QNG13902.1
+OG0000115	N0	n0	1.0	Non-Terminal	BG2_protein_QNG13966.1, CBS138_protein_XP_446629.1, sacCer_protein_NP_012003.1	BG2_protein_QNG15125.1, CBS138_protein_XP_447964.1, sacCer_protein_NP_014245.1
+OG0000116	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_446643.1, BG2_protein_QNG13978.1, sacCer_protein_NP_014304.1	BG2_protein_QNG16456.1, CBS138_protein_XP_448934.1, sacCer_protein_NP_014735.1
+OG0000117	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013684.1	sacCer_protein_NP_010741.1
+OG0000117	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448495.1, BG2_protein_QNG15663.1	CBS138_protein_XP_446677.1, BG2_protein_QNG14009.1
+OG0000118	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_446714.1, BG2_protein_QNG14048.1, sacCer_protein_NP_010378.1	sacCer_protein_NP_011093.3, CBS138_protein_XP_449281.1, BG2_protein_QNG16638.1
+OG0000119	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_446731.1, BG2_protein_QNG14065.1	CBS138_protein_XP_449349.1, BG2_protein_QNG16705.1, BG2_protein_QNG17325.1, CBS138_protein_XP_449958.1
+OG0000119	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_449349.1, BG2_protein_QNG16705.1	BG2_protein_QNG17325.1, CBS138_protein_XP_449958.1
+OG0000120	N0	n0	1.0	Non-Terminal	BG2_protein_QNG14076.1, CBS138_protein_XP_446743.1, sacCer_protein_NP_012140.1	sacCer_protein_NP_014933.3, BG2_protein_QNG16917.1, CBS138_protein_XP_449556.1
+OG0000121	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013403.1	sacCer_protein_NP_014833.3
+OG0000121	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447274.1, BG2_protein_QNG15968.1	CBS138_protein_XP_446773.1, BG2_protein_QNG14108.1
+OG0000122	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012595.1, BG2_protein_QNG14212.1, CBS138_protein_XP_446877.1	sacCer_protein_NP_012721.1, BG2_protein_QNG14541.1, CBS138_protein_XP_447196.1
+OG0000123	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_447197.1, BG2_protein_QNG14542.1, sacCer_protein_NP_012723.3	sacCer_protein_NP_012593.3, BG2_protein_QNG14214.1, CBS138_protein_XP_446879.1
+OG0000124	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_447029.1, BG2_protein_QNG14370.1, sacCer_protein_NP_015251.1	sacCer_protein_NP_010966.1, BG2_protein_QNG14985.1, CBS138_protein_XP_447823.1
+OG0000125	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16992.1, CBS138_protein_XP_449630.1	BG2_protein_QNG14376.1, CBS138_protein_XP_447035.1
+OG0000125	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_015244.1	sacCer_protein_NP_009748.3
+OG0000126	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009740.3	sacCer_protein_NP_015235.1
+OG0000126	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16983.1, CBS138_protein_XP_449621.1	BG2_protein_QNG14382.1, CBS138_protein_XP_447041.1
+OG0000127	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010763.2, BG2_protein_QNG17097.1, CBS138_protein_XP_449735.1	sacCer_protein_NP_014662.1, BG2_protein_QNG14502.1, CBS138_protein_XP_447158.1
+OG0000128	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010933.1, BG2_protein_QNG14553.1, CBS138_protein_XP_447208.1	sacCer_protein_NP_013807.1, CBS138_protein_XP_447770.1, BG2_protein_QNG14933.1
+OG0000129	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010316.1	sacCer_protein_NP_009610.1
+OG0000129	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448732.1, BG2_protein_QNG15904.1	CBS138_protein_XP_447235.1, BG2_protein_QNG14580.1
+OG0000130	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015299.1, CBS138_protein_XP_447483.1, BG2_protein_QNG14641.1	CBS138_protein_XP_448705.1, BG2_protein_QNG15878.1, sacCer_protein_NP_010533.1
+OG0000131	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015067.1, CBS138_protein_XP_447504.1, BG2_protein_QNG14662.1	sacCer_protein_NP_013926.1, CBS138_protein_XP_449230.1, BG2_protein_QNG16587.1
+OG0000132	N0	n0	1.0	Non-Terminal	BG2_protein_QNG17143.1, CBS138_protein_XP_449781.1, sacCer_protein_NP_009698.3	BG2_protein_QNG14753.1, CBS138_protein_XP_447593.1, sacCer_protein_NP_014560.1
+OG0000133	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_448783.1, BG2_protein_QNG15954.1	CBS138_protein_XP_447684.1, BG2_protein_QNG14845.1, CBS138_protein_XP_002999567.1, BG2_protein_QNG14946.1
+OG0000133	N1	n2	1.0	Non-Terminal	CBS138_protein_XP_447684.1, BG2_protein_QNG14845.1	CBS138_protein_XP_002999567.1, BG2_protein_QNG14946.1
+OG0000134	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_015184.1, CBS138_protein_XP_449456.1, BG2_protein_QNG16814.1	sacCer_protein_NP_014876.1, BG2_protein_QNG15034.1, CBS138_protein_XP_447873.1
+OG0000135	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_014880.3, BG2_protein_QNG15036.1, CBS138_protein_XP_447875.1	BG2_protein_QNG16811.1, CBS138_protein_XP_449452.1, sacCer_protein_NP_015180.1
+OG0000136	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_449460.1, BG2_protein_QNG16818.1, sacCer_protein_NP_015188.1	sacCer_protein_NP_014870.1, CBS138_protein_XP_447880.1, BG2_protein_QNG15041.1
+OG0000137	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010151.1, CBS138_protein_XP_448111.1, BG2_protein_QNG15273.1	sacCer_protein_NP_010099.1, CBS138_protein_XP_447985.1, BG2_protein_QNG15148.1
+OG0000138	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448898.1, BG2_protein_QNG16491.1, sacCer_protein_NP_014847.3	BG2_protein_QNG15169.1, CBS138_protein_XP_448006.1, sacCer_protein_NP_015206.1
+OG0000139	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448053.1, BG2_protein_QNG15216.1, sacCer_protein_NP_014142.1	BG2_protein_QNG16031.1, CBS138_protein_XP_447337.1, sacCer_protein_NP_012025.1
+OG0000140	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448064.1, BG2_protein_QNG15228.1, sacCer_protein_NP_010851.1	sacCer_protein_NP_014131.1, CBS138_protein_XP_448063.1, BG2_protein_QNG15227.1
+OG0000141	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448101.1, BG2_protein_QNG15263.1, sacCer_protein_NP_010087.1	sacCer_protein_NP_010143.1, CBS138_protein_XP_447417.1, BG2_protein_QNG16109.1
+OG0000142	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448103.1, BG2_protein_QNG15265.1, sacCer_protein_NP_010144.1	CBS138_protein_XP_447419.1, BG2_protein_QNG16111.1, sacCer_protein_NP_010089.1
+OG0000143	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012344.1	sacCer_protein_NP_009960.2
+OG0000143	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449129.1, BG2_protein_QNG16258.1	BG2_protein_QNG15418.1, CBS138_protein_XP_448253.1
+OG0000144	N0	n0	1.0	Non-Terminal	BG2_protein_QNG16777.1, CBS138_protein_XP_449418.1, sacCer_protein_NP_009640.1	sacCer_protein_NP_011720.3, BG2_protein_QNG15429.1, CBS138_protein_XP_448264.1
+OG0000145	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15510.1, CBS138_protein_XP_448344.1, sacCer_protein_NP_011860.1	CBS138_protein_XP_449791.1, BG2_protein_QNG17153.1, sacCer_protein_NP_012917.3
+OG0000146	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448545.1, BG2_protein_QNG15716.1, sacCer_protein_NP_013822.1	sacCer_protein_NP_012796.1, CBS138_protein_XP_448372.1, BG2_protein_QNG15538.1
+OG0000147	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_448373.1, BG2_protein_QNG15539.1, sacCer_protein_NP_013823.1	sacCer_protein_NP_012795.1, BG2_protein_QNG15717.1, CBS138_protein_XP_448546.1
+OG0000148	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012793.2, CBS138_protein_XP_448551.1, BG2_protein_QNG15721.1	sacCer_protein_NP_013827.1, BG2_protein_QNG15543.1, CBS138_protein_XP_448376.1
+OG0000149	N1	n1	1.0	Non-Terminal	CBS138_protein_XP_448425.1, BG2_protein_QNG15592.1	CBS138_protein_XP_002999595.1, BG2_protein_QNG16259.1
+OG0000149	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_012345.1	sacCer_protein_NP_013471.1
+OG0000150	N0	n0	1.0	Non-Terminal	BG2_protein_QNG15651.1, CBS138_protein_XP_448483.1, sacCer_protein_NP_013361.1	CBS138_protein_XP_448973.1, BG2_protein_QNG16416.1, sacCer_protein_NP_014814.1
+OG0000151	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_012401.1, BG2_protein_QNG16130.1, CBS138_protein_XP_447437.1	sacCer_protein_NP_012979.3, BG2_protein_QNG15751.1, CBS138_protein_XP_448581.1
+OG0000152	N0	n0	1.0	Non-Terminal	BG2_protein_QNG16692.1, CBS138_protein_XP_449337.1, sacCer_protein_NP_011991.1	BG2_protein_QNG15806.1, CBS138_protein_XP_448636.1, sacCer_protein_NP_014269.4
+OG0000153	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_447312.1, BG2_protein_QNG16006.1, sacCer_protein_NP_012585.1	sacCer_protein_NP_010867.3, CBS138_protein_XP_448824.1, BG2_protein_QNG16173.1
+OG0000154	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010898.1	sacCer_protein_NP_058137.1
+OG0000154	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_002999600.1, BG2_protein_QNG16849.1	BG2_protein_QNG16266.1, CBS138_protein_XP_449124.2
+OG0000155	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009936.1	sacCer_protein_NP_014399.3
+OG0000155	N1	n2	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16276.1, CBS138_protein_XP_449115.1	CBS138_protein_XP_449497.1, BG2_protein_QNG16857.1
+OG0000156	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_010417.3, BG2_protein_QNG16334.1, CBS138_protein_XP_449055.1	CBS138_protein_XP_449849.1, BG2_protein_QNG17217.1, sacCer_protein_NP_013209.1
+OG0000157	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449292.1, BG2_protein_QNG16649.1	CBS138_protein_XP_449048.1, BG2_protein_QNG16342.1
+OG0000157	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_010384.3	sacCer_protein_NP_011104.3
+OG0000158	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014815.3, sacCer_protein_NP_014805.3	sacCer_protein_NP_012700.1, sacCer_protein_NP_013368.1
+OG0000158	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014815.3	sacCer_protein_NP_014805.3
+OG0000158	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012700.1	sacCer_protein_NP_013368.1
+OG0000159	N0	n0	1.0	Non-Terminal	sacCer_protein_NP_013637.1, CBS138_protein_XP_449267.1, BG2_protein_QNG16624.1	sacCer_protein_NP_013554.3, BG2_protein_QNG16731.1, CBS138_protein_XP_449373.1
+OG0000160	N0	n0	1.0	Non-Terminal	CBS138_protein_XP_449666.1, BG2_protein_QNG17029.1, sacCer_protein_NP_015268.1	sacCer_protein_NP_009719.3, CBS138_protein_XP_449590.1, BG2_protein_QNG16952.1
+OG0000161	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012211.2	sacCer_protein_NP_010984.3
+OG0000161	N1	n2	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449848.1, BG2_protein_QNG17216.1	BG2_protein_QNG17251.1, CBS138_protein_XP_449883.1
+OG0000162	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_014458.1	sacCer_protein_NP_012702.1, sacCer_protein_NP_015026.1, sacCer_protein_NP_014489.2, sacCer_protein_NP_013315.1, sacCer_protein_NP_015029.1
+OG0000162	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012702.1, sacCer_protein_NP_015026.1	sacCer_protein_NP_014489.2, sacCer_protein_NP_013315.1, sacCer_protein_NP_015029.1
+OG0000162	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012702.1	sacCer_protein_NP_015026.1
+OG0000162	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_014489.2, sacCer_protein_NP_013315.1	sacCer_protein_NP_015029.1
+OG0000162	sacCer_protein	n4	1.0	Terminal	sacCer_protein_NP_014489.2	sacCer_protein_NP_013315.1
+OG0000163	N1	n0	1.0	Non-Terminal	BG2_protein_QNG12132.1, CBS138_protein_XP_446673.1	CBS138_protein_XP_022456058.1, BG2_protein_QNG12983.1, BG2_protein_QNG12133.1
+OG0000163	BG2_protein	n3	1.0	Terminal	BG2_protein_QNG12983.1	BG2_protein_QNG12133.1
+OG0000164	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG12160.1	BG2_protein_QNG12162.1
+OG0000164	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_002999511.1	CBS138_protein_XP_444828.1
+OG0000165	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12165.1, CBS138_protein_XP_444831.1	CBS138_protein_XP_445816.1, BG2_protein_QNG13167.1
+OG0000166	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_444872.1, BG2_protein_QNG12205.1	CBS138_protein_XP_449271.1, BG2_protein_QNG16628.1
+OG0000167	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_444875.1, BG2_protein_QNG12208.1	CBS138_protein_XP_447306.1, BG2_protein_QNG16000.1
+OG0000168	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16162.1, CBS138_protein_XP_447469.1	BG2_protein_QNG12288.1, CBS138_protein_XP_444954.1
+OG0000169	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009867.1	sacCer_protein_NP_009869.3
+OG0000169	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_445024.2	CBS138_protein_XP_444980.2
+OG0000170	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448415.1, BG2_protein_QNG15582.1	BG2_protein_QNG12431.1, CBS138_protein_XP_445095.2
+OG0000171	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445804.1, BG2_protein_QNG13155.1	BG2_protein_QNG12464.1, CBS138_protein_XP_445129.1
+OG0000172	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12498.1, CBS138_protein_XP_445161.1	BG2_protein_QNG16153.1, CBS138_protein_XP_447460.1
+OG0000173	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12509.1, CBS138_protein_XP_445172.1	CBS138_protein_XP_446565.1, BG2_protein_QNG13901.1
+OG0000174	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449793.1, BG2_protein_QNG17156.1	BG2_protein_QNG12512.1, CBS138_protein_XP_445175.2
+OG0000175	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12806.1, CBS138_protein_XP_445461.1	CBS138_protein_XP_445233.1, BG2_protein_QNG12569.1
+OG0000176	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12571.1, CBS138_protein_XP_445235.1	BG2_protein_QNG12807.1, CBS138_protein_XP_445462.1
+OG0000177	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009803.3	sacCer_protein_NP_012899.3, sacCer_protein_NP_012303.1
+OG0000177	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012899.3	sacCer_protein_NP_012303.1
+OG0000178	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009800.1, sacCer_protein_NP_009952.2	sacCer_protein_NP_011411.3
+OG0000178	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_009800.1	sacCer_protein_NP_009952.2
+OG0000179	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13472.1, CBS138_protein_XP_446131.1	BG2_protein_QNG12641.1, CBS138_protein_XP_445303.1
+OG0000180	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445316.1, BG2_protein_QNG12653.1	BG2_protein_QNG13202.1, CBS138_protein_XP_445854.1
+OG0000181	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445318.1, BG2_protein_QNG12655.1	CBS138_protein_XP_445856.1, BG2_protein_QNG13204.1
+OG0000182	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG12671.1, CBS138_protein_XP_445334.1	CBS138_protein_XP_445712.1, BG2_protein_QNG13063.1
+OG0000183	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448302.1, BG2_protein_QNG15467.1	BG2_protein_QNG12725.1, CBS138_protein_XP_445392.1
+OG0000184	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014586.1	sacCer_protein_NP_015065.1, sacCer_protein_NP_015446.2
+OG0000184	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_015065.1	sacCer_protein_NP_015446.2
+OG0000185	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15453.1, CBS138_protein_XP_448288.1	BG2_protein_QNG12740.1, CBS138_protein_XP_445407.1
+OG0000186	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14165.1, CBS138_protein_XP_446832.1	CBS138_protein_XP_448791.1, BG2_protein_QNG12762.1
+OG0000187	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445459.1, BG2_protein_QNG12804.1	BG2_protein_QNG14353.1, CBS138_protein_XP_447012.1
+OG0000188	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447904.1, BG2_protein_QNG15065.1	CBS138_protein_XP_445496.1, BG2_protein_QNG12843.1
+OG0000189	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445653.1, BG2_protein_QNG13004.1	CBS138_protein_XP_445557.1, BG2_protein_QNG12906.1
+OG0000190	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445618.1, BG2_protein_QNG12968.1	BG2_protein_QNG16034.1, CBS138_protein_XP_447340.1
+OG0000191	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449534.1, BG2_protein_QNG16894.1	BG2_protein_QNG13098.1, CBS138_protein_XP_445747.1
+OG0000192	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449511.1, BG2_protein_QNG16871.1	CBS138_protein_XP_445774.1, BG2_protein_QNG13124.1
+OG0000193	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445795.1, BG2_protein_QNG13146.1	CBS138_protein_XP_448220.1, BG2_protein_QNG15381.1
+OG0000194	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446533.1, BG2_protein_QNG13871.1	BG2_protein_QNG13195.1, CBS138_protein_XP_445846.1
+OG0000195	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447160.1, BG2_protein_QNG14504.1	CBS138_protein_XP_445868.1, BG2_protein_QNG13216.1
+OG0000196	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449422.1, BG2_protein_QNG16781.1	CBS138_protein_XP_445890.1, BG2_protein_QNG13238.1
+OG0000197	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010344.1, sacCer_protein_NP_014984.3	sacCer_protein_NP_009638.1
+OG0000197	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010344.1	sacCer_protein_NP_014984.3
+OG0000198	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13264.1, CBS138_protein_XP_445918.1	BG2_protein_QNG13261.1, CBS138_protein_XP_445913.1
+OG0000199	CBS138_protein	n2	1.0	Terminal	CBS138_protein_XP_445916.1	CBS138_protein_XP_445914.1, CBS138_protein_XP_445915.1
+OG0000199	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_445914.1	CBS138_protein_XP_445915.1
+OG0000200	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_445932.1, BG2_protein_QNG13278.1	CBS138_protein_XP_449865.1, BG2_protein_QNG17234.1
+OG0000201	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13359.1, CBS138_protein_XP_446015.1	CBS138_protein_XP_447068.1, BG2_protein_QNG14410.1
+OG0000202	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446064.1, BG2_protein_QNG13406.1	CBS138_protein_XP_449151.1, BG2_protein_QNG16506.1
+OG0000203	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447006.1, BG2_protein_QNG14347.1	CBS138_protein_XP_446110.1, BG2_protein_QNG13452.1
+OG0000204	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446282.1, BG2_protein_QNG13620.1	CBS138_protein_XP_446288.1, BG2_protein_QNG13626.1
+OG0000205	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13636.1, CBS138_protein_XP_446298.1	CBS138_protein_XP_446297.1, BG2_protein_QNG13635.1
+OG0000206	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446368.1, BG2_protein_QNG13705.1	BG2_protein_QNG16710.1, CBS138_protein_XP_449352.1
+OG0000207	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13785.1, CBS138_protein_XP_446447.1	CBS138_protein_XP_449212.1, BG2_protein_QNG16569.1
+OG0000208	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG13814.1, CBS138_protein_XP_446476.1	BG2_protein_QNG15015.1, CBS138_protein_XP_447853.1
+OG0000209	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446994.1, BG2_protein_QNG14334.1	CBS138_protein_XP_446521.1, BG2_protein_QNG13859.1
+OG0000210	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447575.1, BG2_protein_QNG14735.1	CBS138_protein_XP_446560.1, BG2_protein_QNG13896.1
+OG0000211	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447544.1, BG2_protein_QNG14704.1	BG2_protein_QNG13924.1, CBS138_protein_XP_446588.1
+OG0000212	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_446808.1, BG2_protein_QNG14142.1	CBS138_protein_XP_446791.1, BG2_protein_QNG14126.1
+OG0000213	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449227.1, BG2_protein_QNG16584.1	BG2_protein_QNG14162.1, CBS138_protein_XP_446828.1
+OG0000214	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14234.1, CBS138_protein_XP_446899.1	BG2_protein_QNG15150.1, CBS138_protein_XP_447987.1
+OG0000215	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011438.1	sacCer_protein_NP_010071.1, sacCer_protein_NP_014454.3
+OG0000215	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010071.1	sacCer_protein_NP_014454.3
+OG0000216	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16116.1, CBS138_protein_XP_447425.1	BG2_protein_QNG14351.1, CBS138_protein_XP_447010.1
+OG0000217	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448016.1, BG2_protein_QNG15179.1	BG2_protein_QNG14399.1, CBS138_protein_XP_447057.1
+OG0000218	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14400.1, CBS138_protein_XP_447058.1	CBS138_protein_XP_447059.1, BG2_protein_QNG14401.1
+OG0000219	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447094.1, BG2_protein_QNG14438.1	CBS138_protein_XP_449955.1, BG2_protein_QNG17322.1
+OG0000220	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010956.1, sacCer_protein_NP_010957.1	sacCer_protein_NP_011290.1
+OG0000220	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_010956.1	sacCer_protein_NP_010957.1
+OG0000221	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14587.1, CBS138_protein_XP_447241.1	CBS138_protein_XP_448736.1, BG2_protein_QNG15908.1
+OG0000222	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14986.1, CBS138_protein_XP_447824.1	CBS138_protein_XP_448815.1, BG2_protein_QNG14628.1
+OG0000223	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14655.1, CBS138_protein_XP_447497.1	CBS138_protein_XP_449235.1, BG2_protein_QNG16592.1
+OG0000224	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447522.1, BG2_protein_QNG14681.1	CBS138_protein_XP_449709.1, BG2_protein_QNG17071.1
+OG0000225	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447641.1, BG2_protein_QNG14802.1	CBS138_protein_XP_447642.1, BG2_protein_QNG14803.1
+OG0000226	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG14831.1, CBS138_protein_XP_447670.1	CBS138_protein_XP_447669.1, BG2_protein_QNG14830.1
+OG0000227	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010404.1, sacCer_protein_NP_009852.3	sacCer_protein_NP_013806.1
+OG0000227	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_010404.1	sacCer_protein_NP_009852.3
+OG0000228	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_447786.1, BG2_protein_QNG14949.1	BG2_protein_QNG16128.1, CBS138_protein_XP_447436.1
+OG0000229	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448092.1, BG2_protein_QNG15254.1	BG2_protein_QNG16095.1, CBS138_protein_XP_447403.1
+OG0000230	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15507.1, CBS138_protein_XP_448341.1	BG2_protein_QNG17150.1, CBS138_protein_XP_449788.1
+OG0000231	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_448347.1, BG2_protein_QNG15513.1	BG2_protein_QNG17158.1, CBS138_protein_XP_449795.1
+OG0000232	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15593.1, CBS138_protein_XP_448426.1	CBS138_protein_XP_448424.1, BG2_protein_QNG15591.1
+OG0000233	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG15639.1, CBS138_protein_XP_448472.1	BG2_protein_QNG16004.1, CBS138_protein_XP_447310.1
+OG0000234	N1	n1	1.0	Non-Terminal	BG2_protein_QNG15655.1, CBS138_protein_XP_448971.1	BG2_protein_QNG16418.1, CBS138_protein_XP_448486.1
+OG0000235	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012818.1	sacCer_protein_NP_013802.1, sacCer_protein_NP_013801.1
+OG0000235	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_013802.1	sacCer_protein_NP_013801.1
+OG0000236	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013656.1	sacCer_protein_NP_012088.3, sacCer_protein_NP_013536.3
+OG0000236	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012088.3	sacCer_protein_NP_013536.3
+OG0000237	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010323.3	sacCer_protein_NP_010325.1, sacCer_protein_NP_010324.3
+OG0000237	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010325.1	sacCer_protein_NP_010324.3
+OG0000238	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16177.1, CBS138_protein_XP_448828.1	CBS138_protein_XP_447315.1, BG2_protein_QNG16009.1
+OG0000239	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG16011.1	BG2_protein_QNG16181.1
+OG0000239	CBS138_protein	n3	1.0	Terminal	CBS138_protein_XP_448832.1	CBS138_protein_XP_447317.1
+OG0000240	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16262.1, CBS138_protein_XP_449127.1	CBS138_protein_XP_449472.1, BG2_protein_QNG16830.1
+OG0000241	N1	n1	1.0	Non-Terminal: STRIDE	BG2_protein_QNG16686.1, CBS138_protein_XP_449331.1	BG2_protein_QNG16440.1, CBS138_protein_XP_448950.1
+OG0000242	N1	n1	1.0	Non-Terminal: STRIDE	CBS138_protein_XP_449913.1, BG2_protein_QNG17279.1	CBS138_protein_XP_449329.1, BG2_protein_QNG16684.1
+OG0000243	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013042.1	sacCer_protein_NP_012664.1, sacCer_protein_NP_013628.1
+OG0000243	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012664.1	sacCer_protein_NP_013628.1
+OG0000244	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013222.1	sacCer_protein_NP_013221.1, sacCer_protein_NP_010428.3
+OG0000244	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_013221.1	sacCer_protein_NP_010428.3
+OG0000245	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009311.2	sacCer_protein_NP_009308.2, sacCer_protein_NP_009310.1, sacCer_protein_NP_009309.1
+OG0000245	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009308.2	sacCer_protein_NP_009310.1, sacCer_protein_NP_009309.1
+OG0000245	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_009310.1	sacCer_protein_NP_009309.1
+OG0000246	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_058134.1	sacCer_protein_NP_012422.2, sacCer_protein_NP_001291944.1, sacCer_protein_NP_012421.2, sacCer_protein_NP_058133.1
+OG0000246	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012422.2	sacCer_protein_NP_001291944.1, sacCer_protein_NP_012421.2, sacCer_protein_NP_058133.1
+OG0000246	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_001291944.1	sacCer_protein_NP_012421.2, sacCer_protein_NP_058133.1
+OG0000246	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_012421.2	sacCer_protein_NP_058133.1
+OG0000247	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_009651.3	sacCer_protein_NP_010260.1, sacCer_protein_NP_009434.1, sacCer_protein_NP_012087.1, sacCer_protein_NP_009650.1
+OG0000247	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010260.1, sacCer_protein_NP_009434.1, sacCer_protein_NP_012087.1	sacCer_protein_NP_009650.1
+OG0000247	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010260.1	sacCer_protein_NP_009434.1, sacCer_protein_NP_012087.1
+OG0000247	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_009434.1	sacCer_protein_NP_012087.1
+OG0000248	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_015522.1	sacCer_protein_NP_011804.1, sacCer_protein_NP_009856.3, sacCer_protein_NP_116603.1, sacCer_protein_NP_013732.1
+OG0000248	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011804.1, sacCer_protein_NP_009856.3	sacCer_protein_NP_116603.1, sacCer_protein_NP_013732.1
+OG0000248	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011804.1	sacCer_protein_NP_009856.3
+OG0000248	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_116603.1	sacCer_protein_NP_013732.1
+OG0000249	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_010032.1	sacCer_protein_NP_014477.1, sacCer_protein_NP_012689.1, sacCer_protein_NP_014068.1, sacCer_protein_NP_010038.1
+OG0000249	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014477.1	sacCer_protein_NP_012689.1, sacCer_protein_NP_014068.1, sacCer_protein_NP_010038.1
+OG0000249	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012689.1	sacCer_protein_NP_014068.1, sacCer_protein_NP_010038.1
+OG0000249	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_014068.1	sacCer_protein_NP_010038.1
+OG0000250	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_878124.1	sacCer_protein_NP_878125.1, sacCer_protein_NP_757337.1, sacCer_protein_NP_757339.1, sacCer_protein_NP_757338.1
+OG0000250	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_878125.1	sacCer_protein_NP_757337.1, sacCer_protein_NP_757339.1, sacCer_protein_NP_757338.1
+OG0000250	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_757337.1	sacCer_protein_NP_757339.1, sacCer_protein_NP_757338.1
+OG0000250	sacCer_protein	n3	1.0	Terminal	sacCer_protein_NP_757339.1	sacCer_protein_NP_757338.1
+OG0000251	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009544.1	sacCer_protein_NP_011494.1
+OG0000252	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011502.1	sacCer_protein_NP_009548.1
+OG0000253	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011507.1	sacCer_protein_NP_015289.1
+OG0000254	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013432.1	sacCer_protein_NP_011524.1
+OG0000255	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_002999512.1, BG2_protein_QNG12161.1	BG2_protein_QNG12159.1, CBS138_protein_XP_002999510.1
+OG0000256	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011484.1	sacCer_protein_NP_011664.3
+OG0000257	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013730.1	sacCer_protein_NP_011523.3
+OG0000258	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014661.1	sacCer_protein_NP_116677.3
+OG0000259	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010645.1	sacCer_protein_NP_011976.1
+OG0000260	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014776.1	sacCer_protein_NP_010673.1
+OG0000261	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009526.1	sacCer_protein_NP_009641.1
+OG0000262	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013128.1	sacCer_protein_NP_013839.1
+OG0000263	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013129.1	sacCer_protein_NP_013840.1
+OG0000264	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011022.1	sacCer_protein_NP_009492.1
+OG0000265	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009481.1	sacCer_protein_NP_011028.1
+OG0000266	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009879.2	sacCer_protein_NP_010817.3
+OG0000267	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009880.2	sacCer_protein_NP_010819.1
+OG0000268	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_001032573.1	sacCer_protein_NP_878067.1
+OG0000269	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009893.2	sacCer_protein_NP_010803.3
+OG0000270	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013280.1	sacCer_protein_NP_013279.1
+OG0000271	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013284.1	sacCer_protein_NP_010789.1
+OG0000272	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013286.1	sacCer_protein_NP_010788.1
+OG0000273	BG2_protein	n2	1.0	Terminal	BG2_protein_QNG13053.1	BG2_protein_QNG12358.1
+OG0000274	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010392.1	sacCer_protein_NP_013184.1
+OG0000275	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013582.1	sacCer_protein_NP_013625.1
+OG0000276	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013581.1	sacCer_protein_NP_013623.1
+OG0000277	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013465.1	sacCer_protein_NP_014780.3
+OG0000278	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011555.3	sacCer_protein_NP_013457.1
+OG0000279	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014384.3	sacCer_protein_NP_013350.1
+OG0000280	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013349.1	sacCer_protein_NP_011357.1
+OG0000281	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010295.3	sacCer_protein_NP_009587.1
+OG0000282	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009577.1	sacCer_protein_NP_012294.3
+OG0000283	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014744.1	sacCer_protein_NP_014301.1
+OG0000284	N1	n0	1.0	Non-Terminal	BG2_protein_QNG13051.1, CBS138_protein_XP_445699.1	CBS138_protein_XP_445190.1, BG2_protein_QNG12528.1
+OG0000285	N1	n0	1.0	Non-Terminal	BG2_protein_QNG12555.1, CBS138_protein_XP_445221.1	BG2_protein_QNG12558.1, CBS138_protein_XP_445223.1
+OG0000286	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014254.1	sacCer_protein_NP_010749.3
+OG0000287	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009395.1	sacCer_protein_NP_014659.1
+OG0000288	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014816.2	sacCer_protein_NP_013372.1
+OG0000289	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014445.1	sacCer_protein_NP_010015.3
+OG0000290	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013911.1	sacCer_protein_NP_015084.1
+OG0000291	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013907.1	sacCer_protein_NP_015094.1
+OG0000292	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013510.3	sacCer_protein_NP_010208.1
+OG0000293	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_001335753.1	sacCer_protein_NP_015404.1
+OG0000294	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009675.3	sacCer_protein_NP_015399.1
+OG0000295	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012781.1	sacCer_protein_NP_013836.1
+OG0000296	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013046.2	sacCer_protein_NP_010031.1
+OG0000297	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012278.3	sacCer_protein_NP_013113.1
+OG0000298	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015044.1	sacCer_protein_NP_015035.1
+OG0000299	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015445.1	sacCer_protein_NP_011623.3
+OG0000300	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011693.1	sacCer_protein_NP_015022.3
+OG0000301	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013666.1	sacCer_protein_NP_012588.1
+OG0000302	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013410.1	sacCer_protein_NP_013411.1
+OG0000303	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013079.1	sacCer_protein_NP_013417.3
+OG0000304	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010435.1	sacCer_protein_NP_013237.1
+OG0000305	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014511.1	sacCer_protein_NP_116604.1
+OG0000306	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014092.1	sacCer_protein_NP_014513.1
+OG0000307	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014097.1	sacCer_protein_NP_014520.1
+OG0000308	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014098.1	sacCer_protein_NP_014521.1
+OG0000309	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014525.1	sacCer_protein_NP_013829.1
+OG0000310	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013055.1	sacCer_protein_NP_011830.1
+OG0000311	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011829.1	sacCer_protein_NP_013054.1
+OG0000312	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011816.2	sacCer_protein_NP_011823.1
+OG0000313	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010174.1	sacCer_protein_NP_011371.1
+OG0000314	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_116715.3	sacCer_protein_NP_014982.3
+OG0000315	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014983.1	sacCer_protein_NP_009368.2
+OG0000316	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011381.1	sacCer_protein_NP_015105.1
+OG0000317	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015096.1	sacCer_protein_NP_013905.1
+OG0000318	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015092.1	sacCer_protein_NP_013908.1
+OG0000319	N1	n0	1.0	Non-Terminal	BG2_protein_QNG13321.1, CBS138_protein_XP_445977.1	CBS138_protein_XP_447567.2, BG2_protein_QNG14727.1
+OG0000320	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012252.1	sacCer_protein_NP_014654.1
+OG0000321	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013162.1	sacCer_protein_NP_116619.1
+OG0000322	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015308.1	sacCer_protein_NP_116635.1
+OG0000323	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_116651.1	sacCer_protein_NP_015306.1
+OG0000324	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012337.1	sacCer_protein_NP_009966.2
+OG0000325	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010860.1	sacCer_protein_NP_010706.3
+OG0000326	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009642.3	sacCer_protein_NP_009523.1
+OG0000327	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009514.1	sacCer_protein_NP_012637.4
+OG0000328	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012131.1	sacCer_protein_NP_014325.3
+OG0000329	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015480.1	sacCer_protein_NP_011652.1
+OG0000330	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014823.3	sacCer_protein_NP_013386.1
+OG0000331	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010492.3	sacCer_protein_NP_013334.1
+OG0000332	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010463.1	sacCer_protein_NP_013265.1
+OG0000333	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_878063.3	sacCer_protein_NP_013748.1
+OG0000334	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013751.1	sacCer_protein_NP_012861.1
+OG0000335	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013762.1	sacCer_protein_NP_012855.1
+OG0000336	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012301.3	sacCer_protein_NP_012852.1
+OG0000337	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012830.1	sacCer_protein_NP_013798.1
+OG0000338	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013892.1	sacCer_protein_NP_013893.1
+OG0000339	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012679.3	sacCer_protein_NP_012073.1
+OG0000340	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009402.1	sacCer_protein_NP_011513.1
+OG0000341	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011537.1	sacCer_protein_NP_013436.1
+OG0000342	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013448.1	sacCer_protein_NP_011548.2
+OG0000343	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009679.2	sacCer_protein_NP_015406.1
+OG0000344	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011599.1	sacCer_protein_NP_015427.1
+OG0000345	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013002.3	sacCer_protein_NP_013977.1
+OG0000346	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013020.3	sacCer_protein_NP_012118.1
+OG0000347	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013021.1	sacCer_protein_NP_012117.3
+OG0000348	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014351.3	sacCer_protein_NP_012161.1
+OG0000349	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015440.1	sacCer_protein_NP_011611.1
+OG0000350	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011027.1	sacCer_protein_NP_009484.2
+OG0000351	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011042.3	sacCer_protein_NP_009466.1
+OG0000352	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009461.2	sacCer_protein_NP_011046.3
+OG0000353	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013045.1	sacCer_protein_NP_013104.1
+OG0000354	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012962.3	sacCer_protein_NP_012423.1
+OG0000355	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013475.1	sacCer_protein_NP_011584.2
+OG0000356	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014202.1	sacCer_protein_NP_010057.1
+OG0000357	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010055.1	sacCer_protein_NP_014195.1
+OG0000358	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014205.1	sacCer_protein_NP_010059.1
+OG0000359	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012010.1	sacCer_protein_NP_014237.2
+OG0000360	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_036194.1	sacCer_protein_NP_014242.1
+OG0000361	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014255.1	sacCer_protein_NP_011999.2
+OG0000362	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014303.3	sacCer_protein_NP_014739.1
+OG0000363	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013694.1	sacCer_protein_NP_010726.3
+OG0000364	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013686.1	sacCer_protein_NP_010738.1
+OG0000365	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013685.1	sacCer_protein_NP_010739.3
+OG0000366	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010746.1	sacCer_protein_NP_013679.1
+OG0000367	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011101.3	sacCer_protein_NP_010383.4
+OG0000368	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010471.1	sacCer_protein_NP_013269.1
+OG0000369	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012145.1	sacCer_protein_NP_012146.1
+OG0000370	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015126.1	sacCer_protein_NP_011439.1
+OG0000371	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014825.3	sacCer_protein_NP_013390.1
+OG0000372	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010810.1	sacCer_protein_NP_009882.1
+OG0000373	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013980.1	sacCer_protein_NP_015059.1
+OG0000374	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012984.2	sacCer_protein_NP_012398.1
+OG0000375	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012459.1	sacCer_protein_NP_012935.3
+OG0000376	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012465.3	sacCer_protein_NP_009843.3
+OG0000377	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015137.1	sacCer_protein_NP_011426.1
+OG0000378	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011431.1	sacCer_protein_NP_015135.1
+OG0000379	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009931.1	sacCer_protein_NP_014398.1
+OG0000380	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013630.1	sacCer_protein_NP_012661.3
+OG0000381	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010235.1	sacCer_protein_NP_013479.3
+OG0000382	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015238.1	sacCer_protein_NP_009742.1
+OG0000383	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015236.1	sacCer_protein_NP_009741.3
+OG0000384	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009731.4	sacCer_protein_NP_015220.1
+OG0000385	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010771.1	sacCer_protein_NP_015272.1
+OG0000386	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014676.1	sacCer_protein_NP_010549.3
+OG0000387	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015368.1	sacCer_protein_NP_012628.3
+OG0000388	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015104.1	sacCer_protein_NP_011380.3
+OG0000389	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011382.1	sacCer_protein_NP_015108.1
+OG0000390	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015020.3	sacCer_protein_NP_009339.1
+OG0000391	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009340.1	sacCer_protein_NP_009341.2
+OG0000392	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012228.1	sacCer_protein_NP_010964.3
+OG0000393	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011025.3	sacCer_protein_NP_009485.3
+OG0000394	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014411.3	sacCer_protein_NP_013933.1
+OG0000395	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012377.1	sacCer_protein_NP_012375.2
+OG0000396	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010362.3	sacCer_protein_NP_011077.1
+OG0000397	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010785.1	sacCer_protein_NP_014538.2
+OG0000398	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009708.1	sacCer_protein_NP_014552.1
+OG0000399	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011879.1	sacCer_protein_NP_116678.1
+OG0000400	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012477.1	sacCer_protein_NP_009829.2
+OG0000401	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012487.1	sacCer_protein_NP_009832.1
+OG0000402	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011657.1	sacCer_protein_NP_015483.1
+OG0000403	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015482.1	sacCer_protein_NP_011654.1
+OG0000404	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011647.1	sacCer_protein_NP_015475.1
+OG0000405	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011640.1	sacCer_protein_NP_015471.1
+OG0000406	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014836.3	sacCer_protein_NP_015213.1
+OG0000407	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011541.1	sacCer_protein_NP_013437.1
+OG0000408	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011914.1	sacCer_protein_NP_014453.3
+OG0000409	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011885.1	sacCer_protein_NP_012766.1
+OG0000410	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012490.1	sacCer_protein_NP_012774.1
+OG0000411	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012817.1	sacCer_protein_NP_013803.1
+OG0000412	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015338.1	sacCer_protein_NP_015340.1
+OG0000413	N1	n0	1.0	Non-Terminal	CBS138_protein_XP_447783.1, BG2_protein_QNG14945.1	BG2_protein_QNG14947.1, CBS138_protein_XP_002999568.1
+OG0000414	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_116688.3	sacCer_protein_NP_012246.1
+OG0000415	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012219.3	sacCer_protein_NP_010974.1
+OG0000416	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012198.3	sacCer_protein_NP_010993.1
+OG0000417	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012195.1	sacCer_protein_NP_010997.3
+OG0000418	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014425.3	sacCer_protein_NP_009995.1
+OG0000419	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015185.1	sacCer_protein_NP_014874.1
+OG0000420	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015191.1	sacCer_protein_NP_014865.1
+OG0000421	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014243.3	sacCer_protein_NP_012001.1
+OG0000422	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012007.1	sacCer_protein_NP_014239.1
+OG0000423	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010843.1	sacCer_protein_NP_010103.1
+OG0000424	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010100.1	sacCer_protein_NP_010152.1
+OG0000425	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013998.1	sacCer_protein_NP_013601.1
+OG0000426	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015033.1	sacCer_protein_NP_014125.1
+OG0000427	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013288.1	sacCer_protein_NP_014121.1
+OG0000428	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014312.1	sacCer_protein_NP_014729.1
+OG0000429	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010145.1	sacCer_protein_NP_010090.1
+OG0000430	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012152.3	sacCer_protein_NP_014343.1
+OG0000431	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014340.1	sacCer_protein_NP_012149.1
+OG0000432	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012135.1	sacCer_protein_NP_014331.3
+OG0000433	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012133.1	sacCer_protein_NP_014330.1
+OG0000434	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010598.3	sacCer_protein_NP_011933.1
+OG0000435	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014226.1	sacCer_protein_NP_012016.1
+OG0000436	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011112.3	sacCer_protein_NP_011729.1
+OG0000437	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011725.3	sacCer_protein_NP_013144.1
+OG0000438	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014585.1	sacCer_protein_NP_010263.1
+OG0000439	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011057.1	sacCer_protein_NP_011326.1
+OG0000440	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011336.3	sacCer_protein_NP_011055.3
+OG0000441	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013820.1	sacCer_protein_NP_012801.1
+OG0000442	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012790.1	sacCer_protein_NP_013831.1
+OG0000443	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012789.2	sacCer_protein_NP_013833.1
+OG0000444	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013843.1	sacCer_protein_NP_013131.1
+OG0000445	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011552.1	sacCer_protein_NP_013454.1
+OG0000446	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011384.1	sacCer_protein_NP_015356.1
+OG0000447	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015357.1	sacCer_protein_NP_009444.2
+OG0000448	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013017.2	sacCer_protein_NP_014726.1
+OG0000449	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009907.2	sacCer_protein_NP_010795.3
+OG0000450	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009895.1	sacCer_protein_NP_010801.1
+OG0000451	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013688.1	sacCer_protein_NP_010735.3
+OG0000452	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011870.1	sacCer_protein_NP_010751.4
+OG0000453	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011874.1	sacCer_protein_NP_010759.1
+OG0000454	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009773.1	sacCer_protein_NP_011459.2
+OG0000455	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011455.1	sacCer_protein_NP_009775.3
+OG0000456	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009778.3	sacCer_protein_NP_009779.3
+OG0000457	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009797.1	sacCer_protein_NP_011408.1
+OG0000458	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014961.3	sacCer_protein_NP_013970.1
+OG0000459	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014957.2	sacCer_protein_NP_013969.3
+OG0000460	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012402.1	sacCer_protein_NP_012978.1
+OG0000461	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015030.3	sacCer_protein_NP_014047.1
+OG0000462	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012399.1	sacCer_protein_NP_012983.3
+OG0000463	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009987.2	sacCer_protein_NP_014162.1
+OG0000464	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014770.1	sacCer_protein_NP_010667.1
+OG0000465	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013920.1	sacCer_protein_NP_015074.1
+OG0000466	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013731.1	sacCer_protein_NP_010530.1
+OG0000467	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009553.1	sacCer_protein_NP_010510.3
+OG0000468	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010308.3	sacCer_protein_NP_009604.1
+OG0000469	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013396.1	sacCer_protein_NP_014828.1
+OG0000470	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010198.1	sacCer_protein_NP_013865.1
+OG0000471	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013863.2	sacCer_protein_NP_010200.1
+OG0000472	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012582.1	sacCer_protein_NP_010875.1
+OG0000473	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011759.1	sacCer_protein_NP_012032.1
+OG0000474	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010892.1	sacCer_protein_NP_012565.1
+OG0000475	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010147.1	sacCer_protein_NP_010093.1
+OG0000476	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012985.3	sacCer_protein_NP_012397.1
+OG0000477	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009570.1	sacCer_protein_NP_010274.1
+OG0000478	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009598.1	sacCer_protein_NP_010301.1
+OG0000479	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011011.3	sacCer_protein_NP_010936.1
+OG0000480	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013729.1	sacCer_protein_NP_012881.1
+OG0000481	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011846.1	sacCer_protein_NP_012885.2
+OG0000482	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009589.1	sacCer_protein_NP_012886.3
+OG0000483	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010900.1	sacCer_protein_NP_009955.2
+OG0000484	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010328.3	sacCer_protein_NP_009622.1
+OG0000485	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010188.1	sacCer_protein_NP_010190.1
+OG0000486	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010201.1	sacCer_protein_NP_013862.1
+OG0000487	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012406.1	sacCer_protein_NP_012976.1
+OG0000488	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015457.1	sacCer_protein_NP_011633.3
+OG0000489	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010697.3	sacCer_protein_NP_014799.1
+OG0000490	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014282.1	sacCer_protein_NP_012297.3
+OG0000491	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_011983.1	sacCer_protein_NP_014283.3
+OG0000492	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012436.1	sacCer_protein_NP_012952.3
+OG0000493	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010988.1	sacCer_protein_NP_116585.1
+OG0000494	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015334.1	sacCer_protein_NP_011353.1
+OG0000495	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010559.3	sacCer_protein_NP_014685.1
+OG0000496	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010563.3	sacCer_protein_NP_014690.1
+OG0000497	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013004.3	sacCer_protein_NP_014712.2
+OG0000498	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013934.1	sacCer_protein_NP_014413.1
+OG0000499	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013646.1	sacCer_protein_NP_013547.3
+OG0000500	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013641.1	sacCer_protein_NP_116602.1
+OG0000501	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013553.1	sacCer_protein_NP_013638.1
+OG0000502	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013555.1	sacCer_protein_NP_013636.1
+OG0000503	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010381.1	sacCer_protein_NP_011096.1
+OG0000504	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013193.1	sacCer_protein_NP_009853.3
+OG0000505	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015293.1	sacCer_protein_NP_010537.3
+OG0000506	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015288.1	sacCer_protein_NP_010538.1
+OG0000507	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010539.1	sacCer_protein_NP_015287.1
+OG0000508	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013744.1	sacCer_protein_NP_012874.1
+OG0000509	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013181.1	sacCer_protein_NP_116606.1
+OG0000510	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013546.1	sacCer_protein_NP_013648.1
+OG0000511	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014877.3	sacCer_protein_NP_015182.1
+OG0000512	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011730.1	sacCer_protein_NP_013149.1
+OG0000513	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012451.1	sacCer_protein_NP_012946.3
+OG0000514	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012944.3	sacCer_protein_NP_012452.1
+OG0000515	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014529.1	sacCer_protein_NP_014106.1
+OG0000516	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_014528.1	sacCer_protein_NP_014101.1
+OG0000517	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013234.1	sacCer_protein_NP_010431.3
+OG0000518	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013245.1	sacCer_protein_NP_014465.1
+OG0000519	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013957.1	sacCer_protein_NP_014936.1
+OG0000520	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013960.1	sacCer_protein_NP_014938.3
+OG0000521	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013964.1	sacCer_protein_NP_014943.1
+OG0000522	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009764.3	sacCer_protein_NP_009758.3
+OG0000523	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012396.1	sacCer_protein_NP_012987.3
+OG0000524	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014461.3	sacCer_protein_NP_012990.1
+OG0000525	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015219.1	sacCer_protein_NP_009728.1
+OG0000526	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009736.3	sacCer_protein_NP_015230.1
+OG0000527	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_015246.1	sacCer_protein_NP_009750.1
+OG0000528	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012354.1	sacCer_protein_NP_012564.3
+OG0000529	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012741.1	sacCer_protein_NP_012358.1
+OG0000530	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009854.2	sacCer_protein_NP_010556.1
+OG0000531	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014677.1	sacCer_protein_NP_010550.1
+OG0000532	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012624.1	sacCer_protein_NP_015367.1
+OG0000533	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009449.1	sacCer_protein_NP_015355.1
+OG0000534	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011862.1	sacCer_protein_NP_012920.1
+OG0000535	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009559.1	sacCer_protein_NP_010286.3
+OG0000536	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009978.1	sacCer_protein_NP_014416.1
+OG0000537	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009993.1	sacCer_protein_NP_014423.1
+OG0000538	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014428.1	sacCer_protein_NP_009998.2
+OG0000539	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009349.3	sacCer_protein_NP_015008.3
+OG0000540	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_015010.1	sacCer_protein_NP_009348.2
+OG0000541	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010980.1	sacCer_protein_NP_012214.3
+OG0000542	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012212.1	sacCer_protein_NP_010977.2
+OG0000543	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011004.3	sacCer_protein_NP_012191.1
+OG0000544	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013754.1	sacCer_protein_NP_012858.2
+OG0000545	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011772.3	sacCer_protein_NP_012053.3
+OG0000546	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009305.1	sacCer_protein_NP_009306.1, sacCer_protein_NP_009307.2
+OG0000546	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009306.1	sacCer_protein_NP_009307.2
+OG0000547	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_011254.1	sacCer_protein_NP_878038.1, sacCer_protein_NP_001403028.1, sacCer_protein_NP_878159.3
+OG0000547	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_878038.1	sacCer_protein_NP_001403028.1, sacCer_protein_NP_878159.3
+OG0000547	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_001403028.1	sacCer_protein_NP_878159.3
+OG0000548	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_014487.1	sacCer_protein_NP_012097.1, sacCer_protein_NP_012084.3, sacCer_protein_NP_009430.1
+OG0000548	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012097.1	sacCer_protein_NP_012084.3, sacCer_protein_NP_009430.1
+OG0000548	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012084.3	sacCer_protein_NP_009430.1
+OG0000549	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_009857.1	sacCer_protein_NP_011805.3, sacCer_protein_NP_012694.1, sacCer_protein_NP_010034.1
+OG0000549	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_011805.3	sacCer_protein_NP_012694.1, sacCer_protein_NP_010034.1
+OG0000549	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_012694.1	sacCer_protein_NP_010034.1
+OG0000550	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_010849.3	sacCer_protein_NP_009863.2, sacCer_protein_NP_013032.1, sacCer_protein_NP_014484.1
+OG0000550	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_009863.2, sacCer_protein_NP_013032.1	sacCer_protein_NP_014484.1
+OG0000550	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_009863.2	sacCer_protein_NP_013032.1
+OG0000551	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_014067.1	sacCer_protein_NP_010037.1, sacCer_protein_NP_012690.3, sacCer_protein_NP_116597.1
+OG0000551	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010037.1, sacCer_protein_NP_012690.3	sacCer_protein_NP_116597.1
+OG0000551	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_010037.1	sacCer_protein_NP_012690.3
+OG0000552	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_011358.3	sacCer_protein_NP_010830.4, sacCer_protein_NP_013044.1, sacCer_protein_NP_011476.1
+OG0000552	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_010830.4	sacCer_protein_NP_013044.1, sacCer_protein_NP_011476.1
+OG0000552	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013044.1	sacCer_protein_NP_011476.1
+OG0000553	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_010916.1	sacCer_protein_NP_012251.3, sacCer_protein_NP_014457.3, sacCer_protein_NP_011257.1
+OG0000553	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_012251.3	sacCer_protein_NP_014457.3, sacCer_protein_NP_011257.1
+OG0000553	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_014457.3	sacCer_protein_NP_011257.1
+OG0000554	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_013256.1	sacCer_protein_NP_013261.1, sacCer_protein_NP_013258.1, sacCer_protein_NP_013259.1
+OG0000554	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_013261.1	sacCer_protein_NP_013258.1, sacCer_protein_NP_013259.1
+OG0000554	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_013258.1	sacCer_protein_NP_013259.1
+OG0000555	sacCer_protein	n0	1.0	Terminal	sacCer_protein_NP_878123.1	sacCer_protein_NP_878127.1, sacCer_protein_NP_878122.1, sacCer_protein_NP_878126.1
+OG0000555	sacCer_protein	n1	1.0	Terminal	sacCer_protein_NP_878127.1	sacCer_protein_NP_878122.1, sacCer_protein_NP_878126.1
+OG0000555	sacCer_protein	n2	1.0	Terminal	sacCer_protein_NP_878122.1	sacCer_protein_NP_878126.1

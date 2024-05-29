@@ -1,0 +1,1 @@
+(sacCer_protein_637:0.5,(CBS138_protein_39:1,BG2_protein_41:1)N1_152:0.5)N0_108;

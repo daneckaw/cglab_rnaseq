@@ -1,0 +1,1 @@
+(sacCer_protein_NP_010849.3:0.271232,((sacCer_protein_NP_009863.2:0.005796,sacCer_protein_NP_013032.1:0.000797)n2:0.563335,sacCer_protein_NP_014484.1:0.878605)n1:0.271232)n0;
