@@ -51,6 +51,8 @@ experiment_data_2 = sample_sheet_df[(sample_sheet_df["Species"] == species) & (s
 experiment_data_2.drop(["Species", "Strain"], axis=1, inplace=True)
 print(experiment_data_2)
 
+experiment_data_both = pd.concat([experiment_data_1, experiment_data_2])
+print(experiment_data_both)
 
 sample_names_1 = experiment_data_1["SampleID"].to_list()
 sample_codes_1 = pd.Series(experiment_data_1.Code.values,index=experiment_data_1.SampleID).to_dict()

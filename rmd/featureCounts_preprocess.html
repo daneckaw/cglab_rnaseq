@@ -398,6 +398,25 @@ display: none;
 15       101  BG2_RPMI_DMSO_C  RPMI_DMSO  37C   4h   C  BG2_RPMI_DMSO
 16       102  BG2_RPMI_VORI_C  RPMI_VORI  37C   4h   C  BG2_RPMI_VORI
 17       103  BG2_RPMI_FLUC_C  RPMI_FLUC  37C   4h   C  BG2_RPMI_FLUC</code></pre>
+<pre><code>    SampleID                Code     Medium Temp Time Rep         Condition
+0         86  CBS138_RPMI_DMSO_A  RPMI_DMSO  37C   4h   A  CBS138_RPMI_DMSO
+1         87  CBS138_RPMI_VORI_A  RPMI_VORI  37C   4h   A  CBS138_RPMI_VORI
+2         88  CBS138_RPMI_FLUC_A  RPMI_FLUC  37C   4h   A  CBS138_RPMI_FLUC
+6         92  CBS138_RPMI_DMSO_B  RPMI_DMSO  37C   4h   B  CBS138_RPMI_DMSO
+7         93  CBS138_RPMI_VORI_B  RPMI_VORI  37C   4h   B  CBS138_RPMI_VORI
+8         94  CBS138_RPMI_FLUC_B  RPMI_FLUC  37C   4h   B  CBS138_RPMI_FLUC
+12        95  CBS138_RPMI_DMSO_C  RPMI_DMSO  37C   4h   C  CBS138_RPMI_DMSO
+13        96  CBS138_RPMI_VORI_C  RPMI_VORI  37C   4h   C  CBS138_RPMI_VORI
+14        97  CBS138_RPMI_FLUC_C  RPMI_FLUC  37C   4h   C  CBS138_RPMI_FLUC
+3         89     BG2_RPMI_DMSO_A  RPMI_DMSO  37C   4h   A     BG2_RPMI_DMSO
+4         90     BG2_RPMI_VORI_A  RPMI_VORI  37C   4h   A     BG2_RPMI_VORI
+5         91     BG2_RPMI_FLUC_A  RPMI_FLUC  37C   4h   A     BG2_RPMI_FLUC
+9         98     BG2_RPMI_DMSO_B  RPMI_DMSO  37C   4h   B     BG2_RPMI_DMSO
+10        99     BG2_RPMI_VORI_B  RPMI_VORI  37C   4h   B     BG2_RPMI_VORI
+11       100     BG2_RPMI_FLUC_B  RPMI_FLUC  37C   4h   B     BG2_RPMI_FLUC
+15       101     BG2_RPMI_DMSO_C  RPMI_DMSO  37C   4h   C     BG2_RPMI_DMSO
+16       102     BG2_RPMI_VORI_C  RPMI_VORI  37C   4h   C     BG2_RPMI_VORI
+17       103     BG2_RPMI_FLUC_C  RPMI_FLUC  37C   4h   C     BG2_RPMI_FLUC</code></pre>
 <pre><code>{89: &#39;BG2_RPMI_DMSO_A&#39;, 90: &#39;BG2_RPMI_VORI_A&#39;, 91: &#39;BG2_RPMI_FLUC_A&#39;, 98: &#39;BG2_RPMI_DMSO_B&#39;, 99: &#39;BG2_RPMI_VORI_B&#39;, 100: &#39;BG2_RPMI_FLUC_B&#39;, 101: &#39;BG2_RPMI_DMSO_C&#39;, 102: &#39;BG2_RPMI_VORI_C&#39;, 103: &#39;BG2_RPMI_FLUC_C&#39;}</code></pre>
 <pre><code>[89, 90, 91, 98, 99, 100, 101, 102, 103]</code></pre>
 <pre><code>              CBS138_RPMI_DMSO_A  ...  CBS138_RPMI_FLUC_C
@@ -430,32 +449,32 @@ GWK60_M14047               73  ...                3
 GWK60_M14597                1  ...                1
 
 [5234 rows x 9 columns]</code></pre>
-<pre><code>      CBS138_RPMI_DMSO_A  CBS138_RPMI_VORI_A  ...  CBS138_RPMI_FLUC_C          Gene
-0                    329                1277  ...                3425  CAGL0A00165g
-1                    541                1561  ...                7031  CAGL0A00187g
-2                   2460                6237  ...               18963  CAGL0A00209g
-3                    243                 172  ...                1572  CAGL0A00231g
-4                    791                2009  ...                8426  CAGL0A00253g
-...                  ...                 ...  ...                 ...           ...
-5204                   1                   1  ...                   1     CaglfMp08
-5205                   9                   9  ...                 103     CaglfMp09
-5206                   1                   1  ...                   9     CaglfMp10
-5207                 307                 127  ...                1627     CaglfMp11
-5208                   1                  15  ...                  27     CaglfMp12
+<pre><code>            Geneid  CBS138_RPMI_DMSO_A  ...  CBS138_RPMI_VORI_C  CBS138_RPMI_FLUC_C
+0     CAGL0A00165g                 329  ...                 436                3425
+1     CAGL0A00187g                 541  ...                1120                7031
+2     CAGL0A00209g                2460  ...                1345               18963
+3     CAGL0A00231g                 243  ...                 118                1572
+4     CAGL0A00253g                 791  ...                 395                8426
+...            ...                 ...  ...                 ...                 ...
+5204     CaglfMp08                   1  ...                   1                   1
+5205     CaglfMp09                   9  ...                   1                 103
+5206     CaglfMp10                   1  ...                   1                   9
+5207     CaglfMp11                 307  ...                  81                1627
+5208     CaglfMp12                   1  ...                   1                  27
 
 [5209 rows x 10 columns]</code></pre>
-<pre><code>      BG2_RPMI_DMSO_A  BG2_RPMI_VORI_A  ...  BG2_RPMI_FLUC_C          Gene
-0                   1                1  ...                1  GWK60_A00011
-1                 100              169  ...               26  GWK60_A00033
-2                1490             2411  ...              394  GWK60_A00055
-3                4781             8038  ...             1236  GWK60_A00077
-4               14463            20284  ...             2528  GWK60_A00099
-...               ...              ...  ...              ...           ...
-5229              511              605  ...               89  GWK60_M13981
-5230              241              314  ...               76  GWK60_M14003
-5231              776             1842  ...              254  GWK60_M14025
-5232               73               24  ...                3  GWK60_M14047
-5233                1                1  ...                1  GWK60_M14597
+<pre><code>            Geneid  BG2_RPMI_DMSO_A  ...  BG2_RPMI_VORI_C  BG2_RPMI_FLUC_C
+0     GWK60_A00011                1  ...                1                1
+1     GWK60_A00033              100  ...               19               26
+2     GWK60_A00055             1490  ...              223              394
+3     GWK60_A00077             4781  ...             1015             1236
+4     GWK60_A00099            14463  ...             1804             2528
+...            ...              ...  ...              ...              ...
+5229  GWK60_M13981              511  ...               43               89
+5230  GWK60_M14003              241  ...               38               76
+5231  GWK60_M14025              776  ...              197              254
+5232  GWK60_M14047               73  ...                5                3
+5233  GWK60_M14597                1  ...                1                1
 
 [5234 rows x 10 columns]</code></pre>
 

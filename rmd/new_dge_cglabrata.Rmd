@@ -787,7 +787,7 @@ counts_all_2_rbbh = counts_all_2_rbbh[, !(colnames(counts_all_2_rbbh) %in% c("ge
 # head(counts_all_2_rbbh)
 
 counts_all_joined = merge(py$counts_all_1, counts_all_2_rbbh,by="Geneid")
-# head(counts_all_joined)
+head(counts_all_joined)
 
 ```
 
@@ -1018,6 +1018,106 @@ VORI downregulated in CBS138:
 - trehalose metabolism
 - carbohydrate metabolism
 - energy derivation by oxidation of organic compounds
+
+## PCA
+
+```{r pca_data}
+
+samplesheet = py$experiment_data_both
+print(samplesheet)
+
+counts_only = subset(counts_all, select=-c(Geneid))
+print(head(counts_only))
+
+colnames(counts_only) = NULL # DESeqDataSetFromMatrix throws a col name error unless I do this, even though I'm pretty sure that column names are correct. 
+
+dds_all <- DESeqDataSetFromMatrix(countData = counts_only,
+                                  colData = samplesheet,
+                                  design = ~ Code)
+
+rlog_all <- rlog(dds_all)
+head(assay(rlog_all))
+  
+```
+
+
+```{r calculate_pca_rlog, eval=TRUE}
+# calculate principal components of rlog, after extracting from the dataset
+pca_rlog <- rlog_all %>%
+  assay() %>%
+  t() %>%
+  prcomp()
+
+# convert principal components to data frame
+pcdf_rlog <- bind_cols(
+  as_tibble(colData(rlog_all)),
+  as_tibble(pca_rlog$x)
+)
+
+pcdf_rlog
+```
+
+```{r calculate_propvar, eval=TRUE}
+propvar_rlog_df <- tibble(
+  PC = seq.int(1L, ncol(pca_rlog$x) ),
+  tot_var = pca_rlog$sdev^2,
+  prop_var = tot_var/sum(tot_var)
+)
+
+propvar_rlog_df
+```
+
+```{r plot_percentvar, fig.width = 3, fig.height = 2, eval=TRUE}
+plot_percentvar_rlog <- 
+  ggplot(data = propvar_rlog_df, 
+         aes(x = PC, y = prop_var)) +
+  geom_col(fill = "blue") +
+  scale_x_continuous("principal component",
+                     limits = c(0.4,10.6), 
+                     breaks = 1L:10L,
+                     expand = c(0,0)) + 
+  scale_y_continuous("prop. of variance", expand = c(0,0))
+plot_percentvar_rlog
+```
+
+```{r plot_PC12_default, fig.height=4, fig.width=7, eval=TRUE}
+pc12 = ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = factor(Temp))
+       ) +
+  geom_point(aes(x = PC1, y = PC2)) +
+  theme(legend.box = "horizontal") +
+  guides(shape=guide_legend(title="Condition")) +
+  scale_colour_manual(
+    values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
+               "CBS138_RPMI_FLUC" = "#A569BD",
+               "CBS138_RPMI_VORI" = "#D2B4DE",
+               "BG2_RPMI_DMSO" = "#196F3D",
+               "BG2_RPMI_FLUC" = "#27AE60",
+               "BG2_RPMI_VORI" = "#A9DFBF"))
+legend = get_legend(pc12)
+pc12
+
+pc32 = ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = factor(Temp))
+       ) +
+  geom_point(aes(x = PC3, y = PC2)) +
+  scale_colour_manual(
+    values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
+               "CBS138_RPMI_FLUC" = "#A569BD",
+               "CBS138_RPMI_VORI" = "#D2B4DE",
+               "BG2_RPMI_DMSO" = "#196F3D",
+               "BG2_RPMI_FLUC" = "#27AE60",
+               "BG2_RPMI_VORI" = "#A9DFBF"))
+pc32
+```
+
+Conclusions:
+
+In PC1 vs PC2 there are 4 clear clusters: corresponding to treated and untreated strains BG2 and CBS138.
+In PC3 they look more similar.
+
+The outlier: CBS138_RPMI_VORI (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
+I'm not sure what that means.
 
 
 TODOs:
