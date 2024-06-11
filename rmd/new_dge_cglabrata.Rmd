@@ -1024,12 +1024,11 @@ VORI downregulated in CBS138:
 ```{r pca_data}
 
 samplesheet = py$experiment_data_both
+rownames(samplesheet) = samplesheet$Code
 print(samplesheet)
 
 counts_only = subset(counts_all, select=-c(Geneid))
 print(head(counts_only))
-
-colnames(counts_only) = NULL # DESeqDataSetFromMatrix throws a col name error unless I do this, even though I'm pretty sure that column names are correct. 
 
 dds_all <- DESeqDataSetFromMatrix(countData = counts_only,
                                   colData = samplesheet,

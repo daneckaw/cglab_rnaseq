@@ -1899,26 +1899,46 @@ CAGL0K04169g, CAGL0M03663g, CAGL0M09042g, EFG1, SHO1, TEC1, YPS2</li>
 <div id="pca" class="section level2">
 <h2>PCA</h2>
 <pre class="r"><code>samplesheet = py$experiment_data_both
+rownames(samplesheet) = samplesheet$Code
 print(samplesheet)</code></pre>
-<pre><code>   SampleID               Code    Medium Temp Time Rep        Condition
-0        86 CBS138_RPMI_DMSO_A RPMI_DMSO  37C   4h   A CBS138_RPMI_DMSO
-1        87 CBS138_RPMI_VORI_A RPMI_VORI  37C   4h   A CBS138_RPMI_VORI
-2        88 CBS138_RPMI_FLUC_A RPMI_FLUC  37C   4h   A CBS138_RPMI_FLUC
-6        92 CBS138_RPMI_DMSO_B RPMI_DMSO  37C   4h   B CBS138_RPMI_DMSO
-7        93 CBS138_RPMI_VORI_B RPMI_VORI  37C   4h   B CBS138_RPMI_VORI
-8        94 CBS138_RPMI_FLUC_B RPMI_FLUC  37C   4h   B CBS138_RPMI_FLUC
-12       95 CBS138_RPMI_DMSO_C RPMI_DMSO  37C   4h   C CBS138_RPMI_DMSO
-13       96 CBS138_RPMI_VORI_C RPMI_VORI  37C   4h   C CBS138_RPMI_VORI
-14       97 CBS138_RPMI_FLUC_C RPMI_FLUC  37C   4h   C CBS138_RPMI_FLUC
-3        89    BG2_RPMI_DMSO_A RPMI_DMSO  37C   4h   A    BG2_RPMI_DMSO
-4        90    BG2_RPMI_VORI_A RPMI_VORI  37C   4h   A    BG2_RPMI_VORI
-5        91    BG2_RPMI_FLUC_A RPMI_FLUC  37C   4h   A    BG2_RPMI_FLUC
-9        98    BG2_RPMI_DMSO_B RPMI_DMSO  37C   4h   B    BG2_RPMI_DMSO
-10       99    BG2_RPMI_VORI_B RPMI_VORI  37C   4h   B    BG2_RPMI_VORI
-11      100    BG2_RPMI_FLUC_B RPMI_FLUC  37C   4h   B    BG2_RPMI_FLUC
-15      101    BG2_RPMI_DMSO_C RPMI_DMSO  37C   4h   C    BG2_RPMI_DMSO
-16      102    BG2_RPMI_VORI_C RPMI_VORI  37C   4h   C    BG2_RPMI_VORI
-17      103    BG2_RPMI_FLUC_C RPMI_FLUC  37C   4h   C    BG2_RPMI_FLUC</code></pre>
+<pre><code>                   SampleID               Code    Medium Temp Time Rep
+CBS138_RPMI_DMSO_A       86 CBS138_RPMI_DMSO_A RPMI_DMSO  37C   4h   A
+CBS138_RPMI_VORI_A       87 CBS138_RPMI_VORI_A RPMI_VORI  37C   4h   A
+CBS138_RPMI_FLUC_A       88 CBS138_RPMI_FLUC_A RPMI_FLUC  37C   4h   A
+CBS138_RPMI_DMSO_B       92 CBS138_RPMI_DMSO_B RPMI_DMSO  37C   4h   B
+CBS138_RPMI_VORI_B       93 CBS138_RPMI_VORI_B RPMI_VORI  37C   4h   B
+CBS138_RPMI_FLUC_B       94 CBS138_RPMI_FLUC_B RPMI_FLUC  37C   4h   B
+CBS138_RPMI_DMSO_C       95 CBS138_RPMI_DMSO_C RPMI_DMSO  37C   4h   C
+CBS138_RPMI_VORI_C       96 CBS138_RPMI_VORI_C RPMI_VORI  37C   4h   C
+CBS138_RPMI_FLUC_C       97 CBS138_RPMI_FLUC_C RPMI_FLUC  37C   4h   C
+BG2_RPMI_DMSO_A          89    BG2_RPMI_DMSO_A RPMI_DMSO  37C   4h   A
+BG2_RPMI_VORI_A          90    BG2_RPMI_VORI_A RPMI_VORI  37C   4h   A
+BG2_RPMI_FLUC_A          91    BG2_RPMI_FLUC_A RPMI_FLUC  37C   4h   A
+BG2_RPMI_DMSO_B          98    BG2_RPMI_DMSO_B RPMI_DMSO  37C   4h   B
+BG2_RPMI_VORI_B          99    BG2_RPMI_VORI_B RPMI_VORI  37C   4h   B
+BG2_RPMI_FLUC_B         100    BG2_RPMI_FLUC_B RPMI_FLUC  37C   4h   B
+BG2_RPMI_DMSO_C         101    BG2_RPMI_DMSO_C RPMI_DMSO  37C   4h   C
+BG2_RPMI_VORI_C         102    BG2_RPMI_VORI_C RPMI_VORI  37C   4h   C
+BG2_RPMI_FLUC_C         103    BG2_RPMI_FLUC_C RPMI_FLUC  37C   4h   C
+                          Condition
+CBS138_RPMI_DMSO_A CBS138_RPMI_DMSO
+CBS138_RPMI_VORI_A CBS138_RPMI_VORI
+CBS138_RPMI_FLUC_A CBS138_RPMI_FLUC
+CBS138_RPMI_DMSO_B CBS138_RPMI_DMSO
+CBS138_RPMI_VORI_B CBS138_RPMI_VORI
+CBS138_RPMI_FLUC_B CBS138_RPMI_FLUC
+CBS138_RPMI_DMSO_C CBS138_RPMI_DMSO
+CBS138_RPMI_VORI_C CBS138_RPMI_VORI
+CBS138_RPMI_FLUC_C CBS138_RPMI_FLUC
+BG2_RPMI_DMSO_A       BG2_RPMI_DMSO
+BG2_RPMI_VORI_A       BG2_RPMI_VORI
+BG2_RPMI_FLUC_A       BG2_RPMI_FLUC
+BG2_RPMI_DMSO_B       BG2_RPMI_DMSO
+BG2_RPMI_VORI_B       BG2_RPMI_VORI
+BG2_RPMI_FLUC_B       BG2_RPMI_FLUC
+BG2_RPMI_DMSO_C       BG2_RPMI_DMSO
+BG2_RPMI_VORI_C       BG2_RPMI_VORI
+BG2_RPMI_FLUC_C       BG2_RPMI_FLUC</code></pre>
 <pre class="r"><code>counts_only = subset(counts_all, select=-c(Geneid))
 print(head(counts_only))</code></pre>
 <pre><code>  CBS138_RPMI_DMSO_A CBS138_RPMI_VORI_A CBS138_RPMI_FLUC_A CBS138_RPMI_DMSO_B
@@ -1956,9 +1976,7 @@ print(head(counts_only))</code></pre>
 4              63             146
 5             608            1004
 6             719            1147</code></pre>
-<pre class="r"><code>colnames(counts_only) = NULL # DESeqDataSetFromMatrix throws a col name error unless I do this, even though I&#39;m pretty sure that column names are correct. 
-
-dds_all &lt;- DESeqDataSetFromMatrix(countData = counts_only,
+<pre class="r"><code>dds_all &lt;- DESeqDataSetFromMatrix(countData = counts_only,
                                   colData = samplesheet,
                                   design = ~ Code)</code></pre>
 <pre><code>converting counts to integer mode</code></pre>
@@ -1966,27 +1984,41 @@ dds_all &lt;- DESeqDataSetFromMatrix(countData = counts_only,
 design formula are characters, converting to factors</code></pre>
 <pre class="r"><code>rlog_all &lt;- rlog(dds_all)
 head(assay(rlog_all))</code></pre>
-<pre><code>          0         1         2         6         7         8        12
-1  9.819161 10.247470  9.981287  9.911436 10.004430 10.069135  9.758397
-2 10.850525 11.007853 11.079555 11.037381 11.013891 11.131689 11.019457
-3 12.708113 12.783775 12.891339 12.830194 12.830300 12.878901 12.838603
-4  9.134426  8.283834  8.798710  8.830633  8.731257  8.427881  9.332638
-5 11.102017 11.177522 11.284519 11.065763 11.263050 11.135540 11.186040
-6 11.669165 11.572087 11.616026 11.610497 11.665028 11.583435 11.595165
-         13        14         3         4         5         9        10
-1 10.166875 10.021087  9.575449  9.699059  9.706994  9.552677  9.723904
-2 11.533233 11.203325 11.105937 11.269220 11.305368 11.283900 11.239058
-3 12.350243 12.666644 12.660509 12.678386 12.613487 12.730468 12.646469
-4  8.690081  8.954762  9.522984  8.829991  8.578657  9.468714  8.581103
-5 10.688575 11.326460 11.176013 11.266810 11.107186 11.118469 11.140956
-6 11.028096 11.531482 11.645255 11.545238 11.567974 11.541872 11.533762
-         11        15        16        17
-1  9.631222  9.659647  9.623289  9.889308
-2 11.554708 11.169054 11.440342 11.419485
-3 12.694132 12.730393 12.563927 12.655815
-4  8.570093  9.647514  8.276823  8.672952
-5 11.142942 11.138934 10.997610 11.221235
-6 11.277454 11.546651 11.301486 11.493855</code></pre>
+<pre><code>  CBS138_RPMI_DMSO_A CBS138_RPMI_VORI_A CBS138_RPMI_FLUC_A CBS138_RPMI_DMSO_B
+1           9.819161          10.247470           9.981287           9.911436
+2          10.850525          11.007853          11.079555          11.037381
+3          12.708113          12.783775          12.891339          12.830194
+4           9.134426           8.283834           8.798710           8.830633
+5          11.102017          11.177522          11.284519          11.065763
+6          11.669165          11.572087          11.616026          11.610497
+  CBS138_RPMI_VORI_B CBS138_RPMI_FLUC_B CBS138_RPMI_DMSO_C CBS138_RPMI_VORI_C
+1          10.004430          10.069135           9.758397          10.166875
+2          11.013891          11.131689          11.019457          11.533233
+3          12.830300          12.878901          12.838603          12.350243
+4           8.731257           8.427881           9.332638           8.690081
+5          11.263050          11.135540          11.186040          10.688575
+6          11.665028          11.583435          11.595165          11.028096
+  CBS138_RPMI_FLUC_C BG2_RPMI_DMSO_A BG2_RPMI_VORI_A BG2_RPMI_FLUC_A
+1          10.021087        9.575449        9.699059        9.706994
+2          11.203325       11.105937       11.269220       11.305368
+3          12.666644       12.660509       12.678386       12.613487
+4           8.954762        9.522984        8.829991        8.578657
+5          11.326460       11.176013       11.266810       11.107186
+6          11.531482       11.645255       11.545238       11.567974
+  BG2_RPMI_DMSO_B BG2_RPMI_VORI_B BG2_RPMI_FLUC_B BG2_RPMI_DMSO_C
+1        9.552677        9.723904        9.631222        9.659647
+2       11.283900       11.239058       11.554708       11.169054
+3       12.730468       12.646469       12.694132       12.730393
+4        9.468714        8.581103        8.570093        9.647514
+5       11.118469       11.140956       11.142942       11.138934
+6       11.541872       11.533762       11.277454       11.546651
+  BG2_RPMI_VORI_C BG2_RPMI_FLUC_C
+1        9.623289        9.889308
+2       11.440342       11.419485
+3       12.563927       12.655815
+4        8.276823        8.672952
+5       10.997610       11.221235
+6       11.301486       11.493855</code></pre>
 <pre class="r"><code># calculate principal components of rlog, after extracting from the dataset
 pca_rlog &lt;- rlog_all %&gt;%
   assay() %&gt;%
