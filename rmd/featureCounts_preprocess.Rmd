@@ -36,8 +36,8 @@ strain2 = "BG2"
 samplesheet = "DGE_samplesheet_canGla2.txt"
 # ------------------------
 
-counts_path_1 = "../data/featureCounts/" + species + "_" + strain1 + "/counts/"
-counts_path_2 = "../data/featureCounts/" + species + "_" + strain2 + "/counts/"
+counts_path_1 = "../data/featureCounts/" + species + "_" + strain1
+counts_path_2 = "../data/featureCounts/" + species + "_" + strain2
 
 sample_sheet_path = "../data/sample_sheets/" + samplesheet
 sample_sheet_df = pd.read_csv(sample_sheet_path, sep="\t", comment="#")
@@ -109,9 +109,8 @@ counts_all_2 = counts_df_2.set_index("Geneid").drop(r.COUNT_HEADER_COLUMNS, axis
 print(counts_all_2)
 
 # TODO: output the tables to file
-
-counts_all_1.to_csv("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_featureCounts.tab", sep="\t", index=True)
-counts_all_2.to_csv("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_featureCounts.tab", sep="\t", index=True)
+counts_all_1.to_csv("../data/featureCounts/Candida_glabrata_CBS138/counts/CBS138_all_conditions_featureCounts.tab", sep="\t", index=True)
+counts_all_2.to_csv("../data/featureCounts/Candida_glabrata_BG2/counts/BG2_all_conditions_featureCounts.tab", sep="\t", index=True)
 
 
 
@@ -121,8 +120,8 @@ counts_all_2.to_csv("../data/featureCounts/Candida_glabrata_BG2/counts/all_condi
 counts_rpm_1 = counts_1.div(counts_1.sum(), axis=1) * 1000000
 counts_rpm_2 = counts_2.div(counts_2.sum(), axis=1) * 1000000
 
-counts_rpm_1.to_csv("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_rpm.tab", sep="\t", index=True)
-counts_rpm_2.to_csv("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_rpm.tab", sep="\t", index=True)
+counts_rpm_1.to_csv("../data/featureCounts/Candida_glabrata_CBS138/counts/CBS138_all_conditions_rpm.tab", sep="\t", index=True)
+counts_rpm_2.to_csv("../data/featureCounts/Candida_glabrata_BG2/counts/BG2_all_conditions_rpm.tab", sep="\t", index=True)
 
 ```
 
