@@ -91,7 +91,7 @@ print(rbbh_scer_cgla_ids)
 
 rbbh_scer_cgla_ids_gene = rbbh_scer_cgla_ids[["gene_id_cbs138", "gene_id_by4741"]]
 print(rbbh_scer_cgla_ids_gene)
-#rrbh_gene_id.to_csv("rbbh_cbs138_bg2.csv", header=True, index=None)
+#rbbh_cgla_clga_ids_gene.to_csv("../data/rbbh/cbs138_bg2_rbbh2.csv", header=True, index=None)
 
 
 
