@@ -1,1 +1,21 @@
 **/.DS_Store
+
+# R project files
+.Rproj.user
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
+
+# Venn diagram logs
+rmd/.log

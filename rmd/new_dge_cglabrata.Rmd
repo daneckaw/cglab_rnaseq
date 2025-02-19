@@ -32,8 +32,8 @@ theme_set(theme_cowplot(font_size = 12) +
 COUNT_HEADER_COLUMNS <- c("Geneid", "Chr", "Start",
                           "End", "Strand", "Length")
 
-knitr::knit_child("featureCounts_preprocess.Rmd")
-knitr::knit_child("ortho_preprocess.Rmd")
+#knitr::knit_child("featureCounts_preprocess.Rmd")
+#knitr::knit_child("ortho_preprocess.Rmd")
 ```
 
 # Introduction
@@ -55,9 +55,14 @@ MultiQC results, including quality control of raw reads (FastQC) and alignment a
 featureCount results, aggregated by strain, are below:
 
 ```{r show_data_1}
+counts_all_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_featureCounts.tab", header=TRUE)
+counts_all_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_featureCounts.tab", header=TRUE)
 
-head(counts_1) # CBS138, raw
-head(counts_2) # BG2, raw
+counts_rpm_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_rpm.tab", header=TRUE, row.names = 1)
+
+head(counts_all_1) # CBS138, raw
+head(counts_all_2) # BG2, raw
 ```
 
 Results normalised to RPM are below:
@@ -78,7 +83,8 @@ For quality control, we check correlation between the samples (only within strai
 There is high correlation within untreated (DMSO) samples and treated (FLUC and VORI), but no obvious differences between VORI and FLUC.
 
 
-```{python pairplot1, fig.height = 4, fig.width=10, warning=FALSE, message=FALSE, echo=FALSE}
+```{python pairplot1, fig.height = 4, fig.width=10, warning=FALSE, message=FALSE, echo=FALSE, eval=FALSE}
+# TODO: no Python code in this file; eval set to FALSE until ported to R
 from matplotlib import pyplot as plt
 import seaborn as sns
 
@@ -216,8 +222,10 @@ volcano_plot <- function(deseq_df, rN2, up, down) {
 
 ```{r cbs_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_1
-counts_all = py$counts_all_1
+samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
+# samplesheet = py$experiment_data_1
+
+counts_all = counts_all_1
 head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_FLUC")
@@ -241,6 +249,8 @@ DEGdf_up2x_FDR5_cf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cf = get_non_significant_genes(deseq_df)
 
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
+
 
 p1 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -249,8 +259,9 @@ p1 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
 
 ```{r cbs_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_1
-counts_all = py$counts_all_1
+samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
+# samplesheet = py$experiment_data_1
+counts_all = counts_all_1
 head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI")
@@ -274,6 +285,8 @@ DEGdf_up2x_FDR5_cv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cv = get_non_significant_genes(deseq_df)
 
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_allDESeq.csv")
+
 
 p2 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -285,8 +298,9 @@ p2 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
 
 ```{r cbs_vf_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_1
-counts_all = py$counts_all_1
+samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
+# samplesheet = py$experiment_data_1
+counts_all = counts_all_1
 head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI")
@@ -310,6 +324,7 @@ DEGdf_up2x_FDR5_cvf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cvf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
 
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
 p3 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -319,8 +334,9 @@ p3 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
 
 ```{r bg2_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_2
-counts_all = py$counts_all_2
+samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
+# samplesheet = py$experiment_data_2
+counts_all = counts_all_2
 head(counts_all)
 
 conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_FLUC")
@@ -344,6 +360,7 @@ DEGdf_up2x_FDR5_bf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
 
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_FLUC_DMSO_allDESeq.csv")
 
 p4 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -352,8 +369,9 @@ p4 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
 
 ```{r bg2_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_2
-counts_all = py$counts_all_2
+samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
+# samplesheet = py$experiment_data_2
+counts_all = counts_all_2
 head(counts_all)
 
 conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_VORI")
@@ -377,6 +395,7 @@ DEGdf_up2x_FDR5_bv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
 
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_DMSO_allDESeq.csv")
 
 p5 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -385,8 +404,9 @@ p5 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
 
 ```{r bg2_fv_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = py$experiment_data_2
-counts_all = py$counts_all_2
+samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
+# samplesheet = py$experiment_data_2
+counts_all = counts_all_2
 head(counts_all)
 
 conditions_to_compare = c("BG2_RPMI_FLUC", "BG2_RPMI_VORI")
@@ -409,6 +429,8 @@ deseq_df <- deseq_df_transform(dds_compared_conditions)
 DEGdf_up2x_FDR5_bfv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bfv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bfv = get_non_significant_genes(deseq_df)
+
+write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_FLUC_allDESeq.csv")
 
 p6 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
   ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
@@ -574,14 +596,16 @@ write.csv(ortho_up, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_up_
 write.csv(ortho_down, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_down_ortho.csv")
 ```
 
-Here I look at ovelap between genes upregulated/downregulated in FLUC treatment between CBS138 and BG2.
+Here I look at overlap between genes upregulated/downregulated in FLUC treatment between CBS138 and BG2.
 This includes:
 
 - reporting the number of genes that are DE in one strain and have a homolog in the other - this shows how many genes unique for the strain are DE
 - reporting the number of genes that are DE in both strain - this shows whether the response is similar between CBS138 and BG2.
 
 ```{r ortho_cb, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
-rbbh = py$rbbh_cgla_clga_ids_gene
+rbbh = read.csv("../data/rbbh/cbs138_bg2_rbbh2.csv")
+# rbbh = py$rbbh_cgla_clga_ids_gene
+# write.csv(rbbh, "../data/rbbh/cbs138_bg2_rbbh.csv")
 # head(rbbh)
 
 ortho_cb_c_up = merge(DEGdf_up2x_FDR5_cf, rbbh, by.x="gene", by.y="gene_id_cbs138")
@@ -775,10 +799,10 @@ I have used orthofinder https://doi.org/10.1186/s13059-019-1832-y to find orthol
 
 
 ```{r rbbh, echo=FALSE, message=FALSE, warning=FALSE}
-rbbh = py$rbbh_cgla_clga_ids_gene
+# rbbh = py$rbbh_cgla_clga_ids_gene
 # head(rbbh)
 
-counts_all_2_rbbh = merge(py$counts_all_2, rbbh, by.x="Geneid", by.y="gene_id_bg2")
+counts_all_2_rbbh = merge(counts_all_2, rbbh, by.x="Geneid", by.y="gene_id_bg2")
 # head(py$counts_all_2)
 # head(counts_all_2_rbbh)
 counts_all_2_rbbh["Geneid"] = counts_all_2_rbbh["gene_id_cbs138"]
@@ -786,14 +810,15 @@ counts_all_2_rbbh = counts_all_2_rbbh[, !(colnames(counts_all_2_rbbh) %in% c("ge
 #counts_all_2_rbbh.drop(["gene_id_cbs138", "gene_id_bg2"], axis=1, inplace=True)
 # head(counts_all_2_rbbh)
 
-counts_all_joined = merge(py$counts_all_1, counts_all_2_rbbh,by="Geneid")
+counts_all_joined = merge(counts_all_1, counts_all_2_rbbh,by="Geneid")
 head(counts_all_joined)
 
 ```
 
 ```{r c_b_d, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = py$sample_sheet_df
+samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
+# samplesheet = py$sample_sheet_df
 counts_all = counts_all_joined
 # head(counts_all)
 
@@ -847,7 +872,8 @@ nrow(DEGdf_down2x_FDR5_cbd)
 
 ```{r c_b_v, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = py$sample_sheet_df
+samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
+# samplesheet = py$sample_sheet_df
 counts_all = counts_all_joined
 head(counts_all)
 
@@ -901,7 +927,8 @@ nrow(DEGdf_down2x_FDR5_cbv)
 
 ```{r c_b_f, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = py$sample_sheet_df
+samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
+# samplesheet = py$sample_sheet_df
 counts_all = counts_all_joined
 # head(counts_all)
 
@@ -1023,11 +1050,15 @@ VORI downregulated in CBS138:
 
 ```{r pca_data}
 
-samplesheet = py$experiment_data_both
+samplesheet = read.csv("../data/sample_sheets/experiment_data_both.csv")
+# samplesheet = py$experiment_data_both
 rownames(samplesheet) = samplesheet$Code
 print(samplesheet)
 
 counts_only = subset(counts_all, select=-c(Geneid))
+#counts_only <- counts_all[,-1]
+rownames(counts_only) <- counts_all[,1]
+
 print(head(counts_only))
 
 dds_all <- DESeqDataSetFromMatrix(countData = counts_only,
@@ -1036,6 +1067,7 @@ dds_all <- DESeqDataSetFromMatrix(countData = counts_only,
 
 rlog_all <- rlog(dds_all)
 head(assay(rlog_all))
+rlog_all_df = as.data.frame(assay(rlog_all))
   
 ```
 
@@ -1108,6 +1140,8 @@ pc32 = ggplot(data = pcdf_rlog,
                "BG2_RPMI_FLUC" = "#27AE60",
                "BG2_RPMI_VORI" = "#A9DFBF"))
 pc32
+
+# TODO: change styling to include shapes: circles squares triangles, maybe add Vs and Fs
 ```
 
 Conclusions:
@@ -1117,6 +1151,94 @@ In PC3 they look more similar.
 
 The outlier: CBS138_RPMI_VORI (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
 I'm not sure what that means.
+
+```{r venn}
+library(VennDiagram)
+ 
+# Generate 3 sets of 200 words
+set1 <- paste(rep("word_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+set2 <- paste(rep("word_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+set3 <- paste(rep("word_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+ 
+set.seed(20190708)
+genes <- paste("gene",1:1000,sep="")
+x <- list(
+  A = sample(genes,300), 
+  B = sample(genes,525), 
+  C = sample(genes,440),
+  D = sample(genes,350)
+  )
+
+# Chart
+venn.diagram(
+  x = list(set1, set2, set3),
+  category.names = c("Set 1" , "Set 2 " , "Set 3"),
+  filename = NULL,
+  output=TRUE
+)
+
+display_venn <- function(x, ...){
+  library(VennDiagram)
+  grid.newpage()
+  venn_object <- venn.diagram(x, filename = NULL, ...)
+  grid.draw(venn_object)
+}
+display_venn(
+  x,
+  category.names = c("Set 1" , "Set 2 " , "Set 3", "Set 4"),
+  fill = c("#999999", "#E69F00", "#56B4E9", "#009E73")
+  )
+display_venn(x)
+
+library("ggVennDiagram")
+ggVennDiagram(x, label_alpha = 0)
+
+cf_up = as.vector(ortho_cb_c_up$gene)
+cbd_up = as.vector(DEGdf_up2x_FDR5_cbd$gene)
+cbf_up = as.vector(DEGdf_up2x_FDR5_cbf$gene)
+bf_up = as.vector(ortho_cb_b_up$gene_id_cbs138)
+
+y <- list(
+  CBS138_FLUC = cf_up, 
+  strain_DMSO = cbd_up, 
+  strain_FLUC = cbf_up,
+  BG2_FLUC = bf_up
+  )
+
+display_venn(
+  y,
+  fill = c("#999999", "#E69F00", "#56B4E9", "#009E73")
+  )
+
+
+print(head(DEGdf_up2x_FDR5_cbd))
+```
+
+
+```{python interpretation_figures_rlog, fig.height = 2, fig.width=2, eval=FALSE}
+import pandas as pd
+
+plt.rcParams['svg.fonttype'] = 'none'
+
+rlog_all_p = r.rlog_all_df
+rlog_all_p = rlog_all_p.reset_index().rename(columns={'index': 'Geneid'})
+
+
+filamentous_genes = ["CAGL0H02145g",	"CAGL0I01254g",	"CAGL0I09856g", "CAGL0K04169g", "CAGL0M03663g", "CAGL0M09042g"]
+cell_adhesion_genes = ["CAGL0K00110g", "CAGL0A01584g", "CAGL0I09856g", "CAGL0K12078g", "CAGL0I00220g", "CAGL0E06688g", "CAGL0C00110g"]
+
+s = rlog_all_p[rlog_all_p["Geneid"].isin(cell_adhesion_genes)]
+
+t = s.set_index("Geneid")
+#plt.figure(figsize=(10, 10))
+#plt.subplots_adjust(left=0.5, right=1.5, bottom=4.0)
+g = sns.clustermap(t, cmap='vlag', method="single", annot_kws={"size": 7})
+plt.setp(g.ax_heatmap.get_yticklabels(), rotation=0)  # For y axis
+plt.show()
+#plt.savefig("/Users/s1964600/Work/random_figures/new_svg/cpac_scer_deg.svg")
+plt.close()
+
+```
 
 
 TODOs:
