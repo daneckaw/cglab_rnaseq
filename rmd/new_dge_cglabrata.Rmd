@@ -55,11 +55,11 @@ MultiQC results, including quality control of raw reads (FastQC) and alignment a
 featureCount results, aggregated by strain, are below:
 
 ```{r show_data_1}
-counts_all_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_featureCounts.tab", header=TRUE)
-counts_all_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_featureCounts.tab", header=TRUE)
+counts_all_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_featureCounts.tab", header=TRUE)
+counts_all_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_featureCounts.tab", header=TRUE)
 
-counts_rpm_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/counts/all_conditions_rpm.tab", header=TRUE, row.names = 1)
-counts_rpm_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/counts/all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab", header=TRUE, row.names = 1)
 
 head(counts_all_1) # CBS138, raw
 head(counts_all_2) # BG2, raw
