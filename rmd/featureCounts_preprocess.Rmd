@@ -46,13 +46,16 @@ print(sample_sheet_df)
 experiment_data_1 = sample_sheet_df[(sample_sheet_df["Species"] == species) & (sample_sheet_df["Strain"] == strain1)].copy()
 experiment_data_1.drop(["Species", "Strain"], axis=1, inplace=True)
 print(experiment_data_1)
+experiment_data_1.to_csv("../data/sample_sheets/experiment_data_1.csv", header=True, index=None)
 
 experiment_data_2 = sample_sheet_df[(sample_sheet_df["Species"] == species) & (sample_sheet_df["Strain"] == strain2)].copy()
 experiment_data_2.drop(["Species", "Strain"], axis=1, inplace=True)
 print(experiment_data_2)
+experiment_data_2.to_csv("../data/sample_sheets/experiment_data_2.csv", header=True, index=None)
 
 experiment_data_both = pd.concat([experiment_data_1, experiment_data_2])
 print(experiment_data_both)
+experiment_data_both.to_csv("../data/sample_sheets/experiment_data_both.csv", header=True, index=None)
 
 sample_names_1 = experiment_data_1["SampleID"].to_list()
 sample_codes_1 = pd.Series(experiment_data_1.Code.values,index=experiment_data_1.SampleID).to_dict()
