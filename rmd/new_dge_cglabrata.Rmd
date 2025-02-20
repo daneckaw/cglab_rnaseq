@@ -1050,12 +1050,15 @@ VORI downregulated in CBS138:
 
 ```{r pca_data}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_both.csv")
+samplesheet = here::here("data", 
+                         "sample_sheets", 
+                         "DGE_samplesheet_canGla2.txt") %>%
+  read_table()
 # samplesheet = py$experiment_data_both
 rownames(samplesheet) = samplesheet$Code
 print(samplesheet)
 
-counts_only = subset(counts_all, select=-c(Geneid))
+counts_only = subset(counts_all, select=samplesheet$Code)
 #counts_only <- counts_all[,-1]
 rownames(counts_only) <- counts_all[,1]
 
@@ -1112,34 +1115,58 @@ plot_percentvar_rlog
 ```
 
 ```{r plot_PC12_default, fig.height=4, fig.width=7, eval=TRUE}
+scales_PCA <- 
+  list(
+    scale_colour_manual("Strain, Treatment",
+      values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
+                 "CBS138_RPMI_FLUC" = "#A569BD",
+                 "CBS138_RPMI_VORI" = "#D2B4DE",
+                 "BG2_RPMI_DMSO" = "#196F3D",
+                 "BG2_RPMI_FLUC" = "#27AE60",
+                 "BG2_RPMI_VORI" = "#A9DFBF"),
+      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
+                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
+                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
+                 "BG2_RPMI_VORI"    = "BG2,    VORI")),
+    scale_shape_manual("Strain, Treatment",
+      values = c("CBS138_RPMI_DMSO" = 15,
+                 "CBS138_RPMI_FLUC" = 15,
+                 "CBS138_RPMI_VORI" = 15,
+                 "BG2_RPMI_DMSO" = 17,
+                 "BG2_RPMI_FLUC" = 17,
+                 "BG2_RPMI_VORI" = 17),
+      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
+                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
+                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
+                 "BG2_RPMI_VORI"    = "BG2,    VORI"))
+  )
+
+
 pc12 = ggplot(data = pcdf_rlog,
-       aes(colour = Condition, shape = factor(Temp))
+       aes(colour = Condition, shape = Condition)
        ) +
   geom_point(aes(x = PC1, y = PC2)) +
   theme(legend.box = "horizontal") +
-  guides(shape=guide_legend(title="Condition")) +
-  scale_colour_manual(
-    values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
-               "CBS138_RPMI_FLUC" = "#A569BD",
-               "CBS138_RPMI_VORI" = "#D2B4DE",
-               "BG2_RPMI_DMSO" = "#196F3D",
-               "BG2_RPMI_FLUC" = "#27AE60",
-               "BG2_RPMI_VORI" = "#A9DFBF"))
+  scales_PCA
 legend = get_legend(pc12)
 pc12
 
 pc32 = ggplot(data = pcdf_rlog,
-       aes(colour = Condition, shape = factor(Temp))
+       aes(colour = Condition, shape = Condition)
        ) +
   geom_point(aes(x = PC3, y = PC2)) +
-  scale_colour_manual(
-    values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
-               "CBS138_RPMI_FLUC" = "#A569BD",
-               "CBS138_RPMI_VORI" = "#D2B4DE",
-               "BG2_RPMI_DMSO" = "#196F3D",
-               "BG2_RPMI_FLUC" = "#27AE60",
-               "BG2_RPMI_VORI" = "#A9DFBF"))
+  scales_PCA
 pc32
+
+ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = Rep)
+       ) +
+  geom_point(aes(x = PC3, y = PC2)) +
+  scale_shape_identity()
 
 # TODO: change styling to include shapes: circles squares triangles, maybe add Vs and Fs
 ```
@@ -1149,8 +1176,11 @@ Conclusions:
 In PC1 vs PC2 there are 4 clear clusters: corresponding to treated and untreated strains BG2 and CBS138.
 In PC3 they look more similar.
 
-The outlier: CBS138_RPMI_VORI (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
-I'm not sure what that means.
+The outlier: CBS138_RPMI_VORI_C (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
+After discussion, we decided that something was not quite right in that replicate.
+
+
+## Venn Diagram of DEG lists
 
 ```{r venn}
 library(VennDiagram)

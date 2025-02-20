@@ -18,4 +18,4 @@
 .Rproj.user/
 
 # Venn diagram logs
-rmd/.log
+rmd/*.log
