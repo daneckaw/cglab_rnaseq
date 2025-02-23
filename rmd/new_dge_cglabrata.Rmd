@@ -1,6 +1,6 @@
 ---
-title: "new_dge_cglabrata"
-author: "Weronika"
+title: "Quality Control and Differential Gene Expression Analysis, Candida glabrata"
+author: "Weronika Danecka and Edward Wallace"
 date: "2024-05-23"
 output: 
   html_document:
@@ -55,24 +55,47 @@ MultiQC results, including quality control of raw reads (FastQC) and alignment a
 featureCount results, aggregated by strain, are below:
 
 ```{r show_data_1}
-counts_all_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_featureCounts.tab", header=TRUE)
-counts_all_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_featureCounts.tab", header=TRUE)
+counts_all_CBS138 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_featureCounts.tab", header=TRUE)
+counts_all_BG2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_featureCounts.tab", header=TRUE)
 
-counts_rpm_1 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab", header=TRUE, row.names = 1)
-counts_rpm_2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_CBS138 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_BG2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab", header=TRUE, row.names = 1)
 
-head(counts_all_1) # CBS138, raw
-head(counts_all_2) # BG2, raw
+head(counts_all_CBS138) # CBS138, raw
+head(counts_all_BG2) # BG2, raw
 ```
 
 Results normalised to RPM are below:
 
 ```{r show_data}
 
-head(counts_rpm_1) # CBS138, normalised to RPM
-head(counts_rpm_2) # BG2, normalised to RPM
+head(counts_rpm_CBS138) # CBS138, normalised to RPM
+head(counts_rpm_BG2) # BG2, normalised to RPM
 
 ```
+
+## Match genes across strains using Reciprocal Blast Best Hits
+
+The genes between the two strains are matched using Reciprocal Blast Best Hits, which might not be entirely accurate given copy number variations etc. between the two species.
+I have used orthofinder https://doi.org/10.1186/s13059-019-1832-y to find orthologs, but I haven't found a way to incorporate this into the analysis yet.
+
+
+```{r rbbh, echo=TRUE, message=FALSE, warning=FALSE}
+# Load reciprocal BLAST best hits
+rbbh = read.csv("../data/rbbh/cbs138_bg2_rbbh2.csv")
+
+# merge on CBS138 gene names,
+counts_all_CBS138_rbbh = merge(counts_all_CBS138, rbbh, 
+                               by.x="Geneid", by.y="gene_id_cbs138")
+
+# combine counts from common genes.
+counts_all_joined = merge(counts_all_CBS138_rbbh, 
+                          dplyr::rename(counts_all_BG2, gene_id_bg2 = "Geneid"), 
+                          by = "gene_id_bg2")
+head(counts_all_joined)
+
+```
+
 
 # Analysis
 
@@ -126,9 +149,140 @@ library(pheatmap)
 
 
 # create heatmap using pheatmap
-ph1 = pheatmap(counts_rpm_1, main="CBS138")
-ph2 = pheatmap(counts_rpm_2, main="BG2")
+ph1 = pheatmap(counts_rpm_CBS138, main="CBS138")
+ph2 = pheatmap(counts_rpm_BG2, main="BG2")
 ```
+
+
+## Quality Control - Principal Component Analysis
+
+```{r pca_data}
+
+samplesheet = here::here("data", 
+                         "sample_sheets", 
+                         "DGE_samplesheet_canGla2.txt") %>%
+  read_table()
+# samplesheet = py$experiment_data_both
+rownames(samplesheet) = samplesheet$Code
+print(samplesheet)
+
+dds_all <- DESeqDataSetFromMatrix(countData =
+                                    counts_all_joined %>%
+                             dplyr::select(samplesheet$Code) %>%
+                             magrittr::set_rownames(counts_all_joined$Gene),
+                                  colData = samplesheet,
+                                  design = ~ Code)
+
+rlog_all <- rlog(dds_all)
+head(assay(rlog_all))
+rlog_all_df = as.data.frame(assay(rlog_all))
+  
+```
+
+
+```{r calculate_pca_rlog, eval=TRUE}
+# calculate principal components of rlog, after extracting from the dataset
+pca_rlog <- rlog_all %>%
+  assay() %>%
+  t() %>%
+  prcomp()
+
+# convert principal components to data frame
+pcdf_rlog <- bind_cols(
+  as_tibble(colData(rlog_all)),
+  as_tibble(pca_rlog$x)
+)
+
+pcdf_rlog
+```
+
+```{r calculate_propvar, eval=TRUE}
+propvar_rlog_df <- tibble(
+  PC = seq.int(1L, ncol(pca_rlog$x) ),
+  tot_var = pca_rlog$sdev^2,
+  prop_var = tot_var/sum(tot_var)
+)
+
+propvar_rlog_df
+```
+
+```{r plot_percentvar, fig.width = 3, fig.height = 2, eval=TRUE}
+plot_percentvar_rlog <- 
+  ggplot(data = propvar_rlog_df, 
+         aes(x = PC, y = prop_var)) +
+  geom_col(fill = "blue") +
+  scale_x_continuous("principal component",
+                     limits = c(0.4,10.6), 
+                     breaks = 1L:10L,
+                     expand = c(0,0)) + 
+  scale_y_continuous("prop. of variance", expand = c(0,0))
+plot_percentvar_rlog
+```
+
+```{r plot_PC12_default, fig.height=4, fig.width=7, eval=TRUE}
+scales_PCA <- 
+  list(
+    scale_colour_manual("Strain, Treatment",
+      values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
+                 "CBS138_RPMI_FLUC" = "#A569BD",
+                 "CBS138_RPMI_VORI" = "#D2B4DE",
+                 "BG2_RPMI_DMSO" = "#196F3D",
+                 "BG2_RPMI_FLUC" = "#27AE60",
+                 "BG2_RPMI_VORI" = "#A9DFBF"),
+      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
+                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
+                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
+                 "BG2_RPMI_VORI"    = "BG2,    VORI")),
+    scale_shape_manual("Strain, Treatment",
+      values = c("CBS138_RPMI_DMSO" = 15,
+                 "CBS138_RPMI_FLUC" = 15,
+                 "CBS138_RPMI_VORI" = 15,
+                 "BG2_RPMI_DMSO" = 17,
+                 "BG2_RPMI_FLUC" = 17,
+                 "BG2_RPMI_VORI" = 17),
+      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
+                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
+                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
+                 "BG2_RPMI_VORI"    = "BG2,    VORI"))
+  )
+
+
+pc12 = ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = Condition)
+       ) +
+  geom_point(aes(x = PC1, y = PC2)) +
+  theme(legend.box = "horizontal") +
+  scales_PCA
+legend = get_legend(pc12)
+pc12
+
+pc32 = ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = Condition)
+       ) +
+  geom_point(aes(x = PC3, y = PC2)) +
+  scales_PCA
+pc32
+
+ggplot(data = pcdf_rlog,
+       aes(colour = Condition, shape = Rep)
+       ) +
+  geom_point(aes(x = PC3, y = PC2)) +
+  scale_shape_identity()
+
+# TODO: change styling to include shapes: circles squares triangles, maybe add Vs and Fs
+```
+
+Conclusions:
+
+In PC1 vs PC2 there are 4 clear clusters: corresponding to treated and untreated strains BG2 and CBS138.
+In PC3 they look more similar.
+
+The outlier: CBS138_RPMI_VORI_C (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
+After discussion, we decided that something was not quite right in that replicate.
 
 
 
@@ -225,15 +379,14 @@ volcano_plot <- function(deseq_df, rN2, up, down) {
 samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
 # samplesheet = py$experiment_data_1
 
-counts_all = counts_all_1
-head(counts_all)
+head(counts_all_CBS138)
 
 conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_FLUC")
 
 
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_CBS138,
+                                 conditions_to_compare)
 dds_compared_conditions
-
 
 results(dds_compared_conditions)
 rN = resultsNames(dds_compared_conditions)
@@ -261,13 +414,12 @@ p1 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
 
 samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
 # samplesheet = py$experiment_data_1
-counts_all = counts_all_1
-head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI")
 
 
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_CBS138, 
+                                 conditions_to_compare)
 dds_compared_conditions
 
 
@@ -300,13 +452,10 @@ p2 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
 
 samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
 # samplesheet = py$experiment_data_1
-counts_all = counts_all_1
-head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI")
 
-
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_CBS138, conditions_to_compare)
 dds_compared_conditions
 
 
@@ -336,13 +485,12 @@ p3 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
 
 samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
 # samplesheet = py$experiment_data_2
-counts_all = counts_all_2
-head(counts_all)
+head(counts_all_BG2)
 
 conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_FLUC")
 
-
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_BG2,
+                                 conditions_to_compare)
 dds_compared_conditions
 
 
@@ -371,13 +519,10 @@ p4 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
 
 samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
 # samplesheet = py$experiment_data_2
-counts_all = counts_all_2
-head(counts_all)
 
 conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_VORI")
 
-
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_BG2, conditions_to_compare)
 dds_compared_conditions
 
 
@@ -406,13 +551,10 @@ p5 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
 
 samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
 # samplesheet = py$experiment_data_2
-counts_all = counts_all_2
-head(counts_all)
 
 conditions_to_compare = c("BG2_RPMI_FLUC", "BG2_RPMI_VORI")
 
-
-dds_compared_conditions = de_seq(counts_all, conditions_to_compare)
+dds_compared_conditions = de_seq(counts_all_BG2, conditions_to_compare)
 dds_compared_conditions
 
 
@@ -603,10 +745,6 @@ This includes:
 - reporting the number of genes that are DE in both strain - this shows whether the response is similar between CBS138 and BG2.
 
 ```{r ortho_cb, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
-rbbh = read.csv("../data/rbbh/cbs138_bg2_rbbh2.csv")
-# rbbh = py$rbbh_cgla_clga_ids_gene
-# write.csv(rbbh, "../data/rbbh/cbs138_bg2_rbbh.csv")
-# head(rbbh)
 
 ortho_cb_c_up = merge(DEGdf_up2x_FDR5_cf, rbbh, by.x="gene", by.y="gene_id_cbs138")
 # head(ortho_cb_c_up)
@@ -794,33 +932,10 @@ upc2_targets_down$standard_sc
 
 ## Differential gene expression comparison between the two strains
 
-The genes between the two strains are matched using Reciprocal Blast Best Hits, which might not be entirely accurate given copy number variations etc. between the two species.
-I have used orthofinder https://doi.org/10.1186/s13059-019-1832-y to find orthologs, but I haven't found a way to incorporate this into the analysis yet.
-
-
-```{r rbbh, echo=FALSE, message=FALSE, warning=FALSE}
-# rbbh = py$rbbh_cgla_clga_ids_gene
-# head(rbbh)
-
-counts_all_2_rbbh = merge(counts_all_2, rbbh, by.x="Geneid", by.y="gene_id_bg2")
-# head(py$counts_all_2)
-# head(counts_all_2_rbbh)
-counts_all_2_rbbh["Geneid"] = counts_all_2_rbbh["gene_id_cbs138"]
-counts_all_2_rbbh = counts_all_2_rbbh[, !(colnames(counts_all_2_rbbh) %in% c("gene_id_cbs138","gene_id_bg2"))]
-#counts_all_2_rbbh.drop(["gene_id_cbs138", "gene_id_bg2"], axis=1, inplace=True)
-# head(counts_all_2_rbbh)
-
-counts_all_joined = merge(counts_all_1, counts_all_2_rbbh,by="Geneid")
-head(counts_all_joined)
-
-```
 
 ```{r c_b_d, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
 samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
-# samplesheet = py$sample_sheet_df
-counts_all = counts_all_joined
-# head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_DMSO", "BG2_RPMI_DMSO")
 
@@ -831,9 +946,9 @@ sample_sheet_compared_conditions <-
 rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
 
 dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all %>%
+  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
                            dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all$Gene),
+                           magrittr::set_rownames(counts_all_joined$Gene),
                          colData = sample_sheet_compared_conditions,
                          design = ~ Strain) %>%
   DESeq()
@@ -873,9 +988,6 @@ nrow(DEGdf_down2x_FDR5_cbd)
 ```{r c_b_v, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
 samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
-# samplesheet = py$sample_sheet_df
-counts_all = counts_all_joined
-head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_VORI", "BG2_RPMI_VORI")
 
@@ -886,9 +998,9 @@ sample_sheet_compared_conditions <-
 rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
 
 dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all %>%
+  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
                            dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all$Gene),
+                           magrittr::set_rownames(counts_all_joined$Gene),
                          colData = sample_sheet_compared_conditions,
                          design = ~ Strain) %>%
   DESeq()
@@ -928,9 +1040,6 @@ nrow(DEGdf_down2x_FDR5_cbv)
 ```{r c_b_f, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
 samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
-# samplesheet = py$sample_sheet_df
-counts_all = counts_all_joined
-# head(counts_all)
 
 conditions_to_compare = c("CBS138_RPMI_FLUC", "BG2_RPMI_FLUC")
 
@@ -941,9 +1050,9 @@ sample_sheet_compared_conditions <-
 rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
 
 dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all %>%
+  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
                            dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all$Gene),
+                           magrittr::set_rownames(counts_all_joined$Gene),
                          colData = sample_sheet_compared_conditions,
                          design = ~ Strain) %>%
   DESeq()
@@ -1045,139 +1154,6 @@ VORI downregulated in CBS138:
 - trehalose metabolism
 - carbohydrate metabolism
 - energy derivation by oxidation of organic compounds
-
-## PCA
-
-```{r pca_data}
-
-samplesheet = here::here("data", 
-                         "sample_sheets", 
-                         "DGE_samplesheet_canGla2.txt") %>%
-  read_table()
-# samplesheet = py$experiment_data_both
-rownames(samplesheet) = samplesheet$Code
-print(samplesheet)
-
-counts_only = subset(counts_all, select=samplesheet$Code)
-#counts_only <- counts_all[,-1]
-rownames(counts_only) <- counts_all[,1]
-
-print(head(counts_only))
-
-dds_all <- DESeqDataSetFromMatrix(countData = counts_only,
-                                  colData = samplesheet,
-                                  design = ~ Code)
-
-rlog_all <- rlog(dds_all)
-head(assay(rlog_all))
-rlog_all_df = as.data.frame(assay(rlog_all))
-  
-```
-
-
-```{r calculate_pca_rlog, eval=TRUE}
-# calculate principal components of rlog, after extracting from the dataset
-pca_rlog <- rlog_all %>%
-  assay() %>%
-  t() %>%
-  prcomp()
-
-# convert principal components to data frame
-pcdf_rlog <- bind_cols(
-  as_tibble(colData(rlog_all)),
-  as_tibble(pca_rlog$x)
-)
-
-pcdf_rlog
-```
-
-```{r calculate_propvar, eval=TRUE}
-propvar_rlog_df <- tibble(
-  PC = seq.int(1L, ncol(pca_rlog$x) ),
-  tot_var = pca_rlog$sdev^2,
-  prop_var = tot_var/sum(tot_var)
-)
-
-propvar_rlog_df
-```
-
-```{r plot_percentvar, fig.width = 3, fig.height = 2, eval=TRUE}
-plot_percentvar_rlog <- 
-  ggplot(data = propvar_rlog_df, 
-         aes(x = PC, y = prop_var)) +
-  geom_col(fill = "blue") +
-  scale_x_continuous("principal component",
-                     limits = c(0.4,10.6), 
-                     breaks = 1L:10L,
-                     expand = c(0,0)) + 
-  scale_y_continuous("prop. of variance", expand = c(0,0))
-plot_percentvar_rlog
-```
-
-```{r plot_PC12_default, fig.height=4, fig.width=7, eval=TRUE}
-scales_PCA <- 
-  list(
-    scale_colour_manual("Strain, Treatment",
-      values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
-                 "CBS138_RPMI_FLUC" = "#A569BD",
-                 "CBS138_RPMI_VORI" = "#D2B4DE",
-                 "BG2_RPMI_DMSO" = "#196F3D",
-                 "BG2_RPMI_FLUC" = "#27AE60",
-                 "BG2_RPMI_VORI" = "#A9DFBF"),
-      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
-                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
-                 "CBS138_RPMI_VORI" = "CBS138, VORI",
-                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
-                 "BG2_RPMI_VORI"    = "BG2,    VORI")),
-    scale_shape_manual("Strain, Treatment",
-      values = c("CBS138_RPMI_DMSO" = 15,
-                 "CBS138_RPMI_FLUC" = 15,
-                 "CBS138_RPMI_VORI" = 15,
-                 "BG2_RPMI_DMSO" = 17,
-                 "BG2_RPMI_FLUC" = 17,
-                 "BG2_RPMI_VORI" = 17),
-      labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
-                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
-                 "CBS138_RPMI_VORI" = "CBS138, VORI",
-                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
-                 "BG2_RPMI_VORI"    = "BG2,    VORI"))
-  )
-
-
-pc12 = ggplot(data = pcdf_rlog,
-       aes(colour = Condition, shape = Condition)
-       ) +
-  geom_point(aes(x = PC1, y = PC2)) +
-  theme(legend.box = "horizontal") +
-  scales_PCA
-legend = get_legend(pc12)
-pc12
-
-pc32 = ggplot(data = pcdf_rlog,
-       aes(colour = Condition, shape = Condition)
-       ) +
-  geom_point(aes(x = PC3, y = PC2)) +
-  scales_PCA
-pc32
-
-ggplot(data = pcdf_rlog,
-       aes(colour = Condition, shape = Rep)
-       ) +
-  geom_point(aes(x = PC3, y = PC2)) +
-  scale_shape_identity()
-
-# TODO: change styling to include shapes: circles squares triangles, maybe add Vs and Fs
-```
-
-Conclusions:
-
-In PC1 vs PC2 there are 4 clear clusters: corresponding to treated and untreated strains BG2 and CBS138.
-In PC3 they look more similar.
-
-The outlier: CBS138_RPMI_VORI_C (light purple) clusters with other bio reps in PC1-PC2, but not in PC3.
-After discussion, we decided that something was not quite right in that replicate.
 
 
 ## Venn Diagram of DEG lists
