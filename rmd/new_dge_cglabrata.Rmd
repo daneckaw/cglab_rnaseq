@@ -105,59 +105,72 @@ For quality control, we check correlation between the samples (only within strai
 
 There is high correlation within untreated (DMSO) samples and treated (FCZ and VCZ), but no obvious differences between VCZ and FCZ.
 
+```{r pairplot_counts, echo = FALSE, fig.height = 8, fig.width = 8}
+# set up short sample codes
+shortcodes <- 
+  paste(rep(c("DMSO", "FLUC", "VORI"), each = 3), c("A","B","C"),
+        sep = "_")
 
-```{python pairplot1, fig.height = 4, fig.width=10, warning=FALSE, message=FALSE, echo=FALSE, eval=FALSE}
-# TODO: no Python code in this file; eval set to FALSE until ported to R
-from matplotlib import pyplot as plt
-import seaborn as sns
+# define maximum count so 
+maxcount <- max( counts_all_CBS138 %>%
+                   dplyr::select(-Geneid) %>% max(),
+                 counts_all_BG2 %>%
+                   dplyr::select(-Geneid) %>% max())
+maxlog10count <- log10(maxcount + 100)
 
-plt.close()
-#sns.pairplot(counts_only, corner=True, kind="scatter")
+# function to format ggpairs nicely
+pair_points <- function(data, mapping, ...){
+    ggplot(data=data) + 
+      geom_abline(mapping = NULL,
+                  intercept = 0, slope = 1, linetype = "dashed") + 
+      geom_point(mapping=mapping, colour = "grey50", size = 0.5) + 
+      scale_y_continuous(breaks = 0:6, limits = c(0,maxlog10count)) +
+      scale_x_continuous(breaks = 0:6, limits = c(0,maxlog10count))
+  }
 
-fig, ax = plt.subplots(1, 2, figsize=(9, 4), layout="tight")
+ggpairs(data = counts_all_CBS138 %>%
+          dplyr::rename_with(.fn = stringr::str_remove, pattern = "CBS138_RPMI_") %>%
+          dplyr::select(all_of(shortcodes)) %>%
+          magrittr::add(1) %>%
+          log10(),
+        lower = list(continuous = pair_points),
+        title = "Strain CBS138, log10(counts + 1)")
 
-heatmap = sns.heatmap(counts_1.corr(), annot=True, ax=ax[0], vmin=0.7, vmax=1.0);
-heatmap.set_title('CBS138 Correlation Heatmap', fontdict={'fontsize':12}, pad=12);
+ggpairs(data = counts_all_BG2 %>%
+          dplyr::rename_with(.fn = stringr::str_remove, pattern = "BG2_RPMI_") %>%
+          dplyr::select(all_of(shortcodes)) %>%
+          magrittr::add(1) %>%
+          log10(),
+        lower = list(continuous = pair_points),
+        title = "Strain BG2, log10(counts + 1)")
 
-heatmap = sns.heatmap(counts_2.corr(), annot=True, ax=ax[1], vmin=0.7, vmax=1.0);
-heatmap.set_title('BG2 Correlation Heatmap', fontdict={'fontsize':12}, pad=12);
-
-labs = ['DMSO_A', 'VORI_A', 'FLUC_A', 'DMSO_B', 'VORI_B', 'FLUC_B', 'DMSO_C', 'VORI_C', 'FLUC_C']
-ax[0].set_xticks(ax[0].get_xticks(), labs, rotation=30, rotation_mode='anchor', ha='right')
-ax[0].set_yticks(ax[0].get_yticks(), labs, rotation=30, rotation_mode='anchor', ha='right')
-ax[1].set_xticks(ax[0].get_xticks(), labs, rotation=30, rotation_mode='anchor', ha='right')
-ax[1].set_yticks(ax[0].get_yticks(), labs, rotation=30, rotation_mode='anchor', ha='right')
-ax[0].tick_params(labelsize=8)
-ax[1].tick_params(labelsize=8)
-
-plt.show()
-plt.close()
 ```
 
+This shows that the replicates are generally very well correlated, R > 0.96. However, there is more variability in replicate C, especially CBS138_RPMI_VORI_C.
 
 
-(This is a figure in progress)
+## Quality control - clustering
 
-When we cluster the results, again untreated samples cluster together and treated samples cluster together.
+We intially cluster the results on raw rpm, separately by strain. Again untreated samples cluster together and treated samples cluster together.
 Treated samples cluster in a way that doesn't indicate any obvious sample mix-up.
 
 CBS138_RPMI_VORI_C is an outlier.
 
 
-```{r heatmap, fig.height = 10, fig.width=10, echo=FALSE, message=FALSE}
+```{r heatmap_rpm, fig.height = 8, fig.width=8, echo=FALSE, message=FALSE}
 library(pheatmap)
 
-
 # create heatmap using pheatmap
-ph1 = pheatmap(counts_rpm_CBS138, main="CBS138")
-ph2 = pheatmap(counts_rpm_BG2, main="BG2")
+ph1 = pheatmap(counts_rpm_CBS138, main="CBS138", show_rownames = FALSE)
+ph2 = pheatmap(counts_rpm_BG2, main="BG2", show_rownames = FALSE)
 ```
 
 
-## Quality Control - Principal Component Analysis
+### Calculate rlog
 
-```{r pca_data}
+Regularized logarithm, on both strains together joined by best-hit genes.
 
+```{r calculate_rlog_all}
 sample_sheet_all = here::here("data", 
                          "sample_sheets", 
                          "DGE_samplesheet_canGla2.txt") %>%
@@ -176,9 +189,52 @@ dds_all <- DESeqDataSetFromMatrix(countData =
 rlog_all <- rlog(dds_all)
 head(assay(rlog_all))
 rlog_all_df = as.data.frame(assay(rlog_all))
-  
 ```
 
+### Clustering on rlog across strains
+
+```{r heatmap_rlog, fig.height = 8, fig.width=8, echo=FALSE, message=FALSE}
+
+ph_rlog = pheatmap(rlog_all_df, 
+                   main="Both strains, rlog", 
+                   show_rownames = FALSE)
+```
+
+### Clustering on normalized rlog across strains
+
+Normalized rlog gets at relative (not absolute) differences in expression between strains.
+Here we additionally filter for a minimal count of 100, to remove low-count noise.
+
+
+```{r heatmap_rlog_norm, fig.height = 8, fig.width=8, echo=FALSE, message=FALSE}
+
+mincounts <- 
+  # list of genes with
+  counts_all_joined %>%
+  dplyr::select(all_of(sample_sheet_all$Code)) %>%
+  as.matrix() %>%
+  rowMins()
+genelist_mincount100 <- counts_all_joined$Geneid[mincounts >= 100]
+
+ph_rlog = pheatmap(rlog_all_df[genelist_mincount100,] -
+                     rowMeans(rlog_all_df[genelist_mincount100,]),
+                   main="Both strains, normalized rlog, min. count 100", 
+                   show_rownames = FALSE)
+```
+
+These clustering analyses support:
+
+- clustering by - / + drug dominates clustering by strain
+- the difference between the two drugs is minimal
+- within drug treated samples, strains cluster.
+- CBS138_RPMI_VORI_C is an outlier
+
+We are not trying to get any more information out of this analysis, e.g. not trying to identify clusters of co-regulated genes, so there is no need to do more arranging the plots.
+
+
+## Quality Control - Principal Component Analysis
+
+Calculate principal components from rlog.
 
 ```{r calculate_pca_rlog, eval=TRUE}
 # calculate principal components of rlog, after extracting from the dataset
