@@ -43,7 +43,7 @@ Candida glabrata strains:
 1. CBS138
 2. BG2
 
-Treated with voriconazole (VORI), fluconazole (FLUC) or DMSO (solvent control).
+Treated with voriconazole (VCZ / VORI), fluconazole (FCZ / FLUC) or DMSO (solvent control).
 
 Sequencing FASTQ files were aligned to appropriate genomes using HISAT2 and quantified using featureCounts.
 
@@ -103,7 +103,7 @@ head(counts_all_joined)
 
 For quality control, we check correlation between the samples (only within strain).
 
-There is high correlation within untreated (DMSO) samples and treated (FLUC and VORI), but no obvious differences between VORI and FLUC.
+There is high correlation within untreated (DMSO) samples and treated (FCZ and VCZ), but no obvious differences between VCZ and FCZ.
 
 
 ```{python pairplot1, fig.height = 4, fig.width=10, warning=FALSE, message=FALSE, echo=FALSE, eval=FALSE}
@@ -230,11 +230,11 @@ scales_PCA <-
                  "BG2_RPMI_FLUC" = "#27AE60",
                  "BG2_RPMI_VORI" = "#A9DFBF"),
       labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
-                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
-                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "CBS138_RPMI_FLUC" = "CBS138, FCZ",
+                 "CBS138_RPMI_VORI" = "CBS138, VCZ",
                  "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
-                 "BG2_RPMI_VORI"    = "BG2,    VORI")),
+                 "BG2_RPMI_FLUC"    = "BG2,    FCZ",
+                 "BG2_RPMI_VORI"    = "BG2,    VCZ")),
     scale_shape_manual("Strain, Treatment",
       values = c("CBS138_RPMI_DMSO" = 15,
                  "CBS138_RPMI_FLUC" = 15,
@@ -243,11 +243,11 @@ scales_PCA <-
                  "BG2_RPMI_FLUC" = 17,
                  "BG2_RPMI_VORI" = 17),
       labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
-                 "CBS138_RPMI_FLUC" = "CBS138, FLUC",
-                 "CBS138_RPMI_VORI" = "CBS138, VORI",
+                 "CBS138_RPMI_FLUC" = "CBS138, FCZ",
+                 "CBS138_RPMI_VORI" = "CBS138, VCZ",
                  "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FLUC",
-                 "BG2_RPMI_VORI"    = "BG2,    VORI"))
+                 "BG2_RPMI_FLUC"    = "BG2,    FCZ",
+                 "BG2_RPMI_VORI"    = "BG2,    VCZ"))
   )
 
 
@@ -402,6 +402,7 @@ volcano_plot <- function(deseq_df, up, down,
 
 ```
 
+### DGE, CBS138, FCZ vs DMSO
 
 ```{r cbs_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -431,9 +432,12 @@ write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_all
 
 
 p1 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
-  ggtitle("FLUC vs DMSO, Strain CBS138")
+  ggtitle("FCZ vs DMSO, Strain CBS138")
 #p1
 ```
+
+
+### DGE, CBS138, VCZ vs DMSO
 
 ```{r cbs_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -463,12 +467,69 @@ write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_all
 
 
 p2 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
-  ggtitle("VORI vs DMSO, Strain CBS138")
+  ggtitle("VCZ vs DMSO, Strain CBS138")
 #p2
 
 ```
 
+### Check: DGE, CBS138, FCZ vs DMSO excluding the outlying sample CBS138_RPMI_VORI_C
 
+Conclude: the single outlying sample `CBS138_RPMI_VORI_C` has minimal effect on the substantial results. Although it changes the genelists over the cutoff, it doesn't change much most of the fold changes and p-values.
+
+```{r cbs_v_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_CBS138,
+                     conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI"),
+                     strains_to_include = "CBS138",
+                     sample_sheet = dplyr::filter(sample_sheet_all,
+                                                  Code != "CBS138_RPMI_VORI_C"))
+dds_compared_conditions
+
+
+results(dds_compared_conditions)
+rN = resultsNames(dds_compared_conditions)
+rN
+
+res <- results(dds_compared_conditions, name=rN[2])
+head(res)
+dds_compared_conditions
+biobroom::tidy.DESeqDataSet(dds_compared_conditions)
+deseq_df_xc <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
+
+DEGdf_up2x_FDR5_cvxc = get_upregulated_genes(deseq_df_xc)
+DEGdf_down2x_FDR5_cvxc = get_downregulated_genes(deseq_df_xc)
+DEGdf_non_significant_cvxc = get_non_significant_genes(deseq_df_xc)
+
+# write.csv(deseq_df_xc, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_allDESeq.csv")
+
+
+p2xc = volcano_plot(deseq_df_xc, DEGdf_up2x_FDR5_cvxc, DEGdf_down2x_FDR5_cvxc) +
+  ggtitle("VCZ vs DMSO, Strain CBS138, exclude bad sample")
+#p2
+
+deseq_df_3repsvsxc <- 
+  dplyr::inner_join(deseq_df, 
+              deseq_df_xc, 
+              by = "gene",
+              suffix = c(".all", ".xc"))
+
+ggplot(data = deseq_df_3repsvsxc, aes(x = log2FC.all, y = log2FC.xc)) + 
+  geom_hline(yintercept = c(-1, 1), colour = "purple", linetype = "dashed") + 
+  geom_vline(xintercept = c(-1, 1), colour = "purple", linetype = "dashed") +
+  geom_abline(intercept = 0, slope = 1, colour = "purple") + 
+    geom_point(size = 0.2, colour = "grey50") +
+    geom_point(data = dplyr::filter(deseq_df_3repsvsxc,
+                             gene %in% DEGdf_up2x_FDR5_cvxc$gene),
+               size = 1, colour = "darkblue") +
+    geom_point(data = dplyr::filter(deseq_df_3repsvsxc,
+                             gene %in% DEGdf_down2x_FDR5_cvxc$gene),
+               size = 1, colour = "darkred")
+```
+
+
+### DGE, CBS138, VCZ vs FCZ
 
 ```{r cbs_vf_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -498,10 +559,50 @@ DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
 p3 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
-  ggtitle("VORI vs FLUC, Strain CBS138")
+  ggtitle("VCZ vs FCZ, Strain CBS138")
 #p3
 
 ```
+
+### Double-check: DGE, CBS138, VCZ vs FCZ excluding the outlying sample CBS138_RPMI_VORI_C 
+
+
+```{r cbs_vf_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_CBS138,
+                     conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI"),
+                     strains_to_include = "CBS138",
+                     sample_sheet = dplyr::filter(sample_sheet_all,
+                                                  Code != "CBS138_RPMI_VORI_C"))
+
+dds_compared_conditions
+
+
+results(dds_compared_conditions)
+rN = resultsNames(dds_compared_conditions)
+rN
+
+res <- results(dds_compared_conditions, name=rN[2])
+head(res)
+dds_compared_conditions
+biobroom::tidy.DESeqDataSet(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
+
+DEGdf_up2x_FDR5_cvfxc = get_upregulated_genes(deseq_df)
+DEGdf_down2x_FDR5_cvfxc = get_downregulated_genes(deseq_df)
+
+volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvfxc, DEGdf_down2x_FDR5_cvfxc) +
+  ggtitle("VCZ vs FCZ, Strain CBS138")
+#p3
+
+```
+
+Again this does not substantially change outcome: 7 DE genes when the sample is excluded, instead of zero.
+
+
+### DGE, BG2, FCZ vs DMSO
 
 ```{r bg2_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -531,9 +632,12 @@ DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_FLUC_DMSO_allDESeq.csv")
 
 p4 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
-  ggtitle("FLUC vs DMSO, Strain BG2")
+  ggtitle("FCZ vs DMSO, Strain BG2")
 #p4
 ```
+
+
+### DGE, BG2, VCZ vs DMSO
 
 ```{r bg2_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -562,9 +666,12 @@ DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_DMSO_allDESeq.csv")
 
 p5 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
-  ggtitle("VORI vs DMSO, Strain BG2")
+  ggtitle("VCZ vs DMSO, Strain BG2")
 #p5
 ```
+
+
+### DGE, BG2, VCZ vs FCZ
 
 ```{r bg2_fv_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
@@ -593,9 +700,11 @@ DEGdf_non_significant_bfv = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_FLUC_allDESeq.csv")
 
 p6 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
-  ggtitle("VORI vs FLUC, Strain BG2")
+  ggtitle("VCZ vs FCZ, Strain BG2")
 # p6
 ```
+
+### Volcano plots of pairwise comparisons
 
 ```{r arrange_plots_1, fig.height=9, fig.width=8, echo=FALSE, warning=FALSE}
 pg = plot_grid(p1, p4, p2, p5, p3, p6, ncol = 2, nrow = 3, rel_widths = c(5, 5))
@@ -608,12 +717,12 @@ CBS138:
 
 ```{r cbs_f_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated CBS138 FLUC vs DMSO: %d", nrow(DEGdf_up2x_FDR5_cf))
+sprintf("Upregulated CBS138 FCZ vs DMSO: %d", nrow(DEGdf_up2x_FDR5_cf))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_cf, n = 10)
 
 
-sprintf("Downregulated CBS138 FLUC vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cf))
+sprintf("Downregulated CBS138 FCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cf))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_cf, n = 10)
 
@@ -628,12 +737,12 @@ write.csv(DEGdf_down2x_FDR5_cf, "../data/deseq2/Candida_glabrata_CBS138/CBS138_F
 
 ```{r cbs_v_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in CBS138 VORI vs DMSO: %d", nrow(DEGdf_up2x_FDR5_cv))
+sprintf("Upregulated in CBS138 VCZ vs DMSO: %d", nrow(DEGdf_up2x_FDR5_cv))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_cv, n = 10)
 
 
-sprintf("Downregulated in CBS138 VORI vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cv))
+sprintf("Downregulated in CBS138 VCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cv))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_cv, n = 10)
 
@@ -648,12 +757,12 @@ write.csv(DEGdf_down2x_FDR5_cv, "../data/deseq2/Candida_glabrata_CBS138/CBS138_V
 
 ```{r cbs_fv_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in CBS138 VORI vs FLUC: %d", nrow(DEGdf_up2x_FDR5_cvf))
+sprintf("Upregulated in CBS138 VCZ vs FCZ: %d", nrow(DEGdf_up2x_FDR5_cvf))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_cvf, n = 10)
 
 
-sprintf("Downregulated in CBS138 VORI vs FLUC: %d", nrow(DEGdf_down2x_FDR5_cvf))
+sprintf("Downregulated in CBS138 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_cvf))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_cvf, n = 10)
 
@@ -670,12 +779,12 @@ BG2:
 
 ```{r bg2_f_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in BG2 FLUC vs DMSO: %d", nrow(DEGdf_up2x_FDR5_bf))
+sprintf("Upregulated in BG2 FCZ vs DMSO: %d", nrow(DEGdf_up2x_FDR5_bf))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_bf, n = 10)
 
 
-sprintf("Downregulated in BG2 FLUC vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bf))
+sprintf("Downregulated in BG2 FCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bf))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_bf, n = 10)
 
@@ -690,12 +799,12 @@ write.csv(DEGdf_down2x_FDR5_bf, "../data/deseq2/Candida_glabrata_BG2/BG2_FLUC_DM
 
 ```{r bg2_v_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in BG2 VORI vs DMSO: %d", nrow(DEGdf_up2x_FDR5_bv))
+sprintf("Upregulated in BG2 VCZ vs DMSO: %d", nrow(DEGdf_up2x_FDR5_bv))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_bv, n = 10)
 
 
-sprintf("Downregulated in BG2 VORI vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bv))
+sprintf("Downregulated in BG2 VCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bv))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_bv, n = 10)
 
@@ -710,12 +819,12 @@ write.csv(DEGdf_down2x_FDR5_bv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_DM
 
 ```{r bg2_vf_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in BG2 VORI vs DMSO: %d", nrow(DEGdf_up2x_FDR5_bfv))
+sprintf("Upregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_up2x_FDR5_bfv))
 # sprintf("Printing the first 10:")
 # print(DEGdf_up2x_FDR5_bfv, n = 10)
 
 
-sprintf("Downregulated in BG2 VORI vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bfv))
+sprintf("Downregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_bfv))
 # print("Printing the first 10:")
 # print(DEGdf_down2x_FDR5_bfv, n = 10)
 
@@ -730,15 +839,15 @@ write.csv(DEGdf_down2x_FDR5_bfv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_F
 
 **Conclusions:**
 
-- no difference betwee FLUC and VORI in both strains
-- small but comparable number of up/downregulatedg genes in both strains
-- the CBS138_FLUC outlier might impact the differential expression analysis, so I might need to repeat the results on the two more consistent replicates.
+- no difference between FCZ and VCZ effect in either strain.
+- small but comparable number of up/downregulated genes in both strains.
+- the CBS138_FLUC outlier impacts the differential expression analysis, but not in a way that changes the overall conclusions, so it is reasonable to proceed with the analysis on all 3 replicates.
 
 
 ### Identification of corresponding genes in S. cerevisiae and between the two C.glabrata strains
 
-Using curated orthologs between C.glabrata CBS138 and S.cerevisiae (downloaded from candidagenome.org), I identified standard and systematic _S. cerevisiae_ names for _C.glabrata_ genes up- and down-regulated in FLUC vs DMSO.
-There is no need to do repeat it in VORI, because there are no significant DEG between these two conditions.
+Using curated orthologs between C.glabrata CBS138 and S.cerevisiae (downloaded from candidagenome.org), I identified standard and systematic _S. cerevisiae_ names for _C.glabrata_ genes up- and down-regulated in FCZ vs DMSO.
+There is no need to do repeat it in VCZ, because there are no significant DEG between these two conditions.
 
 Orthologs are also identified between C.glabrata strains using Reciprocal Blast Best Hits.
 
@@ -757,7 +866,7 @@ write.csv(ortho_up, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_up_
 write.csv(ortho_down, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_down_ortho.csv")
 ```
 
-Here I look at overlap between genes upregulated/downregulated in FLUC treatment between CBS138 and BG2.
+Here I look at overlap between genes upregulated/downregulated in FCZ treatment between CBS138 and BG2.
 This includes:
 
 - reporting the number of genes that are DE in one strain and have a homolog in the other - this shows how many genes unique for the strain are DE
@@ -777,11 +886,11 @@ ortho_cb_b_up = merge(DEGdf_up2x_FDR5_bf, rbbh, by.x="gene", by.y="gene_id_bg2")
 ortho_cb_b_down = merge(DEGdf_down2x_FDR5_bf, rbbh, by.x="gene", by.y="gene_id_bg2")
 # head(ortho_cb_b_down)
 
-sprintf("Number of FLUC upregulated genes in CBS138: %d that have a homolog in BG2: %d", nrow(DEGdf_up2x_FDR5_cf), nrow(ortho_cb_c_up))
-sprintf("Number of FLUC downregulated genes in CBS138: %d that have a homolog in BG2: %d", nrow(DEGdf_down2x_FDR5_cf), nrow(ortho_cb_c_down))
+sprintf("Number of FCZ upregulated genes in CBS138: %d that have a homolog in BG2: %d", nrow(DEGdf_up2x_FDR5_cf), nrow(ortho_cb_c_up))
+sprintf("Number of FCZ downregulated genes in CBS138: %d that have a homolog in BG2: %d", nrow(DEGdf_down2x_FDR5_cf), nrow(ortho_cb_c_down))
 
-sprintf("Number of FLUC upregulated genes in BG2: %d that have a homolog in CBS138: %d", nrow(DEGdf_up2x_FDR5_bf), nrow(ortho_cb_b_up))
-sprintf("Number of FLUC downregulated genes in BG2: %d that have a homolog in CBS138: %d", nrow(DEGdf_down2x_FDR5_bf), nrow(ortho_cb_b_down))
+sprintf("Number of FCZ upregulated genes in BG2: %d that have a homolog in CBS138: %d", nrow(DEGdf_up2x_FDR5_bf), nrow(ortho_cb_b_up))
+sprintf("Number of FCZ downregulated genes in BG2: %d that have a homolog in CBS138: %d", nrow(DEGdf_down2x_FDR5_bf), nrow(ortho_cb_b_down))
 
 ortho_cb_cb_up = merge(ortho_cb_c_up, ortho_cb_b_up, by.x = "gene", by.y = "gene_id_cbs138")
 # head(ortho_cb_cb_up)
@@ -789,8 +898,8 @@ ortho_cb_cb_up = merge(ortho_cb_c_up, ortho_cb_b_up, by.x = "gene", by.y = "gene
 ortho_cb_cb_down = merge(ortho_cb_c_down, ortho_cb_b_down, by.x = "gene", by.y = "gene_id_cbs138")
 # head(ortho_cb_cb_down)
 
-sprintf("Number of FLUC upregulated genes overlapping between CBS138 and BG2: %d", nrow(ortho_cb_cb_up))
-sprintf("Number of FLUC downregulated genes overlapping between CBS138 and BG2: %d", nrow(ortho_cb_cb_down))
+sprintf("Number of FCZ upregulated genes overlapping between CBS138 and BG2: %d", nrow(ortho_cb_cb_up))
+sprintf("Number of FCZ downregulated genes overlapping between CBS138 and BG2: %d", nrow(ortho_cb_cb_down))
 
 write.csv(ortho_cb_c_up, "../data/ortho/CBS138_BG2_FLUC_DMSO_CBS138_up_ortho.csv")
 write.csv(ortho_cb_c_down, "../data/ortho/CBS138_BG2_FLUC_DMSO_CBS138_down_ortho.csv")
@@ -1019,7 +1128,7 @@ print(DEGdf_down2x_FDR5_cbv, n = 20)
 print(DEGdf_non_significant_cbv, n = 20)
 
 p8 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv) +
-  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI VORI"), collapse = " "))
+  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI VCZ"), collapse = " "))
 #p8
 
 print("Upregulated genes:")
@@ -1056,7 +1165,7 @@ print(DEGdf_down2x_FDR5_cbf, n = 20)
 print(DEGdf_non_significant_cbf, n = 20)
 
 p9 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf) +
-  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI FLUC"), collapse = " "))
+  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI FCZ"), collapse = " "))
 #p9
 
 print("Upregulated genes:")
@@ -1076,9 +1185,9 @@ Report number of differentially expressed genes in CBS138 vs BG2:
 
 sprintf("DMSO upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbd), nrow(DEGdf_down2x_FDR5_cbd))
 
-sprintf("FLUC upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbf), nrow(DEGdf_down2x_FDR5_cbf))
+sprintf("FCZ upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbf), nrow(DEGdf_down2x_FDR5_cbf))
 
-sprintf("VORI upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbv), nrow(DEGdf_down2x_FDR5_cbv))
+sprintf("VCZ upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbv), nrow(DEGdf_down2x_FDR5_cbv))
 
 write.csv(DEGdf_up2x_FDR5_cbd, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_DMSO_up.csv")
 
@@ -1110,21 +1219,21 @@ DMSO downregulated in CBS138 (selected):
 - small molecule catabolism
 - lipid catabolism
 
-FLUC upregulated in CBS138:
+FCZ upregulated in CBS138:
 
 - cell adhesion: AWP2, CAGL0A01584g, CAGL0I09856g, CAGL0K12078g, EPA23, EPA6
 
-FLUC downregulated in CBS138 (selected):
+FCZ downregulated in CBS138 (selected):
 
 - small molecule catabolism
 - energy derivation by oxidation of organic compounds
 
-VORI upregulated in CBS138:
+VCZ upregulated in CBS138:
 
 - cell adhesion: AWP2, CAGL0A01584g, CAGL0I09856g, EPA23, EPA3, EPA6
 - filamentous growth: CAGL0H02145g, CAGL0I01254g, CAGL0I09856g, CAGL0K04169g, CAGL0M03663g, CAGL0M09042g, EFG1, SHO1, TEC1, YPS2
 
-VORI downregulated in CBS138:
+VCZ downregulated in CBS138:
 
 - small molecule catabolism
 - trehalose metabolism
@@ -1136,14 +1245,14 @@ VORI downregulated in CBS138:
 
 The above conclusions for pairwise comparisons suggest that we should compare:
 
-- Drug vs no drug, taking average of VORI and FLUC responses
+- Drug vs no drug, taking average of VCZ and FCZ responses
 - and compare across strains to get the strain-specific drug interactions
 
 ### Differential expression shared across both strains, both drugs
 
 Here, "up" means that both drugs induces more transcript abundance in both strains. Essentially, treating both drugs as biological replicates, and both strains as biological replicates.
 
-```{r drug_bothstrains}
+```{r drug_bothstrains, fig.height=4, fig.width=5}
 
 sample_sheet_all_drugnodrug <-
   sample_sheet_all %>%
@@ -1197,7 +1306,7 @@ writeLines(DEGdf_down2x_FDR5_drug$gene, "../data/deseq2/BothStrains_Drug_vs_DMSO
 
 We're looking for differential strain responses to drug. Here, "up" means that azoles induce more change in transcript abundance in CBS138 as compared to BG2. Again, treating both drugs as biological replicates, due to the small differences in response to the two diferent drugs.
 
-```{r drug_strain_interactions}
+```{r drug_strain_interactions, fig.height=4, fig.width=5}
 
 dds_drugstrain <- 
   DESeqDataSetFromMatrix(
@@ -1332,5 +1441,5 @@ TODOs:
 
 - [ ] look at the orthogroups for differences between the species
 - [ ] change data formatting to have one file with orthology information instead of multiple files for every condition
-- [ ] extend the analysis of regulation, including the strain differences
+- [x] extend the analysis of regulation, including the strain differences
 - [ ] less text, more figures
