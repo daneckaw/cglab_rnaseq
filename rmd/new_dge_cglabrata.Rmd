@@ -379,7 +379,9 @@ get_non_significant_genes <- function(deseq_df) {
   DEGdf_non_significant
 }
 
-volcano_plot <- function(deseq_df, up, down) {
+volcano_plot <- function(deseq_df, up, down, 
+                         xlimits = c(-4,4),
+                         ylimits = c(0,50)) {
   ggplot(data = deseq_df,
          aes(x = log2FC, y = -log10(padj)) ) +
     geom_point(size = 0.5, colour = "grey50") +
@@ -388,11 +390,11 @@ volcano_plot <- function(deseq_df, up, down) {
     geom_point(data = down,
                size = 1, colour = "darkred") +
     scale_y_continuous("-log10(p)",
-                       limits = c(0,50), expand = c(0,0),
+                       limits = ylimits, expand = c(0,0),
                        oob=scales::squish) +
     scale_x_continuous("log2 fold-change",
                        breaks = -5:5,
-                       limits = c(-4,4), expand = c(0.01,0.01),
+                       limits = xlimits, expand = c(0.01,0.01),
                        oob = scales::squish) +
     coord_cartesian(clip = "off") 
 }
@@ -731,6 +733,7 @@ write.csv(DEGdf_down2x_FDR5_bfv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_F
 - no difference betwee FLUC and VORI in both strains
 - small but comparable number of up/downregulatedg genes in both strains
 - the CBS138_FLUC outlier might impact the differential expression analysis, so I might need to repeat the results on the two more consistent replicates.
+
 
 ### Identification of corresponding genes in S. cerevisiae and between the two C.glabrata strains
 
@@ -1127,6 +1130,111 @@ VORI downregulated in CBS138:
 - trehalose metabolism
 - carbohydrate metabolism
 - energy derivation by oxidation of organic compounds
+
+
+## Analysis of Drug vs no Drug and strain differences
+
+The above conclusions for pairwise comparisons suggest that we should compare:
+
+- Drug vs no drug, taking average of VORI and FLUC responses
+- and compare across strains to get the strain-specific drug interactions
+
+### Differential expression shared across both strains, both drugs
+
+Here, "up" means that both drugs induces more transcript abundance in both strains. Essentially, treating both drugs as biological replicates, and both strains as biological replicates.
+
+```{r drug_bothstrains}
+
+sample_sheet_all_drugnodrug <-
+  sample_sheet_all %>%
+  # select only relevant columns
+  dplyr::select(SampleID, Code, Strain, Medium, Rep) %>%
+  # make Strain a factor in predictable order 
+  mutate(Strain = factor(Strain, 
+                         levels = c("BG2", "CBS138"))
+         ) %>%
+  # create two new columns for Drug, and Voriconazole vs Fluconazole
+  mutate(Drug = Medium %in% c("RPMI_FLUC", "RPMI_VORI"),
+         VORI = Medium %in% c("RPMI_VORI")) %>%
+  magrittr::set_rownames(.$Code)
+
+dds_drugnodrug_bc <- 
+  DESeqDataSetFromMatrix(
+    countData = counts_all_joined %>%
+      dplyr::select(sample_sheet_all_drugnodrug$Code) %>%
+      magrittr::set_rownames(counts_all_joined$Gene),
+    colData = sample_sheet_all_drugnodrug,
+    design = ~ Strain + Drug) %>%
+  DESeq()
+
+resultsNames(dds_drugnodrug_bc)
+
+deseq_df_drugnodrug_bc  <- 
+  deseq_df_transform(dds_drugnodrug_bc,
+                     termstokeep = "DrugTRUE")
+
+deseq_df_drugnodrug_bc
+
+DEGdf_up2x_FDR5_drug = get_upregulated_genes(deseq_df_drugnodrug_bc)
+DEGdf_down2x_FDR5_drug = get_downregulated_genes(deseq_df_drugnodrug_bc)
+
+print(DEGdf_up2x_FDR5_drug, n = 20)
+
+print(DEGdf_down2x_FDR5_drug, n = 20)
+
+volcano_plot(deseq_df_drugnodrug_bc, DEGdf_up2x_FDR5_drug, DEGdf_down2x_FDR5_drug) +
+  ggtitle("Azole vs DMSO, in both strains")
+
+write.csv(deseq_df_drugnodrug_bc, "../data/deseq2/BothStrains_Drug_vs_DMSO_allDESeq.csv")
+write.csv(DEGdf_up2x_FDR5_drug, "../data/deseq2/BothStrains_Drug_vs_DMSO_up2x_FDR5.csv")
+writeLines(DEGdf_up2x_FDR5_drug$gene, "../data/deseq2/BothStrains_Drug_vs_DMSO_up2x_FDR5_names.txt")
+write.csv(DEGdf_down2x_FDR5_drug, "../data/deseq2/BothStrains_Drug_vs_DMSO_down2x_FDR5.csv")
+writeLines(DEGdf_down2x_FDR5_drug$gene, "../data/deseq2/BothStrains_Drug_vs_DMSO_down2x_FDR5_names.txt")
+
+```
+
+### Differential drug-strain interactions across strains
+
+We're looking for differential strain responses to drug. Here, "up" means that azoles induce more change in transcript abundance in CBS138 as compared to BG2. Again, treating both drugs as biological replicates, due to the small differences in response to the two diferent drugs.
+
+```{r drug_strain_interactions}
+
+dds_drugstrain <- 
+  DESeqDataSetFromMatrix(
+    countData = counts_all_joined %>%
+      dplyr::select(sample_sheet_all_drugnodrug$Code) %>%
+      magrittr::set_rownames(counts_all_joined$Gene),
+    colData = sample_sheet_all_drugnodrug,
+    design = ~ Strain * Drug) %>%
+  DESeq()
+
+resultsNames(dds_drugstrain)
+
+deseq_df_drugstrain  <- 
+  deseq_df_transform(dds_drugstrain,
+                     termstokeep = "StrainCBS138.DrugTRUE")
+
+deseq_df_drugstrain
+
+DEGdf_up2x_FDR5_drugstrain = get_upregulated_genes(deseq_df_drugstrain)
+DEGdf_down2x_FDR5_drugstrain = get_downregulated_genes(deseq_df_drugstrain)
+
+print(DEGdf_up2x_FDR5_drugstrain, n = 20)
+
+print(DEGdf_down2x_FDR5_drugstrain, n = 20)
+
+volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_drugstrain,
+             ylimits = c(0,5),
+             xlimits = c(-3,3)) +
+  ggtitle("Azole vs DMSO, strain differences")
+
+write.csv(deseq_df_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_allDESeq.csv")
+write.csv(DEGdf_up2x_FDR5_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_up2x_FDR5.csv")
+writeLines(DEGdf_up2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrain_CBS138_vs_BG2_up2x_FDR5_names.txt")
+write.csv(DEGdf_down2x_FDR5_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_down2x_FDR5.csv")
+writeLines(DEGdf_down2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrain_CBS138_vs_BG2_down2x_FDR5_names.txt")
+
+```
 
 
 ## Venn Diagram of DEG lists
