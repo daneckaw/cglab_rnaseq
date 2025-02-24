@@ -340,11 +340,11 @@ run_deseq_vsstrain <-
     dds_compared_conditions
   }
 
-deseq_df_transform <- function(dds_compared_conditions) {
-  # Note: rN[2] hard-coded needs to be edited.
+deseq_df_transform <- function(dds_compared_conditions, 
+                               termstokeep) {
   deseq_df <- 
   biobroom::tidy.DESeqDataSet(dds_compared_conditions) %>%
-  dplyr::filter(term == rN[2]) %>%
+  dplyr::filter(term %in% termstokeep) %>%
   dplyr::select(gene, 
                 baseMean, 
                 log2FC = estimate, 
@@ -380,7 +380,6 @@ get_non_significant_genes <- function(deseq_df) {
 }
 
 volcano_plot <- function(deseq_df, up, down) {
-  # argument "rN2" not actually used.
   ggplot(data = deseq_df,
          aes(x = log2FC, y = -log10(padj)) ) +
     geom_point(size = 0.5, colour = "grey50") +
@@ -419,7 +418,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cf = get_downregulated_genes(deseq_df)
@@ -428,8 +428,8 @@ DEGdf_non_significant_cf = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
 
 
-p1 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p1 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
+  ggtitle("FLUC vs DMSO, Strain CBS138")
 #p1
 ```
 
@@ -450,7 +450,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cv = get_downregulated_genes(deseq_df)
@@ -459,8 +460,8 @@ DEGdf_non_significant_cv = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
-p2 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p2 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
+  ggtitle("VORI vs DMSO, Strain CBS138")
 #p2
 
 ```
@@ -485,7 +486,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cvf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cvf = get_downregulated_genes(deseq_df)
@@ -493,8 +495,8 @@ DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
-p3 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p3 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
+  ggtitle("VORI vs FLUC, Strain CBS138")
 #p3
 
 ```
@@ -517,7 +519,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_bf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bf = get_downregulated_genes(deseq_df)
@@ -525,8 +528,8 @@ DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_FLUC_DMSO_allDESeq.csv")
 
-p4 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p4 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
+  ggtitle("FLUC vs DMSO, Strain BG2")
 #p4
 ```
 
@@ -547,7 +550,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_bv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bv = get_downregulated_genes(deseq_df)
@@ -555,8 +559,8 @@ DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_DMSO_allDESeq.csv")
 
-p5 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p5 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
+  ggtitle("VORI vs DMSO, Strain BG2")
 #p5
 ```
 
@@ -577,7 +581,8 @@ res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 dds_compared_conditions
 biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_bfv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bfv = get_downregulated_genes(deseq_df)
@@ -585,8 +590,8 @@ DEGdf_non_significant_bfv = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_FLUC_allDESeq.csv")
 
-p6 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
-  ggtitle(paste0(unlist(strsplit(rN[2], "_")), collapse = " "))
+p6 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
+  ggtitle("VORI vs FLUC, Strain BG2")
 # p6
 ```
 
@@ -959,7 +964,8 @@ rN
 res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cbd = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cbd = get_downregulated_genes(deseq_df)
@@ -971,7 +977,7 @@ print(DEGdf_down2x_FDR5_cbd, n = 20)
 
 print(DEGdf_non_significant_cbd, n = 20)
 
-p7 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd) +
+p7 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd) +
   ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI DMSO"), collapse = " "))
 #p7
 
@@ -996,7 +1002,8 @@ rN
 res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cbv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cbv = get_downregulated_genes(deseq_df)
@@ -1008,7 +1015,7 @@ print(DEGdf_down2x_FDR5_cbv, n = 20)
 
 print(DEGdf_non_significant_cbv, n = 20)
 
-p8 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv) +
+p8 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv) +
   ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI VORI"), collapse = " "))
 #p8
 
@@ -1032,7 +1039,8 @@ rN
 res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 
-deseq_df <- deseq_df_transform(dds_compared_conditions)
+deseq_df <- deseq_df_transform(dds_compared_conditions, 
+                               termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cbf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cbf = get_downregulated_genes(deseq_df)
@@ -1044,7 +1052,7 @@ print(DEGdf_down2x_FDR5_cbf, n = 20)
 
 print(DEGdf_non_significant_cbf, n = 20)
 
-p9 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf) +
+p9 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf) +
   ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI FLUC"), collapse = " "))
 #p9
 
