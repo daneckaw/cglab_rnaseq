@@ -158,19 +158,19 @@ ph2 = pheatmap(counts_rpm_BG2, main="BG2")
 
 ```{r pca_data}
 
-samplesheet = here::here("data", 
+sample_sheet_all = here::here("data", 
                          "sample_sheets", 
                          "DGE_samplesheet_canGla2.txt") %>%
   read_table()
 # samplesheet = py$experiment_data_both
-rownames(samplesheet) = samplesheet$Code
-print(samplesheet)
+rownames(sample_sheet_all) = sample_sheet_all$Code
+print(sample_sheet_all)
 
 dds_all <- DESeqDataSetFromMatrix(countData =
                                     counts_all_joined %>%
-                             dplyr::select(samplesheet$Code) %>%
+                             dplyr::select(sample_sheet_all$Code) %>%
                              magrittr::set_rownames(counts_all_joined$Gene),
-                                  colData = samplesheet,
+                                  colData = sample_sheet_all,
                                   design = ~ Code)
 
 rlog_all <- rlog(dds_all)
@@ -296,24 +296,52 @@ The upregulated and downregulated genes are saved in ../data/deseq2
 ```{r functions, echo = FALSE}
 # wrapper functions for DESeq2 package functions
 
+run_deseq_vsmedium <- 
+  function(counts_all,
+           conditions_to_compare,
+           strains_to_include = c("BG2", "CBS138"),
+           sample_sheet = sample_sheet_all) {
+    sample_sheet_compared_conditions <-
+      dplyr::filter(sample_sheet,
+                    Condition %in% conditions_to_compare,
+                    Strain %in% strains_to_include)
+    rownames(sample_sheet_compared_conditions) <-
+      1:nrow(sample_sheet_compared_conditions)
+    
+    dds_compared_conditions <- 
+      DESeqDataSetFromMatrix(
+        countData = counts_all %>%
+          dplyr::select(sample_sheet_compared_conditions$Code) %>%
+          magrittr::set_rownames(counts_all$Gene),
+        colData = sample_sheet_compared_conditions,
+        design = ~ Medium) %>%
+      DESeq()
+    dds_compared_conditions
+  }
 
-de_seq <- function(counts_all, conditions_to_compare) {
-  sample_sheet_compared_conditions <-
-    dplyr::filter(samplesheet,
-                  Condition %in% conditions_to_compare)
-  rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
-
-  dds_compared_conditions <- 
-    DESeqDataSetFromMatrix(countData = counts_all %>%
-                             dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                             magrittr::set_rownames(counts_all$Gene),
-                           colData = sample_sheet_compared_conditions,
-                           design = ~ Medium) %>%
-    DESeq()
-  dds_compared_conditions
-}
+run_deseq_vsstrain <- 
+  function(counts_all,
+           conditions_to_compare,
+           sample_sheet = sample_sheet_all) {
+    sample_sheet_compared_conditions <-
+      dplyr::filter(sample_sheet,
+                    Condition %in% conditions_to_compare)
+    rownames(sample_sheet_compared_conditions) <-
+      1:nrow(sample_sheet_compared_conditions)
+    
+    dds_compared_conditions <- 
+      DESeqDataSetFromMatrix(
+        countData = counts_all %>%
+          dplyr::select(sample_sheet_compared_conditions$Code) %>%
+          magrittr::set_rownames(counts_all$Gene),
+        colData = sample_sheet_compared_conditions,
+        design = ~ Strain) %>%
+      DESeq()
+    dds_compared_conditions
+  }
 
 deseq_df_transform <- function(dds_compared_conditions) {
+  # Note: rN[2] hard-coded needs to be edited.
   deseq_df <- 
   biobroom::tidy.DESeqDataSet(dds_compared_conditions) %>%
   dplyr::filter(term == rN[2]) %>%
@@ -343,6 +371,7 @@ get_downregulated_genes <-function(deseq_df) {
 }
   
 get_non_significant_genes <- function(deseq_df) {
+  # logic here in "filter" call is bad. 
   DEGdf_non_significant <- 
     deseq_df %>%
     dplyr::filter(log2FC > -1, , log2FC < 1, padj > 0.05) %>%
@@ -350,10 +379,10 @@ get_non_significant_genes <- function(deseq_df) {
   DEGdf_non_significant
 }
 
-volcano_plot <- function(deseq_df, rN2, up, down) {
-  volcano_plot <- 
-    ggplot(data = deseq_df,
-           aes(x = log2FC, y = -log10(padj)) ) +
+volcano_plot <- function(deseq_df, up, down) {
+  # argument "rN2" not actually used.
+  ggplot(data = deseq_df,
+         aes(x = log2FC, y = -log10(padj)) ) +
     geom_point(size = 0.5, colour = "grey50") +
     geom_point(data = up,
                size = 1, colour = "darkblue") +
@@ -367,8 +396,7 @@ volcano_plot <- function(deseq_df, rN2, up, down) {
                        limits = c(-4,4), expand = c(0.01,0.01),
                        oob = scales::squish) +
     coord_cartesian(clip = "off") 
-  volcano_plot
-  }
+}
 
 
 ```
@@ -376,16 +404,11 @@ volcano_plot <- function(deseq_df, rN2, up, down) {
 
 ```{r cbs_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
-# samplesheet = py$experiment_data_1
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_CBS138,
+                     conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_FLUC"),
+                     strains_to_include = "CBS138")
 
-head(counts_all_CBS138)
-
-conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_FLUC")
-
-
-dds_compared_conditions = de_seq(counts_all_CBS138,
-                                 conditions_to_compare)
 dds_compared_conditions
 
 results(dds_compared_conditions)
@@ -412,14 +435,10 @@ p1 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
 
 ```{r cbs_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
-# samplesheet = py$experiment_data_1
-
-conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI")
-
-
-dds_compared_conditions = de_seq(counts_all_CBS138, 
-                                 conditions_to_compare)
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_CBS138,
+                     conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI"),
+                     strains_to_include = "CBS138")
 dds_compared_conditions
 
 
@@ -450,12 +469,11 @@ p2 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
 
 ```{r cbs_vf_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_1.csv")
-# samplesheet = py$experiment_data_1
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_CBS138,
+                     conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI"),
+                     strains_to_include = "CBS138")
 
-conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI")
-
-dds_compared_conditions = de_seq(counts_all_CBS138, conditions_to_compare)
 dds_compared_conditions
 
 
@@ -483,14 +501,11 @@ p3 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
 
 ```{r bg2_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
-# samplesheet = py$experiment_data_2
-head(counts_all_BG2)
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_BG2,
+                     conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_FLUC"),
+                     strains_to_include = "BG2")
 
-conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_FLUC")
-
-dds_compared_conditions = de_seq(counts_all_BG2,
-                                 conditions_to_compare)
 dds_compared_conditions
 
 
@@ -517,12 +532,10 @@ p4 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
 
 ```{r bg2_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
-# samplesheet = py$experiment_data_2
-
-conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_VORI")
-
-dds_compared_conditions = de_seq(counts_all_BG2, conditions_to_compare)
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_BG2,
+                     conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_VORI"),
+                     strains_to_include = "BG2")
 dds_compared_conditions
 
 
@@ -549,14 +562,12 @@ p5 = volcano_plot(deseq_df, rN[2], DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
 
 ```{r bg2_fv_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
-samplesheet = read.csv("../data/sample_sheets/experiment_data_2.csv")
-# samplesheet = py$experiment_data_2
+dds_compared_conditions = 
+  run_deseq_vsmedium(counts_all_BG2,
+                     conditions_to_compare = c("BG2_RPMI_FLUC", "BG2_RPMI_VORI"),
+                     strains_to_include = "BG2")
 
-conditions_to_compare = c("BG2_RPMI_FLUC", "BG2_RPMI_VORI")
-
-dds_compared_conditions = de_seq(counts_all_BG2, conditions_to_compare)
 dds_compared_conditions
-
 
 results(dds_compared_conditions)
 rN = resultsNames(dds_compared_conditions)
@@ -935,26 +946,11 @@ upc2_targets_down$standard_sc
 
 ```{r c_b_d, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
+dds_compared_conditions = 
+  run_deseq_vsstrain(counts_all_joined,
+                     conditions_to_compare = c("CBS138_RPMI_DMSO", "BG2_RPMI_DMSO"))
 
-conditions_to_compare = c("CBS138_RPMI_DMSO", "BG2_RPMI_DMSO")
-
-
-sample_sheet_compared_conditions <-
-  dplyr::filter(samplesheet,
-                Condition %in% conditions_to_compare)
-rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
-
-dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
-                           dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all_joined$Gene),
-                         colData = sample_sheet_compared_conditions,
-                         design = ~ Strain) %>%
-  DESeq()
 dds_compared_conditions
-
-
 
 results(dds_compared_conditions)
 rN = resultsNames(dds_compared_conditions)
@@ -987,26 +983,11 @@ nrow(DEGdf_down2x_FDR5_cbd)
 
 ```{r c_b_v, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
+dds_compared_conditions = 
+  run_deseq_vsstrain(counts_all_joined,
+                     conditions_to_compare = c("CBS138_RPMI_VORI", "BG2_RPMI_VORI"))
 
-conditions_to_compare = c("CBS138_RPMI_VORI", "BG2_RPMI_VORI")
-
-
-sample_sheet_compared_conditions <-
-  dplyr::filter(samplesheet,
-                Condition %in% conditions_to_compare)
-rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
-
-dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
-                           dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all_joined$Gene),
-                         colData = sample_sheet_compared_conditions,
-                         design = ~ Strain) %>%
-  DESeq()
 dds_compared_conditions
-
-
 
 results(dds_compared_conditions)
 rN = resultsNames(dds_compared_conditions)
@@ -1039,26 +1020,10 @@ nrow(DEGdf_down2x_FDR5_cbv)
 
 ```{r c_b_f, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 
-samplesheet = read.table("../data/sample_sheets/DGE_samplesheet_canGla2.txt", header=TRUE)
-
-conditions_to_compare = c("CBS138_RPMI_FLUC", "BG2_RPMI_FLUC")
-
-
-sample_sheet_compared_conditions <-
-  dplyr::filter(samplesheet,
-                Condition %in% conditions_to_compare)
-rownames(sample_sheet_compared_conditions) <- 1:nrow(sample_sheet_compared_conditions)
-
-dds_compared_conditions <- 
-  DESeqDataSetFromMatrix(countData = counts_all_joined %>%
-                           dplyr::select(sample_sheet_compared_conditions$Code) %>%
-                           magrittr::set_rownames(counts_all_joined$Gene),
-                         colData = sample_sheet_compared_conditions,
-                         design = ~ Strain) %>%
-  DESeq()
+dds_compared_conditions = 
+  run_deseq_vsstrain(counts_all_joined,
+                     conditions_to_compare = c("CBS138_RPMI_FLUC", "BG2_RPMI_FLUC"))
 dds_compared_conditions
-
-
 
 results(dds_compared_conditions)
 rN = resultsNames(dds_compared_conditions)

@@ -1674,7 +1674,7 @@ that doesn’t indicate any obvious sample mix-up.</p>
 </div>
 <div id="quality-control---principal-component-analysis" class="section level2">
 <h2>Quality Control - Principal Component Analysis</h2>
-<pre class="r"><code>samplesheet = here::here(&quot;data&quot;, 
+<pre class="r"><code>sample_sheet_all = here::here(&quot;data&quot;, 
                          &quot;sample_sheets&quot;, 
                          &quot;DGE_samplesheet_canGla2.txt&quot;) %&gt;%
   read_table()</code></pre>
@@ -1692,9 +1692,9 @@ that doesn’t indicate any obvious sample mix-up.</p>
 ##   Condition = col_character()
 ## )</code></pre>
 <pre class="r"><code># samplesheet = py$experiment_data_both
-rownames(samplesheet) = samplesheet$Code</code></pre>
+rownames(sample_sheet_all) = sample_sheet_all$Code</code></pre>
 <pre><code>## Warning: Setting row names on a tibble is deprecated.</code></pre>
-<pre class="r"><code>print(samplesheet)</code></pre>
+<pre class="r"><code>print(sample_sheet_all)</code></pre>
 <pre><code>## # A tibble: 18 × 9
 ##    SampleID Code               Medium Temp  Time  Rep   Species Strain Condition
 ##  *    &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;    
@@ -1718,9 +1718,9 @@ rownames(samplesheet) = samplesheet$Code</code></pre>
 ## 18      103 BG2_RPMI_FLUC_C    RPMI_… 37C   4h    C     Candid… BG2    BG2_RPMI…</code></pre>
 <pre class="r"><code>dds_all &lt;- DESeqDataSetFromMatrix(countData =
                                     counts_all_joined %&gt;%
-                             dplyr::select(samplesheet$Code) %&gt;%
+                             dplyr::select(sample_sheet_all$Code) %&gt;%
                              magrittr::set_rownames(counts_all_joined$Gene),
-                                  colData = samplesheet,
+                                  colData = sample_sheet_all,
                                   design = ~ Code)</code></pre>
 <pre><code>## Warning in DESeqDataSet(se, design = design, ignoreRank): some variables in
 ## design formula are characters, converting to factors</code></pre>
