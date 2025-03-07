@@ -484,7 +484,7 @@ DEGdf_up2x_FDR5_cf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cf = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
 
 
 p1 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
@@ -519,7 +519,7 @@ DEGdf_up2x_FDR5_cv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cv = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
 p2 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
@@ -558,7 +558,7 @@ DEGdf_up2x_FDR5_cvxc = get_upregulated_genes(deseq_df_xc)
 DEGdf_down2x_FDR5_cvxc = get_downregulated_genes(deseq_df_xc)
 DEGdf_non_significant_cvxc = get_non_significant_genes(deseq_df_xc)
 
-# write.csv(deseq_df_xc, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_allDESeq.csv")
+# write.csv(deseq_df_xc, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
 p2xc = volcano_plot(deseq_df_xc, DEGdf_up2x_FDR5_cvxc, DEGdf_down2x_FDR5_cvxc) +
@@ -612,7 +612,7 @@ DEGdf_up2x_FDR5_cvf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cvf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
 p3 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
   ggtitle("VCZ vs FCZ, Strain CBS138")
@@ -685,7 +685,7 @@ DEGdf_up2x_FDR5_bf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bf = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_FLUC_DMSO_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/BG2/BG2_FLUC_DMSO_allDESeq.csv")
 
 p4 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
   ggtitle("FCZ vs DMSO, Strain BG2")
@@ -719,7 +719,7 @@ DEGdf_up2x_FDR5_bv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_DMSO_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_DMSO_allDESeq.csv")
 
 p5 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
   ggtitle("VCZ vs DMSO, Strain BG2")
@@ -753,7 +753,7 @@ DEGdf_up2x_FDR5_bfv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_bfv = get_downregulated_genes(deseq_df)
 DEGdf_non_significant_bfv = get_non_significant_genes(deseq_df)
 
-write.csv(deseq_df, "../data/deseq2/Candida_glabrata_CBS138/BG2_VORI_FLUC_allDESeq.csv")
+write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_FLUC_allDESeq.csv")
 
 p6 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
   ggtitle("VCZ vs FCZ, Strain BG2")
@@ -786,8 +786,8 @@ sprintf("Downregulated CBS138 FCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cf))
 # print(DEGdf_non_significant_cf, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_cf, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_up.csv")
-write.csv(DEGdf_down2x_FDR5_cf, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_down.csv")
+write.csv(DEGdf_up2x_FDR5_cf, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_up.csv")
+write.csv(DEGdf_down2x_FDR5_cf, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_down.csv")
 
 ```
 
@@ -806,8 +806,8 @@ sprintf("Downregulated in CBS138 VCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_cv))
 # print(DEGdf_non_significant_cv, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_cv, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_up.csv")
-write.csv(DEGdf_down2x_FDR5_cv, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_DMSO_down.csv")
+write.csv(DEGdf_up2x_FDR5_cv, "../data/deseq2/CBS138/CBS138_VORI_DMSO_up.csv")
+write.csv(DEGdf_down2x_FDR5_cv, "../data/deseq2/CBS138/CBS138_VORI_DMSO_down.csv")
 
 ```
 
@@ -826,8 +826,8 @@ sprintf("Downregulated in CBS138 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_cvf))
 # print(DEGdf_non_significant_cvf, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_cvf, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_up.csv")
-write.csv(DEGdf_down2x_FDR5_cvf, "../data/deseq2/Candida_glabrata_CBS138/CBS138_VORI_FLUC_down.csv")
+write.csv(DEGdf_up2x_FDR5_cvf, "../data/deseq2/CBS138/CBS138_VORI_FLUC_up.csv")
+write.csv(DEGdf_down2x_FDR5_cvf, "../data/deseq2/CBS138/CBS138_VORI_FLUC_down.csv")
 
 ```
 
@@ -848,8 +848,8 @@ sprintf("Downregulated in BG2 FCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bf))
 # print(DEGdf_non_significant_bf, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_bf, "../data/deseq2/Candida_glabrata_BG2/BG2_FLUC_DMSO_up.csv")
-write.csv(DEGdf_down2x_FDR5_bf, "../data/deseq2/Candida_glabrata_BG2/BG2_FLUC_DMSO_down.csv")
+write.csv(DEGdf_up2x_FDR5_bf, "../data/deseq2/BG2/BG2_FLUC_DMSO_up.csv")
+write.csv(DEGdf_down2x_FDR5_bf, "../data/deseq2/BG2/BG2_FLUC_DMSO_down.csv")
 
 ```
 
@@ -868,8 +868,8 @@ sprintf("Downregulated in BG2 VCZ vs DMSO: %d", nrow(DEGdf_down2x_FDR5_bv))
 # print(DEGdf_non_significant_bv, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_bv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_DMSO_up.csv")
-write.csv(DEGdf_down2x_FDR5_bv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_DMSO_down.csv")
+write.csv(DEGdf_up2x_FDR5_bv, "../data/deseq2/BG2/BG2_VORI_DMSO_up.csv")
+write.csv(DEGdf_down2x_FDR5_bv, "../data/deseq2/BG2/BG2_VORI_DMSO_down.csv")
 
 ```
 
@@ -888,8 +888,8 @@ sprintf("Downregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_bfv))
 # print(DEGdf_non_significant_bfv, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_bfv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_FLUC_up.csv")
-write.csv(DEGdf_down2x_FDR5_bfv, "../data/deseq2/Candida_glabrata_BG2/BG2_VORI_FLUC_down.csv")
+write.csv(DEGdf_up2x_FDR5_bfv, "../data/deseq2/BG2/BG2_VORI_FLUC_up.csv")
+write.csv(DEGdf_down2x_FDR5_bfv, "../data/deseq2/BG2/BG2_VORI_FLUC_down.csv")
 
 ```
 
@@ -918,8 +918,8 @@ head(ortho_up)
 ortho_down = merge(DEGdf_down2x_FDR5_cf, ortho_cgob, by.x="gene", by.y="systematic_cg")
 head(ortho_down)
 
-write.csv(ortho_up, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_up_ortho.csv")
-write.csv(ortho_down, "../data/deseq2/Candida_glabrata_CBS138/CBS138_FLUC_DMSO_down_ortho.csv")
+write.csv(ortho_up, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_up_ortho.csv")
+write.csv(ortho_down, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_down_ortho.csv")
 ```
 
 Here I look at overlap between genes upregulated/downregulated in FCZ treatment between CBS138 and BG2.
@@ -1245,17 +1245,17 @@ sprintf("FCZ upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbf), nro
 
 sprintf("VCZ upregulated: %d, downregulated: %d", nrow(DEGdf_up2x_FDR5_cbv), nrow(DEGdf_down2x_FDR5_cbv))
 
-write.csv(DEGdf_up2x_FDR5_cbd, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_DMSO_up.csv")
+write.csv(DEGdf_up2x_FDR5_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_up.csv")
 
-write.csv(DEGdf_down2x_FDR5_cbd, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_DMSO_down.csv")
+write.csv(DEGdf_down2x_FDR5_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_down.csv")
 
-write.csv(DEGdf_up2x_FDR5_cbf, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_FLUC_up.csv")
+write.csv(DEGdf_up2x_FDR5_cbf, "../data/deseq2/CompareStrains/CBS138_BG2_FLUC_up.csv")
 
-write.csv(DEGdf_down2x_FDR5_cbf, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_FLUC_down.csv")
+write.csv(DEGdf_down2x_FDR5_cbf, "../data/deseq2/CompareStrains/CBS138_BG2_FLUC_down.csv")
 
-write.csv(DEGdf_up2x_FDR5_cbv, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_VORI_up.csv")
+write.csv(DEGdf_up2x_FDR5_cbv, "../data/deseq2/CompareStrains/CBS138_BG2_VORI_up.csv")
 
-write.csv(DEGdf_down2x_FDR5_cbv, "../data/deseq2/Candida_glabrata_both/CBS138_BG2_VORI_down.csv")
+write.csv(DEGdf_down2x_FDR5_cbv, "../data/deseq2/CompareStrains/CBS138_BG2_VORI_down.csv")
 
 
 ```
@@ -1350,11 +1350,11 @@ print(DEGdf_down2x_FDR5_drug, n = 20)
 volcano_plot(deseq_df_drugnodrug_bc, DEGdf_up2x_FDR5_drug, DEGdf_down2x_FDR5_drug) +
   ggtitle("Azole vs DMSO, in both strains")
 
-write.csv(deseq_df_drugnodrug_bc, "../data/deseq2/BothStrains_Drug_vs_DMSO_allDESeq.csv")
-write.csv(DEGdf_up2x_FDR5_drug, "../data/deseq2/BothStrains_Drug_vs_DMSO_up2x_FDR5.csv")
-writeLines(DEGdf_up2x_FDR5_drug$gene, "../data/deseq2/BothStrains_Drug_vs_DMSO_up2x_FDR5_names.txt")
-write.csv(DEGdf_down2x_FDR5_drug, "../data/deseq2/BothStrains_Drug_vs_DMSO_down2x_FDR5.csv")
-writeLines(DEGdf_down2x_FDR5_drug$gene, "../data/deseq2/BothStrains_Drug_vs_DMSO_down2x_FDR5_names.txt")
+write.csv(deseq_df_drugnodrug_bc, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_allDESeq.csv")
+write.csv(DEGdf_up2x_FDR5_drug, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_up2x_FDR5.csv")
+writeLines(DEGdf_up2x_FDR5_drug$gene, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_up2x_FDR5_names.txt")
+write.csv(DEGdf_down2x_FDR5_drug, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_down2x_FDR5.csv")
+writeLines(DEGdf_down2x_FDR5_drug$gene, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_down2x_FDR5_names.txt")
 
 ```
 
@@ -1393,11 +1393,11 @@ volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_
              xlimits = c(-3,3)) +
   ggtitle("Azole vs DMSO, strain differences")
 
-write.csv(deseq_df_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_allDESeq.csv")
-write.csv(DEGdf_up2x_FDR5_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_up2x_FDR5.csv")
-writeLines(DEGdf_up2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrain_CBS138_vs_BG2_up2x_FDR5_names.txt")
-write.csv(DEGdf_down2x_FDR5_drugstrain, "../data/deseq2/DrugStrain_CBS138_vs_BG2_down2x_FDR5.csv")
-writeLines(DEGdf_down2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrain_CBS138_vs_BG2_down2x_FDR5_names.txt")
+write.csv(deseq_df_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_allDESeq.csv")
+write.csv(DEGdf_up2x_FDR5_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_up2x_FDR5.csv")
+writeLines(DEGdf_up2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_up2x_FDR5_names.txt")
+write.csv(DEGdf_down2x_FDR5_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_down2x_FDR5.csv")
+writeLines(DEGdf_down2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_down2x_FDR5_names.txt")
 
 ```
 
