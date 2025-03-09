@@ -266,7 +266,7 @@ propvar_rlog_df
 plot_percentvar_rlog <- 
   ggplot(data = propvar_rlog_df, 
          aes(x = PC, y = prop_var)) +
-  geom_col(fill = "blue") +
+  geom_col(fill = "skyblue3") +
   scale_x_continuous("principal component",
                      limits = c(0.4,10.6), 
                      breaks = 1L:10L,
@@ -279,18 +279,18 @@ plot_percentvar_rlog
 scales_PCA <- 
   list(
     scale_colour_manual("Strain, Treatment",
-      values = c("CBS138_RPMI_DMSO" = "#5B2C6F",
-                 "CBS138_RPMI_FLUC" = "#A569BD",
-                 "CBS138_RPMI_VORI" = "#D2B4DE",
-                 "BG2_RPMI_DMSO" = "#196F3D",
-                 "BG2_RPMI_FLUC" = "#27AE60",
-                 "BG2_RPMI_VORI" = "#A9DFBF"),
+      values = c("CBS138_RPMI_DMSO" = "grey20",
+                 "CBS138_RPMI_FLUC" = "purple3",
+                 "CBS138_RPMI_VORI" = "green4",
+                 "BG2_RPMI_DMSO" = "grey20",
+                 "BG2_RPMI_FLUC" = "purple3",
+                 "BG2_RPMI_VORI" = "green4"),
       labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
                  "CBS138_RPMI_FLUC" = "CBS138, FCZ",
                  "CBS138_RPMI_VORI" = "CBS138, VCZ",
-                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FCZ",
-                 "BG2_RPMI_VORI"    = "BG2,    VCZ")),
+                 "BG2_RPMI_DMSO"    = "BG2, DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2, FCZ",
+                 "BG2_RPMI_VORI"    = "BG2, VCZ")),
     scale_shape_manual("Strain, Treatment",
       values = c("CBS138_RPMI_DMSO" = 15,
                  "CBS138_RPMI_FLUC" = 15,
@@ -301,16 +301,18 @@ scales_PCA <-
       labels = c("CBS138_RPMI_DMSO" = "CBS138, DMSO",
                  "CBS138_RPMI_FLUC" = "CBS138, FCZ",
                  "CBS138_RPMI_VORI" = "CBS138, VCZ",
-                 "BG2_RPMI_DMSO"    = "BG2,    DMSO",
-                 "BG2_RPMI_FLUC"    = "BG2,    FCZ",
-                 "BG2_RPMI_VORI"    = "BG2,    VCZ"))
+                 "BG2_RPMI_DMSO"    = "BG2, DMSO",
+                 "BG2_RPMI_FLUC"    = "BG2, FCZ",
+                 "BG2_RPMI_VORI"    = "BG2, VCZ"))
   )
 
 
 pc12 = ggplot(data = pcdf_rlog,
        aes(colour = Condition, shape = Condition)
        ) +
-  geom_point(aes(x = PC1, y = PC2)) +
+  geom_hline(yintercept = 0, colour = "grey90") +
+  geom_vline(xintercept = 0, colour = "grey90") +
+  geom_point(aes(x = PC1, y = PC2), size = 2) +
   theme(legend.box = "horizontal") +
   scales_PCA
 legend = get_legend(pc12)
@@ -319,7 +321,9 @@ pc12
 pc32 = ggplot(data = pcdf_rlog,
        aes(colour = Condition, shape = Condition)
        ) +
-  geom_point(aes(x = PC3, y = PC2)) +
+  geom_hline(yintercept = 0, colour = "grey90") +
+  geom_vline(xintercept = 0, colour = "grey90") +
+  geom_point(aes(x = PC3, y = PC2), size = 2) +
   scales_PCA
 pc32
 
@@ -436,6 +440,7 @@ get_non_significant_genes <- function(deseq_df) {
 }
 
 volcano_plot <- function(deseq_df, up, down, 
+                         xlabel = "log2 fold-change",
                          xlimits = c(-4,4),
                          ylimits = c(0,50)) {
   ggplot(data = deseq_df,
@@ -448,7 +453,7 @@ volcano_plot <- function(deseq_df, up, down,
     scale_y_continuous("-log10(p)",
                        limits = ylimits, expand = c(0,0),
                        oob=scales::squish) +
-    scale_x_continuous("log2 fold-change",
+    scale_x_continuous(xlabel,
                        breaks = -5:5,
                        limits = xlimits, expand = c(0.01,0.01),
                        oob = scales::squish) +
@@ -487,9 +492,10 @@ DEGdf_non_significant_cf = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
 
 
-p1 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf) +
+p_cf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf,
+                  xlabel = "log2 fold-change\n← down in FCZ       up in FCZ →") +
   ggtitle("FCZ vs DMSO, Strain CBS138")
-#p1
+#p_cf
 ```
 
 
@@ -522,9 +528,10 @@ DEGdf_non_significant_cv = get_non_significant_genes(deseq_df)
 write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
-p2 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv) +
+p_cv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv,
+                  xlabel = "log2 fold-change\n← down in VCZ       up in VCZ →") +
   ggtitle("VCZ vs DMSO, Strain CBS138")
-#p2
+#p_cv
 
 ```
 
@@ -561,9 +568,10 @@ DEGdf_non_significant_cvxc = get_non_significant_genes(deseq_df_xc)
 # write.csv(deseq_df_xc, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
-p2xc = volcano_plot(deseq_df_xc, DEGdf_up2x_FDR5_cvxc, DEGdf_down2x_FDR5_cvxc) +
-  ggtitle("VCZ vs DMSO, Strain CBS138, exclude bad sample")
-#p2
+p_cvx = volcano_plot(deseq_df_xc, DEGdf_up2x_FDR5_cvxc, DEGdf_down2x_FDR5_cvxc,
+                    xlabel = "log2 fold-change\n← down in VCZ       up in VCZ →") +
+  ggtitle("VCZ vs DMSO, Strain CBS138, exclude outlying sample")
+#p_cvx
 
 deseq_df_3repsvsxc <- 
   dplyr::inner_join(deseq_df, 
@@ -614,9 +622,10 @@ DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
-p3 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf) +
+p_cvf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf,
+                    xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain CBS138")
-#p3
+#p_cvf
 
 ```
 
@@ -649,9 +658,9 @@ deseq_df <- deseq_df_transform(dds_compared_conditions,
 DEGdf_up2x_FDR5_cvfxc = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cvfxc = get_downregulated_genes(deseq_df)
 
-volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvfxc, DEGdf_down2x_FDR5_cvfxc) +
+volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvfxc, DEGdf_down2x_FDR5_cvfxc,
+                    xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain CBS138")
-#p3
 
 ```
 
@@ -687,9 +696,10 @@ DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/BG2/BG2_FLUC_DMSO_allDESeq.csv")
 
-p4 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf) +
+p_bf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf,
+                    xlabel = "log2 fold-change\n← down in FCZ       up in FCZ →") +
   ggtitle("FCZ vs DMSO, Strain BG2")
-#p4
+#p_bf
 ```
 
 
@@ -721,9 +731,10 @@ DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_DMSO_allDESeq.csv")
 
-p5 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv) +
+p_bv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv,
+                    xlabel = "log2 fold-change\n← down in VCZ       up in VCZ →") +
   ggtitle("VCZ vs DMSO, Strain BG2")
-#p5
+#p_bv
 ```
 
 
@@ -749,22 +760,28 @@ biobroom::tidy.DESeqDataSet(dds_compared_conditions)
 deseq_df <- deseq_df_transform(dds_compared_conditions, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_bfv = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_bfv = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_bfv = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_bvf = get_upregulated_genes(deseq_df)
+DEGdf_down2x_FDR5_bvf = get_downregulated_genes(deseq_df)
+DEGdf_non_significant_bvf = get_non_significant_genes(deseq_df)
 
 write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_FLUC_allDESeq.csv")
 
-p6 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bfv, DEGdf_down2x_FDR5_bfv) +
+p_bvf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bvf, DEGdf_down2x_FDR5_bvf,
+                    xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain BG2")
-# p6
+# p_bvf
 ```
 
 ### Volcano plots of pairwise comparisons
 
-```{r arrange_plots_1, fig.height=9, fig.width=8, echo=FALSE, warning=FALSE}
-pg = plot_grid(p1, p4, p2, p5, p3, p6, ncol = 2, nrow = 3, rel_widths = c(5, 5))
+```{r arrange_pairwise_volcano_plots, fig.height=7.5, fig.width=7, echo=FALSE, warning=FALSE}
+pg = plot_grid(p_cf, p_bf, p_cv, p_bv, p_cvf, p_bvf, 
+               ncol = 2, nrow = 3)
 pg
+
+ggsave("../figures/pairwise_volcano_plots.png", 
+       plot = pg,
+       width = 7.5, height = 7)
 ```
 
 How many genes were differentially expressed in each condition? [TODO: make it a figure]
@@ -875,21 +892,21 @@ write.csv(DEGdf_down2x_FDR5_bv, "../data/deseq2/BG2/BG2_VORI_DMSO_down.csv")
 
 ```{r bg2_vf_deseq_print, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE}
 
-sprintf("Upregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_up2x_FDR5_bfv))
+sprintf("Upregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_up2x_FDR5_bvf))
 # sprintf("Printing the first 10:")
-# print(DEGdf_up2x_FDR5_bfv, n = 10)
+# print(DEGdf_up2x_FDR5_bvf, n = 10)
 
 
-sprintf("Downregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_bfv))
+sprintf("Downregulated in BG2 VCZ vs FCZ: %d", nrow(DEGdf_down2x_FDR5_bvf))
 # print("Printing the first 10:")
-# print(DEGdf_down2x_FDR5_bfv, n = 10)
+# print(DEGdf_down2x_FDR5_bvf, n = 10)
 
 # print("Non significant genes: ")
-# print(DEGdf_non_significant_bfv, n = 10)
+# print(DEGdf_non_significant_bvf, n = 10)
 
 # save files
-write.csv(DEGdf_up2x_FDR5_bfv, "../data/deseq2/BG2/BG2_VORI_FLUC_up.csv")
-write.csv(DEGdf_down2x_FDR5_bfv, "../data/deseq2/BG2/BG2_VORI_FLUC_down.csv")
+write.csv(DEGdf_up2x_FDR5_bvf, "../data/deseq2/BG2/BG2_VORI_FLUC_up.csv")
+write.csv(DEGdf_down2x_FDR5_bvf, "../data/deseq2/BG2/BG2_VORI_FLUC_down.csv")
 
 ```
 
@@ -1145,9 +1162,10 @@ print(DEGdf_down2x_FDR5_cbd, n = 20)
 
 print(DEGdf_non_significant_cbd, n = 20)
 
-p7 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd) +
-  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI DMSO"), collapse = " "))
-#p7
+p_cbd = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd,
+                    xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
+  ggtitle("Strain comparison in RPMI DMSO")
+#p_cbd
 
 print("Upregulated genes:")
 nrow(DEGdf_up2x_FDR5_cbd)
@@ -1183,9 +1201,10 @@ print(DEGdf_down2x_FDR5_cbv, n = 20)
 
 print(DEGdf_non_significant_cbv, n = 20)
 
-p8 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv) +
-  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI VCZ"), collapse = " "))
-#p8
+p_cbv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv,
+                  xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
+  ggtitle("Strain comparison in RPMI VCZ")
+#p_cbv
 
 print("Upregulated genes:")
 nrow(DEGdf_up2x_FDR5_cbv)
@@ -1220,9 +1239,10 @@ print(DEGdf_down2x_FDR5_cbf, n = 20)
 
 print(DEGdf_non_significant_cbf, n = 20)
 
-p9 = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf) +
-  ggtitle(paste0(c(unlist(strsplit(rN[2], "_")), "in RPMI FCZ"), collapse = " "))
-#p9
+p_cbf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf,
+                    xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
+  ggtitle("Strain comparison in RPMI FCZ")
+#p_cbf
 
 print("Upregulated genes:")
 nrow(DEGdf_up2x_FDR5_cbf)
@@ -1230,8 +1250,8 @@ print("Downregulated genes")
 nrow(DEGdf_down2x_FDR5_cbf)
 ```
 
-```{r arrange_plots_2, fig.height=5.5, fig.width=8, echo=FALSE, message=FALSE, warning=FALSE}
-pg = plot_grid(p7, p8, p9, NULL, ncol = 2, nrow = 2, rel_widths = c(5, 5))
+```{r arrange_strain_volcano_plots, fig.height=7.5, fig.width=3.5, echo=FALSE, message=FALSE, warning=FALSE}
+pg = plot_grid(p_cbd, p_cbv, p_cbf, ncol = 1)
 pg
 ```
 
@@ -1347,8 +1367,13 @@ print(DEGdf_up2x_FDR5_drug, n = 20)
 
 print(DEGdf_down2x_FDR5_drug, n = 20)
 
-volcano_plot(deseq_df_drugnodrug_bc, DEGdf_up2x_FDR5_drug, DEGdf_down2x_FDR5_drug) +
+p_drugnodrug_bc = 
+  volcano_plot(deseq_df_drugnodrug_bc, 
+               DEGdf_up2x_FDR5_drug, 
+               DEGdf_down2x_FDR5_drug,
+               xlabel = "log2 fold-change\n← down in drug       up in drug →") +
   ggtitle("Azole vs DMSO, in both strains")
+p_drugnodrug_bc
 
 write.csv(deseq_df_drugnodrug_bc, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_allDESeq.csv")
 write.csv(DEGdf_up2x_FDR5_drug, "../data/deseq2/DrugBothStrains/BothStrains_Drug_vs_DMSO_up2x_FDR5.csv")
@@ -1388,10 +1413,12 @@ print(DEGdf_up2x_FDR5_drugstrain, n = 20)
 
 print(DEGdf_down2x_FDR5_drugstrain, n = 20)
 
-volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_drugstrain,
+p_drugstrain = volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_drugstrain,
              ylimits = c(0,5),
-             xlimits = c(-3,3)) +
+             xlimits = c(-3,3),
+               xlabel = "log2 fold-change\n← more drug x BG2       more drug x CBS138 →") +
   ggtitle("Azole vs DMSO, strain differences")
+p_drugstrain
 
 write.csv(deseq_df_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_allDESeq.csv")
 write.csv(DEGdf_up2x_FDR5_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_up2x_FDR5.csv")
@@ -1493,9 +1520,57 @@ plt.close()
 ```
 
 
-TODOs:
+# Composite figures
+
+Main manuscript RNA-seq composite plot.
+
+```{r summary_plot, fig.height=7.5, fig.width = 7, echo=FALSE, message=FALSE, warning=FALSE}
+guide_legend_pc12 = 
+  guide_legend("Strain,\nTreatment",
+               position = "bottom",
+               nrow = 3, ncol = 2)
+
+p_summary_leftcolumn =
+  plot_grid(NULL, 
+            pc12 + 
+              guides(colour = guide_legend_pc12, 
+                     shape = guide_legend_pc12), 
+            plot_percentvar_rlog +
+              theme(plot.margin = 
+                      unit(c(3, 7, 0, 36), 
+                                "points")) , 
+            rel_heights = c(2,3,1),
+            ncol = 1,
+            labels = c("A","B","C")) +
+  draw_text("EXPERIMENTAL DESIGN HERE", x = 0.5, y = 0.9)
+  
+
+p_summary_volcanos =
+  plot_grid(p_cbd, p_drugnodrug_bc, p_drugstrain, 
+            ncol = 1, nrow = 3,
+            align = "v",
+            labels = c("D","E","F"))
+
+p_summary = 
+  plot_grid(p_summary_leftcolumn, 
+            p_summary_volcanos, 
+            ncol = 2)
+p_summary
+
+ggsave("../figures/RNAseqsummmary_nodesign.eps",
+       p_summary, 
+       height=7.5, width = 7)
+ggsave("../figures/RNAseqsummmary_nodesign.png",
+       p_summary, 
+       height=7.5, width = 7)
+```
+
+
+
+# TO DOs:
 
 - [ ] look at the orthogroups for differences between the species
 - [ ] change data formatting to have one file with orthology information instead of multiple files for every condition
 - [x] extend the analysis of regulation, including the strain differences
 - [ ] less text, more figures
+- [ ] add calcium-related gene names to figures
