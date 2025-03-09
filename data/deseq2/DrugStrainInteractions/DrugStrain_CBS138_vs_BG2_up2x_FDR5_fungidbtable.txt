@@ -1,0 +1,10 @@
+gene	description	name
+CAGL0I09856g	"Ortholog(s) have role in mitotic cell cycle, pseudohyphal growth and nucleus localization"	NA
+CAGL0J02530g	"Putative adhesion protein, predicted GPI-anchor, belongs to adhesin cluster VI"	NA
+CAGL0K04719g	"Ortholog of S. cerevisiae : YNL208W, C. albicans SC5314 : C3_05710W_A/RCT1, C. dubliniensis CD36 : Cd36_85650, C. parapsilosis CDC317 : CPAR2_807040 and C. auris B8441 : B9J08_002643"	NA
+CAGL0K10824g	"Ortholog of S. cerevisiae : YLR149C, C. albicans SC5314 : C7_03280C_A, C. dubliniensis CD36 : Cd36_72930, C. parapsilosis CDC317 : CPAR2_704080 and C. auris B8441 : B9J08_004261"	NA
+CAGL0L06776g	"Has domain(s) with predicted DNA-binding transcription factor activity, sequence-specific DNA binding, zinc ion binding activity and role in regulation of transcription, DNA-templated"	NA
+CAGL0L08426g	Ortholog(s) have role in protein catabolic process and mitochondrial envelope localization	SUE1
+CAGL0M03839g	"Ortholog(s) have role in apoptotic process, calcium-mediated signaling, endoplasmic reticulum unfolded protein response and endoplasmic reticulum, fungal-type vacuole, mitochondrion localization"	NA
+CAGL0M06347g	"Ortholog(s) have phytoceramidase activity, sphingosine N-acyltransferase activity, role in ceramide biosynthetic process, ceramide catabolic process and cortical endoplasmic reticulum, endoplasmic reticulum localization"	NA
+CAGL0M08800g	bZIP domain-containing protein	YAP6
