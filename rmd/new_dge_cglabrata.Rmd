@@ -18,6 +18,7 @@ library(cowplot)
 library(dplyr)
 library(DESeq2)
 library(GGally)
+library(ggrepel)
 library(here)
 library(biobroom)
 
@@ -1149,12 +1150,12 @@ rN
 res <- results(dds_compared_conditions, name=rN[2])
 head(res)
 
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cbd <- deseq_df_transform(dds_compared_conditions, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_cbd = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cbd = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cbd = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cbd = get_upregulated_genes(deseq_df_cbd)
+DEGdf_down2x_FDR5_cbd = get_downregulated_genes(deseq_df_cbd)
+DEGdf_non_significant_cbd = get_non_significant_genes(deseq_df_cbd)
 
 print(DEGdf_up2x_FDR5_cbd, n = 20)
 
@@ -1162,7 +1163,7 @@ print(DEGdf_down2x_FDR5_cbd, n = 20)
 
 print(DEGdf_non_significant_cbd, n = 20)
 
-p_cbd = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd,
+p_cbd = volcano_plot(deseq_df_cbd, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd,
                     xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
   ggtitle("Strain comparison in RPMI DMSO")
 #p_cbd
@@ -1426,6 +1427,63 @@ writeLines(DEGdf_up2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrainInteractio
 write.csv(DEGdf_down2x_FDR5_drugstrain, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_down2x_FDR5.csv")
 writeLines(DEGdf_down2x_FDR5_drugstrain$gene, "../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_down2x_FDR5_names.txt")
 
+```
+
+
+### Volcano plot drug-strain interactions with highlighted genes
+
+Highlighting calcium transporters MID1, ECM7, CCH1.
+
+```{r drug_strain_interactions_genenames, fig.height=7.5, fig.width = 4}
+# Warning! This code chunk is based on manually reading in a file with gene names only of calculated deseq genes. It would be better to do a merge on all Cg gene names.
+
+calcium_transporters <-
+  tribble(~gene, ~name,
+          "CAGL0B02211g", "CCH1",
+          "CAGL0M03597g", "MID1",
+          "CAGL0M00748g", "ECM7")
+
+favourite_TFs <- 
+  tribble(~gene, ~name,
+          "CAGL0M08800g", "YAP6",
+          "CAGL0L06776g", "GAT3/4")
+
+drugstrain_down_names <- 
+  read_tsv("../data/deseq2/DrugStrainInteractions/DrugStrain_CBS138_vs_BG2_down2x_FDR5_fungidbtable.txt") %>%
+  select(gene, name) %>%
+  filter(!is.na(name))
+
+p_summary_volcanos_labels =
+  plot_grid(
+    p_cbd + 
+      geom_label_repel(data = deseq_df_cbd %>%
+                         right_join(calcium_transporters, by = "gene"),
+                       aes(label = name), 
+                       min.segment.length = 0, max.overlaps = 20,
+                       box.padding = 0.1, label.padding = 0.1),
+    p_drugnodrug_bc + 
+      geom_label_repel(data = deseq_df_drugnodrug_bc %>%
+                         right_join(calcium_transporters, by = "gene"),
+                       aes(label = name), 
+                       min.segment.length = 0, max.overlaps = 20,
+                       box.padding = 0.1, label.padding = 0.1),
+    p_drugstrain + 
+      geom_label_repel(data = deseq_df_drugstrain %>%
+                         right_join(
+                           bind_rows(calcium_transporters, 
+                                    favourite_TFs,
+                                    drugstrain_down_names),
+                           by = "gene"),
+                       aes(label = name), 
+                       min.segment.length = 0, max.overlaps = 20,
+                       box.padding = 0.1, label.padding = 0.1),
+    ncol = 1, nrow = 3)
+
+p_summary_volcanos_labels
+
+ggsave("../figures/summary_volcano_plots_genelabels.png", 
+       plot = p_summary_volcanos_labels,
+       width = 7.5, height = 9)
 ```
 
 
