@@ -458,7 +458,8 @@ volcano_plot <- function(deseq_df, up, down,
                        breaks = -5:5,
                        limits = xlimits, expand = c(0.01,0.01),
                        oob = scales::squish) +
-    coord_cartesian(clip = "off") 
+    coord_cartesian(clip = "off") +
+    theme(plot.title = element_text(hjust = 0.5))
 }
 
 
@@ -1152,6 +1153,7 @@ head(res)
 
 deseq_df_cbd <- deseq_df_transform(dds_compared_conditions, 
                                termstokeep = rN[2])
+write.csv(deseq_df_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_allDESeq.csv")
 
 DEGdf_up2x_FDR5_cbd = get_upregulated_genes(deseq_df_cbd)
 DEGdf_down2x_FDR5_cbd = get_downregulated_genes(deseq_df_cbd)
@@ -1191,6 +1193,7 @@ head(res)
 
 deseq_df <- deseq_df_transform(dds_compared_conditions, 
                                termstokeep = rN[2])
+write.csv(deseq_df, "../data/deseq2/CompareStrains/CBS138_BG2_VORI_allDESeq.csv")
 
 DEGdf_up2x_FDR5_cbv = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cbv = get_downregulated_genes(deseq_df)
@@ -1229,6 +1232,7 @@ head(res)
 
 deseq_df <- deseq_df_transform(dds_compared_conditions, 
                                termstokeep = rN[2])
+write.csv(deseq_df, "../data/deseq2/CompareStrains/CBS138_BG2_FLUC_allDESeq.csv")
 
 DEGdf_up2x_FDR5_cbf = get_upregulated_genes(deseq_df)
 DEGdf_down2x_FDR5_cbf = get_downregulated_genes(deseq_df)
@@ -1417,7 +1421,7 @@ print(DEGdf_down2x_FDR5_drugstrain, n = 20)
 p_drugstrain = volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_drugstrain,
              ylimits = c(0,5),
              xlimits = c(-3,3),
-               xlabel = "log2 fold-change\n← more drug x BG2       more drug x CBS138 →") +
+               xlabel = "log2 fold-change\n← more change in BG2       more change in CBS138 →") +
   ggtitle("Azole vs DMSO, strain differences")
 p_drugstrain
 
@@ -1587,15 +1591,20 @@ guide_legend_pc12 =
   guide_legend("Strain,\nTreatment",
                position = "bottom",
                nrow = 3, ncol = 2)
+plot_margin_summary_plot = 
+              theme(plot.margin = 
+                      unit(c(12, 12, 12, 12), 
+                                "points")) 
 
 p_summary_leftcolumn =
   plot_grid(NULL, 
             pc12 + 
+              plot_margin_summary_plot + 
               guides(colour = guide_legend_pc12, 
                      shape = guide_legend_pc12), 
             plot_percentvar_rlog +
               theme(plot.margin = 
-                      unit(c(3, 7, 0, 36), 
+                      unit(c(6, 12, 6, 30), 
                                 "points")) , 
             rel_heights = c(2,3,1),
             ncol = 1,
@@ -1604,7 +1613,9 @@ p_summary_leftcolumn =
   
 
 p_summary_volcanos =
-  plot_grid(p_cbd, p_drugnodrug_bc, p_drugstrain, 
+  plot_grid(p_cbd + plot_margin_summary_plot, 
+            p_drugnodrug_bc + plot_margin_summary_plot, 
+            p_drugstrain + plot_margin_summary_plot, 
             ncol = 1, nrow = 3,
             align = "v",
             labels = c("D","E","F"))
