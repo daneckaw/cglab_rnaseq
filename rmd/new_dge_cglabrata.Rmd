@@ -59,8 +59,8 @@ featureCount results, aggregated by strain, are below:
 counts_all_CBS138 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_featureCounts.tab", header=TRUE)
 counts_all_BG2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_featureCounts.tab", header=TRUE)
 
-counts_rpm_CBS138 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab", header=TRUE, row.names = 1)
-counts_rpm_BG2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab", header=TRUE, row.names = 1)
+counts_rpm_CBS138 = read.table("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab", header=TRUE)
+counts_rpm_BG2 = read.table("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab", header=TRUE)
 
 head(counts_all_CBS138) # CBS138, raw
 head(counts_all_BG2) # BG2, raw
@@ -162,8 +162,8 @@ CBS138_RPMI_VORI_C is an outlier.
 library(pheatmap)
 
 # create heatmap using pheatmap
-ph1 = pheatmap(counts_rpm_CBS138, main="CBS138", show_rownames = FALSE)
-ph2 = pheatmap(counts_rpm_BG2, main="BG2", show_rownames = FALSE)
+ph1 = pheatmap(counts_rpm_CBS138[,-1], main="CBS138", show_rownames = FALSE)
+ph2 = pheatmap(counts_rpm_BG2[,-1], main="BG2", show_rownames = FALSE)
 ```
 
 
@@ -293,9 +293,9 @@ scales_PCA <-
                  "BG2_RPMI_FLUC"    = "BG2, FCZ",
                  "BG2_RPMI_VORI"    = "BG2, VCZ")),
     scale_shape_manual("Strain, Treatment",
-      values = c("CBS138_RPMI_DMSO" = 15,
-                 "CBS138_RPMI_FLUC" = 15,
-                 "CBS138_RPMI_VORI" = 15,
+      values = c("CBS138_RPMI_DMSO" = 16,
+                 "CBS138_RPMI_FLUC" = 16,
+                 "CBS138_RPMI_VORI" = 16,
                  "BG2_RPMI_DMSO" = 17,
                  "BG2_RPMI_FLUC" = 17,
                  "BG2_RPMI_VORI" = 17),
@@ -1420,7 +1420,6 @@ print(DEGdf_down2x_FDR5_drugstrain, n = 20)
 
 p_drugstrain = volcano_plot(deseq_df_drugstrain, DEGdf_up2x_FDR5_drugstrain, DEGdf_down2x_FDR5_drugstrain,
              ylimits = c(0,5),
-             xlimits = c(-3,3),
                xlabel = "log2 fold-change\n← more change in BG2       more change in CBS138 →") +
   ggtitle("Azole vs DMSO, strain differences")
 p_drugstrain
@@ -1632,6 +1631,137 @@ ggsave("../figures/RNAseqsummmary_nodesign.eps",
 ggsave("../figures/RNAseqsummmary_nodesign.png",
        p_summary, 
        height=7.5, width = 7)
+```
+
+## Load gene info
+
+Load gene info from FungiDB with some of the important gene names.
+
+```{r load_geneinfo}
+CBS138_geneinfo <- 
+  read_tsv("../data/genomes/CBS138_allgenes.txt",
+           col_names = c("Geneid", "Transcriptid","GenomicLocation", "Description", "Name"),
+           skip = 1,
+           na = c("", "NA", "N/A"))
+
+BG2_geneinfo <- 
+  read_tsv("../data/genomes/BG2_allgenes.txt",
+           col_names = c("Geneid", "Transcriptid","GenomicLocation", "Description"),
+           skip = 1,
+           na = c("", "NA", "N/A")) %>%
+  mutate(Name = stringr::str_extract(Description, "^[A-Z]+[0-9]+"))
+```
+
+## Plot groups of genes
+
+```{r plot_fewgenes, echo = FALSE}
+
+getrpms <- function(namelist,
+                    geneinfodf = CBS138_geneinfo,
+                    rpmdf = counts_rpm_CBS138,
+                    namelist_order = TRUE) {
+  
+  mygenerpmdf <- 
+    geneinfodf %>%
+    dplyr::select(Geneid, Name) %>%
+    dplyr::filter(Name %in% namelist) %>%
+    left_join(rpmdf, by = "Geneid") 
+  
+  if(namelist_order) {
+    mygenerpmdf <- mutate(mygenerpmdf, 
+                           Name = factor(Name, levels = namelist))
+  }
+  
+  mygenerpmdf
+}
+
+getrpmslong <- function(namelist,
+                        geneinfodf = CBS138_geneinfo,
+                        rpmdf = counts_rpm_CBS138,
+                        namelist_order = TRUE) {
+  
+  getrpms(namelist = namelist,
+          geneinfodf = geneinfodf,
+          rpmdf = rpmdf,
+          namelist_order = namelist_order) %>% 
+    pivot_longer(cols = -c(Geneid, Name),
+                 names_to = "Sample", values_to = "RPM") %>%
+    separate(Sample, 
+             into = c("Strain", "Media", "Treatment", "BioRep"),
+             remove = FALSE)
+}
+
+plot_fewgenes_rpmpointsummary <- 
+  function(namelist) {
+    rpmdf_long <- bind_rows(
+      getrpmslong(namelist, CBS138_geneinfo, counts_rpm_CBS138),
+      getrpmslong(namelist, BG2_geneinfo,    counts_rpm_BG2)
+    )
+    
+    ggplot(data = rpmdf_long,
+           aes(x = Name, y = RPM, colour = Treatment, shape = Strain)) +
+      geom_point(position = 
+                   position_jitter(height = 0, 
+                                   width = 0.15, 
+                                   seed = 1),
+                 size = 1) + 
+      scale_y_log10() +
+      stat_summary(fun.min="mean",fun.max="mean",
+                   geom="errorbar", linewidth = 1, width = 0.6,
+                   aes(group=Treatment)) +
+      scale_colour_manual(
+        values = c("DMSO" = "grey20",
+                   "FLUC" = "purple3",
+                   "VORI" = "green4"),
+        labels = c("DMSO" = "DMSO",
+                   "FLUC" = "FCZ",
+                   "VORI" = "VCZ")) +
+      scale_shape_manual(values = c("CBS138" = 16,
+                                    "BG2" = 17)) +
+      coord_flip() +
+      facet_wrap(~ Strain, ncol = 2) +
+      theme(panel.border = element_rect(colour = "grey50"),
+            panel.grid.major.x = element_line(colour = "grey90"))
+  }
+
+plot_fewgenes_rpmheatmap <- 
+  function(namelist) {
+    rpmdf_long <- bind_rows(
+      getrpmslong(namelist, CBS138_geneinfo, counts_rpm_CBS138),
+      getrpmslong(namelist, BG2_geneinfo,    counts_rpm_BG2)
+    )
+    
+    ggplot(data = rpmdf_long,
+           aes(y = Name, x = Sample, fill = log10(RPM))) +
+      geom_tile() +
+      theme(axis.text.x = element_text(angle = 90)) +
+      scale_fill_distiller(palette = "Spectral")
+  }
+```
+
+```{r plot_rpmpointsummaryYPSetc, fig.height = 4, fig.width = 6, echo = FALSE, message = FALSE}
+plot_fewgenes_rpmpointsummary(paste0("YPS",seq(1,11)))
+
+# plot_fewgenes_rpmpointsummary(paste0("AWP",seq(1,13)))
+# plot_fewgenes_rpmpointsummary(paste0("EPA",seq(1,23)))
+# plot_fewgenes_rpmpointsummary(paste0("PWP",seq(1,7)))
+
+plot_fewgenes_rpmpointsummary(c("AWP1", "AWP2", "EPA1", "EPA2", "EPA3", "EPA6", "EPA23"))
+
+plot_fewgenes_rpmpointsummary(paste0("ERG",seq(1,27)))
+
+
+plot_fewgenes_rpmpointsummary(c("CCH1", "MID1", "ECM7", "YVC1"))
+```
+
+
+```{r plot_rpmheatmapYPSetc, fig.height = 4, fig.width = 5, echo = FALSE, message = FALSE}
+plot_fewgenes_rpmheatmap(paste0("YPS",seq(1,11)))
+
+plot_fewgenes_rpmheatmap(c("AWP1", "AWP2", "EPA1", "EPA2", "EPA3", "EPA6", "EPA23"))
+
+plot_fewgenes_rpmheatmap(paste0("ERG",seq(1,27)))
+
 ```
 
 
