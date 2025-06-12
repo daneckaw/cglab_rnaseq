@@ -467,34 +467,30 @@ volcano_plot <- function(deseq_df, up, down,
 
 ### DGE, CBS138, FCZ vs DMSO
 
-```{r cbs_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r cbs_f_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cf = 
   run_deseq_vsmedium(counts_all_CBS138,
                      conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_FLUC"),
                      strains_to_include = "CBS138")
 
-dds_compared_conditions
+dds_compared_conditions_cf
 
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cf)
+rN = resultsNames(dds_compared_conditions_cf)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cf <- deseq_df_transform(dds_compared_conditions_cf, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_cf = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cf = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cf = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cf = get_upregulated_genes(deseq_df_cf)
+DEGdf_down2x_FDR5_cf = get_downregulated_genes(deseq_df_cf)
+DEGdf_non_significant_cf = get_non_significant_genes(deseq_df_cf)
 
-write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
+write.csv(deseq_df_cf, "../data/deseq2/CBS138/CBS138_FLUC_DMSO_allDESeq.csv")
 
 
-p_cf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf,
+p_cf = volcano_plot(deseq_df_cf, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf,
                   xlabel = "log2 fold-change\n← down in FCZ       up in FCZ →") +
   ggtitle("FCZ vs DMSO, Strain CBS138")
 #p_cf
@@ -503,34 +499,29 @@ p_cf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cf, DEGdf_down2x_FDR5_cf,
 
 ### DGE, CBS138, VCZ vs DMSO
 
-```{r cbs_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r cbs_v_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cv = 
   run_deseq_vsmedium(counts_all_CBS138,
                      conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI"),
                      strains_to_include = "CBS138")
-dds_compared_conditions
+dds_compared_conditions_cv
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cv)
+rN = resultsNames(dds_compared_conditions_cv)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cv <- deseq_df_transform(dds_compared_conditions_cv, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_cv = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cv = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cv = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cv = get_upregulated_genes(deseq_df_cv)
+DEGdf_down2x_FDR5_cv = get_downregulated_genes(deseq_df_cv)
+DEGdf_non_significant_cv = get_non_significant_genes(deseq_df_cv)
 
-write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
+write.csv(deseq_df_cv, "../data/deseq2/CBS138/CBS138_VORI_DMSO_allDESeq.csv")
 
 
-p_cv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv,
+p_cv = volcano_plot(deseq_df_cv, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv,
                   xlabel = "log2 fold-change\n← down in VCZ       up in VCZ →") +
   ggtitle("VCZ vs DMSO, Strain CBS138")
 #p_cv
@@ -541,26 +532,21 @@ p_cv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cv, DEGdf_down2x_FDR5_cv,
 
 Conclude: the single outlying sample `CBS138_RPMI_VORI_C` has minimal effect on the substantial results. Although it changes the genelists over the cutoff, it doesn't change much most of the fold changes and p-values.
 
-```{r cbs_v_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r cbs_v_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_xc = 
   run_deseq_vsmedium(counts_all_CBS138,
                      conditions_to_compare = c("CBS138_RPMI_DMSO", "CBS138_RPMI_VORI"),
                      strains_to_include = "CBS138",
                      sample_sheet = dplyr::filter(sample_sheet_all,
                                                   Code != "CBS138_RPMI_VORI_C"))
-dds_compared_conditions
+dds_compared_conditions_xc
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_xc)
+rN = resultsNames(dds_compared_conditions_xc)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df_xc <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_xc <- deseq_df_transform(dds_compared_conditions_xc, 
                                termstokeep = rN[2])
 
 DEGdf_up2x_FDR5_cvxc = get_upregulated_genes(deseq_df_xc)
@@ -576,7 +562,7 @@ p_cvx = volcano_plot(deseq_df_xc, DEGdf_up2x_FDR5_cvxc, DEGdf_down2x_FDR5_cvxc,
 #p_cvx
 
 deseq_df_3repsvsxc <- 
-  dplyr::inner_join(deseq_df, 
+  dplyr::inner_join(deseq_df_cv, 
               deseq_df_xc, 
               by = "gene",
               suffix = c(".all", ".xc"))
@@ -597,34 +583,29 @@ ggplot(data = deseq_df_3repsvsxc, aes(x = log2FC.all, y = log2FC.xc)) +
 
 ### DGE, CBS138, VCZ vs FCZ
 
-```{r cbs_vf_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r cbs_vf_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cvf <- 
   run_deseq_vsmedium(counts_all_CBS138,
                      conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI"),
                      strains_to_include = "CBS138")
 
-dds_compared_conditions
+dds_compared_conditions_cvf
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cvf)
+rN = resultsNames(dds_compared_conditions_cvf)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cvf <- deseq_df_transform(dds_compared_conditions_cvf, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_cvf = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cvf = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cvf = get_upregulated_genes(deseq_df_cvf)
+DEGdf_down2x_FDR5_cvf = get_downregulated_genes(deseq_df_cvf)
+DEGdf_non_significant_cvf = get_non_significant_genes(deseq_df_cvf)
 
-write.csv(deseq_df, "../data/deseq2/CBS138/CBS138_VORI_FLUC_allDESeq.csv")
+write.csv(deseq_df_cvf, "../data/deseq2/CBS138/CBS138_VORI_FLUC_allDESeq.csv")
 
-p_cvf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf,
+p_cvf = volcano_plot(deseq_df_cvf, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf,
                     xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain CBS138")
 #p_cvf
@@ -634,33 +615,28 @@ p_cvf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvf, DEGdf_down2x_FDR5_cvf,
 ### Double-check: DGE, CBS138, VCZ vs FCZ excluding the outlying sample CBS138_RPMI_VORI_C 
 
 
-```{r cbs_vf_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r cbs_vf_deseq_excludebadc, fig.height=4, fig.width=5, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cvfxc <-
   run_deseq_vsmedium(counts_all_CBS138,
                      conditions_to_compare = c("CBS138_RPMI_FLUC", "CBS138_RPMI_VORI"),
                      strains_to_include = "CBS138",
                      sample_sheet = dplyr::filter(sample_sheet_all,
                                                   Code != "CBS138_RPMI_VORI_C"))
 
-dds_compared_conditions
+dds_compared_conditions_cvfxc
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cvfxc)
+rN = resultsNames(dds_compared_conditions_cvfxc)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cvfxc <- deseq_df_transform(dds_compared_conditions_cvfxc, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_cvfxc = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cvfxc = get_downregulated_genes(deseq_df)
+DEGdf_up2x_FDR5_cvfxc = get_upregulated_genes(deseq_df_cvfxc)
+DEGdf_down2x_FDR5_cvfxc = get_downregulated_genes(deseq_df_cvfxc)
 
-volcano_plot(deseq_df, DEGdf_up2x_FDR5_cvfxc, DEGdf_down2x_FDR5_cvfxc,
+volcano_plot(deseq_df_cvfxc, DEGdf_up2x_FDR5_cvfxc, DEGdf_down2x_FDR5_cvfxc,
                     xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain CBS138")
 
@@ -671,34 +647,29 @@ Again this does not substantially change outcome: 7 DE genes when the sample is 
 
 ### DGE, BG2, FCZ vs DMSO
 
-```{r bg2_f_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r bg2_f_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_bf = 
   run_deseq_vsmedium(counts_all_BG2,
                      conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_FLUC"),
                      strains_to_include = "BG2")
 
-dds_compared_conditions
+dds_compared_conditions_bf
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_bf)
+rN = resultsNames(dds_compared_conditions_bf)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_bf <- deseq_df_transform(dds_compared_conditions_bf, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_bf = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_bf = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_bf = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_bf = get_upregulated_genes(deseq_df_bf)
+DEGdf_down2x_FDR5_bf = get_downregulated_genes(deseq_df_bf)
+DEGdf_non_significant_bf = get_non_significant_genes(deseq_df_bf)
 
-write.csv(deseq_df, "../data/deseq2/BG2/BG2_FLUC_DMSO_allDESeq.csv")
+write.csv(deseq_df_bf, "../data/deseq2/BG2/BG2_FLUC_DMSO_allDESeq.csv")
 
-p_bf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf,
+p_bf = volcano_plot(deseq_df_bf, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf,
                     xlabel = "log2 fold-change\n← down in FCZ       up in FCZ →") +
   ggtitle("FCZ vs DMSO, Strain BG2")
 #p_bf
@@ -707,33 +678,28 @@ p_bf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bf, DEGdf_down2x_FDR5_bf,
 
 ### DGE, BG2, VCZ vs DMSO
 
-```{r bg2_v_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r bg2_v_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_bv <-
   run_deseq_vsmedium(counts_all_BG2,
                      conditions_to_compare = c("BG2_RPMI_DMSO", "BG2_RPMI_VORI"),
                      strains_to_include = "BG2")
-dds_compared_conditions
+dds_compared_conditions_bv
 
-
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_bv)
+rN = resultsNames(dds_compared_conditions_bv)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_bv <- deseq_df_transform(dds_compared_conditions_bv, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_bv = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_bv = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_bv = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_bv = get_upregulated_genes(deseq_df_bv)
+DEGdf_down2x_FDR5_bv = get_downregulated_genes(deseq_df_bv)
+DEGdf_non_significant_bv = get_non_significant_genes(deseq_df_bv)
 
-write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_DMSO_allDESeq.csv")
+write.csv(deseq_df_bv, "../data/deseq2/BG2/BG2_VORI_DMSO_allDESeq.csv")
 
-p_bv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv,
+p_bv = volcano_plot(deseq_df_bv, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv,
                     xlabel = "log2 fold-change\n← down in VCZ       up in VCZ →") +
   ggtitle("VCZ vs DMSO, Strain BG2")
 #p_bv
@@ -742,33 +708,29 @@ p_bv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bv, DEGdf_down2x_FDR5_bv,
 
 ### DGE, BG2, VCZ vs FCZ
 
-```{r bg2_fv_deseq, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r bg2_fv_deseq, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_bvf <-
   run_deseq_vsmedium(counts_all_BG2,
                      conditions_to_compare = c("BG2_RPMI_FLUC", "BG2_RPMI_VORI"),
                      strains_to_include = "BG2")
 
-dds_compared_conditions
+dds_compared_conditions_bvf
 
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_bvf)
+rN = resultsNames(dds_compared_conditions_bvf)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-dds_compared_conditions
-biobroom::tidy.DESeqDataSet(dds_compared_conditions)
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_bvf <- deseq_df_transform(dds_compared_conditions_bvf, 
                                termstokeep = rN[2])
 
-DEGdf_up2x_FDR5_bvf = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_bvf = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_bvf = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_bvf = get_upregulated_genes(deseq_df_bvf)
+DEGdf_down2x_FDR5_bvf = get_downregulated_genes(deseq_df_bvf)
+DEGdf_non_significant_bvf = get_non_significant_genes(deseq_df_bvf)
 
-write.csv(deseq_df, "../data/deseq2/BG2/BG2_VORI_FLUC_allDESeq.csv")
+write.csv(deseq_df_bvf, "../data/deseq2/BG2/BG2_VORI_FLUC_allDESeq.csv")
 
-p_bvf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_bvf, DEGdf_down2x_FDR5_bvf,
+p_bvf = volcano_plot(deseq_df_bvf, DEGdf_up2x_FDR5_bvf, DEGdf_down2x_FDR5_bvf,
                     xlabel = "log2 fold-change\n← up in FCZ       up in VCZ →") +
   ggtitle("VCZ vs FCZ, Strain BG2")
 # p_bvf
@@ -1136,22 +1098,19 @@ upc2_targets_down$standard_sc
 ## Differential gene expression comparison between the two strains
 
 
-```{r c_b_d, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+```{r c_b_d, fig.height=6, fig.width=8, eval=TRUE,  message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cbd <-
   run_deseq_vsstrain(counts_all_joined,
                      conditions_to_compare = c("CBS138_RPMI_DMSO", "BG2_RPMI_DMSO"))
 
-dds_compared_conditions
+dds_compared_conditions_cbd
 
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cbd)
+rN = resultsNames(dds_compared_conditions_cbd)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-
-deseq_df_cbd <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cbd <- deseq_df_transform(dds_compared_conditions_cbd, 
                                termstokeep = rN[2])
 write.csv(deseq_df_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_allDESeq.csv")
 
@@ -1176,28 +1135,25 @@ print("Downregulated genes")
 nrow(DEGdf_down2x_FDR5_cbd)
 ```
 
-```{r c_b_v, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+```{r c_b_v, fig.height=6, fig.width=8, eval=TRUE,  message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cbv <-
   run_deseq_vsstrain(counts_all_joined,
                      conditions_to_compare = c("CBS138_RPMI_VORI", "BG2_RPMI_VORI"))
 
-dds_compared_conditions
+dds_compared_conditions_cbv
 
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cbv)
+rN = resultsNames(dds_compared_conditions_cbv)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cbv <- deseq_df_transform(dds_compared_conditions_cbv, 
                                termstokeep = rN[2])
-write.csv(deseq_df, "../data/deseq2/CompareStrains/CBS138_BG2_VORI_allDESeq.csv")
+write.csv(deseq_df_cbv, "../data/deseq2/CompareStrains/CBS138_BG2_VORI_allDESeq.csv")
 
-DEGdf_up2x_FDR5_cbv = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cbv = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cbv = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cbv = get_upregulated_genes(deseq_df_cbv)
+DEGdf_down2x_FDR5_cbv = get_downregulated_genes(deseq_df_cbv)
+DEGdf_non_significant_cbv = get_non_significant_genes(deseq_df_cbv)
 
 print(DEGdf_up2x_FDR5_cbv, n = 20)
 
@@ -1205,7 +1161,7 @@ print(DEGdf_down2x_FDR5_cbv, n = 20)
 
 print(DEGdf_non_significant_cbv, n = 20)
 
-p_cbv = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv,
+p_cbv = volcano_plot(deseq_df_cbv, DEGdf_up2x_FDR5_cbv, DEGdf_down2x_FDR5_cbv,
                   xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
   ggtitle("Strain comparison in RPMI VCZ")
 #p_cbv
@@ -1216,27 +1172,24 @@ print("Downregulated genes")
 nrow(DEGdf_down2x_FDR5_cbv)
 ```
 
-```{r c_b_f, fig.height=6, fig.width=8, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+```{r c_b_f, fig.height=6, fig.width=8, eval=TRUE, message=FALSE, warning=FALSE}
 
-dds_compared_conditions = 
+dds_compared_conditions_cbf <-
   run_deseq_vsstrain(counts_all_joined,
                      conditions_to_compare = c("CBS138_RPMI_FLUC", "BG2_RPMI_FLUC"))
-dds_compared_conditions
+dds_compared_conditions_cbf
 
-results(dds_compared_conditions)
-rN = resultsNames(dds_compared_conditions)
+results(dds_compared_conditions_cbf)
+rN = resultsNames(dds_compared_conditions_cbf)
 rN
 
-res <- results(dds_compared_conditions, name=rN[2])
-head(res)
-
-deseq_df <- deseq_df_transform(dds_compared_conditions, 
+deseq_df_cbf <- deseq_df_transform(dds_compared_conditions_cbf, 
                                termstokeep = rN[2])
-write.csv(deseq_df, "../data/deseq2/CompareStrains/CBS138_BG2_FLUC_allDESeq.csv")
+write.csv(deseq_df_cbf, "../data/deseq2/CompareStrains/CBS138_BG2_FLUC_allDESeq.csv")
 
-DEGdf_up2x_FDR5_cbf = get_upregulated_genes(deseq_df)
-DEGdf_down2x_FDR5_cbf = get_downregulated_genes(deseq_df)
-DEGdf_non_significant_cbf = get_non_significant_genes(deseq_df)
+DEGdf_up2x_FDR5_cbf = get_upregulated_genes(deseq_df_cbf)
+DEGdf_down2x_FDR5_cbf = get_downregulated_genes(deseq_df_cbf)
+DEGdf_non_significant_cbf = get_non_significant_genes(deseq_df_cbf)
 
 print(DEGdf_up2x_FDR5_cbf, n = 20)
 
@@ -1244,7 +1197,7 @@ print(DEGdf_down2x_FDR5_cbf, n = 20)
 
 print(DEGdf_non_significant_cbf, n = 20)
 
-p_cbf = volcano_plot(deseq_df, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf,
+p_cbf = volcano_plot(deseq_df_cbf, DEGdf_up2x_FDR5_cbf, DEGdf_down2x_FDR5_cbf,
                     xlabel = "log2 fold-change\n← up in BG2       up in CBS138 →") +
   ggtitle("Strain comparison in RPMI FCZ")
 #p_cbf
