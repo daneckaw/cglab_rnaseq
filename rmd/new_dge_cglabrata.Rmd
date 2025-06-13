@@ -21,6 +21,7 @@ library(GGally)
 library(ggrepel)
 library(here)
 library(biobroom)
+library(readxl)
 
 theme_set(theme_cowplot(font_size = 12) +
             theme(strip.background = element_blank(),
@@ -1714,6 +1715,85 @@ plot_fewgenes_rpmheatmap(paste0("YPS",seq(1,11)))
 plot_fewgenes_rpmheatmap(c("AWP1", "AWP2", "EPA1", "EPA2", "EPA3", "EPA6", "EPA23"))
 
 plot_fewgenes_rpmheatmap(paste0("ERG",seq(1,27)))
+
+```
+
+
+## Visualise drug-dependent DGE across strains
+
+First make a data frame of:
+
+- deseq results drug vs no drug
+- for both drugs separately
+- in both strains separately
+
+```{r deseq_4x_create, echo = FALSE}
+# make data frame 
+deseq_df_cboth <- bind_rows(
+  deseq_df_cf %>% 
+    mutate(Strain = "CBS138",
+           Drug   = "FCZ"),
+  deseq_df_cv %>% 
+    mutate(Strain = "CBS138",
+           Drug   = "VCZ")
+) %>%
+  rename(gene = "gene_id_cbs138") %>%
+  left_join(rbbh, by = "gene_id_cbs138")
+
+deseq_df_bboth <- bind_rows(
+  deseq_df_bf %>% 
+    mutate(Strain = "BG2",
+           Drug   = "FCZ"),
+  deseq_df_bv %>% 
+    mutate(Strain = "BG2",
+           Drug   = "VCZ")
+) %>%
+  rename(gene = "gene_id_bg2") %>%
+  left_join(rbbh, by = "gene_id_bg2")
+
+deseq_df_4x <- 
+  bind_rows(deseq_df_cboth, deseq_df_bboth) %>%
+  select(gene_id_cbs138, gene_id_bg2, Strain, Drug,
+         baseMean, log2FC, stderror, padj) %>%
+  mutate(Strain_Drug = paste(Strain, Drug, sep = "_") %>%
+           as_factor)
+deseq_df_4x
+```
+
+```{r load_gene_list}
+gene_list_3groups <- 
+  read_excel("../data/gene_lists/Gene lists Ribeiro et al 2025.xlsx",
+             sheet = 2) %>%
+  mutate(Group = as_factor(Group), 
+         gene_name = coalesce(gene_name, gene_id_cbs138) %>%
+           as_factor() %>% fct_rev() )
+gene_list_3groups
+```
+
+```{r gene_list_heatmap, fig.height = 6, fig.width = 3}
+deseq_4x_goi <- 
+  left_join(gene_list_3groups, deseq_df_4x,
+            by = "gene_id_cbs138",
+            )
+
+genelist_heatmap <- 
+  ggplot(data = deseq_4x_goi) +
+  geom_tile(aes(x = Strain_Drug, y = gene_name, fill = log2FC)) +
+  scale_fill_gradient2() +
+  facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+
+genelist_heatmap
+
+genelist_dotmap <- 
+  ggplot(data = deseq_4x_goi) +
+  geom_point(aes(x = Strain_Drug, y = gene_name, fill = log2FC),
+             colour = "black", size = 3, shape = 21) +
+  scale_fill_gradient2() +
+  facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+
+genelist_dotmap
 
 ```
 
