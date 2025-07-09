@@ -24,7 +24,7 @@ library(biobroom)
 library(readxl)
 library(extrafont)
 
-theme_set(theme_cowplot(font_size = 12, font_family = "arial") +
+theme_set(theme_cowplot(font_size = 12, font_family = "Arial") +
             theme(strip.background = element_blank(),
                   axis.text=element_text(size=10),
                   axis.title=element_text(size=10),
@@ -1591,6 +1591,7 @@ p_summary
 ggsave("../figures/RNAseqsummary_nodesign.png",
        p_summary, 
        height=6, width = 6.85, 
+       dpi = 350,
        bg = 'white')
 ```
 
@@ -1726,7 +1727,9 @@ plot_fewgenes_rpmheatmap(paste0("ERG",seq(1,27)))
 ```
 
 
-## Visualise drug-dependent DGE across strains
+## Figure 3 - Genes in known pathways are specifically responsive to azole drugs.
+
+The goal is to Visualise drug-dependent DGE across strains
 
 First make a data frame of:
 
@@ -1767,40 +1770,115 @@ deseq_df_4x <-
 deseq_df_4x
 ```
 
-```{r load_gene_list}
-gene_list_3groups <- 
+Then load the genelist.
+
+```{r load_genelist}
+gene_list_5groups <- 
   read_excel("../data/gene_lists/Gene lists Ribeiro et al 2025.xlsx",
              sheet = 2) %>%
   mutate(Group = as_factor(Group), 
          gene_name = coalesce(gene_name, gene_id_cbs138) %>%
            as_factor() %>% fct_rev() )
-gene_list_3groups
+gene_list_5groups
 ```
 
-```{r gene_list_heatmap, fig.height = 6, fig.width = 3}
-deseq_4x_goi <- 
-  left_join(gene_list_3groups, deseq_df_4x,
-            by = "gene_id_cbs138",
-            )
+Now join the genelist to the deseq data frame.
 
-genelist_heatmap <- 
-  ggplot(data = deseq_4x_goi) +
-  geom_tile(aes(x = Strain_Drug, y = gene_name, fill = log2FC)) +
-  scale_fill_gradient2() +
-  facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y") + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+```{r make_deseq_4x_genelist}
+deseq_4x_genelist <- 
+  left_join(gene_list_5groups, deseq_df_4x,
+            by = "gene_id_cbs138",
+            ) %>%
+  mutate(Strain_Drug = fct_relabel(Strain_Drug, 
+                                   ~ str_replace(., "_", ", ")))
+
+```
+
+Make a heatmap of DGE in all 4 conditions using facet_grid.
+
+```{r genelist_heatmap, fig.height = 8, fig.width = 3.4}
+genelist_heatmap_pieces <- list(
+  geom_tile(aes(x = Strain_Drug, y = gene_name, fill = log2FC)),
+  scale_fill_gradient2(limits = c(-3,3), oob = scales::squish),
+  facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y"), 
+  xlab("Strain, Drug"),
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        axis.title.y = element_blank())
+  )
+
+genelist_heatmap <-
+  ggplot(data = deseq_4x_genelist) +
+  genelist_heatmap_pieces
 
 genelist_heatmap
 
-genelist_dotmap <- 
-  ggplot(data = deseq_4x_goi) +
-  geom_point(aes(x = Strain_Drug, y = gene_name, fill = log2FC),
-             colour = "black", size = 3, shape = 21) +
-  scale_fill_gradient2() +
-  facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y") + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+ggsave("../figures/genelist_heatmap.svg",
+       genelist_heatmap, 
+       height = 8, width = 3.4)
+```
 
-genelist_dotmap
+This heatmap wwas then edited manually using inkscape, in `figures/genelist_heatmap_manualedit.svg`.
+
+
+```{r genelist_heatmap_alternativeapproach, fig.height = 6, fig.width = 3, eval = FALSE, echo = FALSE}
+# alternative approach to genelist heatmap with facet_wrap
+# abandoned as could not get it to display titles properly
+# or otherwise not heights properly
+
+genecategoriesA <- c("azole specific", "virulence factor", "cell wall")
+
+genelist_heatmapA <- 
+  ggplot(data = filter(deseq_4x_genelist, Group %in% genecategoriesA)) +
+  genelist_heatmap_pieces
+
+genecategoriesB <- c("CRZ1-regulated", "stress response")
+
+genelist_heatmapB <- 
+  ggplot(data = filter(deseq_4x_genelist, Group %in% genecategoriesB)) +
+  genelist_heatmap_pieces
+
+theme(plot.margin = 
+                      unit(c(12, 12, 12, 12), 
+                                "points")) 
+
+genelist_heatmap_alt <- 
+  plot_grid(genelist_heatmapA +
+              theme(legend.position = "none",
+                    plot.margin = 
+                      unit(c(18, 6, 6, 8), 
+                                "points")),
+            genelist_heatmapB + 
+              theme(plot.margin = 
+                      unit(c(18, 6, 68, 6), 
+                                "points")) + 
+              guides(fill = 
+                guide_colourbar("log2\nfold-\nchange",
+                             position = "bottom",
+                             direction = "vertical",
+                             theme(legend.title.position = "left",
+                                   legend.justification.bottom = c(0,0.5)))),
+            ncol = 2,
+            rel_widths = c(1, 1.2),
+            labels = c("a","b"))
+
+genelist_heatmap_alt
+
+# ggsave("../figures/genelist_heatmap.png",
+#        genelist_heatmap, 
+#        height = 6, width = 4.2, 
+#        dpi = 350,
+#        bg = 'white')
+
+# genelist_dotmap - commenting out for now.
+# genelist_dotmap <- 
+#   ggplot(data = deseq_4x_goi) +
+#   geom_point(aes(x = Strain_Drug, y = gene_name, fill = log2FC),
+#              colour = "black", size = 3, shape = 21) +
+#   scale_fill_gradient2() +
+#   facet_grid(Group ~ ., drop = TRUE, scales = "free_y", space = "free_y") + 
+#   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+# 
+# genelist_dotmap
 
 ```
 
