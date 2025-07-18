@@ -28,14 +28,14 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="0.91136537"
-     inkscape:cx="386.78231"
-     inkscape:cy="263.34115"
+     inkscape:cx="189.82508"
+     inkscape:cy="263.34114"
      inkscape:window-width="1512"
-     inkscape:window-height="858"
+     inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1434" />
+     inkscape:current-layer="g2076" />
   <defs
      id="defs707">
     <style
@@ -56,7 +56,7 @@
   <rect
      width="100%"
      height="100%"
-     style="fill:none;stroke:none"
+     style="fill:#ffffff;stroke:none;fill-opacity:1"
      id="rect709"
      x="0"
      y="0" />
@@ -582,7 +582,7 @@
        x="80.5"
        y="148.92"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="32.799999"
        lengthAdjust="spacingAndGlyphs"
        id="text1196">ERG25</text>
@@ -590,7 +590,7 @@
        x="80.5"
        y="138.67"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="32.799999"
        lengthAdjust="spacingAndGlyphs"
        id="text1198">ERG24</text>
@@ -598,7 +598,7 @@
        x="80.5"
        y="128.42999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="32.799999"
        lengthAdjust="spacingAndGlyphs"
        id="text1200">ERG20</text>
@@ -606,7 +606,7 @@
        x="80.5"
        y="118.18"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="32.049999"
        lengthAdjust="spacingAndGlyphs"
        id="text1202">ERG11</text>
@@ -614,7 +614,7 @@
        x="80.5"
        y="107.93"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1204">ERG7</text>
@@ -622,7 +622,7 @@
        x="80.5"
        y="97.68"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1206">ERG6</text>
@@ -630,7 +630,7 @@
        x="80.5"
        y="87.440002"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1208">ERG5</text>
@@ -638,7 +638,7 @@
        x="80.5"
        y="77.190002"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1210">ERG3</text>
@@ -646,7 +646,7 @@
        x="80.5"
        y="66.940002"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1212">ERG2</text>
@@ -654,7 +654,7 @@
        x="80.5"
        y="56.700001"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1214">ERG1</text>
@@ -662,7 +662,7 @@
        x="80.5"
        y="46.450001"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1216">SNQ2</text>
@@ -670,7 +670,7 @@
        x="80.5"
        y="36.200001"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.68"
        lengthAdjust="spacingAndGlyphs"
        id="text1218">PDH1</text>
@@ -678,7 +678,7 @@
        x="80.5"
        y="25.950001"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1220">CDR1</text>
@@ -686,7 +686,7 @@
        x="80.5"
        y="15.71"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.68"
        lengthAdjust="spacingAndGlyphs"
        id="text1222">PDR1</text>
@@ -989,7 +989,7 @@
        x="80.5"
        y="259.42001"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="30.389999"
        lengthAdjust="spacingAndGlyphs"
        id="text1254">EPA23</text>
@@ -997,7 +997,7 @@
        x="80.5"
        y="249.17"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="24.83"
        lengthAdjust="spacingAndGlyphs"
        id="text1256">EPA1</text>
@@ -1005,7 +1005,7 @@
        x="80.5"
        y="238.92"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="24.469999"
        lengthAdjust="spacingAndGlyphs"
        id="text1258">PLB2</text>
@@ -1013,7 +1013,7 @@
        x="80.5"
        y="228.67999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="24.469999"
        lengthAdjust="spacingAndGlyphs"
        id="text1260">PLB1</text>
@@ -1021,7 +1021,7 @@
        x="80.5"
        y="218.42999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="30.389999"
        lengthAdjust="spacingAndGlyphs"
        id="text1262">YPS11</text>
@@ -1029,7 +1029,7 @@
        x="80.5"
        y="208.17999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="25.57"
        lengthAdjust="spacingAndGlyphs"
        id="text1264">YPS9</text>
@@ -1037,7 +1037,7 @@
        x="80.5"
        y="197.94"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="25.57"
        lengthAdjust="spacingAndGlyphs"
        id="text1266">YPS7</text>
@@ -1045,7 +1045,7 @@
        x="80.5"
        y="187.69"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="25.57"
        lengthAdjust="spacingAndGlyphs"
        id="text1268">YPS6</text>
@@ -1053,7 +1053,7 @@
        x="80.5"
        y="177.44"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="25.57"
        lengthAdjust="spacingAndGlyphs"
        id="text1270">YPS5</text>
@@ -1061,7 +1061,7 @@
        x="80.5"
        y="167.19"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="25.57"
        lengthAdjust="spacingAndGlyphs"
        id="text1272">YPS1</text>
@@ -1252,7 +1252,7 @@
        x="80.5"
        y="328.92999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.68"
        lengthAdjust="spacingAndGlyphs"
        id="text1296">GAS2</text>
@@ -1260,7 +1260,7 @@
        x="80.5"
        y="318.67999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.110001"
        lengthAdjust="spacingAndGlyphs"
        id="text1298">UTR2</text>
@@ -1268,7 +1268,7 @@
        x="80.5"
        y="308.42999"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="21.67"
        lengthAdjust="spacingAndGlyphs"
        id="text1300">TIR1</text>
@@ -1276,7 +1276,7 @@
        x="80.5"
        y="298.19"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.68"
        lengthAdjust="spacingAndGlyphs"
        id="text1302">SUN4</text>
@@ -1284,7 +1284,7 @@
        x="80.5"
        y="287.94"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="26.68"
        lengthAdjust="spacingAndGlyphs"
        id="text1304">GAS1</text>
@@ -1292,7 +1292,7 @@
        x="80.5"
        y="277.69"
        text-anchor="end"
-       style="font-size:10px;font-family:Arial"
+       style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
        textLength="27.23"
        lengthAdjust="spacingAndGlyphs"
        id="text1306">CRH1</text>
@@ -1626,7 +1626,7 @@
          x="80.5"
          y="449.67001"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="26.120001"
          lengthAdjust="spacingAndGlyphs"
          id="text1322">YPC1</text>
@@ -1634,7 +1634,7 @@
          x="80.5"
          y="439.42999"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="68.970001"
          lengthAdjust="spacingAndGlyphs"
          id="text1324">CAGL0I08591g</text>
@@ -1642,7 +1642,7 @@
          x="80.5"
          y="429.17999"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="74.519997"
          lengthAdjust="spacingAndGlyphs"
          id="text1326">CAGL0M04125g</text>
@@ -1650,7 +1650,7 @@
          x="80.5"
          y="418.92999"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="71.190002"
          lengthAdjust="spacingAndGlyphs"
          id="text1328">CAGL0J09416g</text>
@@ -1658,7 +1658,7 @@
          x="80.5"
          y="408.67999"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="26.67"
          lengthAdjust="spacingAndGlyphs"
          id="text1330">FMS1</text>
@@ -1666,7 +1666,7 @@
          x="80.5"
          y="398.44"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="26.120001"
          lengthAdjust="spacingAndGlyphs"
          id="text1332">YSR3</text>
@@ -1674,7 +1674,7 @@
          x="80.5"
          y="388.19"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="72.120003"
          lengthAdjust="spacingAndGlyphs"
          id="text1334">CAGL0K11946g</text>
@@ -1682,7 +1682,7 @@
          x="80.5"
          y="377.94"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="26.120001"
          lengthAdjust="spacingAndGlyphs"
          id="text1336">CPS1</text>
@@ -1690,7 +1690,7 @@
          x="80.5"
          y="367.70001"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="27.23"
          lengthAdjust="spacingAndGlyphs"
          id="text1338">RCN2</text>
@@ -1698,7 +1698,7 @@
          x="80.5"
          y="357.45001"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="74.519997"
          lengthAdjust="spacingAndGlyphs"
          id="text1340">CAGL0M03839g</text>
@@ -1706,7 +1706,7 @@
          x="80.5"
          y="347.20001"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="72.860001"
          lengthAdjust="spacingAndGlyphs"
          id="text1342">CAGL0K08338g</text>
@@ -1841,7 +1841,7 @@
          x="80.5"
          y="498.69"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="24.83"
          lengthAdjust="spacingAndGlyphs"
          id="text1368">YAP1</text>
@@ -1849,7 +1849,7 @@
          x="80.5"
          y="488.44"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="27.23"
          lengthAdjust="spacingAndGlyphs"
          id="text1370">MKK1</text>
@@ -1857,7 +1857,7 @@
          x="80.5"
          y="478.19"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="26.68"
          lengthAdjust="spacingAndGlyphs"
          id="text1372">RLM1</text>
@@ -1865,7 +1865,7 @@
          x="80.5"
          y="467.95001"
          text-anchor="end"
-         style="font-size:10px;font-family:Arial"
+         style="font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic';font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
          textLength="23.16"
          lengthAdjust="spacingAndGlyphs"
          id="text1374">SLT2</text>
@@ -1934,7 +1934,7 @@
   </g>
   <g
      id="g1827"
-     transform="translate(54.576746,56.950696)">
+     transform="translate(54.576746,65.950696)">
     <image
        width="13.15"
        height="65.75"
