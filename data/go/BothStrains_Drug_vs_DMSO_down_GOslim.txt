@@ -10,8 +10,8 @@ GOID	GO term	Frequency	Gene(s)	Organism
 6259	DNA metabolic process	16 out of 355 genes, 4.5%	CAGL0D01716g CAGL0J03146g CAGL0D04642g HHT2 KRE29 RIX1 CAGL0L07700g CAGL0L01397g CAGL0J11066g CAGL0J08822g CAGL0K00605g CAGL0D02860g CAGL0J11638g CAGL0L11176g CAGL0J04950g CAGL0E03245g	Candida glabrata
 36211	protein modification process	12 out of 355 genes, 3.4%	CAGL0F00407g CAGL0F09075g CAGL0L04026g CAGL0C04565g CAGL0J02816g HMT1 CAGL0J04576g CAGL0J11638g CAGL0F06809g CAGL0I06248g CAGL0K06457g CAGL0M02519g	Candida glabrata
 6950	response to stress	12 out of 355 genes, 3.4%	CAGL0D01716g HHT2 KRE29 CAGL0L07700g TIR1 TSA1 CAGL0C02519g CAGL0L10868g CAGL0L01397g CAGL0L04928g CAGL0L11176g TRR2	Candida glabrata
+42221	response to chemical	10 out of 355 genes, 2.8%	GAT1 CAGL0B00374g TSA1 CAGL0C02519g CAGL0L10868g FUR1 CAGL0L04928g CAGL0H05379g TPO4 TRR2	Candida glabrata
 71555	cell wall organization	10 out of 355 genes, 2.8%	CAGL0J06050g PRS5 UTR2 CAGL0G05566g CWP1.2 CWP1.1 CAGL0D00550g CAGL0F06809g CAGL0E02255g CAGL0G08668g	Candida glabrata
-42221	response to chemical	9 out of 355 genes, 2.5%	GAT1 CAGL0B00374g TSA1 CAGL0C02519g CAGL0L10868g CAGL0L04928g CAGL0H05379g TPO4 TRR2	Candida glabrata
 19725	cellular homeostasis	9 out of 355 genes, 2.5%	HHT2 CAGL0G04631g CAGL0L13156g TSA1 CAGL0F05709g FTR1 HTZ1 CAGL0I06248g PMA1	Candida glabrata
 7010	cytoskeleton organization	7 out of 355 genes, 2%	CAGL0F00407g CAGL0M09086g CAGL0F05885g CAGL0L10252g CAGL0I04818g CAGL0J11638g CAGL0H10516g	Candida glabrata
 6629	lipid metabolic process	6 out of 355 genes, 1.7%	CAGL0M10307g PLB2 CAGL0M10219g CAGL0M07700g URA7 CAGL0H01177g	Candida glabrata
@@ -22,19 +22,19 @@ GOID	GO term	Frequency	Gene(s)	Organism
 6091	generation of precursor metabolites and energy	5 out of 355 genes, 1.4%	CAGL0H02695g HHT2 PDC1 COX6 RKI1	Candida glabrata
 7155	cell adhesion	3 out of 355 genes, 0.8%	TIR1 CAGL0I09856g HTZ1	Candida glabrata
 45333	cellular respiration	2 out of 355 genes, 0.6%	HHT2 COX6	Candida glabrata
-6457	protein folding	2 out of 355 genes, 0.6%	TSA1 CAGL0D05500g	Candida glabrata
 30447	filamentous growth	2 out of 355 genes, 0.6%	CAGL0L04026g CAGL0I09856g	Candida glabrata
 7124	pseudohyphal growth	2 out of 355 genes, 0.6%	CAGL0L04026g CAGL0I09856g	Candida glabrata
 6766	vitamin metabolic process	2 out of 355 genes, 0.6%	HMT1 RKI1	Candida glabrata
 7114	cell budding	2 out of 355 genes, 0.6%	CAGL0M09086g CAGL0F05709g	Candida glabrata
 70783	growth of unicellular organism as a thread of attached cells	2 out of 355 genes, 0.6%	CAGL0L04026g CAGL0I09856g	Candida glabrata
 16192	vesicle-mediated transport	2 out of 355 genes, 0.6%	CAGL0L01551g CAGL0F05885g	Candida glabrata
+9410	response to xenobiotic stimulus	1 out of 355 genes, 0.3%	FUR1	Candida glabrata
+6457	protein folding	1 out of 355 genes, 0.3%	TSA1	Candida glabrata
 6997	nucleus organization	1 out of 355 genes, 0.3%	CAGL0M09801g	Candida glabrata
 30163	protein catabolic process	1 out of 355 genes, 0.3%	CAGL0J00473g	Candida glabrata
 747	conjugation with cellular fusion	1 out of 355 genes, 0.3%	SCW4	Candida glabrata
 44419	biological process involved in interspecies interaction between organisms	1 out of 355 genes, 0.3%	TPO1_1	Candida glabrata
-9410	response to xenobiotic stimulus	0 out of 355 genes, 0%	none	
 32196	transposition	0 out of 355 genes, 0%	none	
 30448	hyphal growth	0 out of 355 genes, 0%	none	
 42710	biofilm formation	0 out of 355 genes, 0%	none	
-other	other	23 out of 355 genes, 6.5%	CAGL0F03927g CAGL0K10780g CAGL0L08008g CAGL0M04873g CAGL0M02783g CAGL0M12881g CAGL0C01749g CAGL0G02783g APT1 CAGL0J05984g CAGL0G03267g CAGL0L03289g CAGL0I09592g HPT1 SEC53 CAGL0F06501g FUR1 CAGL0I01342g CAGL0I10494g CAGL0J00385g CAGL0L00429g CAGL0I10791g CAGL0M03305g	Candida glabrata
+other	other	23 out of 355 genes, 6.5%	CAGL0F03927g CAGL0K10780g CAGL0L08008g CAGL0M04873g CAGL0M02783g CAGL0M12881g CAGL0C01749g CAGL0G02783g APT1 CAGL0J05984g CAGL0G03267g CAGL0L03289g CAGL0I09592g HPT1 SEC53 CAGL0F06501g CAGL0D05500g CAGL0I01342g CAGL0I10494g CAGL0J00385g CAGL0L00429g CAGL0I10791g CAGL0M03305g	Candida glabrata

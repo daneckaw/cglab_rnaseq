@@ -1126,6 +1126,11 @@ print(DEGdf_down2x_FDR5_cbd, n = 20)
 
 print(DEGdf_non_significant_cbd, n = 20)
 
+write.csv(DEGdf_up2x_FDR5_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_up2x_FDR5.csv")
+writeLines(DEGdf_up2x_FDR5_cbd$gene, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_up2x_FDR5_names.txt")
+write.csv(DEGdf_down2x_FDR5_cbd, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_down2x_FDR5.csv")
+writeLines(DEGdf_down2x_FDR5_cbd$gene, "../data/deseq2/CompareStrains/CBS138_BG2_DMSO_down2x_FDR5_names.txt")
+
 p_cbd = volcano_plot(deseq_df_cbd, DEGdf_up2x_FDR5_cbd, DEGdf_down2x_FDR5_cbd,
                     xlabel = "log2 fold-change\nup, BG2      up, CBS138\n←                        →") +
   ggtitle("Strain BG2 vs CBS138\nin RPMI CT")
@@ -1727,7 +1732,7 @@ plot_fewgenes_rpmheatmap(paste0("ERG",seq(1,27)))
 ```
 
 
-## Figure 3 - Genes in known pathways are specifically responsive to azole drugs.
+## Figure 4 - Genes in known pathways are specifically responsive to azole drugs.
 
 The goal is to Visualise drug-dependent DGE across strains
 

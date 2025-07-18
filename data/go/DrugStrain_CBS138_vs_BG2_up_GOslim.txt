@@ -1,0 +1,39 @@
+GOID	GO term	Frequency	Gene(s)	Organism
+50789	regulation of biological process	4 out of 9 genes, 44.4%	CAGL0I09856g CAGL0M03839g CAGL0L06776g YAP6	Candida glabrata
+8150	biological_process	3 out of 9 genes, 33.3%	CAGL0K10824g CAGL0J02530g CAGL0K04719g	Candida glabrata
+7124	pseudohyphal growth	1 out of 9 genes, 11.1%	CAGL0I09856g	Candida glabrata
+30447	filamentous growth	1 out of 9 genes, 11.1%	CAGL0I09856g	Candida glabrata
+30163	protein catabolic process	1 out of 9 genes, 11.1%	SUE1	Candida glabrata
+7165	signal transduction	1 out of 9 genes, 11.1%	CAGL0M03839g	Candida glabrata
+6629	lipid metabolic process	1 out of 9 genes, 11.1%	CAGL0M06347g	Candida glabrata
+6950	response to stress	1 out of 9 genes, 11.1%	CAGL0M03839g	Candida glabrata
+7049	cell cycle	1 out of 9 genes, 11.1%	CAGL0I09856g	Candida glabrata
+70783	growth of unicellular organism as a thread of attached cells	1 out of 9 genes, 11.1%	CAGL0I09856g	Candida glabrata
+7155	cell adhesion	1 out of 9 genes, 11.1%	CAGL0I09856g	Candida glabrata
+42254	ribosome biogenesis	0 out of 9 genes, 0%	none	
+910	cytokinesis	0 out of 9 genes, 0%	none	
+7010	cytoskeleton organization	0 out of 9 genes, 0%	none	
+45333	cellular respiration	0 out of 9 genes, 0%	none	
+9410	response to xenobiotic stimulus	0 out of 9 genes, 0%	none	
+6457	protein folding	0 out of 9 genes, 0%	none	
+30448	hyphal growth	0 out of 9 genes, 0%	none	
+48468	cell development	0 out of 9 genes, 0%	none	
+5975	carbohydrate metabolic process	0 out of 9 genes, 0%	none	
+36211	protein modification process	0 out of 9 genes, 0%	none	
+16070	RNA metabolic process	0 out of 9 genes, 0%	none	
+6412	translation	0 out of 9 genes, 0%	none	
+6091	generation of precursor metabolites and energy	0 out of 9 genes, 0%	none	
+42221	response to chemical	0 out of 9 genes, 0%	none	
+6810	transport	0 out of 9 genes, 0%	none	
+32196	transposition	0 out of 9 genes, 0%	none	
+7114	cell budding	0 out of 9 genes, 0%	none	
+6766	vitamin metabolic process	0 out of 9 genes, 0%	none	
+71555	cell wall organization	0 out of 9 genes, 0%	none	
+747	conjugation with cellular fusion	0 out of 9 genes, 0%	none	
+6996	organelle organization	0 out of 9 genes, 0%	none	
+44419	biological process involved in interspecies interaction between organisms	0 out of 9 genes, 0%	none	
+19725	cellular homeostasis	0 out of 9 genes, 0%	none	
+6259	DNA metabolic process	0 out of 9 genes, 0%	none	
+42710	biofilm formation	0 out of 9 genes, 0%	none	
+16192	vesicle-mediated transport	0 out of 9 genes, 0%	none	
+6997	nucleus organization	0 out of 9 genes, 0%	none	
