@@ -1,0 +1,163 @@
+---
+title: "Candida glabrata azole response: RPM visualiser"
+author: "Edward Wallace"
+date: "2025-03-20"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+library(tidyverse)
+library(cowplot)
+library(shiny)
+
+theme_set(theme_cowplot(font_size = 12, font_family = "arial") +
+            theme(strip.background = element_blank()))
+```
+
+```{r load_rpms}
+# Load rpm data
+rpms_CBS138 <- read_tsv("../data/featureCounts/Candida_glabrata_CBS138/CBS138_all_conditions_rpm.tab")
+
+rpms_BG2 <- read_tsv("../data/featureCounts/Candida_glabrata_BG2/BG2_all_conditions_rpm.tab")
+
+sample_names <- c( names(rpms_CBS138)[-1], names(rpms_BG2)[-1])
+
+# Load reciprocal BLAST best hits
+rbbh <- read_csv("../data/rbbh/cbs138_bg2_rbbh2.csv")
+
+CBS138_geneinfo <- 
+  read_tsv("../data/genomes/CBS138_allgenes.txt",
+           col_names = c("Geneid", "Transcriptid","GenomicLocation", "Description", "Name"),
+           skip = 1,
+           na = c("", "NA", "N/A"))
+
+# merge on CBS138 gene names,
+rpms_CBS138_withinfo <- 
+  rpms_CBS138 %>%
+  full_join(CBS138_geneinfo, by = "Geneid") %>%
+  rename(gene_id_cbs138 = Geneid ) %>%
+  left_join(rbbh, by = "gene_id_cbs138") %>%
+  select(-c(Description, Transcriptid,GenomicLocation))
+
+
+# combine counts from common genes.
+rpms_joined <- rpms_CBS138_withinfo %>%
+  full_join(rpms_BG2 %>%
+              rename(gene_id_bg2 = Geneid ),
+            by = "gene_id_bg2")
+
+rpms_joined_long <- rpms_joined %>% 
+  pivot_longer(cols = all_of(sample_names),
+               names_to = "Sample", values_to = "RPM") %>%
+  separate(Sample, 
+           into = c("Strain", "Media", "Treatment", "BioRep"),
+           remove = FALSE) %>%
+  select(-Media)
+```
+
+
+```{r rpm_functions, echo = FALSE}
+
+plot_fewgenes_rpmpointsummary <- 
+  function(idlist,
+           idcol = "Name",
+           idlist_order = TRUE,
+           split_idlist = FALSE) {
+    
+    if (split_idlist) {
+      # split input string into list of single ids
+      idlist <- str_split(idlist,pattern="[ ,;]+")[[1]]
+    }
+    mygene_rpmdf_long <-
+      rpms_joined_long %>%
+      mutate(ID = rpms_joined_long[[idcol]]) %>%
+      filter(ID %in% idlist)
+    
+    if(idlist_order) {
+      mygene_rpmdf_long <- 
+        mutate(mygene_rpmdf_long, 
+               ID = factor(ID, levels = rev(idlist)))
+    }
+    
+    ggplot(data = mygene_rpmdf_long,
+           aes(x = ID, y = RPM, colour = Treatment, shape = Strain)) +
+      geom_point(position = 
+                   position_jitter(height = 0, 
+                                   width = 0.15, 
+                                   seed = 1),
+                 size = 1) + 
+      scale_y_log10("mRNA abundance (RPM)") +
+      stat_summary(fun.min="mean",fun.max="mean",
+                   geom="errorbar", linewidth = 1, width = 0.6,
+                   aes(group=Treatment)) +
+      scale_colour_manual(
+        values = c("DMSO" = "grey20",
+                   "FLUC" = "purple3",
+                   "VORI" = "green4"),
+        labels = c("DMSO" = "DMSO",
+                   "FLUC" = "FCZ",
+                   "VORI" = "VCZ")) +
+      scale_shape_manual(values = c("CBS138" = 16,
+                                    "BG2" = 17)) +
+      coord_flip() +
+      facet_wrap(~ Strain, ncol = 2) +
+      theme(panel.border = element_rect(colour = "grey50"),
+            panel.grid.major.x = element_line(colour = "grey90"),
+            axis.title.y = element_blank(),
+            panel.spacing = unit(5, "mm"))
+  }
+
+```
+
+```{r test_plot, eval = FALSE}
+plot_fewgenes_rpmpointsummary(paste0("ERG",seq(1,27)))
+
+```
+
+
+```{r, echo=FALSE}
+shiny_ui <- fluidPage(
+  titlePanel("Plot mRNA abundance in Candida glabrata azole response"),
+  sidebarLayout(
+    sidebarPanel(
+      textInput("idlist","C. glabrata gene name(s) separated by commas",
+                value="ERG1, ERG2, ERG3"),
+      selectInput("idcol",
+                  "Gene IDs to use",
+                  choices=c("Names, e.g. ERG1" = "Name",
+                            "CBS138 id, e.g. CAGL0D05940g" = "gene_id_cbs138",
+                            "BG2 id, e.g. GWK60_D06105" = "gene_id_bg2")),
+      radioButtons(inputId = "plotdevicetype", 
+                   label = "Select output file type",  
+                   choices =  list("png", "pdf")),
+      numericInput(inputId = "plotwidthcm",
+                   label = "Plot width (cm)",
+                   value=12,min=0),
+      numericInput(inputId = "plotheightcm",
+                   label = "Plot height (cm)",
+                   value=8,min=0),
+      downloadButton(outputId = "download", label = "Download the Plot" )
+    ),
+    
+    mainPanel(
+      plotOutput("geneplot")
+    )
+  )
+)
+
+# Define server logic required to draw plot
+shiny_server <- function(input, output) {
+  output$geneplot <- renderPlot(
+    plot_fewgenes_rpmpointsummary(idlist = input$idlist,
+                                  idcol = input$idcol,
+                                  split_idlist = TRUE)
+  )
+}
+
+# Run the application 
+shinyApp(ui = shiny_ui,
+         server = shiny_server,
+         options = list(height = 600))
+```

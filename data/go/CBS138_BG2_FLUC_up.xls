@@ -1,3 +1,0 @@
-GOID	GO_term	Cluster frequency	Background frequency	Corrected P-value	False discovery rate	Gene(s) annotated to the term	Directly Annotated GOID List
-7155	cell adhesion	6 out of 184 genes, 3.3%	18 out of 5614 background genes, 0.3%	0.00812	0.00%	CAGL0A01584g:EPA6:EPA23:CAGL0I09856g:AWP2:CAGL0K12078g	7124:44406:2000221:44011:122:98609:43709:36164:90606:433:90033:128:36267:752:71475:278
-98609	cell-cell adhesion	4 out of 184 genes, 2.2%	8 out of 5614 background genes, 0.1%	0.03752	0.00%	CAGL0A01584g:EPA23:CAGL0I09856g:AWP2	7124:98609:90033:128:36267:752:278

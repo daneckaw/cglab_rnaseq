@@ -1,9 +1,0 @@
-GOID	GO_term	Cluster frequency	Background frequency	Corrected P-value	False discovery rate	Gene(s) annotated to the term	Directly Annotated GOID List
-6553	lysine metabolic process	5 out of 89 genes, 5.6%	8 out of 5614 background genes, 0.1%	1.26e-05	0.00%	LYS9:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g	19752:19878:9085:6281:16558
-9085	lysine biosynthetic process	5 out of 89 genes, 5.6%	8 out of 5614 background genes, 0.1%	1.26e-05	0.00%	LYS9:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g	19752:19878:9085:6281:16558
-19878	lysine biosynthetic process via aminoadipic acid	4 out of 89 genes, 4.5%	7 out of 5614 background genes, 0.1%	0.00052	0.00%	LYS9:CAGL0F06875g:CAGL0J06402g:CAGL0K07788g	19752:19878:9085:6281:16558
-170039	proteinogenic amino acid metabolic process	8 out of 89 genes, 9.0%	91 out of 5614 background genes, 1.6%	0.02218	3.00%	LYS9:CAGL0D04026g:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g:CAGL0K12518g:CAR2	19752:9085:9450:6536:6281:16558:19265:9448:19878:10121:6591
-170033	L-amino acid metabolic process	8 out of 89 genes, 9.0%	92 out of 5614 background genes, 1.6%	0.02398	2.40%	LYS9:CAGL0D04026g:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g:CAGL0K12518g:CAR2	19752:9085:9450:6536:6281:16558:19265:9448:19878:10121:6591
-9067	aspartate family amino acid biosynthetic process	5 out of 89 genes, 5.6%	30 out of 5614 background genes, 0.5%	0.02451	2.00%	LYS9:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g	19752:9085:6281:16558:19878
-1901605	alpha-amino acid metabolic process	8 out of 89 genes, 9.0%	105 out of 5614 background genes, 1.9%	0.06076	4.57%	LYS9:CAGL0D04026g:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g:CAGL0K12518g:CAR2	19752:9085:9450:6536:6281:16558:19265:9448:19878:10121:6591
-9066	aspartate family amino acid metabolic process	5 out of 89 genes, 5.6%	37 out of 5614 background genes, 0.7%	0.06872	5.00%	LYS9:CAGL0F06875g:LYS12:CAGL0J06402g:CAGL0K07788g	19752:9085:6281:16558:19878

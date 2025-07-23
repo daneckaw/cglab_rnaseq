@@ -1,0 +1,20 @@
+GOID	GO term	Frequency	Gene(s)	Organism
+6810	transport	6 out of 22 genes, 27.3%	CAGL0F06875g CAGL0L02079g TIR3 CAGL0K11616g CAGL0G04807g CAGL0L01551g	Candida glabrata
+48468	cell development	2 out of 22 genes, 9.1%	CAGL0I07711g CAGL0L01551g	Candida glabrata
+7155	cell adhesion	2 out of 22 genes, 9.1%	EPA3 TIR3	Candida glabrata
+6996	organelle organization	2 out of 22 genes, 9.1%	CAGL0F06875g CAGL0G04807g	Candida glabrata
+7049	cell cycle	2 out of 22 genes, 9.1%	CAGL0I07711g CAGL0L01551g	Candida glabrata
+16192	vesicle-mediated transport	2 out of 22 genes, 9.1%	CAGL0G04807g CAGL0L01551g	Candida glabrata
+45333	cellular respiration	1 out of 22 genes, 4.5%	ACO2	Candida glabrata
+9410	response to xenobiotic stimulus	1 out of 22 genes, 4.5%	EPA3	Candida glabrata
+16070	RNA metabolic process	1 out of 22 genes, 4.5%	CAGL0J07700g	Candida glabrata
+6412	translation	1 out of 22 genes, 4.5%	ACO2	Candida glabrata
+6091	generation of precursor metabolites and energy	1 out of 22 genes, 4.5%	ACO2	Candida glabrata
+42221	response to chemical	1 out of 22 genes, 4.5%	EPA3	Candida glabrata
+71555	cell wall organization	1 out of 22 genes, 4.5%	CAGL0G08668g	Candida glabrata
+6950	response to stress	1 out of 22 genes, 4.5%	CAGL0J06402g	Candida glabrata
+50789	regulation of biological process	1 out of 22 genes, 4.5%	CAGL0F04917g	Candida glabrata
+6259	DNA metabolic process	1 out of 22 genes, 4.5%	CAGL0J06402g	Candida glabrata
+42710	biofilm formation	1 out of 22 genes, 4.5%	EPA3	Candida glabrata
+8150	biological_process	1 out of 22 genes, 4.5%	CAGL0M01892g	Candida glabrata
+other	other	8 out of 22 genes, 36.4%	CAGL0I09592g MET15 LYS21 ARG8 LYS9 CAGL0K07788g LYS12 CAGL0I08987g	Candida glabrata

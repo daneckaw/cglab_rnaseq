@@ -1,0 +1,23 @@
+gene	description	name
+CAGL0B01507g	"Ortholog(s) have N2-acetyl-L-ornithine:2-oxoglutarate 5-aminotransferase activity, role in arginine biosynthetic process, arginine biosynthetic process via ornithine, ornithine biosynthetic process and mitochondrial matrix localization"	ARG8
+CAGL0C03443g	Putative saccharopine dehydrogenase	LYS9
+CAGL0C03872g	Putative GPI-linked cell wall protein involved in sterol uptake	TIR3
+CAGL0D06402g	"O-acetyl homoserine sulfhydrylase (OAHSH), ortholog of S. cerevisiae MET17, required for utilization of inorganic sulfate as sulfur source, able to utilize cystine as a sulfur source while S. cerevisiae met15 mutants are unable to do so"	MET15
+CAGL0E06688g	"Epithelial adhesion protein, involved in biofilm formation and azole drug resistance, belongs to adhesin cluster I, GPI-anchored"	EPA3
+CAGL0F02431g	"Ortholog(s) have role in mitochondrial translation, tricarboxylic acid cycle and cytoplasm, mitochondrion, nucleus localization"	ACO2
+CAGL0F04917g	"Putative regulatory subunit for protein phosphatase, gene is upregulated in azole-resistant strain"	NA
+CAGL0F06875g	"Ortholog(s) have mRNA binding, saccharopine dehydrogenase (NAD+, L-lysine-forming) activity and role in lysine biosynthetic process, lysine biosynthetic process via aminoadipic acid"	LYS1
+CAGL0G02585g	Homo-isocitrate dehydrogenase	LYS12
+CAGL0G04807g	"Ortholog(s) have SNAP receptor activity and role in autophagosome maturation, piecemeal microautophagy of the nucleus, vacuole fusion, non-autophagic, vesicle docking, vesicle fusion, vesicle fusion with vacuole"	NA
+CAGL0G08668g	Ortholog(s) have role in fungal-type cell wall organization and fungal-type cell wall localization	NA
+CAGL0I07711g	"Ortholog(s) have structural molecule activity, role in ascospore-type prospore membrane formation and meiotic spindle pole body localization"	NA
+CAGL0I08987g	Has domain(s) with predicted argininosuccinate lyase activity and role in arginine biosynthetic process via ornithine	NA
+CAGL0I09592g	"Ortholog(s) have carbamoyl-phosphate synthase (glutamine-hydrolyzing) activity, role in arginine biosynthetic process and carbamoyl-phosphate synthase complex, cytoplasmic stress granule localization"	CPA1
+CAGL0J06402g	"Ortholog(s) have homocitrate synthase activity, role in DNA repair, histone displacement, lysine biosynthetic process via aminoadipic acid and nucleus localization"	NA
+CAGL0J07700g	"Ortholog(s) have role in mRNA splicing, via spliceosome and U2-type spliceosomal complex localization"	CWC25
+CAGL0J09240g	"Homocitrate synthase, protein abundance increased in ace2 mutant cells"	LYS21
+CAGL0K07788g	"Ortholog(s) have L-aminoadipate-semialdehyde dehydrogenase activity and role in lysine biosynthetic process, lysine biosynthetic process via aminoadipic acid"	LYS2
+CAGL0K11616g	"Putative mitochondrial inner membrane transporter, gene is upregulated in azole-resistant strain"	NA
+CAGL0L01551g	"Ortholog(s) have role in ascospore formation, endocytosis, protein localization to eisosome filament and cell cortex, eisosome, membrane raft, plasma membrane localization"	NA
+CAGL0L02079g	"Ortholog(s) have tricarboxylate secondary active transmembrane transporter activity and role in mitochondrial citrate transmembrane transport, transmembrane transport"	NA
+CAGL0M01892g	Ortholog of S. cerevisiae : ECM8 and Saccharomyces cerevisiae S288C : YBR076W	NA
